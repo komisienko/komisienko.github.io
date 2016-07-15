@@ -25,13 +25,15 @@
 	}
 }
 
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 	.top_wrapper .top_text h1 {
-		font-size: 2em;
+		font-size: 5em;
 		padding-left: 10px;
 		padding-right: 10px;
 	}
+	.top_wrapper .top_text p { margin-top: 0 }
 	.main_footer {
 		text-align: center;
 	}
