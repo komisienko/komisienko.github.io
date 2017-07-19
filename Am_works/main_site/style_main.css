@@ -93,11 +93,11 @@ header div{
         align-items: center;
 }
 div .contact{
-        position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      height: 80px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
     padding-left: 20px;
     padding-bottom: 20%;
     color:azure;
@@ -110,20 +110,21 @@ header div.header_content{
     /*background-color:#3c3q3c;
     #3c3c3c*/
     color: azure;
-    opacity: 0.8;
+    opacity: 1;
+
 }
 
     header div.header_content p{
     padding-left: 20px;
-   font-family: 'Open Sans', sans-serif;
-        font-size: 2em;
-        flex-basis: 70%;
+    font-family: 'Open Sans',sans-serif ;
+    font-size: 2em;
+    flex-basis: 70%;
 }
 header div.header_content i{
    
     float right;
     padding-left: 10px;
-    font-size: 2em;
+    font-size: 2.5em;
 }
 /* SLIDER START HERE*/
 .body_slides{
@@ -161,17 +162,17 @@ header div.header_content i{
     animation: anim_slides 24s linear infinite 0s;
 }
 .body_slides li:nth-child(1){
-background-image: url(images/1.jpg) 
+background-image: url(images/2_1.jpg) 
 }
 .body_slides li:nth-child(2){
 -webkit-animation-delay: 6.0s;
 -moz-animation-delay: 6.0s;
-background-image: url(images/2.jpg) 
+background-image: url(images/1_1_1.jpg) 
 }
 .body_slides li:nth-child(3){
 -webkit-animation-delay: 12.0s;
 -moz-animation-delay: 12.0s;
-background-image: url(images/3.jpg) 
+background-image: url(images/3_1.jpg) 
 }
 @-webkit-keyframes anim_slides {
 0% {opacity:0;}
@@ -191,5 +192,20 @@ background-image: url(images/3.jpg)
 
 .general{
     margin-left: 300px;
-    padding: 20px 0 0 50px;
+    padding: 20px 20px 0 50px;
+   
 }
+
+.general_wrap{
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 74vh;
+    padding: 20px;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    font-size: 1.2em;
+    min-width: 95%;
+    position: relative;
+    color: azure;
+        
+}
+
