@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style_preloader.css">
+        <title>index</title>
+       
+    </head>
+   
+    <body>
+       <a href="../Am_works/main_site/main.html">
+        <div class="tc-videobackground">
+            <video src="Assets_video/video-collaboration-overview.mp4" autoplay loop></video>   
+            <video src="Assets_video/video-collaboration-overview.webm" autoplay loop></video>
+                 </div>
+        <button class="enter hiden_button" >ENTER</button>
+        <ul class="fly-in-text hidden">
+            <li>A</li>
+            <li>M</li>
+            <li>-</li>
+            <li>W</li>
+            <li>O</li>
+            <li>R</li>
+            <li>K</li>
+            <li>S</li>
+        </ul>
+       
+        </a> 
+       
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript">
+            
+            ((function($) {
+                
+                setTimeout(function() {
+                    $('.fly-in-text').removeClass('hidden');
+                }, 500);
+                
+            })(jQuery));
+                 ((function($) {
+                
+                setTimeout(function() {
+                    $('.enter').removeClass('hiden_button');
+                }, 3000);
+                
+            })(jQuery));
+        
+            
+        </script>
+
+    </body>
+   
+</html>

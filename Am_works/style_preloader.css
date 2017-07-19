@@ -1,0 +1,80 @@
+ * {
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                background-color: #000;
+                width: 100%;
+                height: 100%;
+                
+                
+                 }
+                html, body { margin: 0; padding: 0; width: 100%; height: 100%; }
+            a { display: block; width: 100%; height: 100%; }
+
+            .fly-in-text {
+                list-style: none;
+                left: 50%;
+                top: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                display: table;
+                
+                position: absolute; 
+                display: table;
+                height: 50px;
+                width:50%;
+                text-align: center;
+                margin-top: 5px;
+               
+            }
+          .fly-in-text li {
+                display: table-cell; 
+                position: relative;
+                margin-right: 10%;
+                font-family: Open Sans, Arial;
+                font-weight: 50%;
+                font-size: 4em;
+                color: #fff;
+                opacity: 1;
+                transition: all 2.5s ease;
+            }
+            .fly-in-text li:last-child {
+                margin-right: 0;
+            }
+            .fly-in-text.hidden li {
+                opacity: 0;
+            }
+            .fly-in-text.hidden li:nth-child(1) { transform: translateX(-200px) translateY(-200px); }
+            .fly-in-text.hidden li:nth-child(2) { transform: translateX(20px) translateY(100px); }
+            .fly-in-text.hidden li:nth-child(3) { transform: translateX(-150px) translateY(-80px); }
+            .fly-in-text.hidden li:nth-child(4) { transform: translateX(10px) translateY(-200px); }
+            .fly-in-text.hidden li:nth-child(5) { transform: translateX(-300px) translateY(200px); }
+            .fly-in-text.hidden li:nth-child(6) { transform: translateX(20px) translateY(-20px); }
+            .fly-in-text.hidden li:nth-child(7) { transform: translateX(30px) translateY(200px); }
+            .fly-in-text.hidden li:nth-child(8) { transform: translateX(10px) translateY(-200px); }
+
+
+
+.hiden_button{
+    opacity: 0;
+}
+.enter{
+    opacity: 50%;
+    transition: all 2.5s ease;
+    
+border: none;
+ 
+ border-radius: 25px 25px 25px 25px;
+ -webkit-border-radius: 25px 25px 25px 25px;
+ -moz-border-radius: 25px 25px 25px 25px;
+ font-family: Open Sans, Arial;
+ width: auto;
+ height: auto;
+ font-size: 50px;
+ padding: 10px 40px;
+ background-color: #FFFFFF;
+ position: absolute;
+left: 50%;
+top: 30%;
+transform: translateX(-50%) translateY(-50%);
+}
