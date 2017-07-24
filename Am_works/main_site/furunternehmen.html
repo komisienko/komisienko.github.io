@@ -5,6 +5,7 @@
       <title>Document</title>
       <link rel="stylesheet" href="style_main.css">
      <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./fur.css">
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       
   </head>
@@ -79,25 +80,41 @@
                     <li></li>
             </ul>
          </div>
-        <div class="general">
+     <div class="general">
             <div class="general_wrap">
-             <h1>KONTAKT</h1>
-              <div class="general_kontakt" style="opacity: 0"><p>Elmer-Fryar-Ring 1
-                    86391 <br>
-                    Stadtbergen
-                    </p> 
-                    <p>
-                    Telefon: 0821 – 600 806 420<br>
-                    Telefax: 0821 – 600 806 429
-                     </p><p>
-                E-Mail: info@am-works.de</p>
+             <h1>FUR UNTERNEHMEN</h1>
+             
+                <div id="tab/one"></div>
+                <div id="tab/two"></div>
+                <div id="tab/three"></div>
+                <div id="tab">
+
+                  <a href="#one">#one</a>
+                  <a href="#two">#two</a>
+                  <b><a href="#tab/one">#three</a></b>
                 </div>
-              <iframe class="gmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2651.2048969461243!2d10.847527415820615!3d48.35658634386046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479ea2d819cdd223%3A0x939fbc1b441574a0!2zRWxtZXItRnJ5YXItUmluZyAxLCA4NjM5MSBTdGFkdGJlcmdlbiwg0JPQtdGA0LzQsNC90LjRjw!5e0!3m2!1sru!2sua!4v1500464046164"  frameborder="0" style="border:0" allowfullscreen></iframe>
+                <div id="two">
+                  <a href="#one">#one</a>
+                  <b><a href="#two">#two</a></b>
+                  <a href="#tab/one">#three</a>
+                </div>
+                <div id="one">
+                  <b><a href="#one">#one</a></b>
+                  <a href="#two">#two</a>
+                  <a href="#tab/one">#three</a>
+                </div>
+             
+               
+
+           
+           
             </div>
-         </div></div>
+            </div>
+           </div>
+    
            <script type="text/javascript">       
        $(function() {
-      $('.general_wrap .general_kontakt').each(function(i) {
+      $('.information_jobborse .logo_jobs').each(function(i) {
             $(this).delay((i++) * 1000).fadeTo(1000, 1); })
         }); 
                 

@@ -260,3 +260,7 @@ background-image: url(images/3_1.jpg)
 .search_location{
     padding-left: 20px;
 }
+.logo_jobs{
+    opacity: 0;
+    vertical-align: middle;
+}
