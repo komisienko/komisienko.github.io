@@ -254,3 +254,9 @@ background-image: url(images/3_1.jpg)
     margin-left: 10%;
 }
 
+.search_jobs{
+    display: -webkit-box;
+}
+.search_location{
+    padding-left: 20px;
+}
