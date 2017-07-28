@@ -24,7 +24,9 @@
                               <span></span>
                               <span></span>
                               <span></span>
+                               <div id="menu_hover"></div>
                         </div>
+                       
                         <ul>
                         
                         <li class="search"><input type="text" placeholder="Поиск  "></li>
@@ -54,7 +56,7 @@
     
     <script type="text/javascript">
     $(document).ready(function(){
-	$('#nav-icon1').hover(function(){
+	$('#nav-icon1, #menu_hover').hover(function(){
 		$(this).toggleClass('open');
 	});
 });
