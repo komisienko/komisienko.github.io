@@ -132,10 +132,12 @@ h1{
     background-size: 100% 100%;}
 
 
-#nav-icon1:hover #menu_hover{
+#nav-icon1.open> #menu_hover{
     display: block;
     position: fixed;
     width: 200px;
     height: 500px;
     background-color: black;
+    padding-top: 20px;
+    margin-top: 33px;
 }
