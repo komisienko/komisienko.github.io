@@ -1,6 +1,8 @@
 *{margin: 0px;padding: 0px;}
 
-
+a{
+    font-family: arial;
+}
 .menu_wrapper{
     width: 100%;
     height: 45px;
@@ -75,28 +77,62 @@
   -o-transform: rotate(-135deg);
   transform: rotate(-135deg);
 }
-li{
-    display: block;
-    float: right;
-    list-style-type: none;
-    text-align: right;
-}
+
 .korzina{
     cursor: pointer;
    
 }
-.ru, .ua, .search, .korzina{
+.radios-as-buttons, .search, .korzina{
     padding-top: 8px;
+       display: block;
+    float: right;
+    list-style-type: none;
+    text-align: right;
 }
-button{
-    height: 30px;
-    width: 30px;
+/* <!--UA RU-->*/
+.radios_ru_ua {
+
+    font-family: arial;
+    font-size: 18px;
+ 
+}
+.radios_ru_ua div {
+    float: left;
+
+}
+.radios_ru_ua input {
+    position: absolute;
+    left: -9999px;
+}
+.radios_ru_ua label {
+    display: block;
+
+    width:30px;
+    height:30px;
+    padding-top:5px;
+    /*background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%);*/
+    box-shadow:inset 0 2px 5px  rgba(0, 0, 0, .75);
     cursor: pointer;
+    background: #992524;
+    color: black;
 }
+.radios_ru_ua input:checked + label {
+    background: #992524;
+    box-shadow:inset 0 2px 5px rgba(0, 0, 0, .75);
+    color:#ff3f3e;
+
+}
+.radios_ru_ua:nth-child(2){
+    margin-left: 10px;
+}
+/* END OF BUTTONS*/
 
 .ru{
     margin-left: 20px;
+
+
 }
+
 .ua{
     margin-left: 10px;
 
@@ -135,9 +171,34 @@ h1{
 #nav-icon1.open> #menu_hover{
     display: block;
     position: fixed;
-    width: 200px;
-    height: 500px;
-    background-color: black;
-    padding-top: 20px;
-    margin-top: 33px;
+    height: 243px;
+    width: 201px;
+    background-image: url(images/menu.png);
+
+    margin-top: 36px;
+    opacity: 0.85; filter: alpha(opacity=85);
+}
+.drop_menu{
+    display: none;
+}
+.drop_menu>li{
+    list-style-type: none;
+    margin-left: 23px;
+    margin-right: 25px;
+    padding-top:11px;
+
+}
+.drop_menu>li>a{
+    color: white;
+    text-decoration: none;
+}
+#nav-icon1.open> #menu_hover>.drop_menu{
+    display: block;
+    
+}
+.drop_menu{
+    margin-top:38px;
+}
+.drop_menu>li:nth-child(1){
+    padding-top: 0;
 }
