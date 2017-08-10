@@ -13,7 +13,7 @@ background-repeat: no-repeat;
 background-size: cover; /* Современные браузеры */
 }
 .row{
-width: 100%;
+width: 300px;
 margin: 0 auto;
 padding: 0;
 
