@@ -78,8 +78,9 @@ a{
 .cn-button {
         border: 1px solid white;
     outline: 0 !important;
-
-    background: none;
+    background: -webkit-linear-gradient(left, #2098df, #2090d9);
+    background: -o-linear-gradient(left, #2098df, #2090d9);
+    background: linear-gradient(to right, #2098df, #2090d9);
     color: black;
     text-align: center;
     font-size: 1.8em;
@@ -145,8 +146,8 @@ a{
 }
 
 .csstransforms .cn-wrapper li a span {
-  font-size: 1.1em;
-/*  opacity: 0.7;*/
+  font-size: 0.8em;
+
     font-weight: 300;
 }
 
@@ -278,8 +279,8 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
   }
 
   .cn-button {
-      background: linear-gradient(to top, #21BCF9, #1F70C1);
-        bottom: -11em;
+
+        bottom: -10.8em;
     font-size: 1em;
   }
 
@@ -328,4 +329,11 @@ color: white;
 left: 12px;
 font-size: 17px;
 text-decoration: none;
+}
+.cn-button>img{
+    top:2px;
+    border-radius: 50%; 
+    border-radius: 50%;
+    height: 90%;
+    width: 90%;
 }

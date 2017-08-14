@@ -1,3 +1,4 @@
+#drink{height: auto;}
 html{
 height: 100%;
 }
@@ -13,7 +14,7 @@ background-repeat: no-repeat;
 background-size: cover; /* Современные браузеры */
 }
 .row{
-width: 300px;
+/*width: 300px;*/
 margin: 0 auto;
 padding: 0;
 
@@ -140,10 +141,11 @@ text-decoration: none;
     border-top: 1px solid white;
 }
 .footer{
-        display: inline-block;
-    height: 153px;
+    display: inline-block;
+    height: 100px;
     width: 300px;
     border-top: 1px solid white;
+    border-bottom: 1px solid white;
 }
 .eco_com_button{
     display: inline-block;
@@ -201,14 +203,20 @@ text-decoration: none;
     
 }
 .money_text{
-width: 100%;
+    width: 100%;
     height: 50%;
     text-align: left;}
 .money_text>p{
     padding-left: 10px;
     margin: 0;
     color: white;
-    padding-top: 45px;
+    padding-top: 20px;
+}
+.money_text>h2{
+    text-align: center; 
+    color: white;
+    font-size: 26px;
+    padding-left: 10px;
 }
 .clean_disturb{
     display: inline-block;
@@ -223,13 +231,24 @@ width: 100%;
 .clean_text{
     height: 100%;
 }
+.clean_text>h2{
+    margin-top: 25px;
+    margin-left: 25%;
+}
 .disturb{
-width: 100%;
+    width: 100%;
     height: 50%;
     text-align: right;
     position: relative;
 }
-
+.disturb_text{
+    height: 100%;
+}
+.disturb_text>h2{
+    margin-top: 15px;
+    margin-left: 25%;
+    
+}
 .disturb:before{
     position:absolute;
     top:0;
@@ -238,4 +257,95 @@ width: 100%;
     border-top:1px solid white;
     content:"";
     margin-left: 25%;
+}
+/*------------DRINKS-------------*/
+.drinks{
+    width: 100%;
+    margin-top: 37px;
+    height: 115px;
+}
+.drinks>img{
+    height: 70px;
+    width: 50px;
+}
+.drinks>h2{
+    float: none;
+    font-size: 21px;
+    margin-top: 8.5px;
+}
+.search{
+  width: 100%;
+    margin-top: 28px;
+}
+
+#search_drink{
+    width: 182px;
+    height: 25px;
+    background-color: white;
+    outline: none;
+    border: 7px;
+    color:#7C7C7C;
+    font-size: 1.2em;
+    text-align: left;
+    padding-left: 30px;
+    background-image: url(/images/search.svg);
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 13px;
+    border-radius: 7px;
+    font: "fira sans", sans-serif;
+
+    }
+::-webkit-input-placeholder{
+    color: #7C7C7C;
+    text-align: left;
+    opacity: 0.5;
+}
+
+/* -----------PRODUCT----------*/
+/* -----------PRODUCT----------*/
+.product{
+    display: block;
+    padding-top: 35px;
+    margin: 0 auto;
+    height: 190px;
+    display: block;
+    width: 320px;
+    border-bottom: 1px solid white;
+}
+.product_image{
+    display: inline-block;
+    margin-left: 20px;
+    height: 100%;
+    width: 80px;
+    float: left;
+}
+.product_dqc{
+    overflow: hidden;
+    width: 220px;
+    height: 100%;
+    float: right;
+    display: inline-block;
+}
+.product_category, .product_name, .product_quantity,.product_cost{
+    display: block;
+width: 100%;
+height: 20px;
+padding-left: 20px;
+}
+
+.product_quantity{
+    padding: 20px 0 20px 20px;;
+}
+.product_quantity>img{
+
+    height: 20px;
+
+}
+.product_cost>h2{
+    font-size: 18px;
+}
+.product_cost>img{
+    height: 30px;
+
 }
