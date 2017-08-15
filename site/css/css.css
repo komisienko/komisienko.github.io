@@ -94,12 +94,13 @@ margin-left: -4px;
 }
 
 .back{
-position: absolute;
-top: -25px;
+position: fixed;
+top: 10px;
 color: white;
 left: 12px;
 font-size: 17px;
 text-decoration: none;
+    z-index: 1;
 }
 
 .icon_wrap{
@@ -347,9 +348,11 @@ width: 100%;
 }
 .product_category>h2,  .product_name>h2,  .product_quantity>h2, .product_cost > h2{
     font-size: 16px;
+
 }
 .product_quantity{
-    padding: 20px 0 20px 20px;;
+    padding: 20px 0 20px 20px;
+        line-height: 30px;
 }
 .product_quantity>img{
 
@@ -402,6 +405,51 @@ background: rgba(255, 255, 255, 0.0001);
     border: 1px solid rgba(255,255,255,0.4);
 }
 .add:active{
+    background-color: rgba(255,255,255,0.4);
+    border: 1px solid rgba(255,255,255,0.4);
+}
+
+/*--------TAXI---------*/
+.taxi_group{
+    width: 121px;
+    margin: 0 auto;
+    margin-top: 37px;
+}
+.taxi_out, .taxi_in{
+    padding-top:20px;
+}
+.taxi_out>button, .taxi_in>button{
+    width: 121px;
+    height: 121px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0);
+    outline: none;
+
+}
+.taxi_out>button>img {
+
+    height: 15px;
+    width: 39px;
+}
+.taxi_in>button>img{
+    height: 40px;
+    width: 38px;
+}
+.taxi_out>button>h2 {
+
+
+    width: 100%;
+}
+.taxi_in>button>h2{
+
+    width: 100%;
+}
+.taxi_out>button:active{
+    background-color: rgba(255,255,255,0.4);
+    border: 1px solid rgba(255,255,255,0.4);
+}
+.taxi_in>button:active{
     background-color: rgba(255,255,255,0.4);
     border: 1px solid rgba(255,255,255,0.4);
 }
