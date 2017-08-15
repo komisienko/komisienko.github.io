@@ -289,7 +289,7 @@ width: 100%;
     font-size: 1.2em;
     text-align: left;
     padding-left: 30px;
-    background-image: url(/images/search.svg);
+    background-image: url(../images/search.svg);
     background-repeat: no-repeat;
     background-position: 10px center;
     background-size: 13px;
