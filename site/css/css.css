@@ -1,17 +1,26 @@
-#drink{height: auto;}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+
+}
+
 html{
-height: 100%;
+margin: 0;
+padding: 0;
+    min-height: 100%;
+background: linear-gradient(to right, #21BCF9, #1F70C1);
+background-repeat: no-repeat;
+-moz-background-size: 100%; /* Firefox 3.6+ */
+-webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+-o-background-size: 100%; /* Opera 9.6+ */
+background-size: 100%; /* Современные браузеры */
 }
 body{
 font-family: "Fira Sans", sans-serif;
-margin: 0;
-padding: 0;
-background: linear-gradient(to right, #21BCF9, #1F70C1);
-background-repeat: no-repeat;
--moz-background-size: cover; /* Firefox 3.6+ */
--webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
--o-background-size: cover; /* Opera 9.6+ */
-background-size: cover; /* Современные браузеры */
+
+
 }
 .row{
 /*width: 300px;*/
@@ -19,7 +28,7 @@ margin: 0 auto;
 padding: 0;
 
 text-align: center;
-/*overflow:hidden*/
+
 
 }
 h1{
@@ -62,13 +71,13 @@ input[type=checkbox]:checked ~ .main_icon{
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
 }
-.img_light{ display: block; width: 39px; height: 40px; margin: auto; position: absolute; top: 2px; left: 3px; bottom: 0; right: 0; }
+.img_light{ display: block; width: 39px; height: 40px; margin: auto; position: absolute; top: 0px; left: 0px; bottom: 0; right: 0; }
 .main_text{
 display: block;
 text-align: center;
 bottom: 0px;
 color: white;
-left: 60px;
+
 margin-top: 70px;
 font-weight: 300;
 }
@@ -81,13 +90,12 @@ background: none;
 border: none;
 margin: 0;
 padding: 0;
-
 margin-left: -4px;
 }
 
 .back{
 position: absolute;
-top: 16px;
+top: -25px;
 color: white;
 left: 12px;
 font-size: 17px;
@@ -277,6 +285,7 @@ width: 100%;
 .search{
   width: 100%;
     margin-top: 28px;
+    margin-bottom: 12px;
 }
 
 #search_drink{
@@ -307,9 +316,9 @@ width: 100%;
 /* -----------PRODUCT----------*/
 .product{
     display: block;
-    padding-top: 35px;
+    padding-top: 33px;
     margin: 0 auto;
-    height: 190px;
+    height: 156px;
     display: block;
     width: 320px;
     border-bottom: 1px solid white;
@@ -321,8 +330,11 @@ width: 100%;
     width: 80px;
     float: left;
 }
+.product_image>img{
+            margin-top: 25px;
+    border-radius: 50%;
+}
 .product_dqc{
-    overflow: hidden;
     width: 220px;
     height: 100%;
     float: right;
@@ -330,11 +342,12 @@ width: 100%;
 }
 .product_category, .product_name, .product_quantity,.product_cost{
     display: block;
-width: 100%;
-height: 20px;
-padding-left: 20px;
+   height: 20px;
+   padding-left: 20px;
 }
-
+.product_category>h2,  .product_name>h2,  .product_quantity>h2, .product_cost > h2{
+    font-size: 16px;
+}
 .product_quantity{
     padding: 20px 0 20px 20px;;
 }
@@ -345,8 +358,50 @@ padding-left: 20px;
 }
 .product_cost>h2{
     font-size: 18px;
+    padding-top: 5px;
 }
-.product_cost>img{
-    height: 30px;
 
+
+
+.submit{
+    outline: none; 
+    font-family: "Fira Sans", sans-serif;
+    margin: 0 auto;
+background: rgba(255, 255, 255, 0.0001);
+    border: 1px solid #FFFFFF;
+    height: 32px;
+    width: 99px;
+    color: #FFFFFF;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: 300;
+
+}
+
+.submit:active {
+    background-color: rgba(255,255,255,0.4);
+    border: 1px solid rgba(255,255,255,0.4);
+}
+
+/*------Button add -remove -----*/
+.remove, .add{
+    height: 32px;
+    width: 32px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0);
+    color: white;
+    margin: 0 auto;
+    outline: none;
+    font-size: 20px;
+    font-weight: 300;
+
+}
+ .remove:active{
+    background-color: rgba(255,255,255,0.4);
+    border: 1px solid rgba(255,255,255,0.4);
+}
+.add:active{
+    background-color: rgba(255,255,255,0.4);
+    border: 1px solid rgba(255,255,255,0.4);
 }
