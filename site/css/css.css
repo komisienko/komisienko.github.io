@@ -453,7 +453,7 @@ background: rgba(255, 255, 255, 0.0001);
     background-color: rgba(255,255,255,0.4);
     border: 1px solid rgba(255,255,255,0.4);
 }
-.cleaning_group {margin-top: 103px;}
+.cleaning_group {margin-top: 53px;}
 .cleaning{
     margin-top:  50px;
     width: 80px;
@@ -466,7 +466,9 @@ background: rgba(255, 255, 255, 0.0001);
 .cleaning>h2{
     width: 100%;
 }
-
+.klinig_ebychiy{
+    margin-top: 30px;
+}
 
 input[type=checkbox]:checked ~ .cleaning{
 
@@ -474,8 +476,8 @@ input[type=checkbox]:checked ~ .cleaning{
     -webkit-transition: all 2s ease-in-out; /** Chrome & Safari **/
     -moz-transition: all 2s ease-in-out; /** Firefox **/
     -o-transition: all 2s ease-in-out; /** Opera **/
-   transform: translate(90px,0);
-    -webkit-transform: translate(90px,0); /** Safari & Chrome **/
-    -o-transform: translate(90px,0); /** Opera **/
-    -moz-transform: translate(90px,0); /** Firefox **/}
+   transform: translate(150%,0);
+    -webkit-transform: translate(150%,0); /** Safari & Chrome **/
+    -o-transform: translate(150%,0); /** Opera **/
+    -moz-transform: translate(150%,0); /** Firefox **/}
 
