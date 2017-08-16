@@ -410,7 +410,7 @@ background: rgba(255, 255, 255, 0.0001);
 
 /*--------TAXI---------*/
 .taxi_group{
-    width: 121px;
+    width: 120px;
     margin: 0 auto;
     margin-top: 37px;
 }
@@ -418,8 +418,8 @@ background: rgba(255, 255, 255, 0.0001);
     padding-top:20px;
 }
 .taxi_out>button, .taxi_in>button{
-    width: 121px;
-    height: 121px;
+    width: 120px;
+    height: 120px;
     border: 1px solid white;
     border-radius: 50%;
     background-color: rgba(255,255,255,0);
