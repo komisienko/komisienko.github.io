@@ -94,12 +94,11 @@ a{
     cursor: pointer;
     z-index: 11;
 }
-
-.cn-button:hover,
-.cn-button:active,
-.cn-button:focus {
-  color: #aa1010;
+.cn-button:active {
+    
+    border: 1px solid rgba(255,255,255,0.4);
 }
+
 
 .csstransforms .cn-wrapper li {
   border-right: 1px solid white;
