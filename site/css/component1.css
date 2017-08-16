@@ -84,13 +84,12 @@ a{
     color: black;
     text-align: center;
     font-size: 1.8em;
-    height: 3.5em;
-    width: 3.5em;
-
+    height: 80px;
+    width: 80px;
     position: relative;
     left: 50%;
-    margin-left: -1.75em;
-    bottom: -9em;
+    margin-left: -1.4em;
+    bottom: -8.5em;
     border-radius: 50%;
     cursor: pointer;
     z-index: 11;
@@ -277,11 +276,10 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
   .csstransforms .cn-wrapper {
     font-size: .68em;
   }
-
   .cn-button {
-
-        bottom: -10.8em;
+    bottom: -11.5em;
     font-size: 1em;
+    margin-left: -2.4em;
   }
 
   .csstransforms .cn-wrapper li {
