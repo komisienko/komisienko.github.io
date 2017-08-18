@@ -1,0 +1,46 @@
+@import "/css/font.css" all;
+body{margin: 0;
+        padding: 0;
+
+        min-width: 320px;
+
+}
+/*------------NAVIGATION TOP----------*/
+    header{
+        width: 100%;
+        height: 59px;
+/*        z-index: 2;*/
+
+    }
+    .nav_menu{
+
+        width: 100%;
+        height: 59px;
+/*
+        background: linear-gradient(top,rgba(58,62,74,.21),rgba(58,62,74,0));
+        background:-webkit-linear-gradient(top,rgba(58,62,74,.21),rgba(58,62,74,0));
+*/
+        line-height: 59px;
+    }
+    .back{
+        height: 100%;
+        width: 52px;
+        float: left;
+        text-align: center;
+    }
+    .back_icon{
+        height: 24px;
+        width: 24px;
+        vertical-align: middle;
+    }
+    .basket{
+        height: 100%;
+        width: 52px;
+        float: right;
+        text-align: center;
+    }
+    .basket_icon{
+        height: 30px;
+        width: 30px;
+        vertical-align: middle;
+    }

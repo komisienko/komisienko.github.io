@@ -1,0 +1,182 @@
+@import "/css/font.css" all;
+body{margin: 0;
+        padding: 0;
+/*        background-color: red;*/
+        min-width: 320px;
+}
+a{
+    text-decoration: none;
+}
+.t_ff ,h2,h1,h3,p{
+    font-family: "MyriadProRegular"
+}
+/*------------NAVIGATION TOP----------*/
+    header{
+        width: 100%;
+        height: 59px;
+/*        z-index: 2;*/
+    }
+    .nav_menu{
+        width: 100%;
+        height: 52px;
+/*
+        background: linear-gradient(top,rgba(58,62,74,.21),rgba(58,62,74,0));
+        background:-webkit-linear-gradient(top,rgba(58,62,74,.21),rgba(58,62,74,0));
+*/
+        line-height: 52px;
+    }
+    .back{
+        height: 100%;
+        width: 80px;
+        float: left;
+
+  
+    }
+    .back_icon{
+           height: 20px;
+    width: 20px;
+    vertical-align: middle;
+    margin-bottom: 5px;
+    margin-left: 1px;
+    }
+.back_text{
+    margin: 0;
+    padding: 0;
+    color: #69C6FF;
+    font-size: 18px;
+    margin-left: 7px;
+}
+    .basket{
+        height: 100%;
+        width: 52px;
+        float: right;
+        text-align: center;
+    }
+    .basket_icon{
+      height: 28px;
+    width: 32px;
+    vertical-align: middle;
+    margin-bottom: 7px;
+    margin-right: 3px;
+    }
+
+.restauraunt{
+    height: 55px;
+    text-align: center;
+}
+.restauraunt>img{
+    height: inherit;
+}
+.food_logo_text{
+    text-align: center;
+    font-size: 21px;
+    width: 100%;
+        font-weight: 400;
+    margin: 0;
+    padding: 0;
+    color:#A5A5A5;
+}
+.search{
+    width: 100%;
+    margin-top: 23px;
+    margin-bottom: 12px;
+}
+
+.search{
+    width: 100%;
+    display: block;
+    text-align: center;
+
+}
+
+input#search_drink{
+
+    width: 182px;
+    height: 25px;
+    background-color: #D4EDFF;
+    outline: none;
+    border: 7px;
+    color:#7C7C7C;
+    font-size: 12px;
+    text-align: left;
+    padding-left: 30px;
+    background-image: url(../images/search.svg);
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 13px;
+    border-radius: 7px;
+    font-family: "MyriadProRegular";
+
+    }
+.food_cart_div{
+        margin: 0 auto;
+    height: 210px;
+    width: 320px;
+}
+.food_cart{
+    box-shadow: 1px 1px 10px 1px rgba(0,0,0,.2);
+    height: 200px;
+    width: 300px;
+    margin: 5px 9px;
+    border-radius: 7px;
+    background-color: #E6F6FF;
+}
+.food_img{
+    height: 130px;
+    width: 130px;
+      padding-top: 10px;
+    padding-left: 5px;
+   display: inline-block;
+}
+.food_img>img{
+    height: inherit;
+    width: inherit;
+    border-radius: 50%;
+}
+.food_cost{
+    height: 60px;
+    width: 135px;
+}
+.price{
+    margin: 0;
+    padding: 0;
+    font-size: 21px;
+    color: #69C6FF;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 300;
+    margin-right: 10px;
+}
+.food_descr{
+    height: 100px;
+    width: 153px;
+    float: right;
+    margin-right: 3px;
+}
+.def_text{
+    font-size: 14px;
+    font-weight: 400;
+    color: #7C7C7C;
+}
+.food_weight{
+    font-family: "MyriadProItalic";
+
+    font-size: 14px;
+    padding-left: 82px;
+     color: #7C7C7C;
+}
+.descr_text{
+    padding: 7px;
+}
+.button_buy{
+    color: #69C6FF;
+    width: 137px;
+    height: 48px;
+    border-radius: 7px;
+    border: 1px solid #69C6FF;
+    background: none;
+    font-size: 21px;
+    font-family: "MyriadProRegular";
+        margin-top: 36px;
+    margin-left: 7px;
+}
