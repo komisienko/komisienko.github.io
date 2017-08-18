@@ -116,7 +116,7 @@ input#search_drink{
     width: 320px;
 }
 .food_cart{
-    box-shadow: 1px 1px 10px 1px rgba(0,0,0,.2);
+       box-shadow: 3px 3px 9px 0px rgba(0,0,0,.2);
     height: 200px;
     width: 300px;
     margin: 5px 9px;
