@@ -89,8 +89,8 @@ a{
     color: #7C7C7C;
     text-align: left;
     opacity: 0.5;
-    line-height: 25px;
-}
+    vertical-align: middle;}
+
 input#search_drink{
 
     width: 182px;
