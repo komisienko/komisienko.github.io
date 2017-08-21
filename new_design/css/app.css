@@ -13,13 +13,10 @@ body{margin: 0;
 
     }
     .nav_menu{
-
         width: 100%;
         height: 59px;
-/*
         background: linear-gradient(top,rgba(58,62,74,.21),rgba(58,62,74,0));
         background:-webkit-linear-gradient(top,rgba(58,62,74,.21),rgba(58,62,74,0));
-*/
         line-height: 59px;
     }
     .back{
