@@ -93,7 +93,7 @@ a{
 
 input#search_drink{
     width: 182px;
-    height: 25px;
+    height: 23px;
     background-color: #D4EDFF;
     outline: none;
     border: 7px;
@@ -107,8 +107,6 @@ input#search_drink{
     background-size: 13px;
     border-radius: 7px;
     font-family: "MyriadProRegular";
-    padding-top: 0;
-    padding-bottom: 0;
     }
 .food_cart_div{
     margin: 0 auto;
