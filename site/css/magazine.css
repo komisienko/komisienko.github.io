@@ -80,19 +80,18 @@ a{
     width: 100%;
     margin-top: 23px;
     margin-bottom: 15px;
-        width: 100%;
+    width: 100%;
     display: block;
     text-align: center;
 }
-
-input[type="search"]::-webkit-input-placeholder{
+::-webkit-input-placeholder{
     color: #7C7C7C;
     text-align: left;
     opacity: 0.5;
+    line-height: 23px;
 }
 
 input#search_drink{
-
     width: 182px;
     height: 25px;
     background-color: #D4EDFF;
@@ -108,10 +107,11 @@ input#search_drink{
     background-size: 13px;
     border-radius: 7px;
     font-family: "MyriadProRegular";
-
+    padding-top: 0;
+    padding-bottom: 0;
     }
 .food_cart_div{
-        margin: 0 auto;
+    margin: 0 auto;
     height: 210px;
     width: 320px;
 }
