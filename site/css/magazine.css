@@ -87,8 +87,8 @@ input#search_drink{
     width: 182px;
     height: 28px;
     background-color: lightblue;
+    border: none;
     outline: none;
-    border: 7px;
     color:#7C7C7C;
     font-size: 0.9em;
     text-align: left;
@@ -98,7 +98,6 @@ input#search_drink{
     background-position: 10px center;
     background-size: 13px;
     border-radius: 7px;
-
    padding-left: 30px;
     }
 ::-webkit-input-placeholder{
