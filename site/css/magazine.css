@@ -7,7 +7,7 @@ text-decoration: none;
 
 
 
-.t_ff ,h2,h1,h3,p{
+.t_ff ,h2,h1,h3,p,label{
 font-family: "MyriadProRegular"
 }
 /*------------NAVIGATION TOP----------*/
@@ -88,15 +88,48 @@ margin-right: 3px;
 .image_cart>img{
     height: inherit;
 }
-#param_cart{
-    height: 18px;
-    width: 18px;
-    border: 1px solid #69C6FF;
-}
 
+/*----------CHECK BOX-------*/
+
+
+.md-checkbox { position: relative; height: 18px; margin: 12px 0; } 
+.md-checkbox_check{
+    width: 150px;
+        margin-left: 10px;
+}
+.md-checkbox label { cursor: pointer; color: #69C6FF;font-size: 14px; } 
+.md-checkbox label:before, .md-checkbox label:after { content: ""; position: absolute; left: 0; top: 0; } 
+.md-checkbox label:before { width: 14px; height: 14px; background: #e6f6ff; border: 2px solid #69C6FF; border-radius: 2px; cursor: pointer; transition: background .3s; }
+.md-checkbox input[type="checkbox"] { outline: 0; margin-right: 10px; }
+.md-checkbox input[type="checkbox"]:checked + label:before { 
+    background: #69C6FF; 
+/*    border: none;*/ }
+.md-checkbox input[type="checkbox"]:checked + label:after { 
+transform: rotate(-45deg); 
+top: 3px; 
+left: 3px; 
+width: 10px; 
+height: 6px; 
+border: 2px solid #fff; 
+border-top-style: none; 
+border-right-style: none; } 
+.checkbox_time{
+    margin-top: 0;
+}
+.md-checkbox_check>.label_check{
+    font-size: 10px;
+}
+/*-------CHECK BOX END----*/
 .how{
     display: inline-block;
     width: 112px;
+}
+.how_check{
+    float: right;
+    top: -85px;
+    position: relative;
+    right: 20px;
+    
 }
 .cost{
     width: 144px;
@@ -134,6 +167,7 @@ margin-right: 3px;
 .restauraunt{
     height: 55px;
     text-align: center;
+    margin-bottom: 10px;
 }
 .restauraunt>img{
     height: 55px;
@@ -146,10 +180,11 @@ margin-right: 3px;
     margin: 0;
     padding: 0;
     color:#A5A5A5;
+    margin-bottom: 28px;
 }
 .search{
     width: 100%;
-    margin-top: 28px;
+
     margin-bottom: 12px;
     text-align: center;
 }
@@ -201,6 +236,11 @@ width: 130px;
 padding-left: 5px;
 display: inline-block;
 }
+.food_img_80x80{
+     height: 80px;
+    width: 80px;
+    padding: 10px 0 0 10px;
+}
 .food_img>img{
 height: inherit;
 width: inherit;
@@ -213,6 +253,9 @@ border-radius: 50%;
 .food_cost{
 height: 60px;
 width: 135px;
+}
+.food_cost_check{
+    width: 100px;
 }
 .price{
 margin: 0;
@@ -230,7 +273,9 @@ width: 153px;
 float: right;
 margin-right: 3px;
 }
-
+.food_descr_check{
+    width: 180px;
+}
 .food_descr_cart{
     margin-left: 18px;
     margin-right: 18px;
@@ -270,4 +315,20 @@ outline: none;
 .button_buy_cart{
         margin-top: 0px;
     float: right;
+}
+.big_button_footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    height: 59px;
+    width: 100%;
+    background-color: rgba(105, 198, 255, 0.4);
+    text-align: center;
+}
+.big_button_footer_text{
+    font-size: 21px;
+    font-weight: 400;
+    vertical-align: middle;
+    color: #69C6FF;
 }
