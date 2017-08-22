@@ -92,7 +92,7 @@ margin-right: 3px;
 /*----------CHECK BOX-------*/
 
 
-.md-checkbox { position: relative; height: 18px; margin: 12px 0; } 
+.md-checkbox { position: relative; height: 18px; margin: 12px 0; left: 2px; } 
 .md-checkbox_check{
     width: 150px;
         margin-left: 10px;
