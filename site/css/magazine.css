@@ -94,7 +94,7 @@ margin-right: 3px;
 
 .md-checkbox { position: relative; height: 18px; margin: 12px 0; left: 2px; } 
 .md-checkbox_check{
-    width: 150px;
+    width: 136px;
         margin-left: 10px;
 }
 .md-checkbox label { cursor: pointer; color: #69C6FF;font-size: 14px; } 
