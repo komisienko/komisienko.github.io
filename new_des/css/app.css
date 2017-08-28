@@ -851,13 +851,13 @@ background: rgba(255, 255, 255, 0.0001);
 /*------------end row false-----------*/
 
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 650px) {
     .row_false {
         margin: 0 auto;
-        width: 700px;
+        width: 650px;
 }
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 650px) {
     .food_cart_div {
     display: inline-block;
     margin: 0;}
