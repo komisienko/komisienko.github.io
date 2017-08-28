@@ -482,3 +482,37 @@ input[type=checkbox]:checked ~ .cleaning{
     -o-transform: translate(150%,0); /** Opera **/
     -moz-transform: translate(150%,0); /** Firefox **/}
 
+/*------food div----------*/
+.cart_header{
+    position: absolute;
+    z-index: 1;
+}
+.cart_basket{
+    margin-right: 0;
+}
+.nav_cart{
+    background: -webkit-linear-gradient(rgba(58,62,74,.21), rgba(58,62,74,0));
+    background: -o-linear-gradient(rgba(58,62,74,.21), rgba(58,62,74,0));
+    background: linear-gradient(rgba(58,62,74,.21), rgba(58,62,74,0));
+}
+.cart_back{
+    height: 20px;
+    width: 12px;
+    vertical-align: middle;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+
+.cart_content{
+
+}
+
+.image_cart{
+    text-align: center;
+    height: 200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.image_cart>img{
+    height: inherit;
+}
