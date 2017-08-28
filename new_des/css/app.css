@@ -597,11 +597,12 @@ outline: none;
     float: right;
 }
 .big_button_footer{
-    line-height: 59px;
     position: absolute;
     bottom: 0;
-    left: 0;
-    display: block;
+    line-height: 59px;
+    margin-top: -59px;
+    clear: both;
+
     height: 59px;
     width: 100%;
     background-color: rgba(105, 198, 255, 0.4);
