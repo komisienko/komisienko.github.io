@@ -93,7 +93,7 @@ ul>li{
 
 
 .csstransforms .cn-wrapper li {
-  border-right: 1px solid #69C6FF;
+  border-bottom: 1px solid #69C6FF;
   position: absolute;
   font-size: 1.5em;
   width: 10em;
@@ -107,9 +107,7 @@ ul>li{
   top: 50%;
   margin-top: -1.3em;
   margin-left: -10em;
-  -webkit-transition: border .3s ease;
-  -moz-transition: border .3s ease;
-  transition: border .3s ease;
+
 }
 
 .csstransforms .cn-wrapper li a {
@@ -129,10 +127,10 @@ ul>li{
   -ms-transform: skew(-19deg) rotate(-54deg) scale(1);
   -moz-transform: skew(-19deg) rotate(-54deg) scale(1);
   transform: skew(-19deg) rotate(-54deg) scale(1);
-  -webkit-backface-visibility: hidden;
+/*   -webkit-backface-visibility: hidden;
   -webkit-transition: opacity 0.3s, color 0.3s;
   -moz-transition: opacity 0.3s, color 0.3s;
-  transition: opacity 0.3s, color 0.3s;
+  transition: opacity 0.3s, color 0.3s; */
 }
 
 .csstransforms .cn-wrapper li a span {
