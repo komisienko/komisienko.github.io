@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3">
+	
+
+		<link rel="stylesheet" type="text/css" href="css/component1.css" />
+			<link rel="stylesheet" href="./css/app.css">
+		<script src="js/modernizr-2.6.2.min.js"></script>
+		        <script src="./js/jquery/jquery-1.8.2.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="./css/msdropdown/dd.css" />
+        <script src="./js/msdropdown/jquery.dd.min.js"></script>
+        <!-- </msdropdown> -->
+        <link rel="stylesheet" type="text/css" href="./css/msdropdown/flags.css" />
+<!--        <link href='https://code.cdn.mozilla.net/fonts/fira.css' rel='stylesheet' type='text/css' />-->
+
+
+	</head>
+	<body>
+<header>
+     <div class="nav_menu"style="
+    z-index: 999999;" >
+         <div class="back"><a href="./index.html" class="back"> <img class="back_icon" src="./img/back_mag.svg" alt=""><span class="back_text t_ff">Назад</span></a>
+            </div>
+         <div class="flag_chose_ot">
+                <select name="countries" id="countries" style="width:50;">
+
+                  <option value='ru' data-image="./images/msdropdown/icons/blank.gif" data-imagecss="flag ru" data-title="Russian Federation"></option>
+
+                  <option value='ua' data-image="./images/msdropdown/icons/blank.gif" data-imagecss="flag ua" data-title="Ukraine"></option>
+
+                  <option value='us' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag us" data-title="United States"></option>
+                </select>
+            </div>
+  </div>
+</header>
+        
+                <div class="deep center">
+            <a class="deep_text">Меню>Управление номером</a>
+        </div>
+		<div class="container" style="z-index: 1">
+
+			<div class="component" style="top:-60px;">
+				<!-- Start Nav Structure -->
+				<a href="tel:+380955115095"><button class="cn-button" ><img src="./img/Phone.svg" alt="" style="    height: 70%;
+    top: 3px;"></button></a>
+				<div class="cn-wrapper opened-nav" id="cn-wrapper">
+				    <ul>
+				      
+				      <li><a href="./taxi.html"><span class="span_rotate_1">Такси</span></a></li>
+				      <li><a href="./cleaning.html"><span class="span_rotate_2">Клиннинг</span></a></li>
+				      <li><a href="./drinks.html"><span class="span_rotate_3">Напитки</span></a></li>
+				      <li><a href="./food.html"><span class="span_rotate_4">Еда</span></a></li>
+				      <li><a href="#"><span class="span_rotate_5">Экскурсии</span></a></li>
+				     </ul>
+				</div>
+				<div id="cn-overlay" class="cn-overlay"></div>
+				<!-- End Nav Structure -->
+			</div>
+		</div>
+		
+		<div class="clean_disturb">
+		    <div class="clean">
+		        <input type="button" value="Убрать комнату">
+		    </div>
+            <div class="disturb">
+		        <input type="button" value="Не беспокоить">
+		    </div>
+		    
+		</div>
+		<!-- /container -->
+<!--		<script src="js/polyfills.js"></script>-->
+<!--<script src="js/demo1.js"></script>-->
+  
+           <script type="text/javascript">
+jQuery(document).ready(function() {
+	jQuery("#countries").msDropdown();
+})</script>
+	</body>
+</html>
