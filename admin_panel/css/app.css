@@ -1,0 +1,170 @@
+@import "./font.css";
+*{ font-family: "MyriadProRegular";
+        margin: 0;
+        padding: 0;
+
+}
+body{
+    min-width: 1024px;
+/*    background-color:rebeccapurple;*/
+background: linear-gradient(to right, #01B0DD, #3E7ADD);
+}
+a{
+    text-decoration: none;
+}
+.img_30{
+       height: 30px;
+    width: 30px;
+    vertical-align: middle;
+    /* float: left; */
+    /* text-align: left; */
+    margin-right: 30px;
+}
+/*-------------nav----------*/
+header{
+    width: 100%;
+    height: 52px;
+    background-color: blueviolet
+}
+.nav_menu{
+    width: 100%;
+    height: 52px;
+    line-height: 52px;
+}
+.back{
+    height: 100%;
+    width: 100px;
+    float: left;  
+}
+
+
+.back_icon{
+height: 20px;
+width: 20px;
+vertical-align: middle;
+margin-bottom: 5px;
+margin-left: 1px;
+}
+.back_text{
+display: inline-block;
+margin: 0;
+padding: 0;
+color: #69C6FF;
+font-size: 18px;
+margin-left: 7px;
+}
+.menu{
+    height: 100%;
+    width: 52px;
+    float: right;
+    text-align: center;
+}
+.menu_icon{
+  height: 28px;
+width: 32px;
+vertical-align: middle;
+/* margin-bottom: 7px;
+margin-right: 3px; */
+}
+/*-------end nav-------------*/
+/*--------flag----------*/
+.flag_chose{
+ height: 30px;
+    width: 30px;
+    /* float: right; */
+    position: relative;
+    left: 275px;
+    top: -51px;
+}
+.flag_chose_ot{
+    line-height: 30px;
+    margin: 0 auto;
+    height: 30px;
+    width: 30px;
+    position: relative;
+
+}
+.res{
+    height: 100%;
+    width: 200px;
+    float: right;
+}
+/*--------end flag------*/
+.wrap{
+    width: 737px;
+        font-size:0;
+       margin: 0 auto;
+    margin-top: 200px;
+ 
+}
+.first_date, .second_date, .guests{
+    margin: 0;
+    display:inline-table;
+    height: 52px;
+    width: 245px;
+    background-color: #ffffff;
+
+}
+.first_date{
+    margin-right: 1px;
+}
+.second_date{
+    margin-right: 1px;
+}
+.guests{
+    height: 126px;
+}
+.adults, .child{
+    height: 37px;
+}
+.text{
+    height: 52px;
+    font-size: 14px;
+    line-height: 52px;
+    padding-left: 20px;
+}
+.main_icons{
+    height: 27px;
+    margin-right: 10px;
+    margin-top: 12px;
+}
+.text_c{
+    display: inline-block;
+        height: 37px;
+    line-height: 37px;
+}
+.found{
+    margin-top: 100px;
+    height: 52px;
+    width: 100%;
+    line-height: 52px;
+    text-align: center;
+}
+.found>button{
+    height: 52px;
+    width: 245px;
+    background-color: #FF9908;
+    font-size: 21px;
+    border: none;
+    color: white;
+}
+
+.main_icons{
+    float: right;
+}
+.minus, .plus, .show_how  {
+    width: 24px; float: right;
+    margin-top: 7px;
+}
+.show_how{ height: 18px;  border: 1px solid black;}
+.minus{
+ 
+}
+.minus>input, .plus>input{
+    height: 100%;
+    width: 100%;
+}
+.how{
+    float: right;
+    margin-right: 10px;
+}
