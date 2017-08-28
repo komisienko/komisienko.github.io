@@ -624,3 +624,81 @@ margin-right: 3px;
     bottom: 5px;
 }
 /*--------end FOOD------*
+/*--------TAXI---------*/
+.taxi_group{
+    width: 120px;
+    margin: 0 auto;
+
+}
+.taxi_group>h1{
+    font-size: 21px;
+}
+.taxi_out, .taxi_in{
+    padding-top:20px;
+}
+.taxi_out>button, .taxi_in>button{
+    width: 120px;
+    height: 120px;
+    border: 1px solid #69C6FF;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0);
+    outline: none;
+
+}
+.taxi_out>button>img {
+
+    height: 40px;
+    width: 40px;
+}
+.taxi_in>button>img{
+    height: 40px;
+    width: 38px;
+}
+.taxi_out>button>h2 {
+    width: 100%;
+    font-size: 14px;
+}
+.taxi_in>button>h2{
+font-size: 14px;
+    width: 100%;
+}
+.taxi_out>button:active{
+    background-color: rgba(105, 198, 255, 0.4);
+    border: 1px solid rgba(105, 198, 255, 0.2);
+}
+.taxi_in>button:active{
+    background-color: rgba(105, 198, 255, 0.4);
+    border: 1px solid rgba(105, 198, 255, 0.2);
+}
+/*---------Cleaning------*/
+.cleaning_group {}
+.cleaning{
+    margin-top:  15px;
+    width: 80px;
+
+}
+.cleaning>img{
+    height: 80px;
+    width: 80px;
+}
+.cleaning>h2{
+    width: 100%;
+    color: #69C6FF;
+    font-size: 14px;
+    text-align: center;
+}
+.klinig_ebychiy{
+
+}
+
+input[type=checkbox]:checked ~ .cleaning{
+
+    transition: all 2s ease-in-out;
+    -webkit-transition: all 2s ease-in-out; /** Chrome & Safari **/
+    -moz-transition: all 2s ease-in-out; /** Firefox **/
+    -o-transition: all 2s ease-in-out; /** Opera **/
+   transform: translate(150%,0);
+    -webkit-transform: translate(150%,0); /** Safari & Chrome **/
+    -o-transform: translate(150%,0); /** Opera **/
+    -moz-transform: translate(150%,0); /** Firefox **/}
+
