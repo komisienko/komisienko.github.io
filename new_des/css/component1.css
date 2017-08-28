@@ -40,7 +40,8 @@ ul>li{
 
 .csstransforms .opened-nav {
   border-radius: 50%;
-  border: 1.5px solid #69C6FF;
+ /*  border: 1.5px solid #69C6FF; */
+   box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
   pointer-events: auto;
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
