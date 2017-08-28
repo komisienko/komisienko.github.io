@@ -199,19 +199,18 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
 .csstransforms .cn-wrapper li:not(.active):hover,
 .csstransforms .cn-wrapper li:not(.active):active,
 .csstransforms .cn-wrapper li:not(.active):focus {
-    background-color: rgba(105,198,255,0.4);
-    border: 1px solid rgba(105,198,255,0.4);
+background-color: rgba(105,198,255,0.4);
+/* border: 1px solid rgba(105,198,255,0.4); */
 }
 .csstransforms .cn-wrapper li:not(.active) a:focus
 {
-    position:fixed;
+position:fixed;
 }
- 
 
-/* fallback */
+/* fallback
 .no-csstransforms .cn-button {
   display: none;
-}
+} */
 
 .no-csstransforms .cn-wrapper li {
   position: static;
