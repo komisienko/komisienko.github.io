@@ -4,10 +4,19 @@
         padding: 0;
 
 }
+html {
+    height: 100%;
+}
 body{
-    min-width: 1024px;
+    background: linear-gradient(to right, #01B0DD, #3E7ADD ) no-repeat;
+
+      height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+/*     min-width: 1024px; */
 /*    background-color:rebeccapurple;*/
-background: linear-gradient(to right, #01B0DD, #3E7ADD);
+
 }
 a{
     text-decoration: none;
