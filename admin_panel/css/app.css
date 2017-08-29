@@ -92,79 +92,144 @@ margin-right: 3px; */
 /*--------end flag------*/
 .wrap{
     width: 737px;
-        font-size:0;
-       margin: 0 auto;
-    margin-top: 200px;
- 
-}
-.first_date, .second_date, .guests{
-    margin: 0;
-    display:inline-table;
-    height: 52px;
-    width: 245px;
-    background-color: #ffffff;
+
+    margin: 0 auto;
+    margin-top: 201px;
 
 }
-.first_date{
-    margin-right: 1px;
+
+
+/*---------Guests-------*/
+#guests ul{
+        display: none;
+  /*   display: block; */ /*--ПОТОМ УДАЛИ--*/
+        background-color: #f90;
+        position: absolute;
+        top: 100%;
+      }
+      #guests li:hover ul { display: block; }
+      #guests, #guests ul{
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+      #guests {
+        height: 52px;
+        /* background-color: #ffffff; */
+      /*   padding-left: 25px; */
+        min-width: 470px;
+      }
+      #guests li {
+        float: left;
+        position: relative;
+        height: 100%;
+         width: 245px;
+          background-color: #ffffff;
+
+      }
+      #guests li a {
+        display: inline;
+        width: 100%;
+        height: 100%;
+        color: black;
+        text-decoration: none;
+                  padding-left: 15px;
+          line-height: 52px;
+          font-size: 18px;
+      }
+
+      #guests ul li { float: none; }
+      #guests li:hover { background-color: #f90; }
+      #guests ul li:hover { background-color: #fff; }
+#guests>li:nth-child(1) {
+    margin-right: 1px; /* Цвет фона */
+   } 
+#guests>li:nth-child(2) {
+    margin-right: 1px; /* Цвет фона */}
+#guests{
+    background-color: none;
 }
-.second_date{
-    margin-right: 1px;
-}
-.guests{
-    height: 126px;
-}
-.adults, .child{
-    height: 37px;
-}
-.text{
-    height: 52px;
-    font-size: 14px;
+
+/*----------input button--------*/
+.input-group{
+    float: right;
+    margin-right: 20px;
     line-height: 52px;
-    padding-left: 20px;
+    height: 52px;
 }
-.main_icons{
-    height: 27px;
-    margin-right: 10px;
-    margin-top: 12px;
+.plus-minus-input {
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.text_c{
+
+.plus-minus-input .input-group-field {
+  text-align: center;
+    position: relative;
+    top: 1px;
+    margin-left: -3px;
+    margin-right: -3px;
+}
+
+.plus-minus-input .input-group-field::-webkit-inner-spin-button,
+.plus-minus-input .input-group-field ::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+}
+
+.input-group-button {
     display: inline-block;
-        height: 37px;
-    line-height: 37px;
 }
+.button_minus, .button_plus{
+    height: 25px; width: 25px; 
+    background-color: none;
+    background: none;
+    outline: none;
+    border: 1px solid black;
+    color: black;
+    vertical-align: middle;
+}
+.button_minus{
+    border-radius: 5px 0 0 5px;
+}
+.button_plus{
+    border-radius: 0 5px 5px 0;
+}
+.input-group-field{
+    height: 23px;
+    width: 25px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    margin: 0;padding: 0;
+}
+.button_text{
+    position: relative;
+    top: -2px;
+    font-size: 21px;
+}
+/*----------end input button--------*/
+
+/*-----end-Guests-------*/
+.img_27px{
+    height: 27px;
+    float: right;
+    margin-right: 15px;
+    margin-top: 13px;
+}
+
 .found{
-    margin-top: 100px;
     height: 52px;
-    width: 100%;
-    line-height: 52px;
-    text-align: center;
+    width: 245px;
+    margin-left: 245px;
+    margin-top: 157px
 }
 .found>button{
-    height: 52px;
-    width: 245px;
-    background-color: #FF9908;
-    font-size: 21px;
-    border: none;
-    color: white;
-}
-
-.main_icons{
-    float: right;
-}
-.minus, .plus, .show_how  {
-    width: 24px; float: right;
-    margin-top: 7px;
-}
-.show_how{ height: 18px;  border: 1px solid black;}
-.minus{
- 
-}
-.minus>input, .plus>input{
     height: 100%;
     width: 100%;
-}
-.how{
-    float: right;
-    margin-right: 10px;
+    font-size: 21px;
+    border: none;
+    outline: none;
+    background-color: #f90;
 }
