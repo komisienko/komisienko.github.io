@@ -17,7 +17,8 @@
     width: 200px;
     height: 30px;
     border: none;
-        font-size: 21px
+        font-size: 21px;
+            outline:none;
 }
 
 /* additional properties for input boxe in activated state, above still applies unless in conflict */
