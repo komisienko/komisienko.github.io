@@ -12,29 +12,50 @@
         <!-- </msdropdown> -->
         <link rel="stylesheet" type="text/css" href="./css/msdropdown/flags.css" />
         
-        
+       
        <!--  calendar -->
        <script src="./js/tcal.js"></script>
-<!--        <script src="./js/tcal_en.js"></script>
-        -->       <link rel="stylesheet" href="./css/tcal.css">
+<!-- <script src="./js/tcal_en.js"></script>       <link rel="stylesheet" href="./css/tcal.css"> -->
+ <!-- навигация -->
+        <!-- <link rel="stylesheet" href="./css/style.css"> -->
+        <link rel="stylesheet" href="./css/right-nav-style.css">
 </head>
-<body>
+<body >
+       
+          <input type="checkbox" id="nav-toggle" hidden>
+        <nav class="nav">
+       <label for="nav-toggle" class="nav-toggle" onclick></label>
+        <h2 class="logo"> 
+            <a href="#">Меню</a> 
+        </h2>
+        <ul>
+            <li><a href="#1">Один</a>
+            <li><a href="#2">Два</a>
+            <li><a href="#3">Три</a>
+            <li><a href="#4">Четыре</a>
+            <li><a href="#5">Пять</a>
+            <li><a href="#6">Шесть</a>
+            <li><a href="#7">Семь</a> 
+        </ul>
+    </nav>
+           <div class="mask-content"></div>
         <header>
+       
         <div class="nav_menu">
 <!--
            <div class="back"><a href="./services.html" class="back"> <img class="back_icon" src="./img/back_mag.svg" alt=""><span class="back_text t_ff">Назад</span></a>
        
             </div>
 -->
-        
              
              
             <a href="#"><div class="menu">
+                
                 <img src="./img/menu_20x30.svg" alt="" class="menu_icon">
             </div></a>
              <div class="res">
               
-                <p style="text-align: right;    margin-right: 20px;"> <img class="img_30" src="./img/top_menu.svg" alt="">Ресепшн</p>
+                <p style="text-align: right;    margin-right: 20px;"> <img class="img_30" src="./img/top_menu.svg" alt="">Вася Пупкин</p>
                  
              </div>
       <div class="flag_chose_ot">
@@ -53,6 +74,7 @@
 
 
         <div class="wrap">
+
                 <ul id="guests">
                   <li><a href="#"><input type="text" name="date" class="tcal" placeholder="Дата заселения" value="" /></a></li>
                   <li><a href="#"><input type="text" name="date" class="tcal" value="" placeholder="Дата выезда"/></a></li>
