@@ -20,16 +20,43 @@ body {
 a {
     text-decoration: none;
 }
+input{
+    outline: none !importtant;
+}
+.white{
+    color:#ffffff;
+}
+.gray{
+	color: #828282;;
+}
+.fs_18{
+    font-size: 18px;
+}
+.center{
+	text-align: center;
+}
 h1{margin: 0;}
 .img_30 {
     height: 30px;
     width: 30px;
     vertical-align: middle;
-    /* float: left; */
-    /* text-align: left; */
-    margin-right: 30px;
 }
-
+.img_40{
+        height: 40px;
+    width: 40px;
+    vertical-align: middle;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+.img_27{
+    height: 27px;
+}
+.dis_inline_block, .name, .doljnost{
+    display: inline-block;
+}
+.dis_block{
+    display: block;
+}
 /*-------------nav----------*/
 
 header {
@@ -42,6 +69,19 @@ header {
     line-height: 52px;
 }
 
+/*--------Текущее время------*/
+#current_data{
+	height: 52px;
+	line-height: 1.7;
+	padding-top: 7px;
+	width: 60px;
+	display: inline-block;
+	color: white;
+	text-align: center;
+	float: right;
+	margin-right: 30px;
+}
+/*--конец---Текущее время------*/
 /*--------RIGHT SLIDE MENU-------*/
 
 @charset "UTF-8";
@@ -94,7 +134,8 @@ header {
     /* определяем цвет фона переключателя
      * чаще вчего в соответствии с цветом фона панели
     */
-    background-color: rgba(0, 0, 0, 0);
+    margin-right: 23px;
+/*    background-color: darkred;*/
     /* цвет текста */
     color: #dadada;
     /* вид курсора */
@@ -123,9 +164,11 @@ header {
 
 /* цвет текста при наведении */
 
+/*
 .nav_r-toggle:hover {
     color: #f4f4f4;
 }
+*/
 
 /**
  * Скрытый чекбокс (флажок)
@@ -147,7 +190,7 @@ header {
 [id='nav_r-toggle']:checked ~ .nav_r > .nav_r-toggle {
     left: auto;
     right: 2px;
-    top: 1em;
+/*    top: 1em;*/
 }
 
 /**
@@ -157,10 +200,12 @@ header {
 
 [id='nav_r-toggle']:checked ~ .nav_r {
     right: 0;
+/*
     box-shadow: -4px 0px 20px 0px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: -4px 0px 20px 0px rgba(0, 0, 0, 0.5);
     -webkit-box-shadow: -4px 0px 20px 0px rgba(0, 0, 0, 0.5);
     overflow-y: auto;
+*/
 }
 
 /*
@@ -171,6 +216,9 @@ header {
 
 [id='nav_r-toggle']:checked ~ .nav_r > .nav_r-toggle:after {
     content: '\2715';
+    font-size: 30px;
+    position: absolute;
+    padding: 12px;
 }
 
 /**
@@ -191,25 +239,27 @@ body {
  * позаботьтимся о средних и маленьких экранах
  * мобильных устройств
  */
+/*
 
 @media screen and (min-width: 320px) {
     html,
     body {
         margin: 0;
-/*        overflow-x: hidden;*/
+
     }
 }
 @media screen and (max-width: 320px) {
     html,
     body {
         margin: 0;
-/*        overflow-x: hidden;*/
+
     }
     .nav_r {
         width: 100%;
         box-shadow: none
     }
 }
+*/
 
 /**
  * Формируем стиль заголовка (логотип) панели 
@@ -425,13 +475,13 @@ body {
     width: 20px;
     vertical-align: middle;
     margin-bottom: 5px;
-    margin-left: 1px;
+    margin-left: 15px;
 }
 .back_text {
     display: inline-block;
     margin: 0;
     padding: 0;
-    color: #69C6FF;
+    color: #ffffff;
     font-size: 18px;
     margin-left: 7px;
 }
@@ -440,38 +490,50 @@ body {
     width: 52px;
     float: right;
     text-align: center;
+    margin-right: 23px;
 }
 .menu_icon {
-    height: 28px;
-    width: 32px;
+
+    width: 26px;
     vertical-align: middle;
     /* margin-bottom: 7px;
 margin-right: 3px; */
 }
 
 /*-------end nav-------------*/
-
-
+/*-------deep---------*/
+.deep{
+    height: 20px;
+}
+.deep_text{
+    color: lightgray;
+}
+/*----------enddeep----*/
+/*----------Deep end------------*/
 /*--------flag----------*/
 
-.flag_chose {
-    height: 30px;
-    width: 30px;
-    /* float: right; */
-    position: relative;
-    left: 275px;
-    top: -51px;
+#hidden_chebox{
+    position: absolute;
+    top:-9999px;
+    left:-9999px;
+    
 }
-.flag_chose_ot {
-    line-height: 30px;
-    margin: 0 auto;
-    height: 30px;
-    width: 30px;
-    position: relative;
+input[type=checkbox]:checked ~ .img_27{
+    opacity: 0.5;
+}
+.usa, .ua{
+    opacity: 0.5
+}
+.flag{
+	height: 52px;
+	float: right;
+    width: 115px;
+    margin-right: 20px;
+/*    padding-top: 10px;*/
 }
 .res {
     height: 100%;
-    width: 200px;
+    width: 245px;
     float: right;
 }
 
@@ -793,23 +855,26 @@ margin-right: 3px; */
 .dataTables_filter {
     float: right;
 }
-.dataTables_wrapper {
-    width: 800px;
+.dataTables_paginate>a,span>a{
+	color: #ffffff;
 }
-.table.dataTable {
-    width: 800px;
-}
-.container_table {
-    width: 800px;
+.container{
+
     margin: 0 auto;
+}
+.dataTables_length{
+	color: #ffffff;
+}
+.dataTables_filter>label{
+	color: #ffffff;
 }
 .dataTables_filter>label>input{
     border: none;
     border-radius: 10px;
+        padding-left: 10px;
+outline: none;
 }
-/* .dataTables_paginate{
-    padding-top: 7px;
-} */
+
 #employees_previous{
     padding-right: 10px;
 }
@@ -825,4 +890,221 @@ span>.paginate_button{
     background-size: cover;
 
 }
+.dataTables_info{
+	color: #ffffff;
+}
+.wrap_emplooyes{
+/*     height: 716px; */
+    width: 100%;
+
+}
+.float-left {
+float:left;
+/*width: 33.3333%  // or 33% for equal width independent of parent width */
+}
+.select_emplooyes{
+    min-width: 271px;
+    width: 271px;
+    height: 100%;
+
+}
+.table_div{
+    width: calc(100% - 496px);
+    min-width: 490px;
+}
+.wrap_sea{
+    width: 225px;
+    min-width: 225px;
+    height: 100%;
+}
+.sea{
+	margin: 39px 0 0 30px;
+}
+.send_sms, .send_email, .add_person, .status{
+	height: 50px;
+	width: 100%;
+	color: #ffffff;
+	line-height: 50px;
+}
+
+
+.img_sea{
+	height: 30px;
+	width: 30px;
+	margin-right: 10px;
+}
+.all_emplooyes{
+    width: 250px;
+    margin-top: 20px;
+    margin-left: 20px;
+        font-size: 16px;
+    color: white;
+    font-weight: 200;
+}
+.table_div{
+    font-size: 16px;
+	padding-top: 10px;
+}
+.table_div>h1{
+    font-size: 24px;
+    font-style: italic;
+    position: relative;
+    color: #ffffff;
+    font-weight: 300;
+}
+.all_emplooyes>h2{
+    color: #ffffff;
+    font-weight: 300;
+}
+#overflow_tbody, table#employees.table.dataTable.no-footer{
+	height: 491px !important;
+	overflow: auto;
+	background-color: #ffffff;
+}
+.container_table{
+	color: #828282;
+}
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #2293DD;
+}
+#overflow_tbody>tr{
+	height: 45px;
+}
 /*-----END-Emplooyes----------*/
+/*----------CHECK BOX-------*/
+
+/*
+input[type=checkbox]{
+    position: absolute;
+    left: -9999px;
+}
+*/
+.md-checkbox { position: relative; height: 18px; margin: 15px 0;} 
+.md-checkbox_check{
+    width: 136px;
+    margin-left: 10px;
+}
+.md-checkbox label { cursor: pointer; color: #ffffff;font-size: 16px; 
+} 
+.md-checkbox label:before, .md-checkbox label:after { content: ""; position: absolute; left: 0; top: 0; } 
+.md-checkbox label:before { width: 18px; height: 18px; background: #ffffff; border: 2px solid #ffffff; border-radius: 2px; cursor: pointer; transition: background .3s; }
+.md-checkbox input[type="checkbox"] { outline: 0; margin-right: 10px; height: 18px;width: 18px;}
+.md-checkbox input[type="checkbox"]:checked + label:before { 
+    background: #ffffff; 
+/*    border: none;*/ }
+.md-checkbox input[type="checkbox"]:checked + label:after { 
+    outline: none;
+transform: rotate(-45deg); 
+top: 4px; 
+left: 4px; 
+width: 10px; 
+height: 6px; 
+border: 2px solid #69C6FF; 
+border-top-style: none; 
+border-right-style: none; } 
+.checkbox_time{
+    margin-top: 0;
+}
+.md-checkbox_check>.label_check{
+    font-size: 10px;
+}
+
+/*----table cheboxes-----*/
+.md-checkbox_t { position: relative; height: 18px;margin-top: 4px;} 
+.md-checkbox_check{
+    width: 136px;
+    margin-left: 10px;
+}
+.md-checkbox_t label { cursor: pointer; color: red;font-size: 16px; 
+} 
+.md-checkbox_t label:before, .md-checkbox_t label:after { content: ""; position: absolute; left: 0; top: 0; } 
+.md-checkbox_t label:before { width: 18px; height: 18px; background: #ffffff; border: 2px solid #727272; border-radius: 2px; cursor: pointer; transition: background .3s; }
+.md-checkbox_t input[type="checkbox"] { outline: 0; margin-right: 10px; height: 18px;width: 18px;}
+.md-checkbox_t input[type="checkbox"]:checked + label:before { 
+    background: #727272; 
+/*    border: none;*/ }
+.md-checkbox_t input[type="checkbox"]:checked + label:after { 
+    outline: none;
+transform: rotate(-45deg); 
+top: 4px; 
+left: 4px; 
+width: 10px; 
+height: 6px; 
+border: 2px solid #ffffff; 
+border-top-style: none; 
+border-right-style: none; } 
+.checkbox_time{
+    margin-top: 0;
+}
+.md-checkbox_check>.label_check{
+    font-size: 10px;
+}
+/*-end-table cheboxes-----*/
+
+/*-------CHECK BOX END----*/
+/*---------POPUP-----------*/
+.pop_up_wrap{
+	display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+	overflow: auto;
+min-width: 1024px;
+}
+.send_sms_popup{
+	width: 450px;
+    height: 360px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+
+	    box-shadow: 0px 0px 100px 30px steelblue;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+}
+.send_sms_popup>h2{
+	text-align: center;
+	padding: 10px 0 0 10px;
+}
+.whom>input,.topic>input, .text_msg>textarea {
+	width: 100%;
+	    height: 52px;
+    padding-left: 25px;
+	 border: none;
+    border-top: 1px solid lightgrey;
+	outline: none;
+}
+.text_msg{
+	text-align: center;
+}
+.text_msg>textarea{
+	width: 100%;
+	height: 100%;
+	padding-top: 10px;
+}
+.close_sms{
+    height: 74px;
+    width: 181px;
+    display: inline-block;
+    font-size: 40px;
+    cursor: pointer;
+    background-color: firebrick;
+
+}
+.text_msg>button{
+margin: 10px;
+    width: 225px;
+    height: 52px;
+    background-color: #72D372;
+    border: none;
+    color: white;
+    font-size: 24px;
+}
+/*-----end--POPUP-----------*/

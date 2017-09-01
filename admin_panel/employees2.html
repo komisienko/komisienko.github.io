@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3">
+
+
+    <script src="./js/jquery/jquery-1.8.2.min.js"></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-glyphicons.css">
+        <link rel="stylesheet" href="./css/app.css">
+    <script src="js/popup.js"></script>
+    <!--
+    
+    <link rel="stylesheet" type="text/css" href="./css/msdropdown/dd.css" />
+    <script src="./js/msdropdown/jquery.dd.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/msdropdown/flags.css" />
+-->
+</head>
+<body>
+    <input type="checkbox" id="nav_r-toggle" hidden>
+    <nav class="nav_r">
+        <label for="nav_r-toggle" class="nav_r-toggle" onclick></label>
+        <h2 class="logo"> 
+            <a href="#">Меню</a> 
+        </h2>
+        <ul>
+            <li><a href="#1">Один</a>
+                <li><a href="#2">Два</a>
+                    <li><a href="#3">Три</a>
+                        <li><a href="#4">Четыре</a>
+                            <li><a href="#5">Пять</a>
+                                <li><a href="#6">Шесть</a>
+                                    <li><a href="#7">Семь</a>
+        </ul>
+    </nav>
+    <div class="mask-content"></div>
+    <header>
+        <div class="nav_r_menu">
+            
+           <div class="back"><a href="./services.html" class="back"> <img class="back_icon" src="./img/back_12x20.svg" alt=""><span class="back_text t_ff">Назад</span></a>
+            </div>
+            <div class="menu">
+                <img src="./img/menu_20x30.svg" alt="" class="menu_icon">
+            </div>
+            <div class="flag">
+                <label class="flag_label">
+                    <input type="checkbox" id="hidden_chebox">
+                    <img class="img_27 ua" src="./img/ukraine.svg" alt="">
+                </label>
+                <label class="flag_label">
+                    <input type="checkbox" id="hidden_chebox">
+                    <img class="img_27 ru" src="./img/russia.svg" alt="">
+                </label>
+                <label class="flag_label">
+                    <input type="checkbox" id="hidden_chebox">
+                    <img class="img_27 usa" src="./img/usa.svg" alt="">
+                </label>
+            </div>
+            <div class="res">
+                <img class="img_40 dis_inline_block" src="./img/unnamed.png" alt="">
+                <div class="name">
+                    <p class="white fs_18">Билл Гейтс |</p>
+                </div>
+                <div class="doljnost">
+                    <p class="white fs_18">Ресепшн</p>
+                </div>
+            </div>
+            <div id="current_data"></div>
+        </div>
+    </header>
+         <div class="deep center">
+            <a class="deep_text" style="color: lightblue" >Меню > Управление персоналом > Список сотрудников</a>
+        </div>
+    <div class="wrap_emplooyes">
+        <div class="select_emplooyes float-left">
+            <div class="all_emplooyes">
+                <div class="md-checkbox">
+                    <input type="checkbox" id="checkAll" toCheck='true'>
+                    <label for="checkAll">Выделить все</label>
+                </div>
+
+                <h2>Услуги:</h2>
+                <div id="all">
+                    <div class="md-checkbox">
+                        <input type="checkbox" id="i_2">
+                        <label for="i_2">Ресепшионист</label>
+                    </div>
+                    <div class="md-checkbox">
+                        <input type="checkbox" id="i_3">
+                        <label for="i_3">Хостес</label>
+                    </div>
+                    <div class="md-checkbox">
+                        <input type="checkbox" id="i_4">
+                        <label for="i_4">Инженер</label>
+                    </div>
+                    <div class="md-checkbox">
+                        <input type="checkbox" id="i_5">
+                        <label for="i_5">Сисадмин</label>
+                    </div>
+                    <h2>Управление:</h2>
+                    <div class="md-checkbox">
+                        <input type="checkbox" id="i_6">
+                        <label for="i_6">Директор</label>
+                    </div>
+                    <div class="md-checkbox">
+                        <input type="checkbox" id="i_7">
+                        <label for="i_7">Финансист</label>
+                    </div>
+                    <div class="md-checkbox">
+                        <input type="checkbox" id="i_8">
+                        <label for="i_8">Менеджер по продажам</label>
+                    </div>
+                    <div class="md-checkbox">
+                        <input type="checkbox" id="i_9">
+                        <label for="i_9">Маркетолог</label>
+                    </div>
+                    <h2>Обслуживание:</h2>
+                    <div class="md-checkbox">
+                        <input type="checkbox" id="i_10">
+                        <label for="i_10">Повар</label>
+                    </div>
+                    <div class="md-checkbox">
+                        <input type="checkbox" id="i_11">
+                        <label for="i_11">Брамен</label>
+                    </div>
+                    <div class="md-checkbox">
+                        <input type="checkbox" id="i_12">
+                        <label for="i_12">Официант</label>
+                    </div>
+                    <div class="md-checkbox">
+                        <input type="checkbox" id="i_13">
+                        <label for="i_13">Работник склада</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="table_div float-left">
+        	<div class="container_table">
+       		<thead>
+        	</thead>
+        		<table class="table " id="employees">
+        			<thead>
+        				<tr>
+        					<th>
+                       <div class="md-checkbox_t"><input type="checkbox" id="t_14"><label for="t_14"></label></div>
+                        </th>
+        					<th>Сотрудник</th>
+        					<th>Должность</th>
+        					<th>Телефон</th>
+        				</tr>
+        			</thead>
+<!--
+        			<tfoot>
+						<tr>
+        					<th><input type="checkbox"></th>
+        					<th>Сотрудник</th>
+        					<th>Должность</th>
+        					<th>Телефон</th>
+        				</tr>
+        			</tfoot>
+-->
+        			<tbody id="overflow_tbody">
+        				<tr>
+        					<td><div class="md-checkbox_t"><input type="checkbox" id="t_15"><label for="t_15"></label></div></td>
+        					<td>Василий пупкин</td>
+        					<td>Официант</td>
+        					<td>+380951111095</td>
+        				</tr>
+						<tr><td><div class="md-checkbox_t"><input type="checkbox" id="t_16"><label for="t_16"></label></div></td><td>Василий пупкин</td><td>Официант</td><td>+380951111095</td> 
+						<tr><td><div class="md-checkbox_t"><input type="checkbox" id="t_17"><label for="t_17"></label></div></td><td>Василий пупкин</td><td>Отт</td><td>+380951111095</td> 
+						<tr><td><div class="md-checkbox_t"><input type="checkbox" id="t_18"><label for="t_18"></label></div></td><td>Василий пупкин</td><td>Официант</td><td>+380951111095</td> 
+						<tr><td><div class="md-checkbox_t"><input type="checkbox" id="t_19"><label for="t_19"></label></div></td><td>Василий пупкин</td><td>Официант</td><td>+380951111095</td> 
+						<tr><td><div class="md-checkbox_t"><input type="checkbox" id="t_20"><label for="t_20"></label></div></td><td>Василий пупкин</td><td>Официант</td><td>+380951111095</td> 
+						<tr><td><div class="md-checkbox_t"><input type="checkbox" id="t_21"><label for="t_21"></label></div></td><td>Василий пупкин</td><td>Официант</td><td>+380951111095</td> 
+        				</tr>						
+        				<tr><td><div class="md-checkbox_t"><input type="checkbox" id="t_22"><label for="t_22"></label></div></td><td>Василий пупкин</td><td>Официант</td><td>+380951111095</td></tr>						
+        				<tr><td><div class="md-checkbox_t"><input type="checkbox" id="t_23"><label for="t_23"></label></div></td><td>Василий пупкин</td><td>Официант</td><td>+380951111095</td></tr>						
+        				<tr><td><div class="md-checkbox_t"><input type="checkbox" id="t_24"><label for="t_24"></label></div></td><td>Василий пупкин</td><td>Официант</td><td>+380951111095</td></tr>						
+        				<tr><td><div class="md-checkbox_t"><input type="checkbox" id="t_25"><label for="t_25"></label></div></td><td>Василий пупкин</td><td>Официант</td><td>+380951111095</td></tr>						
+        				<tr><td><div class="md-checkbox_t"><input type="checkbox" id="t_26"><label for="t_26"></label></div></td><td>Василий пупкин</td><td>Официант</td><td>+380951111095</td></tr>						
+        				<tr><td><div class="md-checkbox_t"><input type="checkbox" id="t_27"><label for="t_27"></label></div></td><td>Василий пупкин</td><td>Официант</td><td>+380951111095</td></tr>						
+        				<tr><td><div class="md-checkbox_t"><input type="checkbox" id="t_28"><label for="t_28"></label></div></td><td>Василий пупкин</td><td>Официант</td><td>+380951111095</td> 
+        				</tr>						
+        				<tr><td><div class="md-checkbox_t"><input type="checkbox" id="t_29"><label for="t_29"></label></div></td><td>Василий пупкин</td><td>Официант</td><td>+380951111095</td> 
+        				</tr>						
+        				<tr><td><div class="md-checkbox_t"><input type="checkbox" id="t_30"><label for="t_30"></label></div></td><td>Василий пупкин</td><td>Официант</td><td>+380951111095</td> 
+        				</tr>						
+        				<tr><td><div class="md-checkbox_t"><input type="checkbox" id="t_31"><label for="t_31"></label></div></td><td>Василий пупкин</td><td>Официант</td><td>+380951111095</td> 
+        				</tr>						
+        				<tr><td><div class="md-checkbox_t"><input type="checkbox" id="t_32"><label for="t_32"></label></div></td><td>Василий пупкин</td><td>Официант</td><td>+380951111095</td> 
+        				</tr>
+        			</tbody>
+        		</table>
+        		
+        	</div>
+        </div>
+<div class="wrap_sea float-left">
+	<div class="sea">
+		<div class="add_person"><img src="./img/add_user_30x30.svg" alt="" class="img_sea">Добавить уч.запись</div>
+		<div class="status"><img src="./img/status_30x30.svg" class="img_sea" alt="">Изменить статус</div>
+
+		<a href="#">
+			<div class="send_sms"><img src="./img/sms_30x30.svg" alt="" class="img_sea">Отправить смс </div></a>
+			<div class="pop_up_wrap">
+				<span class="close_sms">ЗАКРЫТЬ</span>
+				<div class="send_sms_popup">
+					
+					<h2 class="gray">Отправка СМС</h2>
+					<div class="whom">
+						<input type="text" placeholder="Кому">
+					</div>
+					<div class="topic">
+						<input type="text" placeholder="Тема">
+					</div>
+					<div class="text_msg">
+						<textarea rows="10" cols="45" name="text"></textarea>
+						<button>Отправить</button>
+					</div>
+				</div>
+			</div>
+
+
+		<div class="send_email"><img src="./img/mail_30x24.svg" alt="" class="img_sea">Отправить email</div>
+	</div>
+</div>
+</div>
+
+
+    <script src="js/jquery.dataTables.min.js"></script>
+<script type="text/javascript">
+        $(document).ready(function() {
+            $('#employees').dataTable();
+        });
+</script>
+<script>
+        (function() { //чтобы не засорять глобал.
+            var inputs = document.getElementById('all').getElementsByTagName('input');
+            document.getElementById('checkAll').addEventListener('click', function checkme(e, check) {
+                check = check === undefined ? false : true;
+                for (var i = 0, inputs_len = inputs.length; i < inputs_len; i++) {
+                    if (!check && !inputs[i].checked) {
+                        checkme(e, true);
+                        return;
+                    }
+                    inputs[i].checked = check;
+                }
+            });
+        })();
+	
+	document.getElementById("current_data").innerHTML = get_date();
+
+function get_date() {
+var d = new Date(),
+    minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
+    hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours(),
+    months = ['01.','02','03','04.','05','06','07','08','09','10','11','12'],
+    days = ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'];
+return hours+':'+minutes+' '+ days[d.getDay()]+'</br>'+d.getDate()+'/'+months[d.getMonth()]+'/'+d.getFullYear();
+}
+</script>
+
+</body>
+
+</html>
