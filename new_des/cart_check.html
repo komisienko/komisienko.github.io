@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3">
+    <link rel="stylesheet" href="./css/app.css">
+		        <script src="./js/jquery/jquery-1.8.2.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="./css/msdropdown/dd.css" />
+        <script src="./js/msdropdown/jquery.dd.min.js"></script>
+        <!-- </msdropdown> -->
+        <link rel="stylesheet" type="text/css" href="./css/msdropdown/flags.css" />
+</head>
+<body>
+
+<header>
+        <div class="nav_menu">
+           <div class="back"><a href="./cart.html" class="back"> <img class="back_icon" src="./img/back_mag.svg" alt=""><span class="back_text t_ff">Назад</span></a>
+       
+            </div>
+ 
+ 
+        </div>
+    </header>
+         <div class="row row_false">
+          <div class="restauraunt">
+              <img src="./img/cart_check.svg" alt="">
+         
+
+ 
+        </div>
+                   <h2 class="food_logo_text">Ваш заказ</h2>
+     <div class="food_cart_div">
+        <div class="food_cart">
+            <div class="food_img food_img_80x80"><img src="./img/image_4.jpg" alt=""><div class="food_cost food_cost_check"><h2 class="price">100 грн</h2></div>
+            <div class="md-checkbox md-checkbox_check">
+                      <input id="i1" type="checkbox">
+                      <label for="i1" class="label_check">Указать время доставки</label>
+                    </div>
+            </div>
+            
+            <div class="food_descr food_descr_check">
+               <div class="descr_text"><p class="def_text">Борщ украинский 
+с мясом, пампушками 
+и чесноком</p></div>
+                <div class="food_weight">Вес: 250гр</div>
+
+            </div> 
+<div class="how how_check">
+                                    <p style="color: #7C7C7C; text-align: center; font-size: 16px; margin-top: 0;">Колличество: 1</p>
+                        <div class="minus_plus_cart">
+                            <div class="minus_cart"><button style="color:#69C6FF; outline: none;">-</button></div>
+                            <div class="plus_cart"><button  style="color:#69C6FF; outline: none;">+</button></div>
+                        </div>
+</div>
+                    </div>
+     </div>
+
+     </div>
+    <footer>
+        <div class="big_button_footer">
+            <h2 class="big_button_footer_text">Заказать</h2>
+        </div>
+    </footer>
+
+    <a id="tac-link" target="_blank" href="tac.html" style="display: none">terms and conditions</a>
+    <script type="text/javascript">
+jQuery('.big_button_footer').click(function(){
+  alert('Заказ принят');
+    window.location.href = "index.html";
+
+});    </script>
+</body>
+</html>

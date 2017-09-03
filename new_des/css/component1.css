@@ -8,24 +8,15 @@
   list-style: none;
   position: relative;
 }
-
-html,
-body {
-  font-family: "Fira Sans", sans-serif;
-  height: 100%;
-      overflow: hidden;
-}
-
-body {
-  background: linear-gradient(to right, #21BCF9, #1F70C1);
-  color: #fff;
-}
 a{
     outline: none;
 }
 .container{
-    margin-top: 40px;
+
 }
+ul>li{
+        background-color: #EEF9FF;
+    }
 .csstransforms .cn-wrapper {
 
   width: 26em;
@@ -49,7 +40,8 @@ a{
 
 .csstransforms .opened-nav {
   border-radius: 50%;
-  border: 1px solid white;
+ /*  border: 1.5px solid #69C6FF; */
+   box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
   pointer-events: auto;
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
@@ -76,11 +68,11 @@ a{
 
 
 .cn-button {
-        border: 1px solid white;
+        border: 1px solid rgb(105,198,255);
     outline: 0 !important;
-    background: -webkit-linear-gradient(left, #2098df, #2090d9);
-    background: -o-linear-gradient(left, #2098df, #2090d9);
-    background: linear-gradient(to right, #2098df, #2090d9);
+    background: -webkit-white;
+    background: -o-white;
+    background: white;
     color: black;
     text-align: center;
     font-size: 1.8em;
@@ -101,7 +93,7 @@ a{
 
 
 .csstransforms .cn-wrapper li {
-  border-right: 1px solid white;
+  border-bottom: 1px solid #69C6FF;
   position: absolute;
   font-size: 1.5em;
   width: 10em;
@@ -115,9 +107,7 @@ a{
   top: 50%;
   margin-top: -1.3em;
   margin-left: -10em;
-  -webkit-transition: border .3s ease;
-  -moz-transition: border .3s ease;
-  transition: border .3s ease;
+
 }
 
 .csstransforms .cn-wrapper li a {
@@ -137,15 +127,18 @@ a{
   -ms-transform: skew(-19deg) rotate(-54deg) scale(1);
   -moz-transform: skew(-19deg) rotate(-54deg) scale(1);
   transform: skew(-19deg) rotate(-54deg) scale(1);
-  -webkit-backface-visibility: hidden;
+/*-webkit-backface-visibility: hidden;*/
+
+
   -webkit-transition: opacity 0.3s, color 0.3s;
   -moz-transition: opacity 0.3s, color 0.3s;
-  transition: opacity 0.3s, color 0.3s;
+  transition: opacity 0.3s, color 0.3s; 
+
 }
 
 .csstransforms .cn-wrapper li a span {
   font-size: 0.8em;
-
+    color: #69C6FF;
     font-weight: 300;
 }
 
@@ -208,19 +201,18 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
 .csstransforms .cn-wrapper li:not(.active):hover,
 .csstransforms .cn-wrapper li:not(.active):active,
 .csstransforms .cn-wrapper li:not(.active):focus {
-    background-color: rgba(255,255,255,0.4);
-    border: 1px solid rgba(255,255,255,0.3);
+background-color: rgba(105,198,255,0.4);
+/* border: 1px solid rgba(105,198,255,0.4); */
 }
 .csstransforms .cn-wrapper li:not(.active) a:focus
 {
-    position:fixed;
+position:fixed;
 }
- 
 
-/* fallback */
+/* fallback
 .no-csstransforms .cn-button {
   display: none;
-}
+} */
 
 .no-csstransforms .cn-wrapper li {
   position: static;
@@ -253,10 +245,7 @@ items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
   background-color: white;
 }
 
-.no-csstransforms .cn-wrapper li.active a {
-  background-color: #6F325C;
-  color: #fff;
-}
+
 
 .no-csstransforms .cn-wrapper {
   font-size: 1em;
@@ -306,15 +295,10 @@ span{
 @media screen and (max-width:320px) {
   .no-csstransforms .cn-wrapper {
     width: 15.15px;
-    margin-left: -7.5em;
-  }
-    
-x
-
-  .no-csstransforms .cn-wrapper li {
+      margin-left: -7.5em;}
+.no-csstransforms .cn-wrapper li {
     height: 3em;
     width: 3em;
-  }
 }
 
 

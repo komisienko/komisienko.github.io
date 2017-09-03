@@ -1,0 +1,1110 @@
+@import "./font.css";
+* {
+    font-family: "MyriadProRegular";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
+body {
+    background: linear-gradient(to right, #01B0DD, #3E7ADD) no-repeat;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-width: 1024px;
+    /*    background-color:rebeccapurple;*/
+}
+a {
+    text-decoration: none;
+}
+input{
+    outline: none !importtant;
+}
+.white{
+    color:#ffffff;
+}
+.gray{
+	color: #828282;;
+}
+.fs_18{
+    font-size: 18px;
+}
+.center{
+	text-align: center;
+}
+h1{margin: 0;}
+.img_30 {
+    height: 30px;
+    width: 30px;
+    vertical-align: middle;
+}
+.img_40{
+        height: 40px;
+    width: 40px;
+    vertical-align: middle;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+.img_27{
+    height: 27px;
+}
+.dis_inline_block, .name, .doljnost{
+    display: inline-block;
+}
+.dis_block{
+    display: block;
+}
+/*-------------nav----------*/
+
+header {
+    width: 100%;
+    height: 52px;
+}
+.nav_r_menu {
+    width: 100%;
+    height: 52px;
+    line-height: 52px;
+}
+
+/*--------Текущее время------*/
+#current_data{
+	height: 52px;
+	line-height: 1.7;
+	padding-top: 7px;
+	width: 60px;
+	display: inline-block;
+	color: white;
+	text-align: center;
+	float: right;
+	margin-right: 30px;
+}
+/*--конец---Текущее время------*/
+/*--------RIGHT SLIDE MENU-------*/
+
+@charset "UTF-8";
+
+/**
+ * Переключаемая боковая панель навигации
+ * выдвигающаяся справа
+ */
+
+.nav_r {
+    box-sizing: border-box;
+    width: 320px;
+    min-width: 320px;
+    /* фиксируем и выставляем высоту панели на максимум */
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    /* сдвигаем (прячем) панель относительно правого края страницы */
+    right: -320px;
+    /* внутренние отступы */
+    padding: 15px 20px;
+    /* плавный переход смещения панели */
+    -webkit-transition: right 0.3s;
+    -moz-transition: right 0.3s;
+    transition: right 0.3s;
+    /* определяем цвет фона панели */
+    background: #16a085;
+    /* поверх других элементов */
+    z-index: 2000;
+}
+
+/**
+ * Кнопка переключения панели
+ * тег <label>
+ */
+
+.nav_r-toggle {
+    height: 52px;
+    width: 52px;
+    /* абсолютно позиционируем */
+    position: absolute;
+    /* относительно правого края панели */
+    right: 320px;
+    /* отступ от верхнего края панели */
+    top: 0em;
+    /* внутренние отступы */
+    /*     padding: 0.5em; */
+    /* определяем цвет фона переключателя
+     * чаще вчего в соответствии с цветом фона панели
+    */
+    margin-right: 23px;
+/*    background-color: darkred;*/
+    /* цвет текста */
+    color: #dadada;
+    /* вид курсора */
+    cursor: pointer;
+    /* размер шрифта */
+    font-size: 1.2em;
+    line-height: 1;
+    /* всегда поверх других элементов страницы */
+    z-index: 2001;
+    /* анимируем цвет текста при наведении */
+    -webkit-transition: color .25s ease-in-out;
+    -moz-transition: color .25s ease-in-out;
+    transition: color .25s ease-in-out;
+}
+
+/* определяем текст кнопки 
+ * символ Unicode (TRIGRAM FOR HEAVEN)
+*/
+
+
+/* .nav_r-toggle:after {
+    content: '\2630';
+    text-decoration: none;
+} */
+
+
+/* цвет текста при наведении */
+
+/*
+.nav_r-toggle:hover {
+    color: #f4f4f4;
+}
+*/
+
+/**
+ * Скрытый чекбокс (флажок)
+ * невидим и недоступен :)
+ * имя селектора атрибут флажка
+ */
+
+[id='nav_r-toggle'] {
+    position: absolute;
+    display: none;
+}
+
+/**
+ * изменение положения переключателя 
+ * при просмотре на мобильных устройствах
+ * когда навигация раскрыта, распологаем внутри панели
+*/
+
+[id='nav_r-toggle']:checked ~ .nav_r > .nav_r-toggle {
+    left: auto;
+    right: 2px;
+/*    top: 1em;*/
+}
+
+/**
+ * Когда флажок установлен, открывается панель
+ * используем псевдокласс:checked
+ */
+
+[id='nav_r-toggle']:checked ~ .nav_r {
+    right: 0;
+/*
+    box-shadow: -4px 0px 20px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: -4px 0px 20px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: -4px 0px 20px 0px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+*/
+}
+
+/*
+ * изменение символа переключателя,
+ * привычный крестик (MULTIPLICATION X), 
+ * вы можете испльзовать любой другой значок
+*/
+
+[id='nav_r-toggle']:checked ~ .nav_r > .nav_r-toggle:after {
+    content: '\2715';
+    font-size: 30px;
+    position: absolute;
+    padding: 12px;
+}
+
+/**
+ * профиксим баг в Android <= 4.1.2
+ * см: http://timpietrusky.com/advanced-checkbox-hack
+ */
+
+body {
+    -webkit-animation: bugfix infinite 1s;
+}
+@-webkit-keyframes bugfix {
+    to {
+        padding: 0;
+    }
+}
+
+/**
+ * позаботьтимся о средних и маленьких экранах
+ * мобильных устройств
+ */
+/*
+
+@media screen and (min-width: 320px) {
+    html,
+    body {
+        margin: 0;
+
+    }
+}
+@media screen and (max-width: 320px) {
+    html,
+    body {
+        margin: 0;
+
+    }
+    .nav_r {
+        width: 100%;
+        box-shadow: none
+    }
+}
+*/
+
+/**
+ * Формируем стиль заголовка (логотип) панели 
+*/
+
+.nav_r h2 {
+    width: 90%;
+    padding: 0;
+    margin: 10px 0;
+    text-align: center;
+    text-shadow: rgba(255, 255, 255, .1) -1px -1px 1px, rgba(0, 0, 0, .5) 1px 1px 1px;
+    font-size: 1.3em;
+    line-height: 1.3em;
+    opacity: 0;
+    transform: scale(0.1, 0.1);
+    -ms-transform: scale(0.1, 0.1);
+    -moz-transform: scale(0.1, 0.1);
+    -webkit-transform: scale(0.1, 0.1);
+    transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+    -moz-transform-origin: 0% 0%;
+    -webkit-transform-origin: 0% 0%;
+    transition: opacity 0.8s, transform 0.8s;
+    -ms-transition: opacity 0.8s, -ms-transform 0.8s;
+    -moz-transition: opacity 0.8s, -moz-transform 0.8s;
+    -webkit-transition: opacity 0.8s, -webkit-transform 0.8s;
+}
+.nav_r h2 a {
+    color: #dadada;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/*плавное появление заголовка (логотипа) при раскрытии панели */
+
+[id='nav_r-toggle']:checked ~ .nav_r h2 {
+    opacity: 1;
+    transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+}
+
+/**
+ * формируем непосредственно само меню
+ * используем неупорядоченный список для пунктов меню
+ * прикрутим трансфомации и плавные переходы
+ */
+
+.nav_r > ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.nav_r > ul > li {
+    line-height: 2.5;
+    opacity: 0;
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(50%);
+    -webkit-transition: opacity .5s .1s, -webkit-transform .5s .1s;
+    -moz-transition: opacity .5s .1s, -moz-transform .5s .1s;
+    -ms-transition: opacity .5s .1s, -ms-transform .5s .1s;
+    transition: opacity .5s .1s, transform .5s .1s;
+}
+[id='nav_r-toggle']:checked ~ .nav_r > ul > li {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+}
+
+/* определяем интервалы появления пунктов меню */
+
+.nav_r > ul > li:nth-child(2) {
+    -webkit-transition: opacity .5s .2s, -webkit-transform .5s .2s;
+    transition: opacity .5s .2s, transform .5s .2s;
+}
+.nav_r > ul > li:nth-child(3) {
+    -webkit-transition: opacity .5s .3s, -webkit-transform .5s .3s;
+    transition: opacity .5s .3s, transform .5s .3s;
+}
+.nav_r > ul > li:nth-child(4) {
+    -webkit-transition: opacity .5s .4s, -webkit-transform .5s .4s;
+    transition: opacity .5s .4s, transform .5s .4s;
+}
+.nav_r > ul > li:nth-child(5) {
+    -webkit-transition: opacity .5s .5s, -webkit-transform .5s .5s;
+    transition: opacity .5s .5s, transform .5s .5s;
+}
+.nav_r > ul > li:nth-child(6) {
+    -webkit-transition: opacity .5s .6s, -webkit-transform .5s .6s;
+    transition: opacity .5s .6s, transform .5s .6s;
+}
+.nav_r > ul > li:nth-child(7) {
+    -webkit-transition: opacity .5s .7s, -webkit-transform .5s .7s;
+    transition: opacity .5s .7s, transform .5s .7s;
+}
+
+/**
+ * оформление ссылок пунктов меню
+ */
+
+.nav_r > ul > li > a {
+    display: inline-block;
+    position: relative;
+    padding: 0;
+    font-family: "MyriadProRegular";
+    font-weight: 300;
+    font-size: 1.2em;
+    color: #dadada;
+    width: 100%;
+    text-decoration: none;
+    /* плавный переход */
+    -webkit-transition: color .5s ease, padding .5s ease;
+    -moz-transition: color .5s ease, padding .5s ease;
+    transition: color .5s ease, padding .5s ease;
+}
+
+/**
+ * состояние ссылок меню при наведении
+ */
+
+.nav_r > ul > li > a:hover,
+.nav_r > ul > li > a:focus {
+    color: white;
+    padding-left: 15px;
+}
+
+/**
+ * линия подчеркивания ссылок меню
+ */
+
+.nav_r > ul > li > a:before {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    -webkit-transition: width 0s ease;
+    transition: width 0s ease;
+}
+.nav_r > ul > li > a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    background: #3bc1a0;
+    -webkit-transition: width .5s ease;
+    transition: width .5s ease;
+}
+
+/**
+ * анимируем линию подчеркивания 
+ * ссылок при наведении
+ */
+
+.nav_r > ul > li > a:hover:before {
+    width: 0%;
+    background: #3bc1a0;
+    -webkit-transition: width .5s ease;
+    transition: width .5s ease;
+}
+.nav_r > ul > li > a:hover:after {
+    width: 0%;
+    background: transparent;
+    -webkit-transition: width 0s ease;
+    transition: width 0s ease;
+}
+
+/* фон затемнения на основной контент 
+ * при этом элементы блокируютя
+ * спорная такая фича, если оно вам надо
+ * просто раскомментируйте
+*/
+
+.mask-content {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    visibility: hidden;
+    opacity: 0;
+}
+[id='nav_r-toggle']:checked ~ .mask-content {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: opacity .5s, visibility .5s;
+    transition: opacity .5s, visibility .5s;
+}
+
+/*----END-RIGHT SLIDE MENU-------*/
+
+.back {
+    height: 100%;
+    width: 100px;
+    float: left;
+}
+.back_icon {
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+.back_text {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-size: 18px;
+    margin-left: 7px;
+}
+.menu {
+    height: 100%;
+    width: 52px;
+    float: right;
+    text-align: center;
+    margin-right: 23px;
+}
+.menu_icon {
+
+    width: 26px;
+    vertical-align: middle;
+    /* margin-bottom: 7px;
+margin-right: 3px; */
+}
+
+/*-------end nav-------------*/
+/*-------deep---------*/
+.deep{
+    height: 20px;
+}
+.deep_text{
+    color: lightgray;
+}
+/*----------enddeep----*/
+/*----------Deep end------------*/
+/*--------flag----------*/
+
+#hidden_chebox{
+    position: absolute;
+    top:-9999px;
+    left:-9999px;
+    
+}
+input[type=checkbox]:checked ~ .img_27{
+    opacity: 0.5;
+}
+.usa, .ua{
+    opacity: 0.5
+}
+.flag{
+	height: 52px;
+	float: right;
+    width: 115px;
+    margin-right: 20px;
+/*    padding-top: 10px;*/
+}
+.res {
+    height: 100%;
+    width: 245px;
+    float: right;
+}
+
+/*--------end flag------*/
+
+.wrap {
+    width: 737px;
+    margin: 0 auto;
+    margin-top: 201px;
+}
+
+/*---------Guests-------*/
+
+#guests ul {
+    display: none;
+    /*   display: block; */
+    /*--ПОТОМ УДАЛИ--*/
+    background-color: #f90;
+    position: absolute;
+    top: 100%;
+}
+#guests li:hover ul {
+    display: block;
+}
+#guests,
+#guests ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+#guests {
+    height: 52px;
+    /* background-color: #ffffff; */
+    /*   padding-left: 25px; */
+    min-width: 470px;
+}
+#guests li {
+    float: left;
+    position: relative;
+    height: 100%;
+    width: 245px;
+    background-color: #ffffff;
+}
+#guests li a {
+    display: inline;
+    width: 100%;
+    height: 100%;
+    color: black;
+    text-decoration: none;
+    padding-left: 15px;
+    line-height: 52px;
+    font-size: 18px;
+}
+#guests ul li {
+    float: none;
+}
+#guests li:hover {
+    background-color: #f90;
+}
+#guests ul li:hover {
+    background-color: #fff;
+}
+#guests>li:nth-child(1) {
+    margin-right: 1px;
+    /* Цвет фона */
+}
+#guests>li:nth-child(2) {
+    margin-right: 1px;
+    /* Цвет фона */
+}
+#guests {
+    background-color: none;
+}
+
+/*----------input button--------*/
+
+.input-group {
+    float: right;
+    margin-right: 20px;
+    line-height: 52px;
+    height: 52px;
+}
+.plus-minus-input {
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.plus-minus-input .input-group-field {
+    text-align: center;
+    position: relative;
+    top: 1px;
+    margin-left: -3px;
+    margin-right: -3px;
+}
+.plus-minus-input .input-group-field::-webkit-inner-spin-button,
+.plus-minus-input .input-group-field::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+.input-group-button {
+    display: inline-block;
+}
+.button_minus,
+.button_plus {
+    height: 25px;
+    width: 25px;
+    background-color: none;
+    background: none;
+    outline: none;
+    border: 1px solid black;
+    color: black;
+    vertical-align: middle;
+}
+.button_minus {
+    border-radius: 5px 0 0 5px;
+}
+.button_plus {
+    border-radius: 0 5px 5px 0;
+}
+.input-group-field {
+    height: 23px;
+    width: 25px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    margin: 0;
+    padding: 0;
+}
+.button_text {
+    position: relative;
+    top: -2px;
+    font-size: 21px;
+}
+
+/*----------end input button--------*/
+
+
+/*-----end-Guests-------*/
+::-moz-focus-outer, ::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+.img_27px {
+    height: 27px;
+    float: right;
+    margin-right: 15px;
+    margin-top: 13px;
+}
+.found {
+    height: 52px;
+    width: 245px;
+    margin-left: 245px;
+    margin-top: 157px
+}
+.found_emp{
+    height: 52px;
+    width: 245px;
+    margin: 0 auto;
+
+    outline: none;
+}
+.color_yellow {
+    height: 100%;
+    width: 100%;
+    font-size: 21px;
+    border: none;
+    outline: none;
+    background-color: #f90;
+}
+.color_green{
+        background-color:forestgreen;
+}
+/*-------------Календарь-------------*/
+
+
+/*
+	Stylesheet for Tigra Calendar v5.0
+	Product is Public Domain (Free for any kind of applicaiton, customization and derivative works are allowed) 
+	URL: http://www.softcomplex.com/products/tigra_calendar/
+
+	- all image paths are relative to path of stylesheet
+	- the styles below can be moved into the document or in existing stylesheet
+
+*/
+
+
+/* input box in default state */
+
+.tcalInput {
+    background: url('../img/calendar_25x27.svg') 100% 50% no-repeat;
+    padding-right: 20px;
+    cursor: pointer;
+    width: 200px;
+    height: 30px;
+    border: none;
+    font-size: 18px;
+    outline: none;
+}
+
+/* additional properties for input boxe in activated state, above still applies unless in conflict */
+
+.tcalActive {
+    background-image: url('../img/no_cal.svg');
+}
+
+/* container of calendar's pop-up */
+
+#tcal {
+    position: absolute;
+    visibility: hidden;
+    z-index: 100;
+    width: 242px;
+    background-color: white;
+    margin-top: 2px;
+    padding: 0 2px 2px 2px;
+    top: 303px;
+    left: 143px;
+    /* 	border: 1px solid silver; */
+    /* 	-moz-box-shadow: 3px 3px 4px silver;
+	-webkit-box-shadow: 3px 3px 4px silver;
+	box-shadow: 3px 3px 4px silver; */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='silver')";
+    filter: progid: DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='silver');
+}
+
+/* table containing navigation and current month */
+
+#tcalControls {
+    border-collapse: collapse;
+    border: 0;
+    width: 100%;
+}
+#tcalControls td {
+    border-collapse: collapse;
+    border: 0;
+    padding: 0;
+    width: 16px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+#tcalControls th {
+    border-collapse: collapse;
+    border: 0;
+    padding: 0;
+    line-height: 25px;
+    font-size: 10px;
+    text-align: center;
+    font-family: "MyriadProRegular";
+    font-weight: bold;
+    white-space: nowrap;
+}
+#tcalPrevYear {
+    background-image: url('../img/prev_year.gif');
+}
+#tcalPrevMonth {
+    background-image: url('../img/prev_mon.gif');
+}
+#tcalNextMonth {
+    background-image: url('../img/next_mon.gif');
+}
+#tcalNextYear {
+    background-image: url('../img/next_year.gif');
+}
+
+/* table containing week days header and calendar grid */
+
+#tcalGrid {
+    border-collapse: collapse;
+    border: 1px solid silver;
+    width: 100%;
+}
+#tcalGrid th {
+    border: 1px solid silver;
+    border-collapse: collapse;
+    padding: 3px 0;
+    text-align: center;
+    font-family: "MyriadProRegular";
+    font-size: 10px;
+    background-color: gray;
+    color: white;
+}
+#tcalGrid td {
+    border: 0;
+    border-collapse: collapse;
+    padding: 2px 0;
+    text-align: center;
+    font-family: "MyriadProRegular";
+    width: 14%;
+    font-size: 11px;
+    cursor: pointer;
+}
+#tcalGrid td.tcalOtherMonth {
+    color: silver;
+}
+#tcalGrid td.tcalWeekend {
+    background-color: #ACD6F5;
+}
+#tcalGrid td.tcalToday {
+    border: 1px solid red;
+}
+#tcalGrid td.tcalSelected {
+    background-color: #FFB3BE;
+}
+
+/*--------конец Календарь-------------*/
+
+
+/*---------Emplooyes----------*/
+
+.dataTables_length,
+.dataTables_filter,
+.dataTables_info,
+.dataTables_paginate {
+    display: inline-block;
+}
+.dataTables_paginate,
+.dataTables_filter {
+    float: right;
+}
+.dataTables_paginate>a,span>a{
+	color: #ffffff;
+}
+.container{
+
+    margin: 0 auto;
+}
+.dataTables_length{
+	color: #ffffff;
+}
+.dataTables_filter>label{
+	color: #ffffff;
+}
+.dataTables_filter>label>input{
+    border: none;
+    border-radius: 10px;
+        padding-left: 10px;
+outline: none;
+}
+
+#employees_previous{
+    padding-right: 10px;
+}
+span>.paginate_button{
+    padding-right: 10px;
+}
+.dataTables_empty{
+    background-image: url(../img/1470074478156394445.jpg);
+    background-repeat: no-repeat;
+    height: 350px;
+    color: white;
+    font-size: 28px;
+    background-size: cover;
+
+}
+.dataTables_info{
+	color: #ffffff;
+}
+.wrap_emplooyes{
+/*     height: 716px; */
+    width: 100%;
+
+}
+.float-left {
+float:left;
+/*width: 33.3333%  // or 33% for equal width independent of parent width */
+}
+.select_emplooyes{
+    min-width: 271px;
+    width: 271px;
+    height: 100%;
+
+}
+.table_div{
+    width: calc(100% - 496px);
+    min-width: 490px;
+}
+.wrap_sea{
+    width: 225px;
+    min-width: 225px;
+    height: 100%;
+}
+.sea{
+	margin: 39px 0 0 30px;
+}
+.send_sms, .send_email, .add_person, .status{
+	height: 50px;
+	width: 100%;
+	color: #ffffff;
+	line-height: 50px;
+}
+
+
+.img_sea{
+	height: 30px;
+	width: 30px;
+	margin-right: 10px;
+}
+.all_emplooyes{
+    width: 250px;
+    margin-top: 20px;
+    margin-left: 20px;
+        font-size: 16px;
+    color: white;
+    font-weight: 200;
+}
+.table_div{
+    font-size: 16px;
+	padding-top: 10px;
+}
+.table_div>h1{
+    font-size: 24px;
+    font-style: italic;
+    position: relative;
+    color: #ffffff;
+    font-weight: 300;
+}
+.all_emplooyes>h2{
+    color: #ffffff;
+    font-weight: 300;
+}
+#overflow_tbody, table#employees.table.dataTable.no-footer{
+	height: 491px !important;
+	overflow: auto;
+	background-color: #ffffff;
+}
+.container_table{
+	color: #828282;
+}
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #2293DD;
+}
+#overflow_tbody>tr{
+	height: 45px;
+}
+/*-----END-Emplooyes----------*/
+/*----------CHECK BOX-------*/
+
+/*
+input[type=checkbox]{
+    position: absolute;
+    left: -9999px;
+}
+*/
+.md-checkbox { position: relative; height: 18px; margin: 15px 0;} 
+.md-checkbox_check{
+    width: 136px;
+    margin-left: 10px;
+}
+.md-checkbox label { cursor: pointer; color: #ffffff;font-size: 16px; 
+} 
+.md-checkbox label:before, .md-checkbox label:after { content: ""; position: absolute; left: 0; top: 0; } 
+.md-checkbox label:before { width: 18px; height: 18px; background: #ffffff; border: 2px solid #ffffff; border-radius: 2px; cursor: pointer; transition: background .3s; }
+.md-checkbox input[type="checkbox"] { outline: 0; margin-right: 10px; height: 18px;width: 18px;}
+.md-checkbox input[type="checkbox"]:checked + label:before { 
+    background: #ffffff; 
+/*    border: none;*/ }
+.md-checkbox input[type="checkbox"]:checked + label:after { 
+    outline: none;
+transform: rotate(-45deg); 
+top: 4px; 
+left: 4px; 
+width: 10px; 
+height: 6px; 
+border: 2px solid #69C6FF; 
+border-top-style: none; 
+border-right-style: none; } 
+.checkbox_time{
+    margin-top: 0;
+}
+.md-checkbox_check>.label_check{
+    font-size: 10px;
+}
+
+/*----table cheboxes-----*/
+.md-checkbox_t { position: relative; height: 18px;margin-top: 4px;} 
+.md-checkbox_check{
+    width: 136px;
+    margin-left: 10px;
+}
+.md-checkbox_t label { cursor: pointer; color: red;font-size: 16px; 
+} 
+.md-checkbox_t label:before, .md-checkbox_t label:after { content: ""; position: absolute; left: 0; top: 0; } 
+.md-checkbox_t label:before { width: 18px; height: 18px; background: #ffffff; border: 2px solid #727272; border-radius: 2px; cursor: pointer; transition: background .3s; }
+.md-checkbox_t input[type="checkbox"] { outline: 0; margin-right: 10px; height: 18px;width: 18px;}
+.md-checkbox_t input[type="checkbox"]:checked + label:before { 
+    background: #727272; 
+/*    border: none;*/ }
+.md-checkbox_t input[type="checkbox"]:checked + label:after { 
+    outline: none;
+transform: rotate(-45deg); 
+top: 4px; 
+left: 4px; 
+width: 10px; 
+height: 6px; 
+border: 2px solid #ffffff; 
+border-top-style: none; 
+border-right-style: none; } 
+.checkbox_time{
+    margin-top: 0;
+}
+.md-checkbox_check>.label_check{
+    font-size: 10px;
+}
+/*-end-table cheboxes-----*/
+
+/*-------CHECK BOX END----*/
+/*---------POPUP-----------*/
+.pop_up_wrap{
+	display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+	overflow: auto;
+min-width: 1024px;
+}
+.send_sms_popup{
+	width: 450px;
+    height: 360px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+
+	    box-shadow: 0px 0px 100px 30px steelblue;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+}
+.send_sms_popup>h2{
+	text-align: center;
+	padding: 10px 0 0 10px;
+}
+.whom>input,.topic>input, .text_msg>textarea {
+	width: 100%;
+	    height: 52px;
+    padding-left: 25px;
+	 border: none;
+    border-top: 1px solid lightgrey;
+	outline: none;
+}
+.text_msg{
+	text-align: center;
+}
+.text_msg>textarea{
+	width: 100%;
+	height: 100%;
+	padding-top: 10px;
+}
+.close_sms{
+    height: 74px;
+    width: 181px;
+    display: inline-block;
+    font-size: 40px;
+    cursor: pointer;
+    background-color: firebrick;
+
+}
+.text_msg>button{
+margin: 10px;
+    width: 225px;
+    height: 52px;
+    background-color: #72D372;
+    border: none;
+    color: white;
+    font-size: 24px;
+}
+/*-----end--POPUP-----------*/
