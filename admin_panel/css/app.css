@@ -1203,6 +1203,38 @@ margin: 10px;
 	float: right;
 	margin-right: 20px;
 }
+.add_person_photo_select{
+	margin-top: 3px;
+	height: 167px;
+	width: 100%;
+	background-color: aquamarine;
+}
+.photo_select{
+	overflow: hidden;
+	position: relative;
+	height: 100%;
+	width: 125px;
+	background-color: #fff;
+    float: left;
+    padding-top: 60px;
+	text-align: center;
+	font-size: 18px;
+	color:  #828282;
+}
+.photo_select [type=file]{
+	    cursor: pointer;
+    display: block;
+    filter: alpha(opacity=0);
+    min-height: 100%;
+    min-width: 100%;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 0;
+		width: 125px;
+}
+
 /*.ink styles - the elements which will create the ripple effect. The size and position of these elements will be set by the JS code. Initially these elements will be scaled down to 0% and later animated to large fading circles on user click.*/
 .ink {
 	display: block; position: absolute;
