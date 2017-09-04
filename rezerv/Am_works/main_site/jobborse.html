@@ -1,0 +1,118 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+      <meta charset="UTF-8">
+      <title>Document</title>
+      <link rel="stylesheet" href="style_main.css">
+     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      
+  </head>
+  <body>
+        <div class="wrap">
+         <nav>
+            <img src="images/logo1.png" alt="logo" class="logo">
+             <ul>
+                 <li class="with_hover">
+                   <div class="barra"></div>
+                     <a href="./main.html" >STARTSEITE</a>
+                 </li>
+                 <li class="with_hover">
+                    <div class="barra"></div>
+                     <a href="./jobborse.html" >JOBBORSE</a>
+                 </li>
+                 <li class="with_hover" class="menu__list">
+                    <div class="barra"></div>
+                     <a href="./furunternehmen.html" >FUR UNTERNEHMEN</a>
+                     <p class="plus">+</p>
+                     
+                    </li>
+                 <li  class="menu__list with_hover">
+                    <div class="barra"></div>
+                     
+                     <a href="#" class="menu">FUR BEVERBER </a>
+                     <p class="plus">+</p>
+                 </li>
+                 <li class="menu__list with_hover">
+                    <div class="barra"></div>
+                     <a href="#" class="menu">UBER UNS</a>
+                     <p class="plus">+</p>
+                    
+                 </li>
+                 <li class="with_hover">
+                    <div class="barra"></div>
+                     <a href="./kontakt.html" >KONTAKT</a>
+                 </li>
+                 <li><input type="text" id="suche" placeholder="Suche..."></li>
+             </ul>
+             <div class="contact"><p>
+                     Elmer-Fryar-Ring 1
+                    86391 <br>
+                    Stadtbergen
+                    </p> 
+                    <p>
+                    Telefon: 0821 – 600 806 420<br>
+                    Telefax: 0821 – 600 806 429
+                     </p><p>
+                    E-Mail: info@am-works.de
+             </p>
+             </div>
+         </nav>
+        
+         <!-- Конец навигационного-->
+         <header>
+         <div class="header_content">
+             <p>ARBEITNEHMERUBERLASSUNG & PERSONALDIENSTLEISTUNG</p>
+             <i class="fa fa-youtube" aria-hidden="true"></i>
+             <i class="fa fa-google" aria-hidden="true"></i>
+             <i class="fa fa-facebook-square" aria-hidden="true"></i>
+             <i class="fa fa-skype" aria-hidden="true"></i>
+
+             </div>
+            
+         </header>
+          
+         <div class="slider">
+            <ul class="body_slides">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+         </div>
+     <div class="general">
+            <div class="general_wrap">
+             <h1>JOBBORSE</h1>
+             <div class="search_jobs">
+		
+                <div class="search_keywords">
+                    <label for="search_keywords">Stichwörter</label>
+                    <input type="text" name="search_keywords" id="search_keywords" placeholder="Stichwörter" value="" />
+                </div>
+
+                <div class="search_location">
+                    <label for="search_location">Arbeitsort</label>
+                    <input type="text" name="search_location" id="search_location" placeholder="Arbeitsort" value="" />
+                </div>
+                </div>
+               <div class="information_jobborse">
+                    <div class="logo_jobs"><img src="./images/logo_jobs.png" alt="logo_jobs"><p>Reinigungskraft m/w - 170501</p> </div>
+                    <div class="logo_jobs"><img src="./images/logo_jobs.png" alt="logo_jobs"><p>Reinigungskraft m/w - 170501</p> </div>
+                    <div class="logo_jobs"><img src="./images/logo_jobs.png" alt="logo_jobs"><p>Reinigungskraft m/w - 170501</p> </div>
+                    <div class="logo_jobs"><img src="./images/logo_jobs.png" alt="logo_jobs"><p>Reinigungskraft m/w - 170501</p> </div>
+                  
+               
+              </div>
+            </div>
+            </div>
+          
+          </div>
+           <script type="text/javascript">       
+       $(function() {
+      $('.information_jobborse .logo_jobs').each(function(i) {
+            $(this).delay((i++) * 1000).fadeTo(1000, 1); })
+        }); 
+                
+      </script>
+    
+  </body>
+  </html>  

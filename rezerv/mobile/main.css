@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+
+}  
+@font-face {
+    font-family: SFUITextMedium; /* Имя шрифта */
+    src: url(./fonts/SFUIText-Medium.otf); /* Путь к файлу со шрифтом */
+   }
+body {
+  font-family: SFUITextMedium;
+    height: 100%;
+  font-size: 14px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.42857;
+  -webkit-font-smoothing: antialised; 
+
+}
+
+.wrapper {
+  position: relative;
+  min-height: 100%;
+
+}
+.mob_1_logo, .mob_2_logo{
+    margin: 0 auto;
+    display: block;
+    width: 110px;
+    margin-top: 100px;
+
+}
+input[type="text"]{
+    width: 100%; 
+    margin-top: 50px;
+    border: 2px solid #B0B0B0;
+    background: #ffffff !important;
+    outline: none; 
+    color: #000000; 
+    font-size: 1.2em;
+    padding: 0px 0px 10px 0px;
+    border-top: none; 
+    border-left: none;
+    border-right:none;
+    
+}
+button{
+    background-color: #ffffff;
+    margin-top: 20px;
+    border: 2px solid #B0B0B0;
+    padding: 10px;
+    color: #404040;
+    border-radius: 2px;
+    float: right;
+    font-size: 1.2em;
+}
+
+.click_add{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    color: #ffffff;
+    background-color: #2196F3;
+
+    text-align: center;
+    vertical-align: center;
+}
+.click_add>p{
+    font-size: 1.5em;
+    padding-top: 16px;
+    font-family: SFUITextMedium;
+}
+.mob_3_h2{
+    text-align: center;
+    margin-top: 180px;
+    font-size: 2.5em;
+    color: #666666;
+}
+.mob_3_h1{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 4em;
+    color: #666666;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>NAKITEL</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="fonts.css">
+
+</head>
+<body>
+   
+    <header>
+        <div class="menu_wrapper">
+           <div class="container">
+               <div class="row">
+                   <div class="col-md-12 col-sm-12">
+                        <div id="nav-icon1">
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                              
+                               <div id="menu_hover">
+                                   <ul class="drop_menu">
+                                      
+                                       <li><a href="#">НА ГЛАВНУЮ</a></li>
+                                       <li><a href="#">О КОМПАНИИ</a></li>
+                                       <li><a href="#">КАТАЛОГ ПРОДУКЦИИ</a></li>
+                                       <li><a href="#">АКЦИИ</a></li>
+                                       <li><a href="#">ГАРАНТИЯ</a></li>
+                                       <li><a href="#">КОНТАКТЫ</a></li>
+                                   </ul>
+                               </div>
+                        </div>
+                        
+                        <ul>
+                        
+                        <li class="search"><input type="text" placeholder="Поиск  "></li>
+                        <li class="radios-as-buttons">
+                            <div class="radios_ru_ua">
+                               <div>
+                                    <input type="radio" name="option" id="ru" checked />
+                                    <label for="ru" align="center">ru</label>
+                               </div>
+                               <div>
+                                    <input type="radio" name="option" id="ua" />
+                                    <label for="ua" align="center">ua</label>
+                               </div>
+                            </div>
+                        </li>
+                            <li class="korzina"><img src="images/korzina.png" alt=""></li>
+                        </ul>
+                        
+                    </div>    
+                </div>    
+           </div>
+        </div>
+    </header>
+  
+  <div class="content_wrapper">
+      
+      
+      
+      
+      
+  </div>
+    
+    
+    
+    
+    <script type="text/javascript">
+    $(document).ready(function(){
+	$('#nav-icon1, #menu_hover').click(function(){
+		$(this).toggleClass('open');
+	});
+});
+    </script>
+</body>
+</html>

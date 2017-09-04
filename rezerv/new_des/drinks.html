@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3">
+    <link rel="stylesheet" href="./css/app.css">
+			<link rel="stylesheet" href="./css/app.css">
+		
+
+		        <script src="./js/jquery/jquery-1.8.2.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="./css/msdropdown/dd.css" />
+        <script src="./js/msdropdown/jquery.dd.min.js"></script>
+        <!-- </msdropdown> -->
+        <link rel="stylesheet" type="text/css" href="./css/msdropdown/flags.css" />
+
+</head>
+<body>
+ 
+        <header>
+        <div class="nav_menu">
+           <div class="back"><a href="./services.html" class="back"> <img class="back_icon" src="./img/back_mag.svg" alt=""><span class="back_text t_ff">Назад</span></a>
+       
+            </div>
+
+            <a href="./cart_check.html"><div class="basket">
+                <img src="./img/basket_mag.svg" alt="" class="basket_icon">
+            </div></a>
+                          <div class="flag_chose_ot">
+                <select name="countries" id="countries" style="width:50;">
+
+                  <option value='ru' data-image="./images/msdropdown/icons/blank.gif" data-imagecss="flag ru" data-title="Russian Federation"></option>
+
+                  <option value='ua' data-image="./images/msdropdown/icons/blank.gif" data-imagecss="flag ua" data-title="Ukraine"></option>
+
+                  <option value='us' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag us" data-title="United States"></option>
+                </select>
+            </div>
+        </div>
+    </header>
+           <div class="deep center" style="margin-bottom: 10px;">
+            <a class="deep_text">Меню > Услуги > Напитки</a>
+        </div>
+           <div class="row row_false">
+          <div class="restauraunt">
+              <img src="./img/restaurant.svg" alt="">
+        </div>
+                   <h2 class="food_logo_text">Ресторан</h2>
+       <div class="search">
+            <input type="text" id="search_drink" placeholder="Поиск">
+        </div>
+
+     <div class="food_cart_div">
+        <div class="food_cart">
+            <div class="food_img"><img src="./img/cola.png" alt=""><div class="food_cost"><h2 class="price">100 грн</h2></div></div>
+            
+            <div class="food_descr">
+               <div class="descr_text"><p class="def_text">Сладкая вода Coca-cola в стекле</p></div>
+                <div class="food_weight">Объем: 0,33 л</div>
+                <form action="./cart.html">
+                <input type="submit" class="button_buy" value="Заказать">
+                </form>
+            </div>
+     </div>
+     </div>
+     <div class="food_cart_div">
+        <div class="food_cart">
+            <div class="food_img"><img src="./img/cola.png" alt=""><div class="food_cost"><h2 class="price">100 грн</h2></div></div>
+            
+            <div class="food_descr">
+               <div class="descr_text"><p class="def_text">Сладкая вода Coca-cola в стекле</p></div>
+                <div class="food_weight">Объем: 0,33 л</div>
+                <form action="./cart.html">
+                <input type="submit" class="button_buy" value="Заказать">
+                </form>
+            </div>
+     </div>
+     </div>
+          <div class="food_cart_div">
+        <div class="food_cart">
+            <div class="food_img"><img src="./img/cola.png" alt=""><div class="food_cost"><h2 class="price">100 грн</h2></div></div>
+            
+            <div class="food_descr">
+               <div class="descr_text"><p class="def_text">Сладкая вода Coca-cola в стекле</p></div>
+                <div class="food_weight">Объем: 0,33 л</div>
+                <form action="./cart.html">
+                <input type="submit" class="button_buy" value="Заказать">
+                </form>
+            </div>
+     </div>
+     </div>
+                     <div class="food_cart_div">
+        <div class="food_cart">
+            <div class="food_img"><img src="./img/cola.png" alt=""><div class="food_cost"><h2 class="price">100 грн</h2></div></div>
+            
+            <div class="food_descr">
+               <div class="descr_text"><p class="def_text">Сладкая вода Coca-cola в стекле</p></div>
+                <div class="food_weight">Объем: 0,33 л</div>
+                <form action="./cart.html">
+                <input type="submit" class="button_buy" value="Заказать">
+                </form>
+            </div>
+     </div>
+     </div>
+      <div class="food_cart_div">
+        <div class="food_cart">
+            <div class="food_img"><img src="./img/cola.png" alt=""><div class="food_cost"><h2 class="price">100 грн</h2></div></div>
+            
+            <div class="food_descr">
+               <div class="descr_text"><p class="def_text">Сладкая вода Coca-cola в стекле</p></div>
+                <div class="food_weight">Объем: 0,33 л</div>
+                <form action="./cart.html">
+                <input type="submit" class="button_buy" value="Заказать">
+                </form>
+            </div>
+     </div>
+     </div>
+            </div> 
+<!--
+     <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+-->
+           <script type="text/javascript">
+jQuery(document).ready(function() {
+	jQuery("#countries").msDropdown();
+})</script>
+</body>
+</html>

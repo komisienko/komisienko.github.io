@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3">
+    <link rel="stylesheet" href="./css/app.css">
+<!--    <script src="http://www.marghoobsuleman.com/misc/jquery.js"></script>-->
+        <!-- <msdropdown> -->
+        <script src="./js/jquery/jquery-1.8.2.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="./css/msdropdown/dd.css" />
+        <script src="./js/msdropdown/jquery.dd.min.js"></script>
+        <!-- </msdropdown> -->
+        <link rel="stylesheet" type="text/css" href="./css/msdropdown/flags.css" />
+</head>
+<body>
+    <div class="row">
+        <div class="room_name">
+            <h2 class="room_id color_grey center">Номер 101</h2>
+            <div class="flag_chose">
+                <select name="countries" id="countries" style="width:50;">
+
+                  <option value='ru' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag ru" data-title="Russian Federation"></option>
+
+                  <option value='ua' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag ua" data-title="Ukraine"></option>
+
+                  <option value='us' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag us" data-title="United States"></option>
+                </select>
+            </div>
+        </div>
+        <div class="deep center">
+            <a class="deep_text">Меню</a>
+        </div>
+        
+        <div class="condition">
+            <div class="eco_comfort">
+                <div class="eco">
+                    <img src="./img/leaf_40x40.svg" style="height: 40px; width: 40px; position: relative;
+    float: left;
+    margin-left: 27px;
+    margin-top: 20px;" alt="" class="eco_img">
+                    <p class="eco_text color_grey">Эконом</p>
+                </div>
+                <div class="comfort">
+                   <p class="comfort_text color_grey">Комфорт</p>
+                    <img src="./img/couch_40x40.svg" style="height: 40px;float: right;padding-right: 35px; padding-top: 3px;" alt="" class="comfort_img">
+                </div>
+            </div>
+            <div class="temperature_panel">
+                <p class="current_temperature center color_grey ">20<span class="deg">&deg;C</span></p>
+                <div class="temperature_correct">
+                <div class="minus"><input type="button" value="-"></div>
+                <div class="plus"><input type="button" value="+"></div>
+                </div>
+            </div>
+        </div>
+        <div class="info_panel">
+            <p class="info_temp color_grey">Сейчас в номере <span style="font-size: 21px">28&deg;С</span></p>
+            <p class="info_humidity color_grey"><img src="./img/drop_20x20.svg" style="height: 20px; position: relative; margin-bottom: -3px;" alt=""> 70%</p>
+        </div>
+        <div class="control_services">
+            <a href="./manage.html"><div class="control">
+                <img src="./img/door_40x40.svg" style="height: 40px;position: relative;left: 16px;top: 6px;" alt="">
+                <p class="control_room color_blue">Управлять номером</p>
+            </div></a>
+            <a href="./services.html"><div class="services">
+                <img src="./img/restaurant_40x40.svg" style="height: 40px; position: relative;
+    top: 8px;
+    left: 18px;" alt="">
+                <p class="services_room color_blue">Услуги</p>
+            </div></a>
+        </div>
+        <script type="text/javascript">
+jQuery(document).ready(function() {
+	jQuery("#countries").msDropdown();
+})</script>
+    </div>
+</body>
+</html>
