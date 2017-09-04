@@ -72,7 +72,7 @@ header {
 /*--------Текущее время------*/
 #current_data{
 	height: 52px;
-	line-height: 1.7;
+	line-height: 1.5;
 	padding-top: 7px;
 	width: 60px;
 	display: inline-block;
@@ -326,6 +326,7 @@ body {
     -moz-transition: opacity .5s .1s, -moz-transform .5s .1s;
     -ms-transition: opacity .5s .1s, -ms-transform .5s .1s;
     transition: opacity .5s .1s, transform .5s .1s;
+	overflow: hidden;
 }
 [id='nav_r-toggle']:checked ~ .nav_r > ul > li {
     opacity: 1;
@@ -529,12 +530,13 @@ input[type=checkbox]:checked ~ .img_27{
 	float: right;
     width: 115px;
     margin-right: 20px;
-/*    padding-top: 10px;*/
+    padding-top: 10px;
 }
 .res {
     height: 100%;
-    width: 245px;
+    width: auto;
     float: right;
+	margin-right: 20px;
 }
 
 /*--------end flag------*/
@@ -1108,3 +1110,66 @@ margin: 10px;
     font-size: 24px;
 }
 /*-----end--POPUP-----------*/
+
+.admin_general_out{
+	width: 640px;
+	margin: 0 auto;	
+	display: block
+}
+.admin_general_in{
+	padding: 10px;
+	display: block;
+	padding-top: 20px;
+}
+
+.admin_general_in ul,
+.admin_general_in li{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.admin_general_in li{
+	display: inline-block;
+	width: 200px;
+	height: 100px;
+	position: relative;
+		overflow: hidden;
+	cursor: pointer;
+}
+.amin_general_in li a{
+	cursor: pointer; 
+	text-decoration: none;
+		user-select: none;
+	position: relative;
+
+}
+.admin_general_in img{
+	min-width: 100%;
+	display: block;
+	height: 54px;
+	width: 54px;
+}
+.descr{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+/*	background-color: rgba(0,0,0,.5);*/
+	padding-top: 75px;
+	text-align: center;
+	color: #fff;
+}
+/*.ink styles - the elements which will create the ripple effect. The size and position of these elements will be set by the JS code. Initially these elements will be scaled down to 0% and later animated to large fading circles on user click.*/
+.ink {
+	display: block; position: absolute;
+	background: hsla(199, 15%, 93%, 0.5);
+	border-radius: 100%;
+	transform: scale(0);
+}
+/*animation effect*/
+.ink.animate {animation: ripple 0.65s linear;}
+@keyframes ripple {
+	/*scale the element to 250% to safely cover the entire link and fade it out*/
+	100% {opacity: 0; transform: scale(2.5);}
+}
