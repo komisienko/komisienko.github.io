@@ -928,8 +928,13 @@ float:left;
 	color: #ffffff;
 	line-height: 50px;
 }
-
-
+.add_person a{
+	text-decoration: none;
+	color: #fff;
+	display: block;
+	height: 100%;
+	width: 100%;
+}
 .img_sea{
 	height: 30px;
 	width: 30px;
@@ -1136,11 +1141,10 @@ margin: 10px;
 		overflow: hidden;
 	cursor: pointer;
 }
-.amin_general_in li a{
+.admin_general_in li a{
 	cursor: pointer; 
 	text-decoration: none;
-		user-select: none;
-	position: relative;
+	outline: none;
 
 }
 .admin_general_in img{
@@ -1159,6 +1163,45 @@ margin: 10px;
 	padding-top: 75px;
 	text-align: center;
 	color: #fff;
+}
+.two_elem_admin{
+	width: 424px;
+}
+.add_person_wrap{
+	display: block;
+	width: 740px;
+	height: 400px;
+	background-color: rebeccapurple;
+	margin: 0 auto;
+	    margin-top: 26px;
+}
+.add_p_header{
+	display: block;
+	width: 100%;
+	height: 40px;
+	background-color: red;
+}
+.md-checkbox_add_new_p{
+	margin: 0;
+	top: 8px;
+	display: inline-block;
+}
+.fb_icon{
+	float: right;
+	height: 40px;
+}
+.add_p_pass img{
+	display: inline-block;
+	width: 30px;
+	height: 34px;
+	float: left;
+	padding-top: 5px;
+}
+.add_p_pass{
+	display: inline-block;
+	line-height: 40px;	
+	float: right;
+	margin-right: 20px;
 }
 /*.ink styles - the elements which will create the ripple effect. The size and position of these elements will be set by the JS code. Initially these elements will be scaled down to 0% and later animated to large fading circles on user click.*/
 .ink {

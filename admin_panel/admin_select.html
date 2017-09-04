@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3">
+
+
+    <script src="./js/jquery/jquery-1.8.2.min.js"></script>
+        <link rel="stylesheet" href="./css/app.css">
+
+    <!--
+    
+    <link rel="stylesheet" type="text/css" href="./css/msdropdown/dd.css" />
+    <script src="./js/msdropdown/jquery.dd.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/msdropdown/flags.css" />
+-->
+</head>
+<body>
+    <input type="checkbox" id="nav_r-toggle" hidden>
+    <nav class="nav_r">
+        <label for="nav_r-toggle" class="nav_r-toggle" onclick></label>
+        <h2 class="logo"> 
+            <a href="#">Меню</a> 
+        </h2>
+        <ul>
+            <li><a href="#1">Один</a>
+                <li><a href="#2">Два</a>
+                    <li><a href="#3">Три</a>
+                        <li><a href="#4">Четыре</a>
+                            <li><a href="#5">Пять</a>
+                                <li><a href="#6">Шесть</a>
+                                    <li><a href="#7">Семь</a>
+        </ul>
+    </nav>
+    <div class="mask-content"></div>
+    <header>
+        <div class="nav_r_menu">
+            
+           <div class="back"><a href="./admin_menu.html" class="back"> <img class="back_icon" src="./img/back_12x20.svg" alt=""><span class="back_text t_ff">Назад</span></a>
+            </div>
+            <div class="menu">
+                <img src="./img/menu_20x30.svg" alt="" class="menu_icon">
+            </div>
+            <div class="flag">
+                <label class="flag_label">
+                    <input type="checkbox" id="hidden_chebox">
+                    <img class="img_27 ua" src="./img/ukraine.svg" alt="">
+                </label>
+                <label class="flag_label">
+                    <input type="checkbox" id="hidden_chebox">
+                    <img class="img_27 ru" src="./img/russia.svg" alt="">
+                </label>
+                <label class="flag_label">
+                    <input type="checkbox" id="hidden_chebox">
+                    <img class="img_27 usa" src="./img/usa.svg" alt="">
+                </label>
+            </div>
+            <div class="res">
+                <img class="img_40 dis_inline_block" src="./img/unnamed.png" alt="">
+                <div class="name">
+                    <p class="white fs_18">Билл Гейтс |</p>
+                </div>
+                <div class="doljnost">
+                    <p class="white fs_18">Администратор</p>
+                </div>
+            </div>
+            <div id="current_data"></div>
+        </div>
+    </header>
+         <div class="deep center">
+            <a class="deep_text" style="color: lightblue">Меню > Персонал</a>
+        </div>
+  	<div class="admin_general_out two_elem_admin">
+  		<div class="admin_general_in">
+			<ul>
+				<li style="	margin-bottom: 100px;
+"><a href="./employees2.html" onclick="url=this.href;setTimeout('location.href=url',500);this.href='javascript:void(0)';"><span class="descr">Список сотрудников</span><img src="img/workers_84x54.svg" alt="alt_1"></a></li>
+				<li style="	margin-bottom: 100px;
+"><a href="#"><span class="descr">Табель рабочего времени</span><img src="img/statistic_54x54.svg" alt="alt_2"></a></li>
+
+			</ul>
+  		</div>
+  	</div>
+
+<!--    <script src="js/jquery.dataTables.min.js"></script>-->
+    	<script src="js/all.js"></script>
+	<script src="./js/gmaterial_animate.js"></script>
+</body>
+
+</html>
