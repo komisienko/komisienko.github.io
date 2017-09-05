@@ -1181,6 +1181,18 @@ margin: 10px;
 	height: 40px;
 	background-color: red;
 }
+.add_p_body{
+	display: block;
+	height: 170px;
+	margin-bottom: 30px;
+}
+.add_p_footer{
+	display: block;
+	background-color: blue;
+	width: 100%;
+	height: 160px;
+	
+}
 .md-checkbox_add_new_p{
 	margin: 0;
 	top: 8px;
@@ -1206,8 +1218,9 @@ margin: 10px;
 .add_person_photo_select{
 	margin-top: 3px;
 	height: 167px;
-	width: 100%;
 	background-color: aquamarine;
+	display: inline-block;
+	float: left;
 }
 .photo_select{
 	overflow: hidden;
@@ -1234,7 +1247,54 @@ margin: 10px;
     top: 0;
 		width: 125px;
 }
+.add_greed_input{
+	display: inline-block;
+	width: 615px;
+    padding-top: 8px;
+}
+.add_greed_b1, .add_greed_b2, .add_greed_b3{
+	display: inline-block;
+	margin-left: 20px;
+}
+/*---------- add name passport adres other---------*/
+.add_p_input_fix{
+		padding-left: 64px;
+	font-size: 18px;
+	color: #828282;
+	outline: none;
+	outline-offset: none;
+}
+.add_p_name{
+	height: 52px;
+	width: 484px;
+	display: inline-block;
+	background-color: aqua;
+	position: relative;
+}
+#add_p_name[type="text"] {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 
+}
+.add_p_passport{
+	position: relative;
+	height: 52px;
+	width: 254px;
+	display: inline-block;
+background-color: chartreuse;
+	float: right;
+}
+#add_p_passport[type="text"] {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+/*------end- add name passport adres other---------*/
 /*.ink styles - the elements which will create the ripple effect. The size and position of these elements will be set by the JS code. Initially these elements will be scaled down to 0% and later animated to large fading circles on user click.*/
 .ink {
 	display: block; position: absolute;
