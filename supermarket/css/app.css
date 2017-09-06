@@ -49,7 +49,7 @@ header{
 display: inline-block;
 height: 100%;
 width: 100%;
-		transition: all 0.4s ease-in;
+		transition: all 0.2s ease-out;
 
 }
 .check_all{
@@ -146,6 +146,8 @@ padding: 0;
 	position: relative;
     margin: 0 auto;
 	top: -50px;
+	-webkit-box-shadow: 1px 1px 10px;
+	box-shadow: 1px 1px 10px;
 }
 
 .media_width_icon1{

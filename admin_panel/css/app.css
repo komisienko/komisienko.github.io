@@ -1173,35 +1173,37 @@ margin: 10px;
 	height: 400px;
 	background-color: rebeccapurple;
 	margin: 0 auto;
-	    margin-top: 26px;
 }
-.add_p_header{
+/* .add_p_header{
 	display: block;
 	width: 100%;
 	height: 40px;
 	background-color: red;
-}
+} */
 .add_p_body{
 	display: block;
 	height: 170px;
-	margin-bottom: 30px;
+	margin-bottom: 27px;
 }
 .add_p_footer{
 	display: block;
 	background-color: blue;
 	width: 100%;
-	height: 160px;
+	height: 100%;
 	
 }
+/*
 .md-checkbox_add_new_p{
 	margin: 0;
 	top: 8px;
 	display: inline-block;
-}
+}*/
+
 .fb_icon{
 	float: right;
 	height: 40px;
 }
+/*
 .add_p_pass img{
 	display: inline-block;
 	width: 30px;
@@ -1215,6 +1217,7 @@ margin: 10px;
 	float: right;
 	margin-right: 20px;
 }
+*/
 .add_person_photo_select{
 	margin-top: 3px;
 	height: 167px;
@@ -1258,41 +1261,80 @@ margin: 10px;
 }
 /*---------- add name passport adres other---------*/
 .add_p_input_fix{
-		padding-left: 64px;
+		padding-left: 40px;
 	font-size: 18px;
 	color: #828282;
 	outline: none;
 	outline-offset: none;
 }
-.add_p_name{
-	height: 52px;
-	width: 484px;
-	display: inline-block;
-	background-color: aqua;
+.add_p_name, .add_p_adress, .add_p_birthday{
+	height: 35px;
+	width: 614px;
+	display: block;
 	position: relative;
+	    margin-bottom: 2px;
 }
-#add_p_name[type="text"] {
+#add_p_name[type="text"], #add_p_adress[type="text"], #add_p_phone[type="text"],#add_p_email[type="text"], #add_p_inn[type="text"], #add_p_passport[type="text"] , #add_p_date_come[type="text"], #add_p_status[type="text"] ,#add_p_pay[type="text"], #add_p_pass[type="text"],
+#add_p_pass_rep[type="text"]{
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
+	border: none;
 
 }
-.add_p_passport{
-	position: relative;
-	height: 52px;
-	width: 254px;
+.add_p_birthday select{
+	height: 35px;
+	width: 75px;
+	border: none;
+	text-align: center;
+	outline: none;
 	display: inline-block;
-background-color: chartreuse;
-	float: right;
+	float: left;
+	margin-right: 2px;
 }
+
+.add_p_passport, .add_p_inn, .add_p_phone, .add_p_email, .add_p_pass,
+.add_p_pass_rep{
+	position: relative;
+	height: 35px;
+	width: 306px;
+	margin-bottom: 2px;
+	float: left;
+}
+.add_p_passport,.add_p_phone, .add_p_date_come, .add_p_status, .add_p_pass{
+	margin-right: 2px;	
+} 
+
 #add_p_passport[type="text"] {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+.add_p_date_come, .add_p_status , .add_p_pay{
+	position: relative;
+	width: 203.3px;
+	height: 35px;
+	float: left;
+	margin-bottom: 2px;
+}
+.hide_p_dmy{
+	display: none;
+}
+.select_p_gender{
+	float: left;
+	display: inline-block;
+	height: 35px;
+	vertical-align: middle;
+	    line-height: 35px;
+	padding-left: 20px;
+	color: #fff;
+}
+.select_p_gender label{
+	margin-right: 20px;
 }
 /*------end- add name passport adres other---------*/
 /*.ink styles - the elements which will create the ripple effect. The size and position of these elements will be set by the JS code. Initially these elements will be scaled down to 0% and later animated to large fading circles on user click.*/

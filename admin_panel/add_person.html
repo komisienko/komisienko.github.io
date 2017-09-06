@@ -73,14 +73,16 @@
             <a class="deep_text" style="color: lightblue">Меню > Персонал > Список сотрудников > Новая уч.запись</a>
         </div>
 		<div class="add_person_wrap">
-			<div class="add_p_header">
+<!-- 			<div class="add_p_header">
+			
 				  <div class="md-checkbox md-checkbox_add_new_p">
-                        <input type="checkbox" id="add_person_active">
-                        <label for="add_person_active">Учетная запись активирована</label>
-                    </div>
-                    <div class="fb_icon"><img src="./img/fb_icon.png" alt=""></div>
-                    <div class="add_p_pass white"><img src="./img/password.svg" alt="">Установить пароль</div>
-			</div>
+			                        <input type="checkbox" id="add_person_active">
+			                        <label for="add_person_active">Учетная запись активирована</label>
+			                    </div>
+			
+			                    <div class="fb_icon"><img src="./img/fb_icon.png" alt=""></div>
+			                    <div class="add_p_pass white"><img src="./img/password.svg" alt="">Установить пароль</div>
+			</div> -->
 			<div class="add_p_body">
 				<div class="add_person_photo_select">
 					<div class="photo_select">
@@ -149,9 +151,94 @@
 			</div>
 			<div class="add_p_footer">
 				<div class="add_p_name"><input type="text" id="add_p_name" class="add_p_input_fix" placeholder="Введите ФИО"></div>
+				
+				<div class="add_p_adress"><input type="text" id="add_p_adress" class="add_p_input_fix" placeholder="Адрес проживания"></div>
+				
+				<div class="add_p_birthday">
+					<select name="day" id="select_p_day">
+						<option value="" disabled selected class="hide_p_dmy">День</option>
+    					<option value="day_1">1</option>
+    					<option value="day_2">2</option>
+    					<option value="day_3">3</option>
+    					<option value="day_4">4</option>
+    					<option value="day_5">5</option>
+    					<option value="day_6">6</option>
+    					<option value="day_7">7</option>
+    					<option value="day_8">8</option>
+    					<option value="day_9">9</option>
+    					<option value="day_10">10</option>
+    					<option value="day_11">11</option>
+    					<option value="day_12">12</option>
+    					<option value="day_13">13</option>
+    					<option value="day_14">14</option>
+    					<option value="day_15">15</option>
+    					<option value="day_16">16</option>
+    					<option value="day_17">17</option>
+    					<option value="day_18">18</option>
+    					<option value="day_19">19</option>
+    					<option value="day_20">20</option>
+    					<option value="day_21">21</option>
+    					<option value="day_22">22</option>
+    					<option value="day_23">23</option>
+    					<option value="day_24">24</option>
+    					<option value="day_25">25</option>
+    					<option value="day_26">26</option>
+    					<option value="day_27">27</option>
+    					<option value="day_28">28</option>
+    					<option value="day_29">29</option>
+    					<option value="day_30">30</option>
+    					<option value="day_31">31</option>
+					</select>
+					<select name="month" id="select_p_month">
+						<option value="" disabled selected class="hide_p_dmy">Месяц</option>
+						<option value="month_1">Январь</option>
+						<option value="month_2">Февраль</option>
+						<option value="month_3">Март</option>
+						<option value="month_4">Апрель</option>
+						<option value="month_5">Май</option>
+						<option value="month_6">Июнь</option>
+						<option value="month_7">Июль</option>
+						<option value="month_8">Август</option>
+						<option value="month_9">Сентябрь</option>
+						<option value="month_10">Октябрь</option>
+						<option value="month_11">Ноябрь</option>
+						<option value="month_12">Декабрь</option>
+					</select>
+					<select name="year" id="select_p_year">
+						<option value="" disabled selected class="hide_p_dmy">Год</option>
+						<option value="year_1983">1983</option><option value="year_1984">1984</option><option value="year_1985">1985</option><option value="year_1986">1986</option><option value="year_1987">1987</option><option value="year_1988">1988</option><option value="year_1989">1989</option><option value="year_1990">1990</option><option value="1991">1991</option><option value="year_1992">1992</option><option value="year_1993">1993</option><option value="year_1994">1994</option><option value="year_1995">1995</option><option value="year_1996">1996</option><option value="year_1997">1997</option><option value="year_1998">1998</option><option value="year_1999">1999</option><option value="year_2000">2000</option><option value="year_2001">2001</option><option value="year_2002">2002</option><option value="year_2003">2003</option><option value="year_2004">2004</option><option value="year_2005">2005</option><option value="year_2006">2006</option><option value="year_2007">2007</option><option value="year_2008">2008</option><option value="year_2009">2009</option><option value="year_2010">2010</option>
+						
+					</select>
+					<div class="select_p_gender">
+					<form action="" > 
+					  <input type="radio" name="gender" value="male" id="p_male"><label for="p_male"> Мужчина</label>
+  					  <input type="radio" name="gender" value="female" id="p_female"><label for="p_female">Женщина</label> 
+					</form>
+					</div>
+				</div>
+				<div class="add_p_phone"><img src="./img/back_12x20.svg"  style="    height: 100%;
+    width: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: red;" alt=""><input type="text" id="add_p_phone" class="add_p_input_fix" placeholder="Номер телефона"></div>
+				
+				<div class="add_p_email"><img src="" alt=""><input type="text" id="add_p_email" class="add_p_input_fix" placeholder="Электронная почта"></div>
+				
 				<div class="add_p_passport"><input type="text" id="add_p_passport" class="add_p_input_fix" placeholder="Номер паспорта"></div>
-				<div class="add_p_adress"></div>
-				<div class="add_p_phone"></div>
+				
+				<div class="add_p_inn"><input type="text" id="add_p_inn" class="add_p_input_fix" placeholder="ИНН"></div>
+				<div class="add_p_date_come"><input type="text" id="add_p_date_come" class="add_p_input_fix" placeholder="Дата поступления"></div>
+				
+				<div class="add_p_status"><input type="text" id="add_p_status" class="add_p_input_fix" placeholder="Статус"></div>
+				
+				<div class="add_p_pay"><input type="text" id="add_p_pay" class="add_p_input_fix" placeholder="Ставка"></div>
+				
+				<div class="add_p_pass"><input type="text" id="add_p_pass" class="add_p_input_fix" placeholder="Пароль"></div>
+				
+				<div class="add_p_pass_rep"><input type="text" id="add_p_pass_rep" class="add_p_input_fix" placeholder="Повторите пароль"></div>
+				
+				
 			</div>
 		</div>
 		
