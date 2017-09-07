@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3">
+        <script src="./js/jquery/jquery-1.8.2.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js">
+
+	    <link rel="stylesheet" href="./css/app.css">
+  <!--   <link rel="stylesheet" type="text/css" href="./css/msdropdown/dd.css" /> -->
+    <!--  calendar -->
+    <script src="./js/tcal.js"></script>
+    <!-- <script src="./js/tcal_en.js"></script>       <link rel="stylesheet" href="./css/tcal.css"> -->
+    <!-- навигация -->
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <!--        <link rel="stylesheet" href="./css/right-nav-style.css">-->
+    
+</head>
+
+<body>
+ <input type="checkbox" id="nav_r-toggle" hidden>
+    <nav class="nav_r">
+        <label for="nav_r-toggle" class="nav_r-toggle" onclick></label>
+        <h2 class="logo"> 
+            <a href="#">Меню</a> 
+        </h2>
+        <ul>
+            <li><a href="#1">Один</a>
+                <li><a href="#2">Два</a>
+                    <li><a href="#3">Три</a>
+                        <li><a href="#4">Четыре</a>
+                            <li><a href="#5">Пять</a>
+                                <li><a href="#6">Шесть</a>
+                                    <li><a href="#7">Семь</a>
+        </ul>
+    </nav>
+    <div class="mask-content"></div>
+    <header>
+        <div class="nav_r_menu">
+       
+                       <div class="back"><a href="./index.html" class="back"> <img class="back_icon" src="./img/back_12x20.svg" alt=""><span class="back_text t_ff">Назад</span></a>
+                        </div>
+            <div class="menu">
+                <img src="./img/menu_20x30.svg" alt="" class="menu_icon">
+            </div>
+            <div class="flag">
+                <label class="flag_label">
+                    <input type="checkbox" id="hidden_chebox">
+                    <img class="img_27 ua" src="./img/ukraine.svg" alt="">
+                </label>
+                <label class="flag_label">
+                    <input type="checkbox" id="hidden_chebox">
+                    <img class="img_27 ru" src="./img/russia.svg" alt="">
+                </label>
+                <label class="flag_label">
+                    <input type="checkbox" id="hidden_chebox">
+                    <img class="img_27 usa" src="./img/usa.svg" alt="">
+                </label>
+            </div>
+            <div class="res">
+                <img class="img_40 dis_inline_block" src="./img/unnamed.png" alt="">
+                <div class="name">
+                    <p class="white fs_18">Билл Гейтс |</p>
+                </div>
+                <div class="doljnost">
+                    <p class="white fs_18">Администратор</p>
+                </div>
+            </div>
+            <div id="current_data"></div>
+        </div>
+    </header>
+ <div class="deep center">
+            <a class="deep_text" style="color: lightblue">Меню > Бронирование номера > Список свободных номеров</a>
+        </div>
+
+    <div class="wrap" style="margin-top: 20px">
+    	<div class="acepted_date">
+    		10/09/17 - 20/09/17
+    	</div>
+<table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>Номер</th>
+                <th>Тип</th>
+                <th>Вид из номера</th>
+                <th>Цена за сутки</th>
+                <th>Цена общая</th>
+            </tr>
+        </thead>
+<!--         <tfoot>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Age</th>
+                <th>Start date</th>
+                <th>Salary</th>
+            </tr>
+        </tfoot> -->
+        <tbody>
+            <tr>
+            	<td>111</td>
+            	<td>Люкс</td>
+            	<td>Океан</td>
+            	<td>22 000грн</td>
+            	<td>132 000грн</td>
+            </tr> <tr>
+            	<td>112</td>
+            	<td>Люкс</td>
+            	<td>Океан</td>
+            	<td>18 000грн</td>
+            	<td>732 000грн</td>
+            </tr> <tr>
+            	<td>113</td>
+            	<td>Эконом</td>
+            	<td>Океан</td>
+            	<td>29 000грн</td>
+            	<td>632 000грн</td>
+            </tr> <tr>
+            	<td>114</td>
+            	<td>Стандарт</td>
+            	<td>Город</td>
+            	<td>25 000грн</td>
+            	<td>232 000грн</td>
+            </tr> <tr>
+            	<td>115</td>
+            	<td>Люкс</td>
+            	<td>Океан</td>
+            	<td>27 000грн</td>
+            	<td>142 000грн</td>
+            </tr> <tr>
+            	<td>116</td>
+            	<td>Семейный</td>
+            	<td>басейн</td>
+            	<td>342 000грн</td>
+            	<td>162 000грн</td>
+            </tr> <tr>
+            	<td>117</td>
+            	<td>Полулюкс</td>
+            	<td>Лес</td>
+            	<td>22 000грн</td>
+            	<td>172 000грн</td>
+            </tr> <tr>
+            	<td>118</td>
+            	<td>Люкс</td>
+            	<td>Океан</td>
+            	<td>42 000грн</td>
+            	<td>182 000грн</td>
+            </tr>
+            <tr>
+            	<td>121</td>
+            	<td>Семейный</td>
+            	<td>Океан</td>
+            	<td>52 000грн</td>
+            	<td>132 000грн</td>
+            </tr><tr>
+            	<td>124</td>
+            	<td>Люкс</td>
+            	<td>Байсейн</td>
+            	<td>32 000грн</td>
+            	<td>144 000грн</td>
+            </tr><tr>
+            	<td>154</td>
+            	<td>Стандартный</td>
+            	<td>Океан</td>
+            	<td>12 000грн</td>
+            	<td>1333 000грн</td>
+            </tr><tr>
+            	<td>164</td>
+            	<td>Стандартный</td>
+            	<td>Океан</td>
+            	<td>13 000грн</td>
+            	<td>143 000грн</td>
+            </tr><tr>
+            	<td>154</td>
+            	<td>Стандартный</td>
+            	<td>Басейн</td>
+            	<td>15 000грн</td>
+            	<td>321 000грн</td>
+            </tr>
+        </tbody>
+    </table>
+	</div>
+
+
+
+    <!--- Scrip plus min------>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script>
+
+
+		$(document).ready(function() {
+    $('#example').DataTable();
+} );
+    </script>
+     <script src="js/all.js"></script>
+        	
+</body>
+
+</html>

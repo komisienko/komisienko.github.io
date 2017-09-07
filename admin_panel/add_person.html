@@ -230,15 +230,36 @@
 				<div class="add_p_inn"><input type="text" id="add_p_inn" class="add_p_input_fix" placeholder="ИНН"></div>
 				<div class="add_p_date_come"><input type="text" id="add_p_date_come" class="add_p_input_fix" placeholder="Дата поступления"></div>
 				
-				<div class="add_p_status"><input type="text" id="add_p_status" class="add_p_input_fix" placeholder="Статус"></div>
+				<div class="add_p_status">
+				<select name="" id="add_p_status" class="add_p_input_fix">
+					<option value="" disabled selected class="hide_p_dmy">Статус</option>
+					<option value="add_p_status_1">Стажируется</option>
+					<option value="add_p_status_2">Работает</option>
+					<option value="add_p_status_3" disabled style="color:#eaeaea;">Уволен</option>
+				</select>
+				</div>
 				
 				<div class="add_p_pay"><input type="text" id="add_p_pay" class="add_p_input_fix" placeholder="Ставка"></div>
 				
 				<div class="add_p_pass"><input type="text" id="add_p_pass" class="add_p_input_fix" placeholder="Пароль"></div>
 				
 				<div class="add_p_pass_rep"><input type="text" id="add_p_pass_rep" class="add_p_input_fix" placeholder="Повторите пароль"></div>
+				<div class="right_p_buttons">
+						<div class="fb_login">
+							<img src="./img/fb_icon.png" alt="">
+						</div>
+					
+						<div class="schedule white"><a href="#">График работы</a></div>
+						<div class="scan white"><p>Загрузить скан</p><input type="file"></div>
+						<div class="md-checkbox" style="margin-left: 55px;">
+									<input type="checkbox" id="add_p_activate">
+									<label for="add_p_activate">Активировать</label>
+								</div>
+				</div>
+				<div class="buttons_save_key">
 				
-				
+					<button class="p_save">Сохранить</button> <button class="p_key">Сделать ключ</button>
+				</div>
 			</div>
 		</div>
 		

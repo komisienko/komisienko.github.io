@@ -705,6 +705,10 @@ input[type=checkbox]:checked ~ .img_27{
     border: none;
     outline: none;
     background-color: #f90;
+	color: #fff;
+}
+.color_yellow:active{
+	background-color: #E2810C;
 }
 .color_green{
         background-color:forestgreen;
@@ -1170,8 +1174,7 @@ margin: 10px;
 .add_person_wrap{
 	display: block;
 	width: 740px;
-	height: 400px;
-	background-color: rebeccapurple;
+	height: 550px;
 	margin: 0 auto;
 }
 /* .add_p_header{
@@ -1187,41 +1190,14 @@ margin: 10px;
 }
 .add_p_footer{
 	display: block;
-	background-color: blue;
-	width: 100%;
-	height: 100%;
+	width: 740px;
+	height: 332px;
 	
 }
-/*
-.md-checkbox_add_new_p{
-	margin: 0;
-	top: 8px;
-	display: inline-block;
-}*/
 
-.fb_icon{
-	float: right;
-	height: 40px;
-}
-/*
-.add_p_pass img{
-	display: inline-block;
-	width: 30px;
-	height: 34px;
-	float: left;
-	padding-top: 5px;
-}
-.add_p_pass{
-	display: inline-block;
-	line-height: 40px;	
-	float: right;
-	margin-right: 20px;
-}
-*/
 .add_person_photo_select{
 	margin-top: 3px;
 	height: 167px;
-	background-color: aquamarine;
 	display: inline-block;
 	float: left;
 }
@@ -1265,17 +1241,6 @@ margin: 10px;
 	font-size: 18px;
 	color: #828282;
 	outline: none;
-	outline-offset: none;
-}
-.add_p_name, .add_p_adress, .add_p_birthday{
-	height: 35px;
-	width: 614px;
-	display: block;
-	position: relative;
-	    margin-bottom: 2px;
-}
-#add_p_name[type="text"], #add_p_adress[type="text"], #add_p_phone[type="text"],#add_p_email[type="text"], #add_p_inn[type="text"], #add_p_passport[type="text"] , #add_p_date_come[type="text"], #add_p_status[type="text"] ,#add_p_pay[type="text"], #add_p_pass[type="text"],
-#add_p_pass_rep[type="text"]{
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1284,6 +1249,62 @@ margin: 10px;
 	border: none;
 
 }
+.add_p_name, .add_p_adress, .add_p_birthday{
+	height: 35px;
+	width: 614px;
+	display: block;
+	position: relative;
+	    margin-bottom: 2px;
+}
+
+#add_p_name[type="text"]{
+    background-image: url(../img/person_add.svg);
+    background-repeat: no-repeat;
+    background-position: 15px 10px;
+}
+#add_p_adress[type="text"]{
+	background-image: url(../img/home_16x14.svg);
+    background-repeat: no-repeat;
+    background-position: 15px 10px;
+}
+#add_p_phone[type="text"]{
+	background-image: url(../img/phone_16x16.svg);
+    background-repeat: no-repeat;
+    background-position: 15px 10px;
+}
+#add_p_email[type="text"]{
+	background-image: url(../img/mail_16x13.svg);
+    background-repeat: no-repeat;
+    background-position: 15px 10px;
+}
+#add_p_inn[type="text"], #add_p_passport[type="text"]{
+	background-image: url(../img/id_16x14.svg);
+    background-repeat: no-repeat;
+    background-position: 15px 10px;
+}
+#add_p_date_come[type="text"]{
+	background-image: url(../img/calendar_15x16.svg);
+    background-repeat: no-repeat;
+    background-position: 15px 10px;
+}
+#add_p_status{
+	background-image: url(../img/star_16x16.svg);
+    background-repeat: no-repeat;
+    background-position: 15px 9px;
+}
+
+#add_p_pass[type="text"],
+#add_p_pass_rep[type="text"]{
+	background-image: url(../img/password_13x16.svg);
+    background-repeat: no-repeat;
+    background-position: 15px 8px;
+}
+#add_p_pay[type="text"]{
+	background-image: url(../img/money_9x16.svg);
+    background-repeat: no-repeat;
+    background-position: 15px 10px;
+}
+
 .add_p_birthday select{
 	height: 35px;
 	width: 75px;
@@ -1293,6 +1314,7 @@ margin: 10px;
 	display: inline-block;
 	float: left;
 	margin-right: 2px;
+	color: #828282;
 }
 
 .add_p_passport, .add_p_inn, .add_p_phone, .add_p_email, .add_p_pass,
@@ -1316,7 +1338,7 @@ margin: 10px;
 }
 .add_p_date_come, .add_p_status , .add_p_pay{
 	position: relative;
-	width: 203.3px;
+	width: 203.4px;
 	height: 35px;
 	float: left;
 	margin-bottom: 2px;
@@ -1338,11 +1360,100 @@ margin: 10px;
 }
 /*------end- add name passport adres other---------*/
 /*.ink styles - the elements which will create the ripple effect. The size and position of these elements will be set by the JS code. Initially these elements will be scaled down to 0% and later animated to large fading circles on user click.*/
+
+.buttons_save_key{
+	float: left;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+.buttons_save_key button{
+	height: 52px;
+	width: 245px;
+	color: #fff;
+	font-size: 21px;
+	border: none;
+	outline: none;
+}
+.p_save{
+	background-color:#FF9908;
+}
+.p_save:active{
+	background-color: #E2810C;
+}
+.p_key{
+	background-color:#72D372;
+}
+.p_key:active{
+	background-color: #3F993F;
+}
+.right_p_buttons{
+	height: 220px;
+	width: 235px;
+	    margin-left: 616px;
+    top: 269px;
+	position: absolute;
+}
+.schedule, .scan{
+	position: relative;
+	margin: 0 auto;
+	height: 40px;
+	width: 154px;
+	background: none;
+	border-radius: 20px;
+	border: 1px solid #fff;
+	overflow: hidden;
+	text-align: center;
+	padding-top: 10px;
+	
+}
+.schedule>a {
+	text-decoration: none;
+	color: #fff;
+}
+.scan{
+	margin-top: 20px;
+}
+.scan input[type="file"]{
+	position: absolute;
+	    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	opacity: 0;
+}
+.fb_login{
+	text-align: center;
+	margin-bottom: 20px
+}
 .ink {
 	display: block; position: absolute;
 	background: hsla(199, 15%, 93%, 0.5);
 	border-radius: 100%;
 	transform: scale(0);
+}
+table.dataTable{
+		    background-color: #f9f9f9;
+}
+.table-striped>tbody>tr:nth-of-type(even){
+	    background-color: #f9f9f9;
+}
+.table-striped>tbody>tr:nth-of-type(tr){
+	    background-color: #f9f9f9;
+}
+div.dataTables_wrapper div.dataTables_filter input,div.dataTables_wrapper div.dataTables_length select{
+	color: #000;
+}
+.acepted_date{
+	width: 245px;
+	height: 52px;
+	background-color: #fff;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	text-align: center;
+	line-height: 52px;
+	font-size: 21px;
+	
 }
 /*animation effect*/
 .ink.animate {animation: ripple 0.65s linear;}
