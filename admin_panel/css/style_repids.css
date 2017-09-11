@@ -12,7 +12,11 @@ body {
 #table1,#table2 {
 	margin-bottom: 20px;
 }
-
+#right{
+	width: 730px;
+	    overflow: auto;
+    position: relative;
+}
 /* drag container (contains two tables) */
 #redips-drag {
 	margin: auto;
