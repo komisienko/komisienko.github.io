@@ -546,7 +546,13 @@ input[type=checkbox]:checked ~ .img_27{
     margin: 0 auto;
     margin-top: 201px;
 }
+.wrap_room_settings{
 
+
+	    width: 737px;
+    margin: 0 auto;
+		    margin-top: 20px;
+}
 /*---------Guests-------*/
 
 #guests ul {
@@ -1426,12 +1432,7 @@ margin: 10px;
 	text-align: center;
 	margin-bottom: 20px
 }
-.ink {
-	display: block; position: absolute;
-	background: hsla(199, 15%, 93%, 0.5);
-	border-radius: 100%;
-	transform: scale(0);
-}
+
 table.dataTable{
 		    background-color: #f9f9f9;
 }
@@ -1455,7 +1456,36 @@ div.dataTables_wrapper div.dataTables_filter input,div.dataTables_wrapper div.da
 	font-size: 21px;
 	
 }
+#free_room>tbody>tr:hover,tbody>tr:active,tbody>tr:focus{
+   background-color: #E4F8F8;
+    border-left: 5px solid #3ECCCC;
+}
+
+/*---------Room settings----------*/
+.room_settings_radio{
+	color: #fff;
+}
+.room_settings_radio_form{
+	padding: 20px;
+			text-align: center;
+	display: block;
+	padding-left: 80px;
+
+}
+.room_settings_radio_form label{
+	display: inline-block;
+	width: 33%;
+	float: left;
+}
+
+/*----END--Room settings----------*/
 /*animation effect*/
+.ink {
+	display: block; position: absolute;
+	background: hsla(199, 15%, 93%, 0.5);
+	border-radius: 100%;
+	transform: scale(0);
+}
 .ink.animate {animation: ripple 0.65s linear;}
 @keyframes ripple {
 	/*scale the element to 250% to safely cover the entire link and fade it out*/

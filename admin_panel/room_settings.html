@@ -37,9 +37,9 @@
     <div class="mask-content"></div>
     <header>
         <div class="nav_r_menu">
-<!--             
-                       <div class="back"><a href="./employees2.html" class="back"> <img class="back_icon" src="./img/back_12x20.svg" alt=""><span class="back_text t_ff">Назад</span></a>
-                        </div> -->
+             
+                       <div class="back"><a href="./free_rooms.html" class="back"> <img class="back_icon" src="./img/back_12x20.svg" alt=""><span class="back_text t_ff">Назад</span></a>
+                        </div> 
             <div class="menu">
                 <img src="./img/menu_20x30.svg" alt="" class="menu_icon">
             </div>
@@ -70,10 +70,10 @@
         </div>
     </header>
  <div class="deep center">
-            <a class="deep_text" style="color: lightblue">Меню > Бронирование номера </a>
+            <a class="deep_text" style="color: lightblue">Меню > Бронирование номера > Спецификации нормера </a>
         </div> 
 
-    <div class="wrap">
+    <div class="wrap_room_settings">
 
         <ul id="guests">
             <li>
@@ -96,11 +96,11 @@
                                     </p>
                                 </button>
                             </div>
+                       
                             <input class="input-group-field" type="number" name="quantity" value="0">
                             <div class="input-group-button">
                                 <button type="button" class="button button_plus" data-quantity="plus" data-field="quantity" value="+">
-									<p class="button_text">+</p></button>
-                            </div>
+									<p class="button_text">+</p></button>                            </div>
                         </div>
                     </li>
                     <li><a href="#">Дети до 12 лет</a>
@@ -114,26 +114,32 @@
                             <input class="input-group-field" type="number" name="quantity" value="0">
                             <div class="input-group-button">
                                 <button type="button" class="button button_plus" data-quantity="plus" data-field="quantity" value="+">
-									<p class="button_text">+</p></button>
+                                    <p class="button_text">+</p></button>    
                             </div>
                         </div>
 
                     </li>
                 </ul>
-         </li>
+            </li>
 
         </ul>
-
+		<div class="room_settings_radio">
+			<form class="room_settings_radio_form" action="">
+				<label for="rsr_1"><input type="radio" name="rsr" value="rsr_1" id="rsr_1"> Эконом 3000грн</label> 
+			  <label for="rsr_2"><input type="radio" name="rsr" value="rsr_2" id="rsr_2"> Стандарт 17 000грн</label>
+			 <label for="rsr_3"> <input type="radio" name="rsr" value="rsr_3" id="rsr_3"> Люкс  22 000грн</label>
+</form>
+		</div>
 
         <div class="found">
-           <a href="./free_rooms.html"><button class="color_yellow" >Показать</button></a> 
+           <a href="#"><button class="color_yellow" >Поселить</button></a> 
         </div>
     </div>
 
 
 
-
 <!--
+
     <script type="text/javascript">
         jQuery(document).ready(function() {
             jQuery("#countries").msDropdown();
