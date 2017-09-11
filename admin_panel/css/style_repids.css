@@ -17,6 +17,7 @@ body {
 #redips-drag {
 	margin: auto;
 	width: 730px;
+	overflow: auto;
 }
 
 /* drag objects (DIV inside table cells) */
@@ -46,6 +47,7 @@ body {
 /* drag objects border for the first table */
 .t1 {
 	border: 1px solid #9B9EA2;
+	background-color:bisque;
 }
 
 /* tables */
