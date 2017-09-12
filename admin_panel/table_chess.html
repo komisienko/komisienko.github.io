@@ -420,17 +420,11 @@ redips.init = function () {
 	// prepare node list of DIV elements in table2
 	redips.divNodeList = document.getElementById('table2').getElementsByTagName('div');
 	// show / hide report buttons (needed for dynamic version - with index.php)
-	
-	// element is dropped
-
-
-	// after element is deleted from the timetable, print message
 	rd.event.deleted = function () {
 		redips.printMessage('Content has been deleted!');
 		// show / hide report buttons
 		redips.reportButton();
 	};
-	
 	// if any element is clicked, then make all subjects in timetable visible
 	rd.event.clicked = function () {
 		redips.showAll();
@@ -446,15 +440,6 @@ redips.save = function () {
 	window.location.href = 'db_save.php?' + content;
 };
 
-
-// method shows subject occurring in timetable
-
-
-
-// show/hide report buttons
-
-
-
 // print message
 redips.printMessage = function (message) {
 	document.getElementById('message').innerHTML = message;
@@ -467,8 +452,7 @@ redips.showAll = function () {
 	for (i = 0; i < redips.divNodeList.length; i++) {
 	}
 };
-
-
+	
 // add onload event listener
 if (window.addEventListener) {
 	window.addEventListener('load', redips.init, false);
