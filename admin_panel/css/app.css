@@ -1541,8 +1541,12 @@ div.dataTables_wrapper div.dataTables_filter input,div.dataTables_wrapper div.da
     width: 190px;
     height: 85px;
     background-color: #fff;
-        position: relative;
+        position: absolute;
     z-index: 9999;
+}
+.tc_choise_guests_how ul{
+    border: 1px solid;
+    margin-bottom: 0;
 }
 .tc_choise_guests_how ul li{
     list-style-type: none;
@@ -1570,9 +1574,16 @@ div.dataTables_wrapper div.dataTables_filter input,div.dataTables_wrapper div.da
     
     width: 932px;
 	height: 462px;
-    overflow-x: scroll; /* прокрутка по горизонтали */
-overflow-y: scroll; /* прокрутка по вертикали */
-    position: absolute;
+/*     overflow-x: scroll; прокрутка по горизонтали
+    overflow-y: scroll; прокрутка по вертикали */
+    position: relative;
+        -webkit-user-select: none;
+    /* user-select -- это нестандартное свойство */
+
+    -moz-user-select: none;
+    /* поэтому нужны префиксы */
+    overflow: hidden;
+    -ms-user-select: none;
 }
 .tc_choice_room_type{
     margin-left: 5px;
@@ -1621,19 +1632,31 @@ font-size: 21px
     outline: 0 !important;
 }
 
-.tc_table{
+#tc_table_id{
     color: #000; /* Цвет текста */
     background-color: #fff;
 }
-
+.fixRegion > th, tr{
+    background-color: #fff;
+}
 .tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{font-family:Arial, sans-serif;font-size:12px;padding:5px 20px;border-style:solid;border-width:1px;border-color:#c7d7ca ; overflow:hidden;word-break:normal;}
-.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:0px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;    border-color: #c7d7ca; border-bottom-width: 2px;
-    border-bottom-color: #000;}
+.tg td{font-family:Arial, sans-serif;font-size:12px;padding:5px 20px;border-style:solid;border-width:1px;border-color:#c7d7ca ; overflow:hidden;word-break:normal; }
+.tg th {font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:0px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;    border-color: #c7d7ca; /* border-bottom-width: 2px; */
+}
 .tg .tg-28r4{font-size:13px;vertical-align:top;}
 /*.tg .tg-yw4l{vertical-align:top}*/
 .tg-yzt1, .tg-yw4l{
     text-align: center;
+        font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 0px 20px;
+    border-style: solid;
+ border-width: 1px;
+         overflow: hidden;
+    word-break: normal;
+    border-color: #c7d7ca;
+ 
 }
 .tc_numb_descr{
     width: 75px;
@@ -1650,9 +1673,9 @@ font-size: 21px
 .delete_padding_table{
     padding: 0px 0px!important;
 }
-.tg_yw4l_br{
+/* .tg_yw4l_br{
     border-right-color: #000!important;
-    border-right-width: 2px!important;
+    border-right-width: 1px!important;
 }
 .tg-28r4{
     border: none!important;
@@ -1660,6 +1683,9 @@ font-size: 21px
     background-color: #383838!important;
     border-top-color: #383838!important;
 }
+td.tg-yw4l.tg_yw4l_br{
+
+} */
 .vertical{
 -webkit-transform: rotate(-90deg); 
 -moz-transform: rotate(-90deg); 
