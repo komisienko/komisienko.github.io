@@ -1663,9 +1663,12 @@ font-size: 21px
     text-align: left;
     margin: 0;
     font-size: 12px;
+    height: 19px;
 }
+
 .tc_numb_type{
-     width: 62px;
+     width: 75px;
+    height: 19px;
      text-align: center;
         margin: 0;
     font-size: 12px;
@@ -1673,25 +1676,29 @@ font-size: 21px
 .delete_padding_table{
     padding: 0px 0px!important;
 }
-/* .tg_yw4l_br{
-    border-right-color: #000!important;
-    border-right-width: 1px!important;
+.tg_yw4l_br{
+    border-right-color: #000;
+    border-right-width: 1px;
 }
 .tg-28r4{
+    height: 64px;
     border: none!important;
     border-color: #383838!important;
     background-color: #383838!important;
     border-top-color: #383838!important;
 }
 td.tg-yw4l.tg_yw4l_br{
-
-} */
+    height: 31px;
+}
 .vertical{
 -webkit-transform: rotate(-90deg); 
 -moz-transform: rotate(-90deg); 
 -o-transform: rotate(-90deg); 
 -ms-transform: rotate(-90deg);
-    transform: rotate(-90deg); }
+    transform: rotate(-90deg);
+    height: 155px!important;
+    width: 75px;
+}
 /* ----end Table chess ---*/
 .ink {
 	display: block; position: absolute;
