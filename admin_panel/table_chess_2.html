@@ -1019,7 +1019,7 @@ function getScrollWidth() {
 	return (scrollWidth);
 }
 
-/*function setSum(tbl, rr, cc) {
+function setSum(tbl, rr, cc) {
 	var rowCount = tbl.rows.length, sum = '';
 	for (var i=rr; i<rowCount; i++) {
 		var row = tbl.rows[i];
@@ -1029,11 +1029,11 @@ function getScrollWidth() {
 			row.cells[i,j].style.textAlign = 'right';
 		}
 	}
-}*/
+}
 
 function FixAction(el) {
 	FixHeaderCol(gid('tc_table_id'),1,3,932,462);
-	el.parentNode.removeChild(el);
+	//el.parentNode.removeChild(el);
 }
 
 function FixHeaderCol(tbl, fixRows, fixCols, ww, hh) {
@@ -1129,7 +1129,7 @@ function FixHeaderCol(tbl, fixRows, fixCols, ww, hh) {
 		e.preventDefault ? e.preventDefault() : (e.returnValue = false);
 	}
 } 
-//FixHeaderCol();
+//FixHeaderCol
 
 setSum(gid('tc_table_id'),4,4);
 //setSum(gid('tc_table_id'),3,3);
