@@ -9,7 +9,8 @@ html {
     height: 100%;
 }
 body {
-    background: linear-gradient(to right, #01B0DD, #3E7ADD) no-repeat;
+/*    background: linear-gradient(to right, #01B0DD, #3E7ADD) no-repeat;*/
+	background: #383838;
     height: 100%;
     margin: 0;
     background-repeat: no-repeat;
@@ -60,6 +61,7 @@ h1{margin: 0;}
 /*-------------nav----------*/
 
 header {
+	background: #232323;
     width: 100%;
     height: 52px;
 }
@@ -1432,7 +1434,7 @@ margin: 10px;
 	text-align: center;
 	margin-bottom: 20px
 }
-
+/*-
 table.dataTable{
 		    background-color: #f9f9f9;
 }
@@ -1460,7 +1462,7 @@ div.dataTables_wrapper div.dataTables_filter input,div.dataTables_wrapper div.da
    background-color: #E4F8F8;
     border-left: 5px solid #3ECCCC;
 }
-
+*/
 /*---------Room settings----------*/
 .room_settings_radio{
 	color: #fff;
@@ -1480,12 +1482,198 @@ div.dataTables_wrapper div.dataTables_filter input,div.dataTables_wrapper div.da
 
 /*----END--Room settings----------*/
 /*animation effect*/
+/*------Table chess ----*/
+.table_chess_wrap{
+	width: 932px;
+	height: 515px;
+	margin: 0 auto;
+}
+.tc_choice{
+	height: 52px;
+	width: 100%;
+}
+.tc_choice > div{
+    display: inline-block;
+    float: left;
+	width: 150px;
+	font-size: 12px;
+    margin-top: 10px;
+}
+.tc_choice_date>input, #close_it_now{
+	width: 150px;
+	height: 30px;
+	border: none;
+	background-repeat: no-repeat;
+	background-position: 131px center;
+	cursor: pointer;
+
+}
+.tc_choice_date>input{
+    background-image: url(../img/calendar_15x16.svg);
+
+}
+.tc_choise_guests{
+    width: 150px;
+    margin-left: 5px;
+}
+#close_it_now{
+/*
+    background-color: #fff;
+
+*/
+    margin-left: 0;
+    opacity: 0;
+    position: absolute;
+}
+.tc_choise_guests_facediv{
+    width: 150px;
+    height: 30px;
+    background-color: #fff;
+        background-image: url(../img/person_add.svg);
+    background-repeat: no-repeat;
+    background-position: 130px center;
+    text-align: left;
+    line-height: 30px;
+    padding-left: 5px;
+    color: lightgray;
+}
+.tc_choise_guests_how{
+    width: 190px;
+    height: 85px;
+    background-color: #fff;
+        position: relative;
+    z-index: 9999;
+}
+.tc_choise_guests_how ul li{
+    list-style-type: none;
+    height: 40px;
+    font-size: 21px;
+        line-height: 41px;
+    padding-left: 5px;
+
+}
+.tc_choise_guests_how ul li select{
+    float: right; padding-right: 20px;
+    width: 60px;
+    height: 39px;
+    border: none;
+}
+.tc_choise_guests_how ul li select option{
+    height: 40px;
+}
+/*
+.tc_choise_guests>input[type="button"]:checked ~ .tc_choise_guests_how{
+    display: block;
+}
+*/
+#tc_table{
+    
+    width: 932px;
+	height: 462px;
+    overflow-x: scroll; /* прокрутка по горизонтали */
+overflow-y: scroll; /* прокрутка по вертикали */
+    position: absolute;
+}
+.tc_choice_room_type{
+    margin-left: 5px;
+    width: 150px;
+    height: 30px;
+}
+.tc_choice_room_type > select{
+    height: inherit;
+    width: inherit;
+}
+.tc_choice_room_type > select > option{
+font-size: 21px
+}
+.tc_choise_reserv_sett{
+    line-height: 35px;
+    width: 200px!important;
+    height: 30px
+}
+.tc_choise_reserv_sett > form {
+    height: 30px;
+    padding-left: 10px;
+}
+.tc_choise_reserv_sett > form > input{
+    display: inline-block;
+}
+.tc_choise_reserv_sett > form> label{
+    position: relative;
+    top: -2px;
+    margin: 0;
+    color: #fff;
+    }
+.tc_choise_show{
+    height: 30px;
+}
+ .tc_choise_showbtn{
+    height: inherit;
+    width: inherit;
+    border: none;
+    background-color:#407F40 ;
+    color: #fff;
+     outline: 0 !important;
+}
+
+.tc_choise_showbtn:active{
+    background-color: #214C21;
+    outline: 0 !important;
+}
+
+.tc_table{
+    color: #000; /* Цвет текста */
+    background-color: #fff;
+}
+
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:12px;padding:5px 20px;border-style:solid;border-width:1px;border-color:#c7d7ca ; overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:0px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;    border-color: #c7d7ca; border-bottom-width: 2px;
+    border-bottom-color: #000;}
+.tg .tg-28r4{font-size:13px;vertical-align:top;}
+/*.tg .tg-yw4l{vertical-align:top}*/
+.tg-yzt1, .tg-yw4l{
+    text-align: center;
+}
+.tc_numb_descr{
+    width: 75px;
+    text-align: left;
+    margin: 0;
+    font-size: 12px;
+}
+.tc_numb_type{
+     width: 62px;
+     text-align: center;
+        margin: 0;
+    font-size: 12px;
+}
+.delete_padding_table{
+    padding: 0px 0px!important;
+}
+.tg_yw4l_br{
+    border-right-color: #000!important;
+    border-right-width: 2px!important;
+}
+.tg-28r4{
+    border: none!important;
+    border-color: #383838!important;
+    background-color: #383838!important;
+    border-top-color: #383838!important;
+}
+.vertical{
+-webkit-transform: rotate(-90deg); 
+-moz-transform: rotate(-90deg); 
+-o-transform: rotate(-90deg); 
+-ms-transform: rotate(-90deg);
+    transform: rotate(-90deg); }
+/* ----end Table chess ---*/
 .ink {
 	display: block; position: absolute;
 	background: hsla(199, 15%, 93%, 0.5);
 	border-radius: 100%;
 	transform: scale(0);
 }
+
 .ink.animate {animation: ripple 0.65s linear;}
 @keyframes ripple {
 	/*scale the element to 250% to safely cover the entire link and fade it out*/
