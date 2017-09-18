@@ -4,10 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!--
     <script src="./js/jquery/jquery-1.8.2.min.js"></script>
  
@@ -19,6 +17,10 @@
 		<!-- data range-->
 		
 <!-- Include Required Prerequisites -->
+<!-- 	<script type="text/javascript" src='js/redips-drag-min.js'></script>
+	<link rel="stylesheet" href="./css/style_repids.css">
+	 -->
+	
 <script type="text/javascript" src="./js/jquery.min.js"></script>
 <script type="text/javascript" src="./js/moment.min.js"></script>
 <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
@@ -144,8 +146,8 @@
 
           
 -->
-          
-   		<div id="tc_table">
+           <div id="tc_table">
+   		
                       <table id="tc_table_id" class="tg">
    <tr style="border-bottom-color: #000;">
     <th class="tg-28r4" colspan="3" style="margin-bottom: 4px;"><p class="tc_numb_type">text</p></th>
@@ -181,9 +183,7 @@
   <tr>
     <td class="tg-yw4l vertical delete_padding_table" rowspan="5"><p class="tc_numb_type">Люкс</p></td>
     <td class="tg-yw4l tg_yw4l_br" colspan="2"><p class="tc_numb_descr">101-океан</p></td>
-    <td class="tg-yw4l"></td>
-    <td class="tg-yw4l"></td>
-    <td class="tg-yw4l"></td>
+    <td colspan="3"  class="tg-yw4l"><div class="redips-drag acepted_cliend">Елена Еленина</div></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
@@ -960,6 +960,7 @@
 </table>
    		</div>
     </div>
+ 
 
 
 
@@ -1138,8 +1139,10 @@ function FixHeaderCol(tbl, fixRows, fixCols, ww, hh) {
 //setSum(gid('tc_table_id'),0,0);
     
 </script>
-      <script type="text/javascript">FixAction(this)</script> 
-       
+     <script type="text/javascript">FixAction(this)</script> 
+     
+<!--     <script src="./js/redips.js"></script>
+     -->
 </body>
 
 </html>

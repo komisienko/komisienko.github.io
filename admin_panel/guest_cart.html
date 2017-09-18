@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <title>Document</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3">    
+<link rel="stylesheet" href="./css/app.css">
+    <script src="./js/jquery-3.2.1.min.js"></script>
+
+</head>
+
+<body>
+ <input type="checkbox" id="nav_r-toggle" hidden>
+<nav class="nav_r">
+    <label for="nav_r-toggle" class="nav_r-toggle" onclick></label>
+    <h2 class="logo"> 
+            <a href="#">Меню</a> 
+        </h2>
+    <ul>
+        <li><a href="#1">Один</a>
+            <li><a href="#2">Два</a>
+                <li><a href="#3">Три</a>
+                    <li><a href="#4">Четыре</a>
+                        <li><a href="#5">Пять</a>
+                            <li><a href="#6">Шесть</a>
+                                <li><a href="#7">Семь</a>
+    </ul>
+</nav>
+    <div class="mask-content"></div>
+    <header>
+        <div class="nav_r_menu">
+      
+                       <div class="back"><a href="./table_chess_2.html" class="back"> <img class="back_icon" src="./img/back_12x20.svg" alt=""><span class="back_text t_ff">Назад</span></a>
+                        </div>
+            <div class="menu">
+                <img src="./img/menu_20x30.svg" alt="" class="menu_icon">
+            </div>
+            <div class="flag" >
+                <label class="flag_label">
+                    <input type="checkbox" id="hidden_chebox">
+                    <img class="img_27 ua" src="./img/ukraine.svg" alt="">
+                </label>
+                <label class="flag_label">
+                    <input type="checkbox" id="hidden_chebox">
+                    <img class="img_27 ru" src="./img/russia.svg" alt="">
+                </label>
+                <label class="flag_label">
+                    <input type="checkbox" id="hidden_chebox">
+                    <img class="img_27 usa" src="./img/usa.svg" alt="">
+                </label>
+            </div>
+            <div class="res">
+                <img class="img_40 dis_inline_block" src="./img/unnamed.png" alt="">
+                <div class="name">
+                    <p class="white fs_18">Билл Гейтс |</p>
+                </div>
+                <div class="doljnost">
+                    <p class="white fs_18">Администратор</p>
+                </div>
+            </div>
+            <div id="current_data" style="line-height: 1.4; padding-top: 4px;"></div>
+        </div>
+    </header>
+ <div class="deep center">
+            <a class="deep_text" style="color: lightblue">Меню > Бронирование номера > Карточка гостя </a>
+        </div> 
+<div class="guest_cart_wrap dis_block">
+    <div class="guest_cart dis_inline_block">
+        <div class="guest_cart_iconsgrid dis_inline_block">
+            <ul>
+                <li>
+                    <a href="#gcig_1"><img src="./img/bio.svg" class="gcig_background gcig_background_changed" alt=""></a>
+                </li>
+                <li>
+                    <a href="#gcig_2"><img src="./img/hotel.svg" class="gcig_background" alt=""></a>
+                </li>
+                <li>
+                    <a href="#gcig_3"><img src="./img/bill.svg" class="gcig_background" alt=""></a>
+                </li>
+            </ul>
+ </div>
+           <div class="guest_cart_textgrid dis_inline_block">
+            <div class="gcig" id="gcig_2">
+                <p>Sed lobortis placerat elit tincidunt tempor. Nam dignissim euismod quam nec tempor. Sed tortor lorem, ultricies a auctor nec, auctor ut neque. Aenean varius, urna eget adipiscing feugiat, nunc ligula molestie massa, id accumsan turpis metus ac ante. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            </div>
+
+            <div class="gcig" id="gcig_3">
+                <p>Pellentesque quis tortor vitae elit cursus vulputate et vel dui. Nunc commodo pretium arcu in ultricies. Nunc vel velit enim, et tincidunt leo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+            </div>
+
+            <div class="gcig default-gcig" id="gcig_1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus, felis at varius eleifend, neque orci porta magna, consequat aliquam ligula velit quis erat. Aenean porttitor pellentesque risus, eu tincidunt ipsum blandit in.</p>
+            </div>
+           
+            </div>    
+        </div>
+        <div class="guest_check dis_inline_block">
+            <table id="guest_check_table">
+                <caption style="font-size: 20px; text-align: left">Оплата</caption>
+                <tr><td>За номер всего:</td><td>400$</td></tr>
+                <tr><td>Питание:</td><td>120$</td></tr>
+                <tr><td colspan="2">Дополнительные услуги:</td></tr>
+                <tr><td class="add_tlp">-Раскладушка</td><td>20$</td></tr>
+                <tr><td>Скидки:</td><td>30$</td></tr>
+                <tr><td colspan="2" style="border-bottom: 1px solid #D6E2D8"></td></tr>
+
+                <tr><td>Сумма:</td><td>510$</td></tr>
+            </table>
+            <div class="guest_check_print">
+                <button type="button">Печать чека</button>
+            </div>
+        </div>
+    </div>
+      <script type="text/javascript">
+$(".gcig_background").click(function(e) {
+  $(".gcig_background").removeClass('gcig_background_changed');
+  $(this).addClass('gcig_background_changed');
+})
+    </script>
+       <script src="js/all.js"></script>
+</body>
+</html>

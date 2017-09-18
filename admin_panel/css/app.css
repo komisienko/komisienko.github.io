@@ -1491,6 +1491,7 @@ div.dataTables_wrapper div.dataTables_filter input,div.dataTables_wrapper div.da
 .tc_choice{
 	height: 52px;
 	width: 100%;
+    
 }
 .tc_choice > div{
     display: inline-block;
@@ -1571,18 +1572,17 @@ div.dataTables_wrapper div.dataTables_filter input,div.dataTables_wrapper div.da
 }
 */
 #tc_table{
-    
+ position: relative;
     width: 932px;
 	height: 462px;
-/*     overflow-x: scroll; прокрутка по горизонтали
-    overflow-y: scroll; прокрутка по вертикали */
-    position: relative;
+       overflow: hidden;
+      -webkit-overflow-scrolling: touch;
         -webkit-user-select: none;
     /* user-select -- это нестандартное свойство */
 
     -moz-user-select: none;
     /* поэтому нужны префиксы */
-    overflow: hidden;
+ 
     -ms-user-select: none;
 }
 .tc_choice_room_type{
@@ -1635,13 +1635,32 @@ font-size: 21px
 #tc_table_id{
     color: #000; /* Цвет текста */
     background-color: #fff;
+
 }
 .fixRegion > th, tr{
     background-color: #fff;
 }
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{font-family:Arial, sans-serif;font-size:12px;padding:5px 20px;border-style:solid;border-width:1px;border-color:#c7d7ca ; overflow:hidden;word-break:normal; }
-.tg th {font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:0px 20px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color: #c7d7ca;  border-bottom-width: 1px;
+.tg  {border-collapse:collapse;
+    border-spacing:0;
+}
+.tg td{font-family:Arial, sans-serif;
+    height: 31px; 
+    font-size:12px;padding:5px 20px;
+    border-style:solid;
+    border-width:1px;
+    border-color:#c7d7ca;
+    overflow:hidden;
+    word-break:normal;
+}
+.tg th {font-family:Arial, sans-serif;
+    font-size:14px;
+    font-weight:normal;
+    padding:0px 20px;border-style:solid;
+    border-width:1px;
+    overflow:hidden;
+    word-break:normal;
+    border-color: #c7d7ca; 
+    border-bottom-width: 1px;
 }
 .tg .tg-28r4{font-size:13px;vertical-align:top;}
 /*.tg .tg-yw4l{vertical-align:top}*/
@@ -1699,14 +1718,118 @@ td.tg-yw4l.tg_yw4l_br{
     height: 155px!important;
     width: 75px;
 }
+.acepted_cliend{
+    background-color: aqua;
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 148px;
+}
 /* ----end Table chess ---*/
+
+/*---Guest Cart---*/
+.guest_cart_wrap{
+    height: 358px;
+    width: 736px;
+    margin: 0 auto;
+    margin-top: 80px;
+    background-color: #fff;
+        position: relative;
+
+}
+.guest_cart{
+    width: 483px;
+    height: inherit;
+    margin-right: 25px;
+    float: left;
+        position: relative;
+
+}
+.guest_check{
+    width: 228px;
+    height: inherit;
+    float: left;
+    padding: 32px 24px 20px;
+    position: relative;
+}
+#guest_check_table{
+    width: 100%;
+    font-size: 12px;
+}
+#guest_check_table td{
+    padding: 5px;
+}
+.add_tlp{
+    padding-left: 15px!important;
+}
+.guest_check_print{
+    width: 180px;
+    position: absolute;
+    bottom: 20px;
+        text-align: center;
+
+}
+.guest_check_print button{
+    width: 107px;
+    height: 24px;
+    background: none;
+    border: 1px solid #727272;
+    border-radius: 10px;
+    outline: none;
+}
+.guest_check_print button:active{
+    background-color: rgba(0,0,0,0.3)
+}
+.guest_cart_iconsgrid{
+    width: 40px;
+    float: left;
+    height: 100%;
+        background-color: #383838;
+
+}
+.guest_cart_iconsgrid>ul {
+    text-decoration: none;
+    list-style-type: none;
+}
+.guest_cart_iconsgrid>ul>li>a>img{
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+.gcig{
+    padding: 32px 10px 10px;
+}
+
+.gcig:not(:target),
+:target ~ .gcig.default-gcig {
+  display: none;
+}
+.gcig:target,
+.gcig.default-gcig {
+  display: block;
+}
+
+.guest_cart_textgrid{
+    width: 443px;
+    float: left;
+
+    height: 100%;
+}
+.guest_cart_textgrid{
+    
+}
+
+
+.gcig_background_changed{
+    background-color: #fff;
+}
+/*---end Guest Cart---*/
 .ink {
 	display: block; position: absolute;
 	background: hsla(199, 15%, 93%, 0.5);
 	border-radius: 100%;
 	transform: scale(0);
 }
-
+.
 .ink.animate {animation: ripple 0.65s linear;}
 @keyframes ripple {
 	/*scale the element to 250% to safely cover the entire link and fade it out*/
