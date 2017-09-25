@@ -22,7 +22,7 @@ a {
     text-decoration: none;
 }
 input{
-    outline: none !importtant;
+    outline: none;
 }
 .white{
     color:#ffffff;
@@ -1036,7 +1036,7 @@ border-right-style: none; }
     width: 136px;
     margin-left: 10px;
 }
-.md-checkbox_t label { cursor: pointer; color: red;font-size: 16px; 
+.md-checkbox_t label { cursor: pointer;font-size: 16px; 
 } 
 .md-checkbox_t label:before, .md-checkbox_t label:after { content: ""; position: absolute; left: 0; top: 0; } 
 .md-checkbox_t label:before { width: 18px; height: 18px; background: #ffffff; border: 2px solid #727272; border-radius: 2px; cursor: pointer; transition: background .3s; }
@@ -1732,7 +1732,6 @@ td.tg-yw4l.tg_yw4l_br{
     width: 736px;
     margin: 0 auto;
     margin-top: 80px;
-    background-color: #fff;
         position: relative;
 
 }
@@ -1742,6 +1741,8 @@ td.tg-yw4l.tg_yw4l_br{
     margin-right: 25px;
     float: left;
         position: relative;
+        background-color: #fff;
+
 
 }
 .guest_check{
@@ -1750,6 +1751,8 @@ td.tg-yw4l.tg_yw4l_br{
     float: left;
     padding: 32px 24px 20px;
     position: relative;
+        background-color: #fff;
+
 }
 #guest_check_table{
     width: 100%;
@@ -1796,7 +1799,8 @@ td.tg-yw4l.tg_yw4l_br{
     height: 40px;
 }
 .gcig{
-    padding: 32px 10px 10px;
+    padding: 32px 10px 10px 48px;
+    font-size: 12px!important;
 }
 
 .gcig:not(:target),
@@ -1814,13 +1818,124 @@ td.tg-yw4l.tg_yw4l_br{
 
     height: 100%;
 }
-.guest_cart_textgrid{
-    
-}
-
-
 .gcig_background_changed{
     background-color: #fff;
+}
+.gcig1_column1,
+.gcig1_column2 ,
+.gcig2_column1, 
+.gcig2_column2,
+.gcig3_column1{
+    width: 160px;
+    float: left;
+}
+.gcig2_column1>.md-checkbox_t,.gcig2_column2>.md-checkbox_t{
+    height: 28px;
+    width: 160px;
+    margin-bottom: 20px;
+}
+.gcig2_column1>.md-checkbox_t>label,
+.gcig2_column2>.md-checkbox_t>label{
+        display: inline-block;
+    width: 130px;
+    height: 100%;
+    font-size: 12px;
+}
+.gcig1_column1{
+    margin-right: 25px;
+}
+.gcig1_column1>input,
+.gcig1_column2>input{
+    height: 28px;
+    width: 160px;
+    border: 1px solid #D6E2D8;
+    border-bottom: none;
+}
+
+.gcig1_column1>.gcig1_column1_radio_form{
+    display: block;
+    height: 84px;
+    margin-top: 28px;
+}
+
+.gcig1_column1>.gcig1_column1_radio_form>input[type="radio"]:checked,
+.gcig1_column1>.gcig1_column1_radio_form>input[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+.gcig1_column1>.gcig1_column1_radio_form>input[type="radio"]:checked + label,
+.gcig1_column1>.gcig1_column1_radio_form>input[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #000;
+}
+.gcig1_column1>.gcig1_column1_radio_form>input[type="radio"]:checked + label:before,
+.gcig1_column1>.gcig1_column1_radio_form>input[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #727272;
+    border-radius: 100%;
+    background: #fff;
+}
+.gcig1_column1>.gcig1_column1_radio_form>input[type="radio"]:checked + label:after,
+.gcig1_column1>.gcig1_column1_radio_form>input[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #727272;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.gcig1_column1>.gcig1_column1_radio_form>input[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.gcig1_column1>.gcig1_column1_radio_form>input[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.gcig1_column1>.gcig1_column1_radio_form>input{
+    display: inline-block;
+    float: left;
+    height: 15px;
+    width: 15px;
+}
+.gcig1_column1>.gcig1_column1_radio_form>label{
+    float: left;
+    display: inline-block;
+    width: 160px;
+    height: 28px;
+    position: relative;
+    padding-left: 6px;
+    
+}
+.gcig_footer{
+    height: 23px;
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+}
+.gcig_footer>button[type="submit"]{
+    width: 80px;
+    height: 24px;
+   background: none;
+    border: 1px solid #727272;
+    border-radius: 10px;
+    outline: none;
 }
 /*---end Guest Cart---*/
 .ink {

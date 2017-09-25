@@ -69,30 +69,73 @@
     <div class="guest_cart dis_inline_block">
         <div class="guest_cart_iconsgrid dis_inline_block">
             <ul>
-                <li>
-                    <a href="#gcig_1"><img src="./img/bio.svg" class="gcig_background gcig_background_changed" alt=""></a>
-                </li>
-                <li>
-                    <a href="#gcig_2"><img src="./img/hotel.svg" class="gcig_background" alt=""></a>
-                </li>
-                <li>
-                    <a href="#gcig_3"><img src="./img/bill.svg" class="gcig_background" alt=""></a>
-                </li>
+                <li><a href="#gcig_1" ><img src="./img/bio.svg" class="gcig_background gcig_background_changed" alt=""></a></li>
+                <li><a href="#gcig_2"><img src="./img/hotel.svg" class="gcig_background" alt=""></a></li>
+                <li><a href="#gcig_3"><img src="./img/bill.svg" class="gcig_background" alt=""></a></li>
             </ul>
  </div>
            <div class="guest_cart_textgrid dis_inline_block">
             <div class="gcig" id="gcig_2">
-                <p>Sed lobortis placerat elit tincidunt tempor. Nam dignissim euismod quam nec tempor. Sed tortor lorem, ultricies a auctor nec, auctor ut neque. Aenean varius, urna eget adipiscing feugiat, nunc ligula molestie massa, id accumsan turpis metus ac ante. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                <div class="gcig2_column1">
+                    <h3 style="padding-bottom: 7px; font-weight: 400">Питание:</h3>
+
+                    <div class="md-checkbox_t"><input type="checkbox" id="gcig_2_с1"><label for="gcig_2_с1">Завтрак</label></div>             
+                    <div class="md-checkbox_t"><input type="checkbox" id="gcig_2_с2"><label for="gcig_2_с2">Обед</label></div>             
+                    <div class="md-checkbox_t"><input type="checkbox" id="gcig_2_с3"><label for="gcig_2_с3">Ужин</label></div>             
+                    <div class="md-checkbox_t"><input type="checkbox" id="gcig_2_с4"><label for="gcig_2_с4">All inclusive</label></div>             
+                </div>
+                <div class="gcig2_column2">
+                    <h3 style="padding-bottom: 7px; font-weight: 400">Питание:</h3>
+
+                    <div class="md-checkbox_t"><input type="checkbox" id="gcig_2_с5"><label for="gcig_2_с5">Раскладушка</label></div>             
+                    <div class="md-checkbox_t"><input type="checkbox" id="gcig_2_с6"><label for="gcig_2_с6">Вентилятор</label></div>             
+                    <div class="md-checkbox_t"><input type="checkbox" id="gcig_2_с7"><label for="gcig_2_с7">Обогреватель</label></div>             
+                    <div class="md-checkbox_t"><input type="checkbox" id="gcig_2_с8"><label for="gcig_2_с8">Средство от комаров</label></div>             
+                </div>
             </div>
 
             <div class="gcig" id="gcig_3">
-                <p>Pellentesque quis tortor vitae elit cursus vulputate et vel dui. Nunc commodo pretium arcu in ultricies. Nunc vel velit enim, et tincidunt leo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                     <div class="gcig3_column1">
+                     <h3 class="add_tlp" style="padding-bottom: 7px; font-weight: 400">Выберите способ оплаты:</h3>
+                        <select name="tranzaction" id="">
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+
+            </div>
             </div>
 
             <div class="gcig default-gcig" id="gcig_1">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus, felis at varius eleifend, neque orci porta magna, consequat aliquam ligula velit quis erat. Aenean porttitor pellentesque risus, eu tincidunt ipsum blandit in.</p>
+               <form action="#gcig_2" method=”post”> 
+                <div class="gcig1_column1">
+                    <h3 class="add_tlp" style="padding-bottom: 7px; font-weight: 400">Контакты:</h3>
+                    <input required  type="text" placeholder="Фамилия" class="add_tlp">
+                    <input required  type="text" placeholder="Имя" class="add_tlp">
+                    <input required  type="text" placeholder="Отчество" class="add_tlp" style="border-bottom:1px solid #D6E2D8;">
+                    <input required  type="text" placeholder="Паспорт" class="add_tlp" style="border-bottom:1px solid #D6E2D8; margin-top: 18px;">
+                    <div class="gcig1_column1_radio_form">
+			            <input name="gcig_type" type="radio" id="gcig_type_1" checked><label for="gcig_type_1">Гость</label><br>
+                        <input name="gcig_type" type="radio" id="gcig_type_2"><label for="gcig_type_2">VIP</label><br>
+                        <input name="gcig_type" type="radio" id="gcig_type_3"><label for="gcig_type_3">Код учредителя</label>
+			       </div>
+                </div>            
+                <div class="gcig1_column2">
+                     <h3 class="add_tlp" style="padding-bottom: 7px; font-weight: 400">Средство связи:</h3>
+                    <input required  type="text" placeholder="Телефон" class="add_tlp">
+                    <input required  type="text" placeholder="Имя" class="add_tlp" style="border-bottom:1px solid #D6E2D8;">
+                    <h3 class="add_tlp" style="padding-bottom: 7px;margin-top: 22px; font-weight: 400">Адрес:</h3>
+                    <input required  type="text" placeholder="Страна" class="add_tlp">
+                    <input required  type="text" placeholder="Город" class="add_tlp">
+                    <input required  type="text" placeholder="Улица" class="add_tlp">
+                    <input required  type="text" placeholder="Дом" class="add_tlp" style="border-bottom:1px solid #D6E2D8;">
+                </div>
+                <div class="gcig_footer">
+<!--                   <button class="gcig_footer_navigate_back"></button>-->
+                       <button type="submit" class="gcig_footer_navigate_next" disabled>Далее</button>
+               </div>
+                </form>
             </div>
-           
+               
             </div>    
         </div>
         <div class="guest_check dis_inline_block">
@@ -112,12 +155,15 @@
             </div>
         </div>
     </div>
+
       <script type="text/javascript">
 $(".gcig_background").click(function(e) {
-  $(".gcig_background").removeClass('gcig_background_changed');
+ 
+ $(".gcig_background").removeClass('gcig_background_changed');
   $(this).addClass('gcig_background_changed');
-})
-    </script>
+});   </script>
+      
+
        <script src="js/all.js"></script>
 </body>
 </html>
