@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Document</title>
      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3">
-    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/app_user.css">
 <!--    <script src="http://www.marghoobsuleman.com/misc/jquery.js"></script>-->
         <!-- <msdropdown> -->
         <script src="./js/jquery/jquery-1.8.2.min.js"></script>
@@ -28,36 +28,44 @@
                 </select>
             </div>
         </div>
-        <div class="deep center">
-            <a class="deep_text">Меню</a>
+<div class="deep center">
+    <a class="deep_text">Меню</a>
+</div>
+
+<div class="condition">
+    <div class="eco_comfort">
+        <div class="eco">
+            
+                <input type="radio" class="hide_it" name="condition" id="condition_eco" checked><label for="condition_eco">
+                <img src="./img/leaf_40x40.svg" style="" alt="" class="eco_img">
+                <p class="eco_text ">Эконом</p>
+            </label>    
         </div>
-        
-        <div class="condition">
-            <div class="eco_comfort">
-                <div class="eco">
-                    <img src="./img/leaf_40x40.svg" style="height: 40px; width: 40px; position: relative;
-    float: left;
-    margin-left: 27px;
-    margin-top: 20px;" alt="" class="eco_img">
-                    <p class="eco_text color_grey">Эконом</p>
-                </div>
-                <div class="comfort">
-                   <p class="comfort_text color_grey">Комфорт</p>
-                    <img src="./img/couch_40x40.svg" style="height: 40px;float: right;padding-right: 35px; padding-top: 3px;" alt="" class="comfort_img">
-                </div>
+        <div class="comfort">
+           
+                <input type="radio" class="hide_it" name="condition" id="condition_comfort"> <label for="condition_comfort">
+
+                <p class="comfort_text ">Комфорт</p>
+                <img src="./img/couch_40x40.svg"  alt="" class="comfort_img">
+            </label>
+        </div>
+    </div>
+    <div class="temperature_panel">
+        <p class="current_temperature center color_grey ">20<span class="deg">&deg;C</span></p>
+        <div class="temperature_correct">
+            <div class="minus">
+                <input type="button" value="-">
             </div>
-            <div class="temperature_panel">
-                <p class="current_temperature center color_grey ">20<span class="deg">&deg;C</span></p>
-                <div class="temperature_correct">
-                <div class="minus"><input type="button" value="-"></div>
-                <div class="plus"><input type="button" value="+"></div>
-                </div>
+            <div class="plus">
+                <input type="button" value="+">
             </div>
         </div>
-        <div class="info_panel">
-            <p class="info_temp color_grey">Сейчас в номере <span style="font-size: 21px">28&deg;С</span></p>
-            <p class="info_humidity color_grey"><img src="./img/drop_20x20.svg" style="height: 20px; position: relative; margin-bottom: -3px;" alt=""> 70%</p>
-        </div>
+    </div>
+</div>
+<div class="info_panel">
+    <p class="info_temp color_grey">Сейчас в номере <span style="font-size: 21px">28&deg;С</span></p>
+    <p class="info_humidity color_grey"><img src="./img/drop_20x20.svg" style="height: 20px; position: relative; margin-bottom: -3px;" alt=""> 70%</p>
+</div>
         <div class="control_services">
             <a href="./manage.html"><div class="control">
                 <img src="./img/door_40x40.svg" style="height: 40px;position: relative;left: 16px;top: 6px;" alt="">
@@ -69,11 +77,11 @@
     left: 18px;" alt="">
                 <p class="services_room color_blue">Услуги</p>
             </div></a>
-        </div>
+        </div> </div>
         <script type="text/javascript">
 jQuery(document).ready(function() {
 	jQuery("#countries").msDropdown();
 })</script>
-    </div>
+   
 </body>
 </html>

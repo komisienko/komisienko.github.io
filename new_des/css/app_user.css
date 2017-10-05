@@ -25,7 +25,13 @@ a{
     width: 320px;
     margin: 0 auto;
 }
-
+/*
+.hide_it{
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+*/
 /*-------------nav----------*/
 header{
     width: 100%;
@@ -41,8 +47,6 @@ header{
     width: 100px;
     float: left;  
 }
-
-
 .back_icon{
 height: 20px;
 width: 20px;
@@ -90,21 +94,29 @@ margin-left: 7px;
     display: inline-block;
     height: 100%;
 }
-.eco{
+.comfort, .eco{
     height: 50%;
-        position: relative;
+    position: relative;
+    display: block;
+}
+.eco img , .comfort img{
+    -webkit-filter: grayscale(100%);
+-moz-filter: grayscale(100%);
+-ms-filter: grayscale(100%);
+-o-filter: grayscale(100%);
+filter: grayscale(100%);
+filter: gray; /* IE 6-9 */
+}
 
-    text-align: center;
+.eco_text, .comfort_text{
+color: #A5A5A5;
 }
 .eco_text{
     padding-top: 34px;
     padding-right: 35px;
     font-size: 14px;
 }
-.comfort{
-    height: 50%;
-    position: relative;
-}
+
 .comfort_text{
     width: 40%;
     padding-left: 21px;
@@ -124,7 +136,47 @@ margin-left: 7px;
 .temperature_panel{
     float: right;
     width: 50%;
+}
 
+.eco>label, .comfort>label{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block
+}
+#condition_eco, #condition_comfort{
+    position: absolute;
+    top: -99999px;
+    left: -9999px;
+}
+#condition_comfort:checked ~ label > .comfort_img,
+#condition_eco:checked ~ label > .eco_img{
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    filter: grayscale(0%);
+    filter: gray;
+}
+.eco_img{
+    height: 40px; 
+    width: 40px; 
+    position: relative;
+    float: left;
+    margin-left: 27px;
+    margin-top: 20px;
+}
+.comfort_img{
+    height: 40px;
+    float: right;
+    padding-right: 35px; 
+    padding-top: 3px;
+}
+#condition_comfort:checked ~ label > .comfort_text{
+    color: #aa4817;
+} 
+#condition_eco:checked ~ label > .eco_text {
+    color: #72d372;
 }
 .current_temperature{
     font-size: 72px;
@@ -221,6 +273,7 @@ border-radius: 50%;
 -webkit-border-radius: 50%;
 -moz-border-radius: 50%;
 }
+
 input[type=checkbox] {
     position: absolute;
     top: -9999px;
