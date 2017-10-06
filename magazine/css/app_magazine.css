@@ -98,7 +98,7 @@ a:hover{
     top: 0;
     height: 100%;
     width: 50px;
-    background: #fff url(/img/header-sprite.png) no-repeat -88px -40px;
+    background: #e7e7e7 url(/img/header-sprite.png) no-repeat -88px -40px;
 }
 .shoppingcart>a, .search_img>a{
     display: block;
@@ -115,7 +115,7 @@ a:hover{
     -webkit-filter:grayscale(100%) ;
     -moz-filter:grayscale(100%) ;
     filter:grayscale(100%) ;
-    background: #fff url(/img/search_img.png) no-repeat 10px 10px;
+    background: #e7e7e7 url(/img/search_img.png) no-repeat 10px 10px;
     background-size: 60%;
 }
 @media screen and (max-width:450px){
