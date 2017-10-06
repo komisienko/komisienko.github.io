@@ -34,10 +34,13 @@ a:hover{
 }
 
 .navmenu {
-  padding-top: 50px;
+ 
     width: 250px;
 }
-
+.navmenu-brand{
+    margin: 0;
+    padding: 15px 15px;
+}
 .navbar {
   display: block;
   text-align: center;
