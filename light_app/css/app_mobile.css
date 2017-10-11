@@ -3,12 +3,10 @@
 @viewport {
     width: device-width;
     zoom: 1;
-    max-zoom: 2;
    }
 @-ms-viewport{
         width: device-width;
     zoom: 1;
-    max-zoom: 2;
 }
 
 * {
@@ -266,5 +264,10 @@ border-spacing: 0px 0px;}
 @media screen and (min-width: 375px){
     .wrap{
         width:375px;
+    }
+}
+@media screen and (min-width: 414px){
+    .wrap{
+        width:414px;
     }
 }

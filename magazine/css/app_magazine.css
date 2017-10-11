@@ -97,21 +97,23 @@ a:hover{
 .navbar-right{
     margin-right: 0px;
 }
-
+.nav>li{
+    height: 54p;
+    width: 54px;
+}
 .nav>li>a {
     height: 100%;
     width: 100%;
-  margin: 8px 10px 5px 10px;
-  background-color: transparent;
+    margin: 0;
+/*   margin: 8px 10px 5px 10px;
+   */  background-color: transparent;
  /* border: 1px solid #ddd;*/
   /*border-radius: 4px ;*/
-
- 
     padding: 0px 0px ;
-
     color: #333;
+    text-align: center;
+    line-height: 52px;
 }
-
 .navmenu-nav .dropdown-menu {
   margin: 15px 0px 15px 10px;
   border: 1px solid #ddd;
@@ -205,7 +207,6 @@ z-index: 1036}
 
 .search_img, .basket_img{
     width: 30px;
-    padding-top: 5px;
 }
 /*----end SEARCH------*/
 
