@@ -79,7 +79,8 @@ a:hover{
     z-index: 1;
     font-size: 20px;
     text-align: center;
-    width: 268px;
+    width: 100%;
+    width: calc(100% - 52px);
     height: 52px;
 }
 .back_icon{
@@ -167,6 +168,7 @@ button[name="exit"]{
     width: 250px;
     margin-left: 23px;
     overflow: scroll;
+    margin-top: 10px;
 }
 .menu_obj>a{
     display: block;
@@ -189,7 +191,7 @@ button[name="exit"]{
 {
     display: inline-block;
     float: left;
-    width: 160px;
+    width: 50%;
     height: 102px;
     text-align: center;
 }
@@ -229,7 +231,8 @@ button[name="exit"]{
     background-position: bottom;
 }
 .table_ogc{
-    width: 288px;
+    width: 100%;
+    width: calc(100% - 20px);
     margin: 0 auto;
 }
 #ogc{
