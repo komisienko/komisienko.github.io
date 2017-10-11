@@ -1,0 +1,240 @@
+@charset "UTF-8";
+@import "./font.css";
+* {
+    font-family: "MyriadProRegular";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+    font-size: 100%;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    min-width: 320px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+    min-width: 320px;
+}
+/*
+h1,h2,h3,h4,h5,h6,p,ul,li..lead{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #333;
+}
+*/
+input,
+button{
+    outline: none;
+}
+button:active{
+    color: #f60
+}
+a{
+    color: #000;
+    text-decoration: none !important;
+}
+a:hover{
+    color: #f60 !important; 
+    text-decoration: none;
+}
+
+.wrap{
+    display: block;
+    width: 320px;
+    margin: 0 auto;
+    position: relative;
+}
+/*nav*/
+.nav_menu{
+width: 100%;
+height: 52px;
+line-height: 52px;
+}
+.back{
+    display: block;
+    height: 100%;
+    width: 52px;
+    float: left;
+    z-index: 2;
+}
+.title_nav{
+    display: block;
+    z-index: 1;
+    font-size: 20px;
+    text-align: center;
+    width: 268px;
+    height: 52px;
+}
+.back_icon{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+    vertical-align: middle;
+}
+/*end_nav*/
+.user_login{
+    font-size: 40px;
+    font-family: inherit;
+    padding-top: 110px;
+}
+input[name="login"], 
+input[name="password"] {
+    width: 300px;
+    height: 52px;
+    font-size: 40px;
+    border: none;
+    color: #000;
+    margin-left: 10px;
+    margin-bottom: 14px;
+}
+.user_login > form > input[type="submit"]{
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+}
+input[name="login"]::-webkit-input-placeholder {color:#000;}
+input[name="login"]::-moz-placeholder{color:#000;}/* Firefox 19+ */
+input[name="login"]:-moz-placeholder{color:#000;}/* Firefox 18- */
+input[name="login"]:-ms-input-placeholder{color:#000;}
+input[name="password"]::-webkit-input-placeholder {color:#000;}
+input[name="password"]::-moz-placeholder{color:#000;}/* Firefox 19+ */
+input[name="password"]:-moz-placeholder{color:#000;}/* Firefox 18- */
+input[name="password"]:-ms-input-placeholder{color:#000;}
+button[name="forgot"]{
+    margin-top: 21px;
+    width: 250px;
+    height: 52px;
+    background: #fff;
+    border: none;
+    font-size: 30px;
+    margin-left: 10px;
+}
+.logo{
+    margin-top: 35px;
+    height: 70px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.logo>img{
+    height: 70px;
+}
+.footer{
+    width: 320px;
+    height: 40px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+}
+button[name="registration"],
+button[name="exit"]{
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 20px;
+    background: #fff ;
+}
+
+/*menu*/
+.menu_obj{
+    margin-top: 4px;
+    width: 250px;
+    margin-left: 23px;
+    overflow: scroll;
+}
+.menu_obj>a{
+    display: block;
+    width: 250px;
+    height: 52px;
+    line-height: 52px;
+    padding-left: 5px;
+    font-size: 20px;
+}
+
+/*end_menu*/
+
+/*light control*/
+.control_button_panel{
+    height: 102px;
+    margin-top: 36px;
+}
+.cbp_left,
+.cbp_right
+{
+    display: inline-block;
+    float: left;
+    width: 160px;
+    height: 102px;
+    text-align: center;
+}
+.turn_on_off_marked{
+    margin-top: 43px;
+    width: 204px;
+    height: 32px;
+    margin-left: 17px;
+}
+.turn_on_off_marked > button{
+    border: none;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: 32px;
+    font-size: 20px;
+    background-color: #fff;
+}
+.control_button_panel{
+    font-size: 15px;
+}
+.control_button_panel button{
+    width: 100px;
+    height: 50%;
+    border: none;
+    background-color: #fff;
+    margin: 0 auto;
+}
+.top_btn{
+    background: url(../img/round-up.png);
+    background-repeat: no-repeat;
+        background-position: bottom;
+}
+.bottom_btn{
+    background: url(../img/round-down.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.table_ogc{
+    width: 288px;
+    margin: 0 auto;
+}
+#ogc{
+    width: 100%;
+    background-color: #b7b7b7;
+/*         border-collapse: collapse;
+         */
+border-collapse: separate;
+border-spacing: 0px 0px;}
+#ogc td{
+    padding-left: 8px;
+} 
+#ogc th{
+    text-align: left;
+    padding-left: 8px;
+/*     border: 1px solid #000;
+     */}
+#ogc tr{
+    height: 32px;
+    
+}
+#ogc tr:nth-child(even){
+    background-color: #b7b7b7;
+}
+ #ogc tr:nth-child(odd){ 
+    background-color: #fff;
+} 
+/*end_light control*/
