@@ -164,7 +164,7 @@ button[name="exit"]{
 .menu_obj{
     width: 250px;
     margin-left: 23px;
-    overflow: scroll;
+/*     overflow: auto;*/
     margin-top: 10px;
 }
 .menu_obj>a{
@@ -307,6 +307,8 @@ input[aria-controls="objects_t"]{
 #objects_t_filter{
     margin-bottom: 10px;
     font-size: 20px;
+    text-align: center;
+    float: none;
 }
 /*--END--OBJECTS--*/
 
