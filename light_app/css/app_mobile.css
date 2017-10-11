@@ -221,7 +221,7 @@ button[name="exit"]{
 .top_btn{
     background: url(../img/round-up.png);
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: top;
 }
 .bottom_btn{
     background: url(../img/round-down.png);
