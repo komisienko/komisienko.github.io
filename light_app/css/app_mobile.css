@@ -1,5 +1,16 @@
 @charset "UTF-8";
 @import "./font.css";
+@viewport {
+    width: device-width;
+    zoom: 1;
+    max-zoom: 2;
+   }
+@-ms-viewport{
+        width: device-width;
+    zoom: 1;
+    max-zoom: 2;
+}
+
 * {
     font-family: "MyriadProRegular";
     margin: 0;
@@ -48,12 +59,13 @@ a:hover{
     width: 320px;
     margin: 0 auto;
     position: relative;
+    height: 100%;
 }
 /*nav*/
 .nav_menu{
-width: 100%;
-height: 52px;
-line-height: 52px;
+    width: 100%;
+    height: 52px;
+    line-height: 52px;
 }
 .back{
     display: block;
@@ -125,7 +137,7 @@ button[name="forgot"]{
     height: 70px;
 }
 .footer{
-    width: 320px;
+    width: 100%;
     height: 40px;
     position: relative;
     left: 0;
@@ -140,10 +152,18 @@ button[name="exit"]{
     font-size: 20px;
     background: #fff ;
 }
-
+/*DELETE IT*/
+.footer>a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 20px;
+    background: #fff ;
+    line-height: 40px;
+    }
 /*menu*/
 .menu_obj{
-    margin-top: 4px;
     width: 250px;
     margin-left: 23px;
     overflow: scroll;
@@ -201,7 +221,7 @@ button[name="exit"]{
 .top_btn{
     background: url(../img/round-up.png);
     background-repeat: no-repeat;
-        background-position: bottom;
+    background-position: bottom;
 }
 .bottom_btn{
     background: url(../img/round-down.png);
@@ -238,3 +258,10 @@ border-spacing: 0px 0px;}
     background-color: #fff;
 } 
 /*end_light control*/
+
+/*---MEDIA RULES---*/
+@media screen and (min-width: 375px){
+    .wrap{
+        width:375px;
+    }
+}
