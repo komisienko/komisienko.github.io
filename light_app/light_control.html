@@ -5,6 +5,8 @@
     <meta http-equiv="X-Ua-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Document</title>
+    <script src="./js/jquery-1.8.2.min.js"></script>
+    <link rel="stylesheet" href="./css/jquery.dataTables.min.css">
     <link rel="stylesheet" href="./css/app_mobile.css">
 </head>
 <body>
@@ -14,12 +16,13 @@
                 <a href="./menu.html" class="back"><img src="./img/back.png" class="back_icon" alt=""></a>
             </div>
             <div class="title_nav"><h4>Light control</h4></div>
+            
         </div>
         
-        <div class="control_button_panel">
+<!--         <div class="control_button_panel">
             <div class="cbp_left">
-                <button type="button" name="choose_object" class="top_btn">
-                    Choose<br>object
+                <button type="button" name="choose_object" class="top_btn" value="">
+                  <Label for="object" class="label_obj_gr"> <input type="radio" class="hidden_checkbox" name="object_group" id="object"><span class="lc_log"> Choose<br>object</span></Label>
                 </button><br>
                 <button type="button" name="object_on_off" class="bottom_btn">
                     Turn On/Off<br><span style="font-size: 10px">all objects</span>
@@ -27,7 +30,7 @@
             </div>
             <div class="cbp_right">
                 <button type="button" name="choose_group" class="top_btn">
-                    Choose<br>group
+                  <label for="group" class="label_obj_gr"> <input type="radio" class="hidden_checkbox" name="object_group" id="group"><span class="lc_log"> Choose<br>group</span></label>
                 </button><br>
                 <button type="button" name="group_on_off" class="bottom_btn">
                     Turn On/Off<br><span style="font-size: 10px">all groups</span>
@@ -36,98 +39,189 @@
         </div>
         <div class="turn_on_off_marked">
             <button type="button" name="market_turn">Turn On/Off marked</button>
-        </div>
-        <div class="table_ogc">
+        </div> -->
+     <!--    <div class="table_ogc">
             <table id="ogc">
-  <tr>
-    <th style="border:1px solid black; border-right:none;">Object</th>
-    <th style="border:1px solid black; border-right:none;">Group</th>
-    <th style="border:1px solid black">Control</th>
-  </tr>
-  <tr>
-    <td>SM1</td>
-    <td>Store</td>
-    <td>Open</td>
-  </tr>
-  <tr>
-    <td>Office</td>
-    <td>Room</td>
-    <td>Open</td>
-  </tr>
-  <tr>
-    <td>Skyscrapper</td>
-    <td>Leader</td>
-    <td>Open</td>
-  </tr>
-  <tr>
-    <td>Earthy</td>
-    <td>Orangerie</td>
-    <td>Open</td>
-  </tr>
-  <tr>
-    <td>SM1</td>
-    <td>Store</td>
-    <td>Open</td>
-  </tr>
-  <tr>
-    <td>Office</td>
-    <td>Room</td>
-    <td>Open</td>
-  </tr>
-  <tr>
-    <td>Skyscrapper</td>
-    <td>Leader</td>
-    <td>Open</td>
-  </tr>
-  <tr>
-    <td>Earthy</td>
-    <td>Orangerie</td>
-    <td>Open</td>
-  </tr>
-  <tr>
-    <td>SM1</td>
-    <td>Store</td>
-    <td>Open</td>
-  </tr>
-  <tr>
-    <td>Office</td>
-    <td>Room</td>
-    <td>Open</td>
-  </tr>
-  <tr>
-    <td>Skyscrapper</td>
-    <td>Leader</td>
-    <td>Open</td>
-  </tr>
-  <tr>
-    <td>Earthy</td>
-    <td>Orangerie</td>
-    <td>Open</td>
-  </tr>
-  <tr>
-    <td>SM1</td>
-    <td>Store</td>
-    <td>Open</td>
-  </tr>
-  <tr>
-    <td>Office</td>
-    <td>Room</td>
-    <td>Open</td>
-  </tr>
-  <tr>
-    <td>Skyscrapper</td>
-    <td>Leader</td>
-    <td>Open</td>
-  </tr>
-  <tr>
-    <td>Earthy</td>
-    <td>Orangerie</td>
-    <td>Open</td>
-  </tr>
-
-</table>
-        </div>
+          <tr>
+            <th style="border:1px solid black; border-right:none;">Object</th>
+            <th style="border:1px solid black; border-right:none;">Group</th>
+            <th style="border:1px solid black">Control</th>
+          </tr>
+          <tr>
+            <td>SM1</td>
+            <td>Store</td>
+            <td>Open</td>
+          </tr>
+          <tr>
+            <td>Office</td>
+            <td>Room</td>
+            <td>Open</td>
+          </tr>
+          <tr>
+            <td>Skyscrapper</td>
+            <td>Leader</td>
+            <td>Open</td>
+          </tr>
+          <tr>
+            <td>Earthy</td>
+            <td>Orangerie</td>
+            <td>Open</td>
+          </tr>
+          <tr>
+            <td>SM1</td>
+            <td>Store</td>
+            <td>Open</td>
+          </tr>
+          <tr>
+            <td>Office</td>
+            <td>Room</td>
+            <td>Open</td>
+          </tr>
+          <tr>
+            <td>Skyscrapper</td>
+            <td>Leader</td>
+            <td>Open</td>
+          </tr>
+          <tr>
+            <td>Earthy</td>
+            <td>Orangerie</td>
+            <td>Open</td>
+          </tr>
+          <tr>
+            <td>SM1</td>
+            <td>Store</td>
+            <td>Open</td>
+          </tr>
+          <tr>
+            <td>Office</td>
+            <td>Room</td>
+            <td>Open</td>
+          </tr>
+          <tr>
+            <td>Skyscrapper</td>
+            <td>Leader</td>
+            <td>Open</td>
+          </tr>
+          <tr>
+            <td>Earthy</td>
+            <td>Orangerie</td>
+            <td>Open</td>
+          </tr>
+          <tr>
+            <td>SM1</td>
+            <td>Store</td>
+            <td>Open</td>
+          </tr>
+          <tr>
+            <td>Office</td>
+            <td>Room</td>
+            <td>Open</td>
+          </tr>
+          <tr>
+            <td>Skyscrapper</td>
+            <td>Leader</td>
+            <td>Open</td>
+          </tr>
+          <tr>
+            <td>Earthy</td>
+            <td>Orangerie</td>
+            <td>Open</td>
+          </tr>
         
+        </table>
+        </div> -->
+                <div class="table_wrap_light">
+       		<thead>
+        	</thead>
+        		<table class="table" id="light_control_tab">
+        			<thead>
+        				<tr>
+        					<th>Status</th>
+        					<th>Object</th>
+        					<th>Group</th>
+        				</tr>
+        			</thead>
+        			<tbody class="tbody_lc">
+        				<tr>
+                            <td>
+                               <div class="status_checkbox">
+                                    <input type="checkbox" value="0" class="hidden_checkbox" id="status_id_1" name="">
+                                    <label for="status_id_1"></label>
+                                </div> 
+                            </td>
+                            <td>Office</td>
+                            <td>Floor 1</td>
+        				</tr>
+        				<tr>
+                            <td>
+                               <div class="status_checkbox">
+                                    <input type="checkbox" value="0" class="hidden_checkbox" id="status_id_2" name="">
+                                    <label for="status_id_2"></label>
+                                </div> 
+                            </td>
+                            <td>Office</td>
+                            <td>Floor 1</td>
+        				</tr>
+        				<tr>
+                            <td>
+                               <div class="status_checkbox">
+                                    <input type="checkbox" value="0" class="hidden_checkbox" id="status_id_3" name="">
+                                    <label for="status_id_3"></label>
+                                </div> 
+                            </td>
+                            <td>Office</td>
+                            <td>Floor 1</td>
+        				</tr>
+        				<tr>
+                            <td>
+                               <div class="status_checkbox">
+                                    <input type="checkbox" value="0" class="hidden_checkbox" id="status_id_4" name="">
+                                    <label for="status_id_4"></label>
+                                </div> 
+                            </td>
+                            <td>Office</td>
+                            <td>Floor 1</td>
+        				</tr>
+        				<tr>
+                            <td>
+                               <div class="status_checkbox">
+                                    <input type="checkbox" value="0" class="hidden_checkbox" id="status_id_5" name="">
+                                    <label for="status_id_5"></label>
+                                </div> 
+                            </td>
+                            <td>Office</td>
+                            <td>Floor 1</td>
+        				</tr>
+        				<tr>
+                            <td>
+                               <div class="status_checkbox">
+                                    <input type="checkbox" value="0" class="hidden_checkbox" id="status_id_6" name="">
+                                    <label for="status_id_6"></label>
+                                </div> 
+                            </td>
+                            <td>Office</td>
+                            <td>Floor 1</td>
+        				</tr>
+
+        			</tbody>
+        		</table>
+        		
+        </div>
     </div>
+    
+             <script src="js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function() {
+             var table = $('#light_control_tab').DataTable({
+        "paging":   false,
+        "ordering": false,
+        "info":     false,  
+        "language": {
+        searchPlaceholder: "name" ,       
+//            "url": "http://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Russian.json"
+             }
+             });
+        });
+</script>   
 </body>
 </html>
