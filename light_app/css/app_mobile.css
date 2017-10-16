@@ -45,6 +45,7 @@ body {
 h1, h2, h3, h4, h5, h6 , p, ul, li{
     font-family: 'MyriadProRegular';
     font-weight: 300 !important;
+    color: #333;
 }
 .hidden_checkbox{
     position: absolute;
@@ -56,20 +57,20 @@ button{
     outline: none;
 }
 button:active{
-    color: #f60
+    color: #f60;
+    opacity: 1;
 }
 a{
-    color: #000;
+    color: #333;
     text-decoration: none !important;
     outline: none !important;
     -webkit-tap-highlight-color: rgba(0,0,0,0); 
     -webkit-tap-highlight-color: transparent;
 }
 a:hover{
-    color: #f60 !important; 
-    text-decoration: none;
+   color: #f80 !important; 
+   text-decoration: none;
 }
-
 .wrap{
     display: block;
     width: 320px;
@@ -239,25 +240,8 @@ button[name="exit"]{
     position: relative;
     display: block;
 }
-.menu_obj a span:before{
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    text-decoration: inherit;
-    color: #b7b7b7;
-    font-size: 21px;
-    padding-right: 0.5em;
-    position: absolute;;
-    opacity: 0.8;
-    z-index: 1;
-        top: 0;
-    }
 
-}.menu_obj li:hover::before{
-    color: #f80;
-    opacity: 1;
-}
-.menu_obj>ul>li>a{
+.a_cover{
     display: block;
     width: 280px;
     height: 52px;
@@ -265,60 +249,20 @@ button[name="exit"]{
     font-size: 20px; 
     z-index: 2;
 }
-
-.menu_obj a span:nth-child(1){
+.menu_img span{
+    color: #b7b7b7;
+    opacity: 0.8;
+}
+.menu_img{
     display: inline-block;
     height: 52px;
     width: 52px;
     float: left;
+    text-align: center;
+    opacity: 0.6;
 }
-.menu_obj a .menu_text{
+.menu_text{
     display: inline-block;
-        ;
-}
-/*
-.menu_obj ul li::before{
-    content: "";
-    background-image: url(../img/menu_light.png);
-    background-repeat: no-repeat;
-    background-position: 15px 15px;
-    background-size: 65%;
-    width: 52px;
-    height: 52px;
-    position: absolute;
-}
-*/
-.li_light_control:before{
-    content: "\f0eb";
-    left: 20px;
-}
-.li_user_and_access:before{
-    content: "\f0c0";
-    left: 13px;
-}
-.li_events:before{
-        content: "\f022";
-    left: 13px;
-}
-.li_objects:before{
-    content:"\f247";
-    left: 13px;
-}
-.li_scenarios:before{
-    content: "\f0ae";
-    left: 13px;
-}
-.li_group_light:before{
-    content: "\f0e8";
-    left: 13px;
-}
-.li_sheldule:before{
-    content: "\f017";
-    left: 13px;
-}
-.li_equipment:before{
-    content: "\f085";
-    left: 13px;
 }
 /*end_menu*/
 
