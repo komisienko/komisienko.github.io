@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-Ua-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <title>Document</title>
+    <title>light control</title>
     <script src="./js/jquery-1.8.2.min.js"></script>
     <link rel="stylesheet" href="./css/jquery.dataTables.min.css">
     <link rel="stylesheet" href="./css/app_mobile.css">
@@ -15,8 +15,7 @@
             <div class="back">
                 <a href="./menu.html" class="back"><img src="./img/back.png" class="back_icon" alt=""></a>
             </div>
-            <div class="title_nav"><h4>Light control</h4></div>
-            
+            <div class="title_nav"><h4>Управление светом</h4></div>
         </div>
         
 <!--         <div class="control_button_panel">
@@ -133,12 +132,12 @@
                 <div class="table_wrap_light">
        		<thead>
         	</thead>
-        		<table class="table" id="light_control_tab">
+        		<table class="light_control_tab" id="light_control_tab">
         			<thead>
         				<tr>
-        					<th>Status</th>
-        					<th>Object</th>
-        					<th>Group</th>
+        					<th>Статус</th>
+        					<th>Объект</th>
+        					<th>Группа</th>
         				</tr>
         			</thead>
         			<tbody class="tbody_lc">
@@ -149,8 +148,8 @@
                                     <label for="status_id_1"></label>
                                 </div> 
                             </td>
-                            <td>Office</td>
-                            <td>Floor 1</td>
+                            <td onclick="location.href='./light_control_group.html'">Office</td>
+                            <td onclick="location.href='./light_control_group.html'">Floor 1</td>
         				</tr>
         				<tr>
                             <td>
@@ -159,8 +158,8 @@
                                     <label for="status_id_2"></label>
                                 </div> 
                             </td>
-                            <td>Office</td>
-                            <td>Floor 1</td>
+                            <td onclick="location.href='./light_control_group.php?id_2'">Magazine</td>
+                            <td onclick="location.href='./light_control_group.php?id_2'">Floor 22</td>
         				</tr>
         				<tr>
                             <td>
@@ -217,8 +216,8 @@
         "ordering": false,
         "info":     false,  
         "language": {
-        searchPlaceholder: "name" ,       
-//            "url": "http://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Russian.json"
+        searchPlaceholder: "Имя" ,       
+            "url": "http://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Russian.json"
              }
              });
         });
