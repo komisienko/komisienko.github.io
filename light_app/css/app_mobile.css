@@ -237,6 +237,7 @@ button[name="exit"]{
     text-decoration: none;
     list-style-type: none;
     position: relative;
+    display: block;
 }
 .menu_obj li:before{
         font-family: FontAwesome;
