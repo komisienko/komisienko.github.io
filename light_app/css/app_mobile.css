@@ -75,7 +75,7 @@ a:hover{
 }
 .wrap{
     display: block;
-    width: 320px;
+    width: 100%;
     margin: 0 auto;
     position: relative;
     height: 100%;
@@ -135,8 +135,8 @@ input[name="password"]:focus{
 }
 .user_login > form > input[type="submit"]{
     height: 42px;
-  padding: 0 6px 0 6px;
-  margin: 6px 8px 6px 8px;
+/*   padding: 0 6px 0 6px;
+  margin: 6px 8px 6px 8px; */
   min-width: 88px;
   border-radius: 3px;
   font-size: 20px;
@@ -155,8 +155,8 @@ input[name="password"]:focus{
     width: 300px;
     text-align: right;
     margin: 0 auto;
-    margin-top: 15px;
-    margin-bottom: 15px;
+/*     margin-top: 15px;
+    margin-bottom: 15px; */
 }
 input[name="login"]::-webkit-input-placeholder {color:#bdbdbd;}
 input[name="login"]::-moz-placeholder{color:#bdbdbd;}/* Firefox 19+ */
@@ -168,8 +168,8 @@ input[name="password"]:-moz-placeholder{color:#bdbdbd;}/* Firefox 18- */
 input[name="password"]:-ms-input-placeholder{color:#bdbdbd;}
 button[name="forgot"]{
     height: 42px;
-    padding: 0 6px 0 6px;
-    margin: 6px 8px 6px 8px;
+/*     padding: 0 6px 0 6px;
+    margin: 6px 8px 6px 8px; */
     min-width: 88px;
     border-radius: 3px;
     font-size: 14px;
@@ -234,8 +234,8 @@ button[name="exit"]{
     width: 270px;
 
 /*     overflow: auto;*/
-    margin-top: 10px;
-}
+/*     margin-top: 10px;
+     */}
 .menu_obj li{
     text-decoration: none;
     list-style-type: none;
