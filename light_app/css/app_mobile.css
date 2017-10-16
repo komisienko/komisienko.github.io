@@ -8,7 +8,14 @@
         width: device-width;
     zoom: 1;
 }
-
+@font-face {
+    font-family: FontAwesome ; /* Имя шрифта */
+    src: url(./fonts/fa/fontawesome-webfont.woff); /* Путь к файлу со шрифтом */
+   }
+@font-face {
+    font-family: FontAwesome ; /* Имя шрифта */
+    src: url(./fonts/fa/fontawesome-webfont.ttf); /* Путь к файлу со шрифтом */
+   }
 * {
     font-family: "MyriadProRegular";
     margin: 0;
