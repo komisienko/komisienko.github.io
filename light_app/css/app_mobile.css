@@ -239,8 +239,8 @@ button[name="exit"]{
     position: relative;
     display: block;
 }
-.menu_obj li:before{
-        font-family: FontAwesome;
+.menu_obj a span:before{
+    font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
     text-decoration: inherit;
@@ -249,10 +249,10 @@ button[name="exit"]{
     padding-right: 0.5em;
     position: absolute;;
     opacity: 0.8;
+    z-index: 1;
+        top: 0;
     }
-.menu_obj li:active::before{
-    color: #f80;
-    opacity: 1;
+
 }.menu_obj li:hover::before{
     color: #f80;
     opacity: 1;
@@ -262,10 +262,20 @@ button[name="exit"]{
     width: 280px;
     height: 52px;
     line-height: 52px;
-    padding-left: 52px;
-    font-size: 20px;
+    font-size: 20px; 
+    z-index: 2;
 }
 
+.menu_obj a span:nth-child(1){
+    display: inline-block;
+    height: 52px;
+    width: 52px;
+    float: left;
+}
+.menu_obj a .menu_text{
+    display: inline-block;
+        ;
+}
 /*
 .menu_obj ul li::before{
     content: "";
@@ -280,42 +290,34 @@ button[name="exit"]{
 */
 .li_light_control:before{
     content: "\f0eb";
-    top: 15px;
     left: 20px;
 }
 .li_user_and_access:before{
     content: "\f0c0";
-    top: 15px;
     left: 13px;
 }
 .li_events:before{
         content: "\f022";
-    top: 16px;
     left: 13px;
 }
 .li_objects:before{
     content:"\f247";
-    top: 15px;
     left: 13px;
 }
 .li_scenarios:before{
     content: "\f0ae";
-    top: 15px;
     left: 13px;
 }
 .li_group_light:before{
     content: "\f0e8";
-    top: 15px;
     left: 13px;
 }
 .li_sheldule:before{
     content: "\f017";
-    top: 15px;
     left: 13px;
 }
 .li_equipment:before{
     content: "\f085";
-    top: 15px;
     left: 13px;
 }
 /*end_menu*/
