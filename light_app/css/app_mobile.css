@@ -47,9 +47,9 @@ input,
 button{
     outline: none;
 }
-/* button:active{
+button:active{
     color: #f60
-} */
+}
 a{
     color: #000;
     text-decoration: none !important;
@@ -134,7 +134,9 @@ input[name="password"]:focus{
 /*     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);*/        
   background-color: rgba(0,0,0,0);
 }
-
+.user_login > form > input[type="submit"]:active{
+    color: #f80;
+}
 .forgot{
     width: 300px;
     text-align: right;
