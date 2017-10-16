@@ -53,7 +53,9 @@ h1, h2, h3, h4, h5, h6 , p, ul, li{
     right: -9999px;
 }
 input,
-button{
+button,
+a,
+label{
     outline: none;
 }
 button:active{
@@ -411,6 +413,7 @@ input[aria-controls="light_control_tab"]{
 	height: 40px;
     border-radius: 100%;
 	position: relative;
+    outline: none;
 }
 .status_checkbox label {
 	display: block;
