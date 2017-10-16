@@ -52,11 +52,15 @@ h1, h2, h3, h4, h5, h6 , p, ul, li{
     left: -9999px;
     right: -9999px;
 }
-input,
-button,
-a,
-label{
+input,button,a,label{
     outline: none;
+}
+input:active:focus,button:active:focus,a:active:focus,:active:focuslabel:active:focus{
+    outline: none;
+}
+
+button::-moz-focus-inner {
+  border: 0;
 }
 button:active{
     color: #f60;
@@ -409,27 +413,30 @@ input[aria-controls="light_control_tab"]{
 } 
                 /* chechbox STATUS*/
 .status_checkbox {
+     border-radius: 100%;
 	width: 40px;
 	height: 40px;
-    border-radius: 100%;
+   
 	position: relative;
     outline: none;
 }
 .status_checkbox label {
+    border-radius: 100px;
 	display: block;
 	width: 40px;
 	height: 40px;
-	border-radius: 100px;
+	
 	cursor: pointer;
 	position: absolute;
 	top: 0px;
 	left: 0px;
     outline: none;
 	background: #333;
-/* 	box-shadow:inset 0px 1px 3px rgba(0,0,0,0.5);
-	 */}
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	 }
 .status_checkbox input[type=checkbox]:checked + label {
-	background: #26ca28;
+	background-color: #1bff6e;
+    /*background: #26ca28;*/
 }
 /*---end_light control---*/
 /*EVENTS*/
