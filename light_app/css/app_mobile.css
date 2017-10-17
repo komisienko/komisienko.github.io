@@ -522,7 +522,7 @@ outline: none !important;
     color: #333;
 }
 .lcg td:nth-child(1){
-    padding-left: 20px;
+    padding: 10px 20px;
 }
 #drimmiring{
     max-width: 80%;
@@ -539,10 +539,11 @@ outline: none !important;
     content: " %";
 }
 .scenarios{
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 .schedule{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .scenarios, .schedule{
     width: 100%;
@@ -565,15 +566,25 @@ outline: none !important;
     height: 100%;
 }
 
-button[name="gc_btn_on_off"],
-button[name="gc_btn_block"]{
+.gc_btn_on_off>label,
+.gc_btn_block>label{
+    display: block;
     height: 51px;
     width: 80px;
     border: 1px solid #333;
     border-radius: 7px;
     background: #fff;
     font-size: 15px;
+    margin: 0 auto;
+    line-height: 51px;
 }
+.gc_btn_on_off input[name="gc_btn_on_off"]:checked + label,
+.gc_btn_block input[name="gc_btn_block"]:checked + label
+{
+    background: #b7b7b7;
+    border-color: #b7b7b7;
+}
+
 .gc_btn_on_off,.gc_btn_block{
     width: 50%; 
     float: left;
