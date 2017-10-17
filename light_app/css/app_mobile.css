@@ -516,10 +516,16 @@ outline: none !important;
     border-bottom: 1px solid #333;
 }
 .lcg{
-    margin-left: 52px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    color: #333;
+}
+.lcg td:nth-child(1){
+    padding-left: 20px;
 }
 #drimmiring{
-    max-width: 50%;
+    max-width: 80%;
     margin: 0 auto;
     margin-bottom: 45px;
 }
@@ -532,11 +538,18 @@ outline: none !important;
 #drimmiring_slider::after{
     content: " %";
 }
+.scenarios{
+    margin-top: 20px;
+}
+.schedule{
+    margin-bottom: 20px;
+}
 .scenarios, .schedule{
     width: 100%;
     display: block;
     height: 40px;
     line-height: 40px;
+    padding-left: 20px;
 }
 .scenarios a,.schedule a{
     font-size: 20px;
@@ -545,7 +558,6 @@ outline: none !important;
     line-height: 40px;
     float: right;
     font-size: 40px;
-    padding-right: 18px;;
 }
 .scenarios a, .schedule a{
     display: block;
