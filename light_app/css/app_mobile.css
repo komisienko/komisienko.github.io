@@ -367,7 +367,7 @@ border: 1px solid #000;}
 }
 input[aria-controls="light_control_tab"]{
     border: none;
-    font-size: 20px;
+    font-size: 18px;
     border-bottom: 1px solid #bdbdbd;
 }
 .table_wrap_light{
