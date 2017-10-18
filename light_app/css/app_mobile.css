@@ -114,14 +114,16 @@ a:hover{
     vertical-align: middle;
 }
 /*end_nav*/
-.user_login{
+.user_login, .new_user_add{
     font-size: 40px;
     font-family: inherit;
     text-align: center;
 /*    padding-top: 110px;*/
 }
-input[name="login"], 
-input[name="password"] {
+input[name="login"],
+input[name="new_user_login"], 
+input[name="password"], 
+input[name="new_user_email"] {
     width: 300px;
     height: 52px;
     font-size: 30px;
@@ -132,8 +134,10 @@ input[name="password"] {
     text-align: left;
 }
 input[name="login"]:focus, 
+input[name="new_user_login"]:focus,
+input[name="new_user_email"]:focus,
 input[name="password"]:focus{
-  
+
     border-bottom: 1px solid #f80;
       transition: .5s ease-out;
 }
@@ -376,21 +380,6 @@ input[aria-controls="light_control_tab"]{
 #light_control_tab tr:nth-child(odd){ 
     background-color: #fff;
 }
-/*
-#light_control_tab tr td{
-    position: relative;
-    z-index: 1;
-}
-#light_control_tab tr td:nth-child(n+2) a{ 
-    position: absolute;
-    width: 200%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
-    z-index: 2;
-    background-color: rebeccapurple;
-}
-*/
 #light_control_tab_filter{
     margin-bottom: 10px;
     font-size: 20px;
@@ -454,25 +443,30 @@ input[aria-controls="light_control_tab"]{
 }
 /*tab EVENTS*/
 /*--OBJECTS--*/
-#objects_t thead th{
+#objects_t thead th,
+#user_and_access_table thead th{
     text-align: left;
 }
-input[aria-controls="objects_t"]{
+input[aria-controls="objects_t"],
+input[aria-controls="user_and_access_table"]
+{
     border: none;
-    font-size: 20px;
+    font-size: 15px;
+    border-bottom: 1px solid #bdbdbd;
 }
 .table_wrap{
     margin-left: 10px;
     margin-right: 10px;
 }
-#objects_t tr:nth-child(even){
+#objects_t tr:nth-child(even), #user_and_access_table tr:nth-child(even){
     background-color: #b7b7b7;
 }
-#objects_t tr:nth-child(odd){ 
+#objects_t tr:nth-child(odd), #user_and_access_table tr:nth-child(odd){ 
     background-color: #fff;
 } 
 .dataTables_wrapper .dataTables_filter input {
     width: 200px;
+    
 }
 .create_object{
     display: block;
@@ -488,7 +482,8 @@ input[aria-controls="objects_t"]{
 #objects_t_filter{
     margin-bottom: 10px;
     font-size: 20px;
-    text-align: center;
+    text-align: left;
+    padding-left: 20px;
     float: none;
 }
 /*--END--OBJECTS--*/
@@ -591,7 +586,70 @@ outline: none !important;
     text-align: center;
 }
  /*---END---light_control_group---*/
+/*--User and acces--*/
+.add_delete_user{
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 88px;
+    line-height: 88px;
+    margin-bottom: 20px
+}
 
+.add_user, .delete_user{
+    width: 50%;
+    display: inline-block;
+    float: left;
+}
+
+.add_user button, .delete_user button{
+    height: 51px;
+    width: 120px;
+    border: 1px solid #333; 
+    border-radius: 7px;
+    background-color: #fff;
+    margin: 0 auto;
+    font-size: 15px;
+}
+.add_delete_user button:active{
+    background: #b7b7b7;
+    border-color: #b7b7b7;
+    color: #333;
+}
+
+/*---add_new user---*/
+.devider_screen{
+        display: block;
+    text-align: center;
+    width: 300px;
+    height: 100px;
+    margin: 0 auto;
+    margin-bottom: 20px
+}
+.devider_screen_section_1,
+.devider_screen_section_2{
+    width: 50%;
+    display: inline-block;
+    float: left;
+    height: inherit;
+    line-height: 100px;
+}
+.new_user_add{
+    padding-top: 100px;
+}
+.new_user_add input[type="submit"],
+.new_user_add input[type="reset"]{
+    height: 51px;
+    width: 95px;
+    border: 0;
+    font-size: 20px;
+    background: #fff;
+
+    
+}
+
+/*---END---add_new user---*/
+/*--END--User and acces--*/
 
 
 /*---MEDIA RULES---*/

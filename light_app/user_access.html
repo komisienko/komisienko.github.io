@@ -1,0 +1,74 @@
+        <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-Ua-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <script src="./js/jquery-1.8.2.min.js"></script>
+    <link rel="stylesheet" href="./css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="./css/app_mobile.css">
+</head>
+<body>
+  <div class="wrap">
+    <div class="nav_menu">
+            <div class="back">
+                <a href="./menu.html" class="back"><img src="./img/back.png" class="back_icon" alt=""></a>
+            </div>
+            <div class="title_nav"><h4>Пользователи и доступ</h4></div>
+    </div>
+        
+         <div class="add_delete_user">
+             <div class="add_user"><button name="add_user" onclick="javascript:location.href='./user_access_add_user.html'" >Добавить<br> пользователя</button></div>
+             <div class="delete_user"><button name="delete_user">Удалить пользователя</button></div>
+         </div>
+    <div class="table_wrap">
+                		<table class="table" id="user_and_access_table">
+        			<thead>
+        				<tr>
+        					<th>Пользователь</th>
+        					<th>Объект</th>
+        				</tr>
+        			</thead>
+        			<tbody id="overflow_tbody">
+        				<tr>
+                            <td>Босс</td>
+                            <td>Магазин</td>
+        				</tr>
+        				<tr>
+                            <td>Босс</td>
+                            <td>Прилавок</td>
+        				</tr>
+        				<tr>
+                            <td>Админ</td>
+                            <td>Хранилище</td>
+        				</tr>
+        				<tr>
+                            <td>Шеф</td>
+                            <td>Ресторан</td>
+        				</tr>
+        			</tbody>
+        		</table>
+    </div>
+   
+     
+            
+            
+<script src="js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function() {
+             var table = $('#user_and_access_table').DataTable({
+        "paging":   false,
+        "ordering": false,
+        "info":     false,  
+        "language": {
+        searchPlaceholder: "Имя" ,       
+            "url": "./js/dataTables_json/Russian.json"
+             }
+             });
+        });
+        </script>   
+        
+ </div>        
+</body>
+</html>
