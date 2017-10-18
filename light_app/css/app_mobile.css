@@ -595,7 +595,14 @@ outline: none !important;
     line-height: 88px;
     margin-bottom: 20px
 }
-
+#user_and_access_table_filter{
+        margin-bottom: 10px;
+    font-size: 20px;
+    text-align: left;
+    float: none;
+    padding-left: 20px;
+    margin: 20px 0;
+}
 .add_user, .delete_user{
     width: 50%;
     display: inline-block;
@@ -644,9 +651,8 @@ outline: none !important;
     border: 0;
     font-size: 20px;
     background: #fff;
-
-    
 }
+
 
 /*---END---add_new user---*/
 /*--END--User and acces--*/
