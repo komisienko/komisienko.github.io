@@ -623,7 +623,7 @@ outline: none !important;
     border-color: #b7b7b7;
     color: #333;
 }
-
+/*---END---add_new user---*/
 /*---add_new user---*/
 .devider_screen{
         display: block;
@@ -652,11 +652,29 @@ outline: none !important;
     font-size: 20px;
     background: #fff;
 }
-
-
-/*---END---add_new user---*/
 /*--END--User and acces--*/
-
+/*---objects add---*/
+#objects_add_form {
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 20px;
+}
+#objects_add_form input[type="text"]{
+    border: none;
+    border-bottom: 1px solid #bdbdbd;
+    font-size: 20px;
+    margin-bottom: 24px;
+    width: 100%;
+    
+}
+#objects_add_form .devider_screen input{
+    height: 51px;
+    width: 95px;
+    border: 0;
+    font-size: 20px;
+    background: #fff;
+}
+    /*---END---objects add---*/
 
 /*---MEDIA RULES---*/
 /* @media screen and (min-width: 375px){
