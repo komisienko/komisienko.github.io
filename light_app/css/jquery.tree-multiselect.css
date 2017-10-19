@@ -65,10 +65,7 @@ height: 40px}
       width: 10px; }
 div.tree-multiselect div.title > span.collapse-section{
     position: relative;
-    -webkit-transition: top 1s ease-out 0.5s;
-     -moz-transition: top 1s ease-out 0.5s;
-     -o-transition: top 1s ease-out 0.5s;
-     transition: top 1s ease-out 0.5s;
+    float: right;
 }
       div.tree-multiselect div.title > span.collapse-section:after {
           content: "\f149";
@@ -79,10 +76,9 @@ div.tree-multiselect div.title > span.collapse-section{
 /*--adjust as necessary--*/
     color: #000;
     font-size: 20px;
-    padding-right: 0.5em;
     position: absolute;
-    top: -5px;
-    left: 0;}
+    top: 9px;
+    left: -10px;}
     div.tree-multiselect div.title:hover {
       cursor: pointer; }
   div.tree-multiselect input[type=checkbox] {
@@ -92,6 +88,7 @@ height: 30px;
 width: 30px;
     position: relative;
       top: 5px;
+      margin-left: 5px;
 }
     div.tree-multiselect input[type=checkbox]:not([disabled]):hover {
       cursor: pointer; }
