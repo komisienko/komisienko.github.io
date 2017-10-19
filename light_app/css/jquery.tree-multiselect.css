@@ -2,8 +2,8 @@
 div.tree-multiselect {
   border-top: 1px solid #333;
   display: table;
-  height: inherit;
-  width: calc(100% - 20px);
+/*   height: inherit;
+   */  width: calc(100% - 20px);
     margin-left: 10px;
     margin-right: 10px;
 }
