@@ -675,7 +675,12 @@ outline: none !important;
     background: #fff;
 }
     /*---END---objects add---*/
+/*---ADD GROUP---*/
+.ad_user_name_mail{
+    padding-left: 40px;
+}
 
+/*---END---ADD GROUP---*/
 /*---MEDIA RULES---*/
 /* @media screen and (min-width: 375px){
     .wrap{

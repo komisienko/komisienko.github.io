@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-Ua-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="./css/jquery.tree-multiselect.css">
+    <script src="./js/jquery-1.11.3.min.js"></script>
+    <script src="./js/jquery.tree-multiselect.min.js"></script>
+<!--    <script src="./js/jquery.ui.touch-punch.min.js"></script>-->
+       <link rel="stylesheet" href="./css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./css/app_mobile.css">
+</head>
+<body>
+     <div class="nav_menu">
+            <div class="back">
+                <a href="./user_access.html" class="back"><img src="./img/back.png" class="back_icon" alt=""></a>
+            </div>
+            <div class="title_nav"><h4>Добавить группу</h4></div>
+    </div>
+        <div class="wrap">
+            <div class="ad_user_name_mail">
+                <h2 class="user_name">Шеф</h2><br>
+                <h4 class="user_mail">chef@fuck.off</h4>
+            </div>
+            
+            <h2 style="text-align: center;padding: 10px 0;">Объекты и группы</h2>
+            
+        <select id="demo" multiple="multiple">
+          <option value="one" data-section="Торговый Центр" >Магазин 1</option>
+          <option value="two" data-section="Торговый Центр" >Магазин 2</option>
+          <option value="three" data-section="Торговый Центр" >Магазин 3</option>
+          
+          <option value="four" data-section="Офис">Комната 1</option>
+          <option value="one" data-section="Офис" >Комната 2</option>
+          <option value="two" data-section="Офис" >Комната 3</option>
+          <option value="three" data-section="Офис" >Комната 4</option>
+  <option value="four" data-section="Офис">Комната 5</option>
+  
+</select>   
+            
+            
+ 
+        </div>
+        <script>
+          $("#demo").treeMultiselect({
+              startCollapsed: true
+          });
+
+
+    </script>
+</body>
+</html>
