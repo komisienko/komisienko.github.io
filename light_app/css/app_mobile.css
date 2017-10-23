@@ -10,11 +10,11 @@
 }
 @font-face {
     font-family: FontAwesome ; /* Имя шрифта */
-    src: url(./fonts/fa/fontawesome-webfont.woff); /* Путь к файлу со шрифтом */
+    src: url(./fonts/fontawesome-webfont.woff); /* Путь к файлу со шрифтом */
    }
 @font-face {
     font-family: FontAwesome ; /* Имя шрифта */
-    src: url(./fonts/fa/fontawesome-webfont.ttf); /* Путь к файлу со шрифтом */
+    src: url(./fonts/fontawesome-webfont.ttf); /* Путь к файлу со шрифтом */
    }
 * {
     font-family: "MyriadProRegular";
@@ -70,6 +70,59 @@ button:active{
     color: #f60;
     opacity: 1;
 }
+/*---DATA TABLES ICONS---*/
+table.dataTable thead th {
+    position: relative;
+    background-image: none !important;
+}
+ 
+table.dataTable thead th.sorting:after,
+table.dataTable thead th.sorting_asc:after,
+table.dataTable thead th.sorting_desc:after {
+    position: absolute;
+    top: 12px;
+    right: 8px;
+    display: block;
+    font-family: FontAwesome;
+}
+.devider_screen{
+        display: block;
+    text-align: center;
+    width: 300px;
+    height: 52px;
+    margin: 0 auto;
+/*    margin-bottom: 20px*/
+}
+.devider_screen_section_1,
+.devider_screen_section_2{
+    width: 50%;
+    display: inline-block;
+    float: left;
+    height: inherit;
+/*    line-height: 100px;*/
+}
+.devider_screen_on3{
+    width: 33%;
+    display: inline-block;
+    float: left;
+    height: inherit;
+/*    line-height: 100px;*/
+}
+
+table.dataTable thead th.sorting:after {
+    content: "\f0dc";
+    color: #ddd;
+    font-size: 0.8em;
+    padding-top: 0.12em;
+}
+table.dataTable thead th.sorting_asc:after {
+    content: "\f0de";
+}
+table.dataTable thead th.sorting_desc:after {
+    content: "\f0dd";
+}
+/*---END DataTables icons---*/
+
 a{
     color: #333;
     text-decoration: none !important;
@@ -141,9 +194,8 @@ input[name="login"]:focus,
 input[name="new_user_login"]:focus,
 input[name="new_user_email"]:focus,
 input[name="password"]:focus{
-
     border-bottom: 1px solid #f80;
-      transition: .5s ease-out;
+    transition: .5s ease-out;
 }
 .user_login > form > input[type="submit"]{
     height: 42px;
@@ -210,7 +262,7 @@ button[name="forgot"]{
 }
 .footer{
     width: 100%;
-    height: 40px;
+/*     height: 40px; */
     position: relative;
     left: 0;
     bottom: 0;
@@ -229,6 +281,7 @@ button[name="exit"]{
     text-decoration: none;
     border: none;
     outline: none;
+    font-size: 20px;
     background-color: rgba(0,0,0,0);
 }
 /*DELETE IT*/
@@ -366,6 +419,15 @@ border: 1px solid #000;}
 .label_obj_gr>input[type="radio"]:checked ~ .lc_log{
     color: #f60;
 } */
+.dataTables_filter{
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: left !important;
+    float: none !important;
+    padding-left: 20px;
+    margin: 20px 0;
+    margin-top: 1.5em !important;
+}
 #light_control_tab thead th{
     text-align: left;
 }
@@ -383,14 +445,6 @@ input[aria-controls="light_control_tab"]{
 }
 #light_control_tab tr:nth-child(odd){ 
     background-color: #fff;
-}
-#light_control_tab_filter{
-    margin-bottom: 10px;
-    font-size: 20px;
-    text-align: left;
-    float: none;
-    padding-left: 20px;
-    margin: 20px 0;
 }
 .light_control_tab{
     position: relative;
@@ -448,12 +502,13 @@ input[aria-controls="light_control_tab"]{
 /*tab EVENTS*/
 /*--OBJECTS--*/
 #objects_t thead th,
-#user_and_access_table thead th{
+#user_and_access_table thead th,
+#equipment_t thead th{
     text-align: left;
 }
 input[aria-controls="objects_t"],
-input[aria-controls="user_and_access_table"]
-{
+input[aria-controls="user_and_access_table"],
+input[aria-controls="equipment_t"]{
     border: none;
     font-size: inherit;
     border-bottom: 1px solid #bdbdbd;
@@ -462,17 +517,21 @@ input[aria-controls="user_and_access_table"]
     margin-left: 10px;
     margin-right: 10px;
 }
-#objects_t tr:nth-child(even), #user_and_access_table tr:nth-child(even){
+#objects_t tr:nth-child(even), 
+#user_and_access_table tr:nth-child(even),
+#equipment_t tr:nth-child(even){
     background-color: #b7b7b7;
 }
-#objects_t tr:nth-child(odd), #user_and_access_table tr:nth-child(odd){ 
+#objects_t tr:nth-child(odd),
+#user_and_access_table tr:nth-child(odd),
+#equipment_t tr:nth-child(odd){ 
     background-color: #fff;
 } 
 .dataTables_wrapper .dataTables_filter input {
     width: 200px;
     
 }
-.create_object{
+.big_button_href{
     display: block;
     height: 52px;
     width: 100%;
@@ -480,15 +539,7 @@ input[aria-controls="user_and_access_table"]
     top: 50px;
     font-size: 30px;
     line-height: 52px;
-/*    margin-top: 64px;*/
     margin-bottom: 64px;
-}
-#objects_t_filter{
-    margin-bottom: 10px;
-    font-size: 20px;
-    text-align: left;
-    padding-left: 20px;
-    float: none;
 }
 /*--END--OBJECTS--*/
 
@@ -532,7 +583,7 @@ outline: none !important;
     text-align: center;
 }
 #drimmiring_slider::before{
-    content: "Диммирование ";
+    content: "Диммирование: ";
 }
 #drimmiring_slider::after{
     content: " %";
@@ -583,7 +634,6 @@ outline: none !important;
     background: #b7b7b7;
     border-color: #b7b7b7;
 }
-
 .gc_btn_on_off,.gc_btn_block{
     width: 50%; 
     float: left;
@@ -591,29 +641,8 @@ outline: none !important;
 }
  /*---END---light_control_group---*/
 /*--User and acces--*/
-.add_delete_user{
-    display: block;
-    text-align: center;
-    width: 100%;
-    height: 88px;
-    line-height: 88px;
-    margin-bottom: 20px
-}
-#user_and_access_table_filter{
-        margin-bottom: 10px;
-    font-size: 20px;
-    text-align: left;
-    float: none;
-    padding-left: 20px;
-    margin: 20px 0;
-}
-.add_user, .delete_user{
-    width: 50%;
-    display: inline-block;
-    float: left;
-}
-
-.add_user button, .delete_user button{
+.add_user,
+.delete_user{
     height: 51px;
     width: 120px;
     border: 1px solid #333; 
@@ -622,36 +651,16 @@ outline: none !important;
     margin: 0 auto;
     font-size: 15px;
 }
-.add_delete_user button:active{
+.add_user:active,
+.delete_user:active{
     background: #b7b7b7;
     border-color: #b7b7b7;
     color: #333;
 }
+
 /*---END---add_new user---*/
 /*---add_new user---*/
-.devider_screen{
-        display: block;
-    text-align: center;
-    width: 300px;
-    height: 52px;
-    margin: 0 auto;
-/*    margin-bottom: 20px*/
-}
-.devider_screen_section_1,
-.devider_screen_section_2{
-    width: 50%;
-    display: inline-block;
-    float: left;
-    height: inherit;
-/*    line-height: 100px;*/
-}
-.devider_screen_on3{
-    width: 33%;
-    display: inline-block;
-    float: left;
-    height: inherit;
-/*    line-height: 100px;*/
-}
+
 .new_user_add{
     padding-top: 100px;
 }

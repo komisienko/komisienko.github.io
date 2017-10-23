@@ -17,38 +17,34 @@
             </div>
             <div class="title_nav"><h4>Оборудование</h4></div>
      </div>
-            <a href="./equipment_add.html" class="create_object">Добавить оборудование</a>
+            <a href="./equipment_add.html" class="big_button_href">Добавить оборудование</a>
         <div class="table_wrap">
        	
-        		<table class="table" id="objects_t">
+        		<table class="table" id="equipment_t">
         			<thead>
         				<tr>
+        				    <th>Объект</th>
         					<th>Оборудование</th>
-        					<th>Каналы</th>
+        					<th>Статус</th>
         				</tr>
         			</thead>
         			<tbody id="overflow_tbody">
-        				<tr onclick="javascript:location.href='./objects_edit.html'">
+        				<tr onclick="javascript:location.href='./equipment_edit.html'">
+                            <td>Торговый центр 1</td>   
                             <td>Коробочка 1</td>
-                            <td>Подключено</td>
+                            <td>Включено</td>
         				</tr>
         				<tr>
-                            <td>Магазин 1</td>
-                            <td>Подключено</td>
+                            <td>Торговый центр 2</td>   
+                            <td>Коробочка 2</td>
+                            <td>Включено</td>
         				</tr>
         				<tr>
-                            <td>Магазин 2</td>
-                            <td>Подключено</td>
+                            <td>Торговый центр 3</td>   
+                            <td>Коробочка 3</td>
+                            <td>Отлючено</td>
         				</tr>
-        				<tr>
-                            <td>Магазин 3</td>
-                            <td>Подключено</td>
-        				</tr>
-        				<tr>
-                            <td>Офис 2</td>
-                            <td>Подключено</td>
-        				</tr>
-        			</tbody>
+                    </tbody>
         		</table>
         		
         </div>
@@ -57,12 +53,12 @@
         <script src="js/jquery.dataTables.min.js"></script>
         <script type="text/javascript">
         $(document).ready(function() {
-             var table = $('#objects_t').DataTable({
+             var table = $('#equipment_t').DataTable({
         "paging":   false,
-        "ordering": false,
+        "ordering": true,
         "info":     false,  
         "language": {
-        searchPlaceholder: "имя" ,       
+        searchPlaceholder: "Имя" ,       
            //"url": "http://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Russian.json"
            "url": "./js/dataTables_json/Russian.json"
              }
