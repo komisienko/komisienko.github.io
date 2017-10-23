@@ -539,7 +539,7 @@ input[aria-controls="equipment_t"]{
     top: 50px;
     font-size: 30px;
     line-height: 52px;
-    margin-bottom: 64px;
+    margin-bottom: 30px;
 }
 /*--END--OBJECTS--*/
 
@@ -662,7 +662,7 @@ outline: none !important;
 /*---add_new user---*/
 
 .new_user_add{
-    padding-top: 100px;
+    padding-top: 10px;
 }
 .new_user_add input[type="submit"],
 .new_user_add input[type="reset"]{
