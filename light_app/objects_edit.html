@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-Ua-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/app_mobile.css">
+</head>
+<body>
+   
+       <div class="nav_menu">
+            <div class="back">
+                <a href="./objects.html" class="back"><img src="./img/back.png" class="back_icon" alt=""></a>
+            </div>
+            <div class="title_nav"><h4>Редактировать объект</h4></div>
+    </div>
+    <div class="wrap">
+        <form action="#" id="objects_add_form" method="get">
+            <input type="text" placeholder="Имя" required value="Офис 1">
+<!--            <br>-->
+            <input type="text" placeholder="Страна" required value="Россия">
+<!--            <br>-->
+            <input type="text" placeholder="Город" required value="Новосибирск">
+<!--            <br>-->
+            <input type="text" placeholder="Часовой пояс" required value="UTC+3">
+<!--            <br>-->
+            <input type="text" placeholder="Улица" required value="Главная">
+<!--            <br>-->
+            <input type="text" placeholder="Дом" required value="3">
+<!--            <br>-->
+             <div class="devider_screen">
+                    <div class="devider_screen_on3"><input type="reset" onclick="javascript:location.href='./objects_edit.html'" value="Ред."></div>
+                    <div class="devider_screen_on3"><input type="submit" value="Удалить"></div>
+                   
+                    <div class="devider_screen_on3"><input type="reset" onclick="javascript:location.href='./objects.html'" value="Отменить"></div>
+                </div>
+        </form>    
+    </div>
+</body>
+</html>
