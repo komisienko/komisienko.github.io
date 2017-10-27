@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+        <meta http-equiv="X-Ua-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" type="text/css" href="./print.css" media="print">
+</head>
+<body>
+    <style>
+    </style>
+    
+    <div class="wrap">
+        <div class="inner_wrap">
+           
+       
+        <table id="info_head">
+          <thead>  
+           <caption class="header_nak">Накладная № 21 от «25» Октября 2017г. </caption>
+            <tr>
+                <td><div class="gen_text">Продавец: </div><span>ООО рога и комыта</span></td>
+
+            </tr>    
+            <tr>
+                <td><div class="gen_text">Адрес продавца</div>    <span>ООО рога и комыта</span></td>
+                
+            </tr>
+            <tr class="space_tr"></tr>
+            <tr>
+                <td><div class="gen_text">Покупатель:</div> <span>Петров васисий петровичПетров васисий петровичПетров васисий петрович Петров васисий петровичПетров васисий петровичПетров васисий петровичПетров васисий петрович</span></td>
+            </tr>    
+            <tr>
+                <td><div class="gen_text">Адрес покупателя:</div> <span>Киев Сечевых стрельцов дом 9271120380 </span></td>
+            </tr>
+             <tr class="space_tr"></tr>
+            <tr >
+                <td><div class="gen_text">Основание для отпуска:</div> <span class="span_clear">Потому что так надо</span></td>
+            </tr>
+            <tr class="space_tr"></tr>
+            <tr class="space_tr"></tr>
+            </thead>
+        </table>
+        
+        <table id="info_body">
+            <th>№</th>
+            <th>Товар</th>
+            <th>Ед.</th>
+            <th>Цена</th>
+            <th>Кол-во</th>
+            <th>Сумма</th>
+            <tr>
+                <td>1</td>
+                <td>Название товара</td>
+                <td>кг</td>
+                <td>4 555.00</td>
+                <td>10</td>
+                <td id="product_sum_1" class="count_col">20000</td>
+            </tr>            <tr>
+                <td>2</td>
+                <td>Название Название Название  товаратоварат оваратоваратовара товара Название  Название  Название </td>
+                <td>кг</td>
+                <td>4 555.00</td>
+                <td>10</td>
+                <td id="product_sum_2" class="count_col">30000</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Название товара</td>
+                <td>упак.</td>
+                <td>4 555.00</td>
+                <td>10</td>
+                <td id="product_sum_3" class="count_col">40000</td>
+            </tr>            <tr>
+                <td>1</td>
+                <td>Название товара</td>
+                <td>кг</td>
+                <td>4 555.00</td>
+                <td>10</td>
+                <td id="product_sum_4" class="count_col">50000</td>
+            </tr>            <tr>
+                <td>2</td>
+                <td>Название Название Название  товаратоварат оваратоваратовара товара Название  Название  Название </td>
+                <td>кг</td>
+                <td>4 555.00</td>
+                <td>10</td>
+                <td id="product_sum_5" class="count_col">60000</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Название товара</td>
+                <td>упак.</td>
+                <td>4 555.00</td>
+                <td>10</td>
+                <td id="product_sum_6" class="count_col">70000</td>
+            </tr>
+          <tr class="price_sector_nds">
+               
+                <td colspan="5">В том числе НДС 18%:</td>
+                <td id="nds">18%</td>
+            </tr>
+            <tr class="price_sector_total">
+
+                <td colspan="5">Итого:</td>
+                <td id="count_col_total"></td>
+            </tr>
+
+        </table>
+            <script>
+   function sum_total(){ 
+       var count_col_total1 = document.getElementsById("count_col");
+       var cls = document.getElementsByClassName("count_col");
+    var sum = 0;
+    for (var i = 0; i < cls.length; i++){
+        if(cls[i].className == "count_col"){
+            sum += isNaN(cls[i].innerHTML) ? 0 : parseInt(cls[i].innerHTML);
+        }
+        
+    }
+         
+       
+     var tot = count_col_total1.getElementById('count_col_total').innerHTML("sum * 18%");
+        
+   }
+        console.log(" your sum is " + tot);
+    </script> 
+        
+
+        <table id="info_footer_total">
+            <tbody>
+             <tr class="space_tr"></tr>
+                       
+            <tr>
+                <td>Всего выпущено: <span class="span_clear">Три наименования</span></td>
+            </tr>
+                
+            <tr>
+                <td><div class="gen_text">На сумму</div>    <span>Тут сумма прописью  столькото рублей</span></td>
+            </tr>
+            <tr>
+                <td><div class="gen_text">Продавец: </div><span>ООО рога и комыта</span></td>
+
+            </tr>
+            <tr>
+                <td><div class="gen_text">В том числе НДС18%: </div><span>Тысяча двести тридцать два руб. 0 коп.</span></td>
+
+            </tr>
+             <tr class="space_tr"></tr>
+            </tbody>
+        </table>
+                
+        <table id="info_footer_signatures">
+            <tbody>
+                <tr class="space_tr"></tr>
+                
+                <tr class="row_with_border">
+                    <td class="place_of_seal"><div class="gen_text"> Отпуск разрешил</div></td>
+                    <td class="podpis"></td>
+                    <td class="position"></td>
+                    <td colspan="3" class="full_name"></td>
+                </tr>
+                <tr class="space_tr"></tr>
+
+                <tr class="row_with_border">
+                    <td class=""><div class="gen_text"> Отпустил</div></td>
+                    <td class="podpis"></td>
+                    <td class="position"></td>
+                    <td colspan="3" class="full_name"></td>
+                </tr>
+                <tr class="space_tr"></tr>
+
+                <tr class="row_with_border">
+                    <td class="place_of_seal"><div class="gen_text"> Получил</div></td>
+                    <td class="podpis"></td>
+                    <td class="position"></td>
+                    <td colspan="3" class="full_name"></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    </div>    
+    
+
+    
+</body>
+</html>

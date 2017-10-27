@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+        <meta http-equiv="X-Ua-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" type="text/css" href="./print.css" media="print">
+</head>
+<body>
+    <style>
+    </style>
+    
+    <div class="wrap">
+        <div class="inner_wrap">
+           
+       
+        <table id="info_head">
+          <thead>  <caption class="header_nak">Накладная № 21 от «25» Октября 2017г. </caption>
+            <tr>
+                <td>Продавец:<span>ООО рога и комыта</span></td>
+
+            </tr>    
+            <tr>
+                <td>Адрес продавца</td>
+                <td>Киев артема 12</td>
+            </tr>
+            <tr class="space_tr"></tr>
+            <tr>
+                <td>Покупатель:</td>
+                <td>ООО рога и комыта</td>
+            </tr>    
+            <tr>
+                <td>Адрес покупателя</td>
+                <td>Киев артема 12</td>
+            </tr>
+             <tr class="space_tr"></tr>
+            <tr >
+                <td style="width: 10%;" colspan="2">Основание для отпуска</td>
+                
+            </tr>
+            </thead>
+        </table>
+    </div>
+    </div>
+    
+    
+</body>
+</html>

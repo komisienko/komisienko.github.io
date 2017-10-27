@@ -1,0 +1,33 @@
+/* 
+@page { size: auto;  margin: 0;} */
+/* @page :left {
+    margin: 1cm 1cm 1cm 2cm;
+   }
+   @page :right {
+    margin: 1cm 1cm 1cm 2cm; 
+   } */
+@media print{
+    #Header, #Footer { display: none !important; }
+/*     @page { size: auto;  margin: 0;} */    
+    @page :left {
+    margin: 1cm 1cm 1cm 2cm;
+   }
+   @page :right {
+    margin: 1cm 1cm 1cm 2cm; 
+   }
+
+}
+.wrap{
+/*    position: absolute;*/
+            width: 100%;
+/*            height: 29.7cm;*/
+/*            background-color: lightcyan;*/
+            max-height: 270mm;
+            max-width: 210mm;
+  page-break-after:always
+}
+.header_nak{
+    font-weight: bold;
+    font-size: 21px;
+    text-align: center;
+}

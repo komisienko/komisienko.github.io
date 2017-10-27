@@ -1,0 +1,192 @@
+* {
+    -webkit-print-color-adjust: exact;
+    /*background: green;*/
+}
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+.wrap {
+    width: 21cm;
+/*     height: 29.7cm;
+     */    max-height: 270mm;
+    max-width: 210mm;
+    overflow: hidden;
+    position: absolute;
+}
+.inner_wrap {
+    /*    background-color: lavender;*/
+}
+.header_nak {
+    font-weight: bold;
+    font-size: 21px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+#info_head,
+#info_body,
+#info_footer_total,
+#info_footer_signatures {
+    width: 100%;
+}
+.space_tr {
+    height: 10px;
+}
+#info_head tbody tr td,
+#info_footer_total tbody tr td {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+span {
+    width: 100%;
+    width: -webkit-fill-available;
+    width: -moz-fill-available;
+    border-bottom: 1px solid black;
+    display: inline-table;
+    font-weight: 600;
+    flex: 1;
+    /*     float: left;
+     */
+    /*     word-break: break-all
+     */
+}
+.span_clear {
+    border: none;
+    font-weight: normal;
+}
+span:before {
+    content: "\00a0";
+}
+#info_head tr td:nth-child(1) {
+    /*     white-space: nowrap;
+     */
+}
+.gen_text,
+span {
+    display: table-cell
+}
+#info_head tr td:nth-child(2),
+#info_footer_total tr td:nth-child(2) {
+    white-space: normal;
+    width: 99%;
+    font-weight: bold;
+    /*    text-decoration: underline;*/
+    border-bottom: 1px solid #000;
+}
+
+/*Главная таблица*/
+
+#info_body {
+    border-collapse: collapse;
+}
+#info_body th {
+    background-color: #cdcdcd;
+}
+#info_body tr td:first-child {
+    text-align: center;
+    width: 20px;
+    min-width: 20px;
+}
+#info_body tr td:nth-child(2) {
+    text-align: left;
+    max-width: 335px;
+}
+#info_body tr td:nth-child(3) {
+    text-align: center;
+    width: 35px;
+    max-width: 35px;
+}
+#info_body tr td:nth-child(4) {
+    text-align: right;
+    min-width: 80px;
+}
+#info_body tr td:nth-child(5) {
+    text-align: right;
+    /*     width: 50px;
+     */
+    max-width: 50px;
+}
+#info_body tr td:last-child {
+    text-align: right;
+    min-width: 80px;
+}
+#info_body tr td {
+    padding: 4px;
+    border: 1px solid #000;
+}
+#info_body th {
+    border: 3px solid #000;
+}
+.price_sector_nds td,
+.price_sector_total td {
+    border: none !important;
+    text-align: right !important;
+}
+.price_sector_nds td:last-child,
+.price_sector_total td:last-child {
+    border: 1px solid #000 !important;
+}
+
+/*----Поля с подписями ---*/
+
+#info_footer_signatures {
+    border-spacing: 10px;
+    position: relative;
+}
+#info_footer_signatures tr td {
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+    width: 100px;
+    position: relative;
+}
+#info_footer_signatures tr td:first-child {
+    border: none;
+    text-align: left;
+    width: 150px;
+}
+#info_footer_signatures tr td:last-child {
+    text-align: center;
+    width: 210px;
+}
+.row_with_border td {
+    border-bottom: 1px solid #000;
+}
+.podpis,
+.position,
+.fio,
+.place_of_seal{
+    position: absolute;
+}
+.podpis:before {
+    position: absolute;
+    content: "(Подпись)";
+    top: 20px;
+    left: 20px;
+    font-size: 12px;
+}
+.position:before {
+    position: absolute;
+    content: "(Должность)";
+    top: 20px;
+    left: 16px;
+    font-size: 12px;
+}
+.full_name:before {
+    position: absolute;
+    content: "(Ф.И.О.)";
+    top: 20px;
+    left: 120px;
+    font-size: 12px;
+}
+.place_of_seal:before{
+    position: absolute;
+    content: "М.П.";
+    top: 20px;
+    left: 34px;
+    font-size: 14px;
+    font-weight: bold;
+}

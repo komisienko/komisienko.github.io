@@ -101,6 +101,7 @@ table.dataTable thead th.sorting_desc:after {
     height: inherit;
 /*    line-height: 100px;*/
 }
+base64:ZwVtwqazWGKwBaf22ABu+GVKl84o3e6hfLHlER6XTyc=
 .devider_screen_on3{
     width: 33%;
     display: inline-block;
@@ -529,7 +530,7 @@ input[aria-controls="equipment_t"]{
 } 
 .dataTables_wrapper .dataTables_filter input {
     width: 200px;
-    
+
 }
 .big_button_href{
     display: block;
