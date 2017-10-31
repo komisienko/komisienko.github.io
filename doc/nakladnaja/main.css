@@ -8,15 +8,15 @@ body {
     padding: 0;
 }
 .wrap {
-    width: 21cm;
-/*     height: 29.7cm;
-     */    max-height: 270mm;
+    width: 210mm;
+    height: 29.7cm;
+    max-height: 270mm;
     max-width: 210mm;
     overflow: hidden;
     position: absolute;
 }
 .inner_wrap {
-    /*    background-color: lavender;*/
+    height: inherit;
 }
 .header_nak {
     font-weight: bold;
@@ -24,12 +24,19 @@ body {
     text-align: center;
     padding-bottom: 10px;
 }
+/*fix info_head for IE*/
+#info_head{max-width: 793px;}
+/*end fix info_head for IE*/
+
 #info_head,
 #info_body,
 #info_footer_total,
 #info_footer_signatures {
     width: 100%;
 }
+/*fix info_head for IE*/
+#info_head{max-width: 793px;}
+/*end fix info_head for IE*/
 .space_tr {
     height: 10px;
 }
@@ -41,7 +48,7 @@ body {
     display: -o-flex;
     display: flex;
 }
-span {
+.fix_table_span {
     width: 100%;
     width: -webkit-fill-available;
     width: -moz-fill-available;
@@ -58,15 +65,14 @@ span {
     border: none;
     font-weight: normal;
 }
-span:before {
+.fix_table_span:before {
     content: "\00a0";
 }
-#info_head tr td:nth-child(1) {
-    /*     white-space: nowrap;
-     */
-}
+/* #info_head tr td:nth-child(1) {
+    white-space: nowrap;
+} */
 .gen_text,
-span {
+.fix_table_span{
     display: table-cell
 }
 #info_head tr td:nth-child(2),
@@ -119,7 +125,7 @@ span {
     border: 1px solid #000;
 }
 #info_body th {
-    border: 3px solid #000;
+    border: 2px solid #000;
 }
 .price_sector_nds td,
 .price_sector_total td {

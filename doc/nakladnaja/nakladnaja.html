@@ -7,32 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" type="text/css" href="./print.css" media="print">
+    <script src="jquery-2.1.1.min.js"></script>
 </head>
 <body>
-    <style>
-    </style>
-    
     <div class="wrap">
         <div class="inner_wrap">
            
        
         <table id="info_head">
-          <thead>  
+ 
            <caption class="header_nak">Накладная № 21 от «25» Октября 2017г. </caption>
+
             <tr>
-                <td><div class="gen_text">Продавец: </div><span>ООО рога и комыта</span></td>
+                <td><div class="gen_text">Продавец: </div><span class="fix_table_span">ООО рога и комыта</span></td>
 
             </tr>    
             <tr>
-                <td><div class="gen_text">Адрес продавца</div>    <span>ООО рога и комыта</span></td>
+                <td><div class="gen_text">Адрес продавца</div>    <span class="fix_table_span">ООО рога и комыта</span></td>
                 
             </tr>
             <tr class="space_tr"></tr>
             <tr>
-                <td><div class="gen_text">Покупатель:</div> <span>Петров васисий петровичПетров васисий петровичПетров васисий петрович Петров васисий петровичПетров васисий петровичПетров васисий петровичПетров васисий петрович</span></td>
+                <td><div class="gen_text">Покупатель:</div> <span class="fix_table_span">Петров васисий петровичПетров васисий петровичПетров васисий петрович Петров васисий петровичПетров васисий петровичПетров васисий петровичПетров васисий петрович</span></td>
             </tr>    
             <tr>
-                <td><div class="gen_text">Адрес покупателя:</div> <span>Киев Сечевых стрельцов дом 9271120380 </span></td>
+                <td><div class="gen_text">Адрес покупателя:</div> <span class="fix_table_span">Киев Сечевых стрельцов дом 9271120380 </span></td>
             </tr>
              <tr class="space_tr"></tr>
             <tr >
@@ -40,7 +39,7 @@
             </tr>
             <tr class="space_tr"></tr>
             <tr class="space_tr"></tr>
-            </thead>
+            
         </table>
         
         <table id="info_body">
@@ -56,14 +55,14 @@
                 <td>кг</td>
                 <td>4 555.00</td>
                 <td>10</td>
-                <td id="product_sum_1" class="count_col">20000</td>
+                <td id="product_sum_1" class="count_col">200</td>
             </tr>            <tr>
                 <td>2</td>
                 <td>Название Название Название  товаратоварат оваратоваратовара товара Название  Название  Название </td>
                 <td>кг</td>
                 <td>4 555.00</td>
                 <td>10</td>
-                <td id="product_sum_2" class="count_col">30000</td>
+                <td id="product_sum_2" class="count_col">300</td>
             </tr>
             <tr>
                 <td>3</td>
@@ -71,34 +70,42 @@
                 <td>упак.</td>
                 <td>4 555.00</td>
                 <td>10</td>
-                <td id="product_sum_3" class="count_col">40000</td>
+                <td id="product_sum_3" class="count_col">400</td>
             </tr>            <tr>
-                <td>1</td>
+                <td>4</td>
                 <td>Название товара</td>
                 <td>кг</td>
                 <td>4 555.00</td>
                 <td>10</td>
-                <td id="product_sum_4" class="count_col">50000</td>
+                <td id="product_sum_4" class="count_col">500</td>
             </tr>            <tr>
-                <td>2</td>
+                <td>5</td>
                 <td>Название Название Название  товаратоварат оваратоваратовара товара Название  Название  Название </td>
                 <td>кг</td>
                 <td>4 555.00</td>
                 <td>10</td>
-                <td id="product_sum_5" class="count_col">60000</td>
+                <td id="product_sum_5" class="count_col">600</td>
             </tr>
             <tr>
-                <td>3</td>
+                <td>6</td>
                 <td>Название товара</td>
                 <td>упак.</td>
                 <td>4 555.00</td>
                 <td>10</td>
-                <td id="product_sum_6" class="count_col">70000</td>
+                <td id="product_sum_6" class="count_col">700</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Название товара</td>
+                <td>упак.</td>
+                <td>4 555.00</td>
+                <td>10</td>
+                <td id="product_sum_7" class="count_col">700</td>
             </tr>
           <tr class="price_sector_nds">
                
-                <td colspan="5">В том числе НДС 18%:</td>
-                <td id="nds">18%</td>
+                <td colspan="5" >В том числе НДС <span id="nds_percent">10</span>%:</td>
+                <td id="nds_sum"></td>
             </tr>
             <tr class="price_sector_total">
 
@@ -107,24 +114,49 @@
             </tr>
 
         </table>
-            <script>
-   function sum_total(){ 
-       var count_col_total1 = document.getElementsById("count_col");
-       var cls = document.getElementsByClassName("count_col");
-    var sum = 0;
-    for (var i = 0; i < cls.length; i++){
-        if(cls[i].className == "count_col"){
+    <script type="text/javascript">
+        
+    function calculate(){ 
+    var getnds = $('#nds_percent').text();
+    //console.log(getnds);
+//    var nds = "";
+//    for (i = 0; i < getnds.length; i++)
+//    {
+//    if ("" + parseInt(getnds[i]) != "NaN") //if the character is a number
+//    nds = nds + getnds[i];
+//    }
+    //var nds = parseFloat();
+    //НДС С процентом, удаляем знак процента, чтоб привести к number
+    // var nds = nds.slice(0,-1);
+    //console.log("НДС составляет: " + getnds + "%");
+    var nds = getnds/100;  
+    var tmp = 0; 
+    $('td.count_col').each(function() { tmp += parseInt($(this).text());});
+    $('#count_col_total').text(tmp + (tmp*nds)); 
+    $('#nds_sum').text(tmp*nds);
+  //  console.log(tmp)
+        }               
+        calculate();
+         $(function(){$('#returned_nds').ready(function(){var text= $('#nds_percent').text();$("#returned_nds").text(text);});});
+        
+        </script>
+        
+        
+         <!--    <script>
+               function sum_total(){ 
+                   var count_col_total_all = document.getElementsById("count_col");
+                   var cls = document.getElementsByClassName("count_col");
+                var sum = 0;
+                for (var i = 0; i < cls.length; i++){
+                    if(cls[i].className == "count_col"){
             sum += isNaN(cls[i].innerHTML) ? 0 : parseInt(cls[i].innerHTML);
-        }
-        
-    }
-         
-       
-     var tot = count_col_total1.getElementById('count_col_total').innerHTML("sum * 18%");
-        
-   }
-        console.log(" your sum is " + tot);
-    </script> 
+                    }
+                    
+                }       
+               }
+                var tot = count_col_total_all.getElementById('count_col_total').innerHTML("sum * 18%");
+                    console.log("your sum is " + tot);
+                </script>  -->
         
 
         <table id="info_footer_total">
@@ -136,14 +168,14 @@
             </tr>
                 
             <tr>
-                <td><div class="gen_text">На сумму</div>    <span>Тут сумма прописью  столькото рублей</span></td>
+                <td><div class="gen_text">На сумму</div><span class="fix_table_span">Тут сумма прописью  столькото рублей</span></td>
             </tr>
             <tr>
-                <td><div class="gen_text">Продавец: </div><span>ООО рога и комыта</span></td>
+                <td><div class="gen_text">Продавец: </div><span class="fix_table_span">ООО рога и комыта</span></td>
 
             </tr>
             <tr>
-                <td><div class="gen_text">В том числе НДС18%: </div><span>Тысяча двести тридцать два руб. 0 коп.</span></td>
+                <td><div class="gen_text">В том числе НДС <span id="returned_nds"></span> %: </div><span class="fix_table_span">Тысяча двести тридцать два руб. 0 коп.</span></td>
 
             </tr>
              <tr class="space_tr"></tr>

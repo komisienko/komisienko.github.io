@@ -1,5 +1,15 @@
 /* Код для подключения шрифта в /css/stylename.css */
 
+
+@font-face{
+            font-family: "MetronicRegular";
+			src: url("./fonts/MyriadProRegular/MyriadProRegular.eot");
+			src: url("./fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+			url("./fonts/Mostardesign-MetronicProRegular.woff") format("woff"),
+			url("./fonts/tahoma.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+}
 	@font-face {
 			font-family: "MyriadProRegular";
 			src: url("./fonts/MyriadProRegular/MyriadProRegular.eot");
