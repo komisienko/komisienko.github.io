@@ -7,6 +7,37 @@ body {
     margin: 0;
     padding: 0;
 }
+.bold {
+    font-weight: bold;
+}
+.tcollapse {
+    border-collapse: collapse;
+}
+.left {
+    float: left;
+}
+.right{
+    float: right;
+}
+.text_right {
+    text-align: right;
+}
+.text_center {
+    text-align: center;
+}
+.nborder{
+  border: none !important;  
+}
+.italic {
+    font-style: italic;
+}
+.border1px {
+    border: 1px solid #000 !important;
+    width: 50%;
+}
+.border2px {
+    border: 2px solid #000 !important;
+}
 .wrap {
     width: 210mm;
     height: 29.7cm;
