@@ -8,14 +8,21 @@
 
 </head>
 <body>
+            <div id="particles-js"></div>
    <style>
        *{
         font-family: "Fira Sans", sans-serif;
          
      
        }
+       #particles-js{
+           background-size: cover;
+        position: absolute;
+           z-index: -9999;
+       }
        body{
-              background: #e2e1e0;
+/*              background: #e2e1e0;*/
+background:rgba(110, 175, 249, 0.88);
        }
 .wrap{
 /*     width: 70%;
@@ -135,6 +142,7 @@ figure:hover+span {
        }
        
        .card {
+           opacity: 0.85;
   background: #fff;
   border-radius: 4px;
   display: inline-block;
@@ -148,9 +156,15 @@ figure:hover+span {
        .card h1{
            position: relative; left: -15px; text-align: center;
        }
+       .particles-js-canvas-el{
+/*                z-index: -9999;
+                   position: absolute; */
+       }
     </style>
+
      <div class="wrap">
-    <h1>komisienko@gmail.com <br>+380955115095</h1>
+  
+    <h1 style="color: #fff;">komisienko@gmail.com <br>+380955115095</h1>
 
     <div class="hover08 column">
      <!--  <div><a href="../komisienko.github.io/Landing_portfolio/index.html">
@@ -253,5 +267,8 @@ figure:hover+span {
     
     
     </div>
+    <div id="particles-js"></div>
+<script src="./particles.js-master/particles.min.js"></script>
+<script src="./particles.js-master/demo/js/app.js"></script>
 </body>
 </html>
