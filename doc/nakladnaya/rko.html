@@ -13,63 +13,16 @@
     <div class="wrap">
         <div class="inner_wrap">
         <style>
-            .wrap {
-                font-size: 14px;
-/*                 border: 1px solid red;
-                 */            }
-            .inner_wrap{
-/*                 border: 1px solid black;
-                 */            }
-            .rko_head{
-                width: 100%;
-/*                 background: green;
-                 */                height: 50px;
-                margin: 0;
-                font-size: 10px;
-            }
-            .rko_company{
-                width: 550px;
-/*                 background-color: red;
-                 */            }
-            .rko_code{
-                width: 243px;
-            }
-            .rko_code td{
-                height: 16px;
-            }
-            .rko_code td:nth-child(odd){
-                padding-right: 10px;
-            }
-            .rko_code td:nth-child(even){
-                border: 2px solid #000;
-           
-            }
-            .main_body{
-                width: 100%;
-                margin: 10px 0;
-            }
-            .main_body td{
-                border: 1px solid #000;
-                width: 120px;
-                text-align: center;
-            }
-            .name_rko{
-                font-size: 16px;
-                font-weight: 700;
-                display: block;
-            }
-            .main_body td[rowspan="3"]{
-                width: 586px;
-            }
+
             </style>
-                <table class="rko_head text_right italic">
+                <table id="rko_head" class=" text_right italic">
                     <tbody>
                         <tr><td style="font-weight: bold;">Унифицированная форма № КО-2</td></tr>
                         <tr><td>Утверждена постановлением Госкомстата</td></tr>
                         <tr><td>России от 18.08.98 г. №88</td></tr>
                     </tbody>
                 </table>
-                <table class="rko_company left">
+                <table id="rko_company" class="left">
                     <tbody>
                         <tr class="space_tr"></tr>
                         <tr class="space_tr"></tr>
@@ -82,7 +35,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <table class="rko_code tcollapse">
+                <table id="rko_code" class="tcollapse">
                     <tbody>
                         <tr>
                             <td></td>
@@ -102,10 +55,10 @@
                         </tr>
                     </tbody>
                 </table>
-                <table class="main_body tcollapse">
+                <table id="main_body" class="tcollapse">
                     <tbody>
                         <tr>
-                            <td rowspan="3" class="text_center nborder"><span class="name_rko ">
+                            <td rowspan="3" class="text_center nborder bold"><span class="name_rko ">
                                 РАСХОДНЫЙ КАССОВЫЙ ОРДЕР
                             </span></td>
                             <td>Номер документа</td>
@@ -115,36 +68,77 @@
                             <td class="border2px">Тут номер</td>
                             <td class="border2px">01.11.2017</td>
                         </tr>
-                        <tr class="space_tr"></tr>
-                        <tr class="space_tr"></tr>
                     </tbody>
                 </table>
-                <table class>
+                <table id="rko_main_table" class="tcollapse">
                     <tbody>
                         <tr>
-                            <td colspan="4">Дебет</td>
-                            <td rowspan="2">Кредит</td>
-                            <td rowspan="2">Сумма</td>
-                            <td rowspan="2">Код целевого назначения</td>
-                            <td rowspan="2">Пустой</td>
+                            <td colspan="4" class="text_center">Дебет</td>
+                            <td rowspan="2" style="width: 100px;">Кредит</td>
+                            <td rowspan="2" style="width: 120px">Сумма</td>
+                            <td rowspan="2" style="width: 120px">Код целевого назначения</td>
+                            <td rowspan="2" style=""></td>
                         </tr>
                         <tr>
-                            <td>1</td>
-                            <td>код</td>
-                            <td> счет</td>
-                            <td>код</td>
+                            <td style="width:30px;">1</td>
+                            <td style="width:117px">код структурного<br>подразделения</td>
+                            <td style="width:117px">корреспондирующий <br> счет, субсчет</td>
+                            <td style="width:117px">код аналитического <br>учета</td>
                         </tr>
                         <tr>
+                            <td></td>
                             <td>sometext</td>
                             <td>sometext</td>
                             <td>sometext</td>
                             <td>sometext</td>
                             <td>sometext</td>
                             <td>sometext</td>
-                            <td>sometext</td>
-                            <td>sometext</td>  
+                            <td></td>  
                         </tr>
+                        <tr class="space_tr"></tr>
+                        <tr></tr>
                     </tbody>
+                </table>
+                
+                <table id="rko_extradite_base_sum">
+                    <tbody>
+                        
+            <tr >
+                <td><div class="gen_text">Выдать:</div> <span class="span_clear">тестовый текст  ТЕСТОВЫЙ ТЕКСТ</span></td>
+            </tr>
+            <tr >
+                <td><div class="gen_text">Основание:</div> <span class="span_clear">тестовый текст  ТЕСТОВЫЙ ТЕКСТ</span></td>
+            </tr>
+            <tr >
+                <td><div class="gen_text">Сумма:</div> <span class="span_clear">тестовый текст  ТЕСТОВЫЙ ТЕКСТ</span></td>
+            </tr>
+            
+                </table>
+                <table id="rko_info_footer_signatures">
+                <tr class="row_with_border">
+                    <td class="nborder"><div class="bold"> Руководитель</div></td>
+                    <td class="position"></td>
+                    <td class="podpis"></td>
+                    <td colspan="3" class="full_name"></td>
+                </tr>
+                <tr class="space_tr"></tr>
+
+                <tr class="row_with_border">
+                    <td class="nborder"  style="width:  150px"><div class="bold"> Главный бухгалтер</div></td>
+                    <td class="podpis" ></td>
+<!--                    <td class="position"></td>-->
+                    <td colspan="3" class="full_name"></td>
+                    <td class="nborder"></td>
+                </tr>
+                    
+
+                </table>
+            <table id="rko_suma_in_cuirsive">
+            <tr class="space_tr"></tr>
+            <tr class="space_tr"></tr>
+            <tr>
+            <td><div class="gen_text">На сумму</div><span class="fix_table_span">Тут сумма прописью  столькото рублей</span></td>
+            </tr>
                 </table>
         </div>
     </div>    

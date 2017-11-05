@@ -45,6 +45,7 @@ body {
     max-width: 210mm;
     overflow: hidden;
     position: absolute;
+    font-size: 14px;
 }
 .inner_wrap {
     height: inherit;
@@ -62,7 +63,7 @@ body {
 #info_head,
 #info_body,
 #info_footer_total,
-#info_footer_signatures {
+#info_footer_signatures{
     width: 100%;
 }
 /*fix info_head for IE*/
@@ -72,7 +73,7 @@ body {
     height: 10px;
 }
 #info_head tbody tr td,
-#info_footer_total tbody tr td {
+#info_footer_total tbody tr td{
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -92,20 +93,25 @@ body {
     /*     word-break: break-all
      */
 }
+.gen_text,
+.fix_table_span{
+    display: table-cell;
+}
 .span_clear {
     border: none;
     font-weight: normal;
 }
+.span_clear:before{
+content: "\00a0";
+}
+
 .fix_table_span:before {
     content: "\00a0";
 }
 /* #info_head tr td:nth-child(1) {
     white-space: nowrap;
 } */
-.gen_text,
-.fix_table_span{
-    display: table-cell
-}
+
 #info_head tr td:nth-child(2),
 #info_footer_total tr td:nth-child(2) {
     white-space: normal;
@@ -170,11 +176,11 @@ body {
 
 /*----Поля с подписями ---*/
 
-#info_footer_signatures {
+#info_footer_signatures{
     border-spacing: 10px;
     position: relative;
 }
-#info_footer_signatures tr td {
+#info_footer_signatures tr td{
     border-bottom: 1px solid black;
     border-collapse: collapse;
     width: 100px;
@@ -227,3 +233,89 @@ body {
     font-size: 14px;
     font-weight: bold;
 }
+/* Расходный кассовый ордер */
+#rko_head {
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    font-size: 10px;
+}
+#rko_company {
+    width: 550px;
+}
+#rko_code {
+    width: 243px;
+}
+#rko_code td {
+    height: 16px;
+}
+#rko_code td:nth-child(odd) {
+    padding-right: 10px;
+}
+#rko_code td:nth-child(even) {
+    border: 2px solid #000;
+}
+#main_body {
+    width: 100%;
+    margin: 10px 0;
+}
+#main_body td {
+    border: 1px solid #000;
+    width: 120px;
+    text-align: center;
+}
+#name_rko {
+    font-size: 16px;
+    font-weight: 700;
+    display: block;
+}
+#main_body td[rowspan="3"] {
+    width: 586px;
+}
+#rko_main_table{
+    margin-top: 10px;
+}
+#rko_main_table td{
+    border: 1px solid #000;
+    text-align: center;
+}
+#rko_main_table tr:nth-child(3) td{
+    border: 2px solid #000;
+    height: 25px
+}
+#rko_info_footer_signatures{
+    position: relative;
+    border-spacing: 10px;
+}
+#rko_info_footer_signatures tr td:first-child {
+    border: none;
+    text-align: left;
+    width: 150px;
+}    
+ #rko_info_footer_signatures tr td{
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+    width: 100px;
+    position: relative;
+}
+#rko_info_footer_signatures{
+    border-spacing: 10px;
+    position: relative;
+}
+#rko_extradite_base_sum tr td,
+#rko_suma_in_cuirsive tr td{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+#rko_main_table,
+#rko_extradite_base_sum,
+#rko_info_footer_signatures,
+#rko_extradite_base_sum,
+#rko_suma_in_cuirsive{
+    width: 100%;
+}        
+            
+
