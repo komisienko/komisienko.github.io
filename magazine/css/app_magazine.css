@@ -378,8 +378,8 @@ z-index: 1036}
   right:0;
   left: auto;
     }
-.carousel-inner,.carousel{ min-height: 400px;}
-.ms_rc_shadow{
+/* .carousel-inner,.carousel{ min-height: 400px;}
+ */.ms_rc_shadow{
         border-radius: 2px;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.24)
 }
