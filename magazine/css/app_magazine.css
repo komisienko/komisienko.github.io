@@ -665,6 +665,10 @@ z-index: 1036}
 .product-img {
  height: 200px;
 }
+.product-img a{
+    display: block;
+    height: 340px;
+}
 .content img{
     height: auto;
     max-width: 100%;
@@ -781,7 +785,7 @@ div.section > div > input {
     border: 1px solid orange;
 }
 
-@media (max-width: 426px) {
+/* @media (max-width: 426px) {
     .container {margin-top:0px !important;}
     .container > .row{padding:0 !important;}
     .container > .row > .col-xs-12.col-sm-5{
@@ -797,4 +801,4 @@ div.section > div > input {
     }            
     .section{width:104%;}
     .menu-items{padding-left:0;}
-}
+} */
