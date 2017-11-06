@@ -537,15 +537,19 @@ z-index: 1036}
     width: 100%;
     height: 52px;
     background-color: #f8f8f8;
-    padding: 8px;
+    padding: 8px 15px;
+}
+.shipping_total{
+    float: left;
+}
+.button_shipping_text{
+    float: right;
 }
 .shipping_total,
 .button_shipping_text
 {
     display: inline-block;
-    width: 50%;
     text-align: center;
-    float: right;
     font-weight: 400;
     color: #fff;
 }
@@ -567,12 +571,14 @@ z-index: 1036}
 }
 .shipping_total span{
     display: block;
-    width: 150px;
+    width: 110px;
     text-align: left;
-    margin: 0 auto;
 }
 .shipping_total_text {
     font-weight: 600;
     color: rgb(244, 67, 54);
-
+}
+.button_shipping_text{
+    max-width: 300px;
+    min-width: 150px;
 }
