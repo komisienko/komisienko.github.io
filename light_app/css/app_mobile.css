@@ -132,7 +132,7 @@ a{
     -webkit-tap-highlight-color: transparent;
 }
 a:hover{
-   color: #f80 !important; 
+   color: rgb(44,125,134) !important; 
    text-decoration: none;
 }
 .wrap{
@@ -147,6 +147,7 @@ a:hover{
     width: 100%;
     height: 52px;
     line-height: 52px;
+    color: rgb(44,125,134);
 }
 .back{
     display: block;
@@ -163,6 +164,10 @@ a:hover{
     width: 100%;
     width: calc(100% - 52px);
     height: 52px;
+    
+}
+.title_nav h4{
+    color: inherit;
 }
 .back_icon{
     display: block;
@@ -186,7 +191,7 @@ input[name="new_user_email"] {
     height: 52px;
     font-size: 30px;
     border: none;
-    color: #333;
+    color: rgb(44,125,134);
     margin-bottom: 14px;
     border-bottom: 1px solid #b7b7b7;
     text-align: left;
@@ -195,7 +200,7 @@ input[name="login"]:focus,
 input[name="new_user_login"]:focus,
 input[name="new_user_email"]:focus,
 input[name="password"]:focus{
-    border-bottom: 1px solid #f80;
+    border-bottom: 1px solid rgb(44,125,134);
     transition: .5s ease-out;
 }
 .user_login > form > input[type="submit"]{
@@ -214,12 +219,13 @@ input[name="password"]:focus{
   background-color: rgba(0,0,0,0);
 }
 .user_login > form > input[type="submit"]:active ,input[type="submit"]:active,input[type="reset"]:active{
-    color: #f80;
+    color:rgb(44,125,134);
 }
 .forgot{
     width: 300px;
     text-align: right;
     margin: 0 auto;
+    color: rgb(44,125,134);
 /*     margin-top: 15px;
     margin-bottom: 15px; */
 }
@@ -243,6 +249,7 @@ button[name="forgot"]{
     border: none;
     outline: none;
     background-color: rgba(0,0,0,0);
+    
 }
 
 .logo{
@@ -256,10 +263,10 @@ button[name="forgot"]{
 }
 .logo_span{
     display: block;
-    color:#f80;
     font-size: 41px;
     vertical-align: 
         middle;height: 52px;
+    color: rgb(44,125,134);
 }
 .footer{
     width: 100%;
@@ -268,6 +275,7 @@ button[name="forgot"]{
     left: 0;
     bottom: 0;
     text-align: center;
+    color: rgb(44,125,134);
 }
 button[name="registration"],
 button[name="exit"]{
@@ -284,6 +292,7 @@ button[name="exit"]{
     outline: none;
     font-size: 20px;
     background-color: rgba(0,0,0,0);
+    color: rgb(44,125,134);
 }
 /*DELETE IT*/
 .footer>a{
@@ -294,6 +303,7 @@ button[name="exit"]{
     font-size: 20px;
     background: #fff ;
     line-height: 40px;
+    color: rgb(44,125,134);
     }
 /*menu*/
 .menu_obj{
