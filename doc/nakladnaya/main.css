@@ -183,7 +183,7 @@ content: "\00a0";
 #info_footer_signatures tr td{
     border-bottom: 1px solid black;
     border-collapse: collapse;
-    width: 100px;
+    width: 140px;
     position: relative;
 }
 #info_footer_signatures tr td:first-child {
@@ -208,21 +208,28 @@ content: "\00a0";
     position: absolute;
     content: "(Подпись)";
     top: 20px;
-    left: 20px;
+    left: 44px;
     font-size: 12px;
 }
 .position:before {
     position: absolute;
     content: "(Должность)";
     top: 20px;
-    left: 16px;
+    left: 37px;
+    font-size: 12px;
+}
+.rko_full_name:before{
+    position: absolute;
+    content: "(Расшифровка подписи)";
+    top: 20px;
+    left: 90px;
     font-size: 12px;
 }
 .full_name:before {
     position: absolute;
     content: "(Ф.И.О.)";
     top: 20px;
-    left: 120px;
+    left: 80px;
     font-size: 12px;
 }
 .place_of_seal:before{
@@ -283,19 +290,22 @@ content: "\00a0";
     border: 2px solid #000;
     height: 25px
 }
-#rko_info_footer_signatures{
+#rko_info_footer_signatures,
+#rko_cashier{
     position: relative;
     border-spacing: 10px;
 }
-#rko_info_footer_signatures tr td:first-child {
+#rko_info_footer_signatures tr td:first-child,
+#rko_cashier tr td:first-child{
     border: none;
     text-align: left;
     width: 150px;
 }    
- #rko_info_footer_signatures tr td{
+ #rko_info_footer_signatures tr td,
+#rko_cashier tr td{
     border-bottom: 1px solid black;
     border-collapse: collapse;
-    width: 100px;
+    width: 140px;
     position: relative;
 }
 #rko_info_footer_signatures{
@@ -310,12 +320,23 @@ content: "\00a0";
     display: -o-flex;
     display: flex;
 }
+#rko_suma_in_cuirsive{
+    position: relative;
+}
 #rko_main_table,
 #rko_extradite_base_sum,
 #rko_info_footer_signatures,
 #rko_extradite_base_sum,
-#rko_suma_in_cuirsive{
+#rko_suma_in_cuirsive,
+#rko_cashier{
     width: 100%;
 }        
-            
 
+.rko_po_descr:before{
+    position: relative;
+    content: "(наименование, номер, дата и место выдачи документа, удостоверяющего личность получателя)";
+    font-size: 12px;
+    font-weight: 300;
+    top: 17px;
+    left: 100px;
+}
