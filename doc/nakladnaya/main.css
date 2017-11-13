@@ -16,6 +16,9 @@ body {
 .left {
     float: left;
 }
+.fz12{
+    font-size: 12px;
+}
 .right{
     float: right;
 }
@@ -339,4 +342,161 @@ content: "\00a0";
     font-weight: 300;
     top: 17px;
     left: 100px;
+}
+/***Приходный кассовый ордер***/
+.pko_left_part{
+    width: 540px;
+    height: auto;
+    display: inline-block;
+    border-right: 1px solid #000;
+    padding-right: 5px;
+}
+.pko_right_part{
+    float: right;
+    height: auto;
+    display: inline-block;
+    width:240px;
+    border-left: 1px solid #000; 
+}
+#pko_head {
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    font-size: 10px;
+}
+.pko_org_fix{
+    width: 300px;
+}
+#pko_company {
+    width: 310px;
+}
+#pko_code {
+    width: 230px;
+}
+#pko_code td {
+    height: 16px;
+}
+#pko_code td:nth-child(odd) {
+    padding-right: 10px;
+}
+#pko_code td:nth-child(even) {
+    border: 2px solid #000;
+}
+.name_pko{
+    padding-bottom: 0;
+    font-size: 16px;
+    font-weight: 700;
+    display: block;
+}
+#pko_main_body {
+    width: 100%;
+    margin: 10px 0;
+}
+#pko_main_body td {
+    border: 1px solid #000;
+    width: 120px;
+    text-align: center;
+}
+#pko_main_body td[rowspan="3"] {
+    width: 586px;
+}
+#pko_main_table{
+    margin-top: 10px;
+    line-height: 1;
+}
+#pko_main_table td{
+    border: 1px solid #000;
+    text-align: center;
+}
+#pko_main_table tr:nth-child(3) td{
+    border: 2px solid #000;
+    height: 25px
+}
+.pko_after_table{
+    width: 100%;
+}
+.pko_after_table td{
+    height: 20px;
+}
+.pko_after_table td:nth-child(1){
+    width: 82px;
+}
+.pko_after_table td:nth-child(2){
+    border-bottom: 1px solid #000;
+}#pko_cashier{
+    width: 100%;
+    position: relative;
+    border-spacing: 10px;
+}
+.pko_after_table td{
+    vertical-align: bottom;
+}
+#pko_info_footer_signatures tr td:first-child,
+#pko_cashier tr td:first-child{
+    border: none;
+    text-align: left;
+    width: 150px;
+}    
+#pko_info_footer_signatures tr td,
+#pko_cashier tr td{
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+    width: 140px;
+    position: relative;
+}
+.pko_full_name:before{
+    position: absolute;
+    content: "(Расшифровка подписи)";
+    top: 20px;
+    left: 40px;
+    font-size: 12px;
+}
+.row_with_border td{
+    vertical-align: bottom;
+}
+
+/*-правая часть-*/
+.pko_rp_header{
+    width: 100%;
+    padding-top: 100px;
+}
+.pko_after_table_right{
+    line-height: 1;
+}
+.pko_rp_footer{
+    margin-top: 98px;
+    width: 100%;
+    position: relative;
+}
+.pko_rp_footer{
+    width: 100%;
+}
+.pko_rp_footer td{
+    height: 25px;
+    vertical-align: bottom;
+}
+.pko_rp_footer td:nth-child(1){
+    width: 120px;
+}
+.pko_rp_footer td:nth-child(2){
+    border-bottom: 1px solid #000;
+}
+.pko_pr_podpis,
+.pko_por_rashfrovka{
+    position: relative;
+}
+.pko_pr_podpis:before{
+        position: absolute;
+    content: "(Подпись)";
+    left: 30px;
+    font-size: 10px;
+    top: 28px;
+}
+
+.pko_por_rashfrovka:before{
+        position: absolute;
+    content: "(Расшифровка подписи)";
+    left: 60px;
+    font-size: 10px;
+    top: 28px;
 }
