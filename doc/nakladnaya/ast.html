@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+        <meta http-equiv="X-Ua-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./main.css">
+<link rel="stylesheet" type="text/css" href="./print.css" media="print">    <script src="jquery-2.1.1.min.js"></script>
+<script src="./moneytostr.min.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="inner_wrap">
+        <table id="ast_head">
+              <caption class="ast_caption">
+                Акт списания товаров № <span id="ast_id">22</span> от <span id="ast_full_date"> 22.11.2017</span>г.
+                </caption>
+            <tbody>
+            <tr class="space_tr"></tr>
+            <tr>
+                <td>Организация:</td>
+                <td class="bold">ООО "Пошла родимая"</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td style="padding-left: 10px;">Код по ЕГРПОУ 234124124, ИНН 120841241, № свид 2312312</td>
+            </tr>
+            <tr>
+                <td>Склад:</td>
+                <td>Главный склад</td>
+            </tr>
+            <tr>
+                <td>Подразделение:</td>
+                <td>Администрация</td>
+            </tr> 
+            <tr>
+                <td>Основание:</td>
+                <td>Администрация</td>
+            </tr>
+            </tbody>
+        </table>
+       
+        
+        
+        <table id="ast_body">
+            <th>№</th>
+            <th>Код</th>
+            <th>Товар</th>
+            <th>Ед.</th>
+            <th>Цена</th>
+            <th>Кол-во</th>
+            <th>Сумма</th>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>Название товара</td>
+                <td>кг</td>
+                <td>4 555.00</td>
+                <td>10</td>
+                <td id="product_sum_1" class="count_col">200</td>
+            </tr>            <tr>
+                <td>2</td>
+                <td>2</td>
+                <td>Название Название Название  товаратоварат оваратоваратовара товара Название  Название  Название </td>
+                <td>кг</td>
+                <td>4 555.00</td>
+                <td>10</td>
+                <td id="product_sum_2" class="count_col">300</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>3</td>
+                <td>Название товара</td>
+                <td>упак.</td>
+                <td>4 555.00</td>
+                <td>10</td>
+                <td id="product_sum_3" class="count_col">400</td>
+            </tr>            <tr>
+                <td>4</td>
+                <td>4</td>
+                <td>Название товара</td>
+                <td>кг</td>
+                <td>4 555.00</td>
+                <td>10</td>
+                <td id="product_sum_4" class="count_col">500,20</td>
+            </tr>            <tr>
+                <td>5</td>
+                <td>5</td>
+                <td>Название Название Название  товаратоварат оваратоваратовара товара Название  Название  Название </td>
+                <td>кг</td>
+                <td>4 555.00</td>
+                <td>10</td>
+                <td id="product_sum_5" class="count_col">600</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>6</td>
+                <td>Название товара</td>
+                <td>упак.</td>
+                <td>4 555.00</td>
+                <td>10</td>
+                <td id="product_sum_6" class="count_col">700</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>00000000023</td>
+                <td>Название товара</td>
+                <td>упак.</td>
+                <td>4 555.00</td>
+                <td>10</td>
+                <td id="product_sum_7" class="count_col">700</td>
+            </tr>
+<!--
+          <tr class="price_sector_nds">
+               
+                <td colspan="6" >В том числе НДС <span id="nds_percent">10</span>%:</td>
+                <td id="nds_sum"></td>
+            </tr>
+-->
+            <tr class="price_sector_total">
+
+                <td colspan="6">Итого:</td>
+                <td id="count_col_total">1512212.12</td>
+            </tr>
+
+        </table>
+    <script type="text/javascript">
+        
+    function calculate(){ 
+    var getnds = $('#nds_percent').text();
+    //console.log(getnds);
+//    var nds = "";
+//    for (i = 0; i < getnds.length; i++)
+//    {
+//    if ("" + parseInt(getnds[i]) != "NaN") //if the character is a number
+//    nds = nds + getnds[i];
+//    }
+    //var nds = parseFloat();
+    //НДС С процентом, удаляем знак процента, чтоб привести к number
+    // var nds = nds.slice(0,-1);
+    //console.log("НДС составляет: " + getnds + "%");
+    var nds = getnds/100;  
+    var tmp = 0; 
+    $('td.count_col').each(function() { tmp += parseInt($(this).text());});
+    $('#count_col_total').text(tmp + (tmp*nds)); 
+    $('#nds_sum').text(tmp*nds);
+  //  console.log(tmp)
+        $
+        }               
+        calculate();
+         $(function(){$('#returned_nds').ready(function(){var text= $('#nds_percent').text();$("#returned_nds").text(text);});});
+        </script>
+        <table id="info_footer_total">
+            <tbody>
+             <tr class="space_tr"></tr>
+                       
+            <tr>
+                <td>Всего выпущено: <span class="span_clear">Семь наименований</span></td>
+            </tr>
+                
+            <tr>
+                <td><div class="gen_text">На сумму</div><span class="fix_table_span" id="summa_propisu"></span></td>
+            </tr>
+            <tr>
+                <td><div class="gen_text">Продавец: </div><span class="fix_table_span">ООО "Пошла родимая"</span></td>
+
+            </tr>
+            <tr>
+                <td><div class="gen_text">В том числе НДС <span id="returned_nds"></span> %: </div><span class="fix_table_span">Тысяча двести тридцать два руб. 0 коп.</span></td>
+
+            </tr>
+             <tr class="space_tr"></tr>
+            </tbody>
+        </table>
+                
+        <table id="info_footer_signatures">
+            <tbody>
+                <tr class="space_tr"></tr>
+                
+                <tr class="row_with_border">
+                    <td class="place_of_seal"><div class="gen_text"> Отпуск разрешил</div></td>
+                    <td class="podpis"></td>
+                    <td class="position"></td>
+                    <td colspan="3" class="full_name"></td>
+                </tr>
+                <tr class="space_tr"></tr>
+
+                <tr class="row_with_border">
+                    <td class=""><div class="gen_text"> Отпустил</div></td>
+                    <td class="podpis"></td>
+                    <td class="position"></td>
+                    <td colspan="3" class="full_name"></td>
+                </tr>
+                <tr class="space_tr"></tr>
+
+                <tr class="row_with_border">
+                    <td class="place_of_seal"><div class="gen_text"> Получил</div></td>
+                    <td class="podpis"></td>
+                    <td class="position"></td>
+                    <td colspan="3" class="full_name" id="result5"></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    </div>    
+    <script type="text/javascript">
+        
+  
+       
+
+    moneyToStrTxt = new MoneyToStr(Currency.RUR, Language.RUS, Pennies.TEXT);
+    moneyToStrNum = new MoneyToStr(Currency.RUR, Language.RUS, Pennies.NUMBER);
+
+function generateResult() {
+  var summ = parseFloat($("#count_col_total").text().replace(",", "."));
+  var result = moneyToStrNum.convertValue(summ);
+  $("#summa_propisu").text(result);
+  $("#summa_propisu").text(result.substring(0, 1).toUpperCase() + result.substring(1));
+  var nds = Math.round((summ - (summ / (1 + (18 / 100)))) * 100) / 100;
+  $("#summa_propisu").val(moneyToStrNum.convertValue(summ));
+};
+        generateResult()
+
+/*$("#count_col_total").load(function(e) {
+  if (e.which == '13') {
+     e.preventDefault();
+     setInterval(console.log(generateResult(),300));
+      
+   }
+});*/
+
+    </script>
+
+    
+</body>
+</html>

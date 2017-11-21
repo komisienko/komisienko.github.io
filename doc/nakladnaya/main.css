@@ -501,3 +501,65 @@ content: "\00a0";
     top: 28px;
     
 }
+
+/**Акт списания товаров*/
+#ast_head,
+#ast_body{
+    width: 100%;
+}
+.ast_caption{
+    border-bottom: 2px solid #000;
+    text-align: left;
+    font-weight: bold;
+    font-size: 18px;
+    padding-left: 10px;
+}
+#ast_head tr td:first-child{
+    width: 120px;
+    text-decoration: underline;
+    vertical-align: top;
+}
+#ast_body {
+    border-collapse: collapse;
+}
+#ast_body th {
+    background-color: #cdcdcd;
+}
+#ast_body tr td:first-child {
+    text-align: center;
+    width: 20px;
+    min-width: 20px;
+}
+#ast_body tr td:nth-child(2) {
+    width: 90px;
+}
+#ast_body tr td:nth-child(3) {
+
+    text-align: left;
+    max-width: 335px;
+}
+#ast_body tr td:nth-child(4) {
+    text-align: center;
+    width: 35px;
+    max-width: 35px;
+}
+#ast_body tr td:nth-child(5) {
+    text-align: right;
+    min-width: 80px;
+}
+#ast_body tr td:nth-child(6) {
+    text-align: right;
+    width: 50px;
+    max-width: 50px;
+}
+#ast_body tr td:last-child {
+    text-align: right;
+    min-width: 80px;
+}
+#ast_body tr td {
+    padding: 4px;
+    border: 1px solid #000;
+}
+#ast_body th {
+    border: 2px solid #000;
+}
