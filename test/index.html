@@ -8,7 +8,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
 </head>
 <style>
-    .cards-wrap {
+    #cards-wrap {
         padding: 5px 15px
     }
     
@@ -16,14 +16,13 @@
         display: none;
     }
 
-
 </style>
 
 <body>
     <div class="container">
         <div class="row">
             <div class="col m6 s12 offset-m3">
-                <div class="cards-wrap z-depth-3">
+                <div id="cards-wrap" class=" z-depth-3">
                     <div class="card">
                         <div class="card-content">
                             <span class="card-title">Card Title</span>
@@ -32,7 +31,7 @@
                                     Project: <span class="project" data-project="444">1</span>
                                 </div>
                                 <div class="col s6 m6">
-                                    Priority: <span class="priority">1</span>
+                                        Priority: <span class="priority" data-priority="3">3</span>
                                 </div>
                             </div>
                             <div class="divider"></div>
@@ -46,7 +45,7 @@
                             </div>
                         </div>
                     </div>
-                <div class="card">
+                    <div class="card">
                         <div class="card-content">
                             <span class="card-title">Card Title</span>
                             <div class="opt row">
@@ -54,7 +53,7 @@
                                     Project: <span class="project" data-project="555">1</span>
                                 </div>
                                 <div class="col s6 m6">
-                                    Priority: <span class="priority">1</span>
+                                    Priority: <span class="priority" data-priority="2">2</span>
                                 </div>
                             </div>
                             <div class="divider"></div>
@@ -68,7 +67,7 @@
                             </div>
                         </div>
                     </div>
-                <div class="card">
+                    <div class="card">
                         <div class="card-content">
                             <span class="card-title">Card Title</span>
                             <div class="opt row">
@@ -76,7 +75,7 @@
                                     Project: <span class="project" data-project="666">1</span>
                                 </div>
                                 <div class="col s6 m6">
-                                    Priority: <span class="priority">1</span>
+                                    Priority: <span class="priority" data-priority="1">1</span>
                                 </div>
                             </div>
                             <div class="divider"></div>
@@ -97,36 +96,48 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <script type=text/javascript>
         $(document).ready(function() {
-                    $(".expand").click(function() {
-                        var des = $(this)
-                            .closest('.card-content')
-                            .children('.description')
-                            .toggle();
-                             $(this).text(function(i, btn_text){
-                                return btn_text === 'Развернуть' ? 'Свернуть' : 'Развернуть'
-                            })
-                        ;}); 
-                        $(".close").click(function() {
-                            $(this).closest('.card').remove();
-                        })
-                        $(".change").click(function() {
-                            $(this).closest('.card-content')
-                        })
-                    //
-                    var all_cards = [];
-                    $('.card-content').each(function() {
-                        var this_row={};
-                        $(this).find(".project").each(function(){
-                        keyvalue = $(this).closest(".project").attr('data-project');
-                        namevalue = $(this).closest(".project").data();
-                        this_row[keyvalue] = namevalue;
-                    }); 
-                    all_cards.push(this_row);
-
+            $(".expand").click(function() {
+                var des = $(this)
+                    .closest('.card-content')
+                    .children('.description')
+                    .toggle();
+                $(this).text(function(i, btn_text) {
+                    return btn_text === 'Развернуть' ? 'Свернуть' : 'Развернуть'
                 });
-        console.log(all_cards);
-                    })
-            
+            });
+            $(".close").click(function() {
+                $(this).closest('.card').remove();
+            })
+            $(".change").click(function() {
+                    $(this).closest('.card-content')
+                })
+                //
+            var all_cards = [];
+            $('.card-content').each(function() {
+                var this_row = {};
+                $(this).find(".project").each(function() {
+                    keyvalue = $(this).closest(".project").attr('data-project');
+                    namevalue = $(this).closest(".project").data();
+                    this_row[keyvalue] = namevalue;
+                });
+                all_cards.push(this_row);
+
+            });
+            console.log(all_cards);
+
+            //
+
+            var contacts = $('#cards-wrap'),
+                cont = contacts.children('.priority');
+            cont.detach().sort(function(a, b) {
+                var astts = $(a).data('priority');
+                var bstts = $(b).data('priority')
+                    // return astts - bstts;
+                return (astts > bstts) ? (astts > bstts) ? 1 : 0 : -1;
+            });
+            contacts.append(cont);
+
+        })
 
     </script>
 </body>
