@@ -1,113 +1,144 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Document</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Document</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="./js/slick/slick.css">
-    <link rel="stylesheet" href="./js/slick/slick-theme.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Sigmar+One" rel="stylesheet">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script type="text/javascript" src="./js/slick/slick.min.js"></script>
-    <script type="text/javascript" src="./js/slick.js"></script>
-</head>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Sigmar+One" rel="stylesheet">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script type="text/javascript" src="./js/slick/slick.min.js"></script>
+        <script type="text/javascript" src="./js/slick.js"></script>
+        <link rel="stylesheet" href="css/jquery.fullPage.css"> 
+        <!--<script src="js/jquery.fullPage.js" type="text/javascript"></script>-->
+        <link rel="stylesheet" href="./js/slick/slick.css">
+        <link rel="stylesheet" href="./js/slick/slick-theme.css">
+        <link rel="stylesheet" href="css/crinson.css"> 
+    </head>
 
 
-<body>
-    <style>
-        *{-webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        -o-user-select: none;
-        user-select: none;    }
-    </style>
-           <header>
-        <div class="container">
-            <a href="./" style="background: url(./img/logo.png)no-repeat center;" class="logo"></a>
-            <span class="m_btn" style="background: url(./img/menu.png)no-repeat center"></span>
+    <body>
+
+        <style>
+            *{-webkit-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              -o-user-select: none;
+              user-select: none;    }
+            </style>
+
+            <header id="header">
+            <div class="navbar-fixed">
+                <nav role="navigation">
+                    <div class="nav-wrapper container">
+                        <a href="./" style="background: url(./img/logo.png)no-repeat center;" class="logo brand-logo"></a>
+                        <a href="#" data-target="mobile_menu" class="sidenav-trigger"><span class="sidenav_button_icon" style=""></span></a>
+                        <ul   class=" right hide-on-med-and-down">
+                            <li><a href="#!">Вкладка 1</a></li>
+                            <li><a href="#!">Вкладка 2</a></li>
+                            <li><a href="#!">Вкладка 3</a></li>
+                        </ul>
+                    </div>
+
+                </nav>
+
+            </div>
+            <ul id="mobile_menu" class="sidenav  ">
+                <li><a href="#!">Вкладка 1</a></li>
+                <li><a href="#!">Вкладка 2</a></li>
+                <li><a href="#!">Вкладка 3 </a></li>
+            </ul>
+        </header>
+        <div id="fullpage">
+            <div class="section" id="main_title">
+                <div class="fp-bg"></div>
+                <div class="container main_title__item">
+
+                    <h1 class="header">Корпорация Маркетинга</h1>
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing.</h5>
+                    <div class='icon-scroll'><div/>
+                    </div>
+
+                </div>
+            </div>
         </div>
-    </header>
-    <div class="corp">
-        <div class="mask"></div>
-        <div class="container">
-            <h1>Корпорация Маркетинга</h1>
-            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
-            <div class="flex piar">
-                <section class="flex">
+        <div id="slides" class="section">
+            <div class="slide" id="price">
+                <div class="fp-bg"></div>
+                <div class="container main_title__item">
+
                     <img src="./img/prise.png" alt="">
                     <h3>Цена</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus officia nobis cumque, omnis neque numquam harum doloribus dicta corrupti natus.</p>
-                </section>
-                <section class="flex">
+
+                </div>
+            </div>
+            <div class="slide" id="garant">
+                <div class="fp-bg"></div>
+                <div class="container main_title__item">
                     <img src="./img/garant.png" alt="">
                     <h3>Качество</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus officia nobis cumque, omnis neque numquam harum doloribus dicta corrupti natus.</p>
-                </section>
-                <section class="flex">
+                </div>
+            </div>
+            <div class="slide" id="sped">
+                <div class="fp-bg"></div>
+                <div class="container main_title__item">
                     <img src="./img/sped.png" alt="">
                     <h3>Скорость</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus officia nobis cumque, omnis neque numquam harum doloribus dicta corrupti natus.</p>
-                </section>
-            </div>
-        </div>
-    </div>
-    <div class="form">
-        <div class="container">
-            <h3>forma</h3>
-        </div>
-    </div>
-    <div class="info">
-        <div class="container">
-            <h2>Немного о нас!</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente vel consequuntur sequi excepturi, atque, dolor possimus cum odio omnis incidunt tenetur hic quos minus rem vitae obcaecati nesciunt error ab. Expedita, nulla illo dolor ducimus, magnam temporibus ea perferendis iste a enim consequatur amet alias explicabo nesciunt libero optio. Amet culpa itaque eos aut dolore recusandae saepe, error, architecto nemo aliquam inventore aliquid repudiandae consequatur expedita praesentium fugiat consequuntur quae nihil odit quidem! Totam perferendis vel amet quaerat quae pariatur aut laborum voluptatem repellendus odio rerum nemo provident velit, delectus cupiditate ipsum quisquam maiores, laboriosam natus. Beatae, sint maxime ratione! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque aliquid sed qui labore enim vero rerum odit voluptatum impedit eveniet ut blanditiis dolor expedita ipsa sunt nemo maiores ab, accusamus adipisci harum officia. Nemo blanditiis iure maiores quis, cumque voluptate?</p>
-        </div>
-    </div>
-    <div class="client">
-        <div class="container">
-            <div class="slider4">
-                <span style="background: url(./img/logo_p.png)no-repeat center;"></span>
-                <span style="background: url(./img/logo_p2.png)no-repeat center;"></span>
-                <span style="background: url(./img/logo_p3.png)no-repeat center;"></span>
-                <span style="background: url(./img/logo_p.png)no-repeat center;"></span>
-                <span style="background: url(./img/logo_p2.png)no-repeat center;"></span>
-                <span style="background: url(./img/logo_p3.png)no-repeat center;"></span>
-            </div>
-        </div>
-    </div>
-    <div class="works">
-        <div class="container">
-            <div class="slider3">
-                <section style="background: url(./img/fon.jpg)no-repeat center;"></section>
-                <section style="background: url(./img/fon2.jpg)no-repeat center;"></section>
-                <section style="background: url(./img/fon3.jpg)no-repeat center;"></section>
-                <section style="background: url(./img/fon.jpg)no-repeat center;"></section>
-            </div>
-        </div>
-    </div>
-    <div class="reviews">
-        <div class="container">
-            <div class="rev_block flex" style="background: url(./img/a10.jpg)no-repeat center; background-size: cover;">
-                <div class="slider">
-                    <section>
-                        <h3>Роман</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae placeat repellendus dolor quae maxime aperiam accusantium, aspernatur, neque ipsa nam, reprehenderit architecto hic eligendi, modi voluptates! Reprehenderit vero delectus tempore ullam nesciunt.</p>
-                    </section>
-                    <section>
-                        <h3>Lorem</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae placeat repellendus dolor quae maxime aperiam accusantium, aspernatur, neque ipsa nam.</p>
-                    </section>
                 </div>
-                <div class="clear"></div>
-                <form method="post" class="flex">
-                    <input class="reviews_inp text" type="text" placeholder="Напишите ваш отзыв здесь:">
-                    <input class="reviews_name text" type="text" placeholder="Ваше имя:">
-                    <button class="reviews_btn">Оставить отзыв</button>
-                </form>
+            </div>
+        </div>
+        <div class="section" id="clients">
+            <div class="fp-bg"></div>
+            <div class="container main_title__item">
+                <h3>С нами работают</h3>
+                <div class="slider4">
+                    <span style="background: url(./img/logo_p.png)no-repeat center;"></span>
+                    <span style="background: url(./img/logo_p2.png)no-repeat center;"></span>
+                    <span style="background: url(./img/logo_p3.png)no-repeat center;"></span>
+                    <span style="background: url(./img/logo_p.png)no-repeat center;"></span>
+                    <span style="background: url(./img/logo_p2.png)no-repeat center;"></span>
+                    <span style="background: url(./img/logo_p3.png)no-repeat center;"></span>
+                </div>
+            </div>
+        </div>
+
+        <div id="reviews" class="section">
+            <div class="fp-bg"></div>
+            <div class="container">
+                <div class="rev_block flex" >
+                        <div class="slider">
+                            <section>
+                                <h3>Роман</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae placeat repellendus dolor quae maxime aperiam accusantium, aspernatur, neque ipsa nam,</p>
+                            </section>
+                            <section>
+                                <h3>Lorem</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae placeat repellendus dolor quae maxime aperiam accusantium, aspernatur, neque ipsa nam.</p>
+                            </section>
+                        </div>
+
+                    <form method="post" class="row">
+                        <div class="input-field col s12">
+                            <input class="reviews_inp text" type="text" id="user_text">
+                            <label for="user_text">Напишите ваш отзыв здесь:</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input class="reviews_name text" id="user_name" type="text">
+                            <label for="user_name">Ваше имя:</label>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="right-align">
+                            <button class="btn pulse ">Оставить отзыв</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
@@ -120,96 +151,100 @@
             </div>
         </div>
     </footer>
-    <script type="text/javascript">
-        document.onkeypress = function(event) {
-            event = (event || window.event);
-            if (event.keyCode == 123) {
-                //alert('No F-12');
-                return false;
-            }
-        }
-        window.oncontextmenu = function () {
-            return false;
-        }
-        $(document).keydown(function (event) {
-            if (event.keyCode == 123) {
-                return false;
-            }
-            else if ((event.ctrlKey && event.shiftKey && event.keyCode == 73) || (event.ctrlKey && event.shiftKey && event.keyCode == 74)||(event.ctrlKey && event.shiftKey && event.keyCode == 67)||(event.ctrlKey && event.keyCode == 83)) {
-                return false;
-            }
-        });
-        document.onmousedown = function(event) {
-            event = (event || window.event);
-            if (event.keyCode == 123) {
-                //alert('No F-keys');
-                return false;
-            }
-        }
-        document.onkeydown = function(event) {
-            event = (event || window.event);
-            if (event.keyCode == 123) {
-                //alert('No F-keys');
-                return false;
-            }
-        }
-
-        var message = "Эх ты, мамке расскажу";
-
-        function clickIE() {
-            if (document.all) {
-                (message);
-                return false;
-            }
-        }
-
-        function clickNS(e) {
-            if (document.layers || (document.getElementById && !document.all)) {
-                if (e.which == 2 || e.which == 3) {
-                    (message);
-                    return false;
-                }
-            }
-        }
-        if (document.layers) {
-            document.captureEvents(Event.MOUSEDOWN);
-            document.onmousedown = clickNS;
-        } else {
-            document.onmouseup = clickNS;
-            document.oncontextmenu = clickIE;
-        }
-        document.oncontextmenu = new Function("return false")
-
-        function disableCtrlKeyCombination(e) {
-
-            var forbiddenKeys = new Array('a', 'n', 'c', 'x', 'v', 'j', 'w');
-            var key;
-            var isCtrl;
-            if (window.event) {
-                key = window.event.keyCode;
-                if (window.event.ctrlKey)
-                    isCtrl = true;
-                else
-                    isCtrl = false;
-            } else {
-                key = e.which;
-                if (e.ctrlKey)
-                    isCtrl = true;
-                else
-                    isCtrl = false;
-            }
-            if (isCtrl) {
-                for (i = 0; i < forbiddenKeys.length; i++) {
-                    if (forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase()) {
-                        alert('Key combination CTRL + ' + String.fromCharCode(key) + ' has been disabled.');
+    <!--        <script type="text/javascript">
+                document.onkeypress = function (event) {
+                    event = (event || window.event);
+                    if (event.keyCode == 123) {
+                        //alert('No F-12');
                         return false;
                     }
                 }
-            }
-            return true;
-        }
-
-    </script>
+                window.oncontextmenu = function () {
+                    return false;
+                }
+                $(document).keydown(function (event) {
+                    if (event.keyCode == 123) {
+                        return false;
+                    } else if ((event.ctrlKey && event.shiftKey && event.keyCode == 73) || (event.ctrlKey && event.shiftKey && event.keyCode == 74) || (event.ctrlKey && event.shiftKey && event.keyCode == 67) || (event.ctrlKey && event.keyCode == 83)) {
+                        return false;
+                    }
+                });
+                document.onmousedown = function (event) {
+                    event = (event || window.event);
+                    if (event.keyCode == 123) {
+                        //alert('No F-keys');
+                        return false;
+                    }
+                }
+                document.onkeydown = function (event) {
+                    event = (event || window.event);
+                    if (event.keyCode == 123) {
+                        //alert('No F-keys');
+                        return false;
+                    }
+                }
+    
+                var message = "Эх ты, мамке расскажу";
+    
+                function clickIE() {
+                    if (document.all) {
+                        (message);
+                        return false;
+                    }
+                }
+    
+                function clickNS(e) {
+                    if (document.layers || (document.getElementById && !document.all)) {
+                        if (e.which == 2 || e.which == 3) {
+                            (message);
+                            return false;
+                        }
+                    }
+                }
+                if (document.layers) {
+                    document.captureEvents(Event.MOUSEDOWN);
+                    document.onmousedown = clickNS;
+                } else {
+                    document.onmouseup = clickNS;
+                    document.oncontextmenu = clickIE;
+                }
+                document.oncontextmenu = new Function("return false")
+    
+                function disableCtrlKeyCombination(e) {
+    
+                    var forbiddenKeys = new Array('a', 'n', 'c', 'x', 'v', 'j', 'w');
+                    var key;
+                    var isCtrl;
+                    if (window.event) {
+                        key = window.event.keyCode;
+                        if (window.event.ctrlKey)
+                            isCtrl = true;
+                        else
+                            isCtrl = false;
+                    } else {
+                        key = e.which;
+                        if (e.ctrlKey)
+                            isCtrl = true;
+                        else
+                            isCtrl = false;
+                    }
+                    if (isCtrl) {
+                        for (i = 0; i < forbiddenKeys.length; i++) {
+                            if (forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase()) {
+                                alert('Key combination CTRL + ' + String.fromCharCode(key) + ' has been disabled.');
+                                return false;
+                            }
+                        }
+                    }
+                    return true;
+                }
+    
+            </script>-->
+    <script src="js/materializeNEW.js" type="text/javascript"></script>
+    <script src="js/fullpage.parallax.limited.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.extensions.min.js"></script>
+    <script src="js/includes.js"></script>
 </body>
+
 
 </html>
