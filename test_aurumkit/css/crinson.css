@@ -6552,4 +6552,17 @@ nav {
   #reviews .rev_block form {
     margin: 0 auto; }
 
+.footer {
+  height: 80px;
+  padding: 15px;
+  position: relative; }
+  .footer .logo {
+    background-size: contain !important;
+    height: 50px;
+    width: 131px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0px; }
+
 /*# sourceMappingURL=crinson.css.map */
