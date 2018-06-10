@@ -9,6 +9,7 @@
 			$('#fullpage').fullpage({
 				slidesNavigation: true,
 				parallax: true,
+                                parallaxKey: 'YWx2YXJvdHJpZ28uY29tXzlNZGNHRnlZV3hzWVhnPTFyRQ==',
 				parallaxOptions: {
 					type: 'reveal',
 					percentage: 62,
