@@ -1,0 +1,70 @@
+//header buttons
+.btn,
+.btn-header {
+    user-select: none;
+    display: $btn-display;
+    text-decoration: none;
+    border-radius: $btn-border-radius;
+    line-height: 32px;
+    margin-right: 4px;
+    line-height: $btn-line-height;
+    height: $btn-header-height;
+    //width: $btn-header-width;
+    padding-left: $btn-header-padding;
+    padding-right: $btn-header-padding;
+    background: hsla(0, 0%, 100%, .3);
+    .header-btn-text {
+        height: inherit;
+        padding-left: 8px;
+        color: #fff;
+        @media only screen and (max-width: 750px) {
+            display: none;
+        }
+    }
+    &:hover{
+            background: hsla(0,0%,100%,.2);
+    }
+    
+}
+.header-logo {
+        bottom: 0;
+        display: block;
+        height: 30px;
+        left: 50%;
+        margin-left: -40px;
+        opacity: .5;
+        position: absolute;
+        top: 5px;
+        line-height: 32px;
+        width: 80px;
+        text-align: center;
+        transition: .1s ease;
+        z-index: 2;
+        .header-logo-default {
+            height: 30px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 80px;
+        }
+    }
+#header{
+    .member{
+        cursor: pointer;
+        border-radius: 50%;
+        background-color: #d6dadc;
+        width: $btn-header-width;
+        height:  $btn-header-height;
+        display: inline-block;
+        line-height: $btn-line-height;
+        text-align: center;
+    }
+}
+.btn i {
+    font-size: 1.3rem;
+    line-height: inherit;
+}
+
+.btn_menu{
+    color: #fff;
+}

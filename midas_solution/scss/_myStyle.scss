@@ -1,0 +1,117 @@
+#header {
+    background: rgba(0, 0, 0, .15);
+    height: 40px;
+    padding: 4px;
+}
+main {
+    &::after {
+        content: "";
+        display: table;
+    }
+}
+.clearfix {
+    clear: both;
+}
+body {
+    background-color: rgb(0, 121, 191);
+}
+.header__item {
+    display: inline-block;
+}
+.cards-header {
+    padding: 8px 4px 8px 8px;
+}
+.btn_menu {
+    background: transparent;
+    &:before {
+        content: "\2219 \2219 \2219";
+        width: 20px;
+        padding: 4px;
+    }
+    @extend .btn
+}
+.cards-header {
+    position: relative;
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+.board-menu {
+        z-index: 999;
+    position: fixed;
+    transform: translateX(105%);
+    right: 0;
+    width: 336px;
+    padding: 0 6px 0 12px;
+    background-color: #edeff0;
+    transition: transform .1s ease-in;
+    &_title {
+        position: relative;
+        height: 46px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+}
+ .board-menu_title_close {
+            user-select: none;
+            cursor: pointer;
+            line-height: 23px;
+            position: absolute;
+            right: 0;
+            padding: 4px;
+            width: 32px;
+            height: 32px;
+        }
+#cards {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    .card {
+        margin: 0 4px;
+        padding: 0 4px;
+        background: #e2e4e6;
+        flex: 0 0 200px;
+        margin: 10px;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+        &_title {
+            height: 40px;
+            padding-right: 36px;
+            font-size: 18px;
+            margin: 0 0 9px;
+            font-weight: 500;
+            position: relative;
+            line-height: 40px;
+            .card-title_dots {
+                @extend .board-menu_title_close; 
+                    line-height: 12px;
+                text-align: center;
+                top:5px;
+                &:hover{
+                        background: #cdd2d4;
+                    border-radius: 3px;
+                }
+            }
+        }
+        &_content {
+            padding: 6px 8px 2px;
+            background-color: #fff;
+            border-radius: 3px;
+            box-shadow: 0 1px 0 #ccc;
+        }
+    }
+}
