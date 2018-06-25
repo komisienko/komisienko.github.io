@@ -9,7 +9,7 @@ $('#nav-mobile').on('click', function (event) {
 });
 $(window).on('scroll', function () {
     $('.target').each(function () {
-        if ($(window).scrollTop() >= $(this).position().top) {
+        if ($(window).scrollTop() >= $(this).position().top-70) {
             var id = $(this).attr('id');
             $('#nav-mobile a').parent().removeClass('active');
             $('#nav-mobile a[href="#' + id + '"]').parent().addClass('active');
