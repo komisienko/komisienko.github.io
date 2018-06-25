@@ -4,6 +4,7 @@
         <title>Landing</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <link rel="stylesheet" href="./css/materialize.css"/>
     </head>
@@ -15,7 +16,8 @@
                     <div class="container">
                         <div class="col s12 m12">
                             <a href="#" class="brand-logo">Tradeinfo24</a>
-                            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                            <ul id="nav-desctop" class="right hide-on-med-and-down">
                                 <li class="active"><a href="#section1">Заявка</a></li>
                                 <li><a href="#section2">Обучение</a></li>
                                 <li><a href="#section3">О трейдинге</a></li>
@@ -24,6 +26,14 @@
                     </div>
                 </div>
             </nav>
+
+            <ul class="sidenav" id="nav-mobile">
+                <li ><a href="#" class="brand-logo">Tradeinfo24</a></li >
+                <li ><a href="#section1">Заявка</a></li>
+                <li><a href="#section2">Обучение</a></li>
+                <li><a href="#section3">О трейдинге</a></li>
+            </ul>
+
         </header>
         <main>
             <section id="section1" class="target">
@@ -79,14 +89,14 @@
                     <div class="row">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, molestiae, repudiandae ducimus assumenda porro totam eveniet quasi dolore ullam iusto dolores voluptas quaerat nemo velit voluptates alias non. Iste, est.
                     </div>
-                    </div>
+                </div>
             </section>
             <section id="section3" class="target">
                 <div class="container">
                     <div class="row">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, molestiae, repudiandae ducimus assumenda porro totam eveniet quasi dolore ullam iusto dolores voluptas quaerat nemo velit voluptates alias non. Iste, est.
                     </div>
-                    </div>
+                </div>
             </section>
 
         </main>
