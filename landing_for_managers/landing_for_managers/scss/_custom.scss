@@ -1,3 +1,8 @@
+@media only screen and (max-width: 600px){
+    .container{
+        width: 100%;
+    }
+}
 nav{
     position: fixed;
     z-index:2;
@@ -10,8 +15,8 @@ nav{
                 left: 0;
                 right: 0;
                 bottom: 0;
-                height: 1px;
-                background-color: #333;
+                height: 2px;
+                background-color: #fff;
             }
         }
     }
@@ -19,36 +24,36 @@ nav{
 main{
     section{
         height: 100vh;
-        
+
     }
     #section1{
         background-color: lightgray;
         padding: 100px 0 100px 0;
         @media only screen and (max-width: 600px){
-            
+
             height: max-content;
             padding: 0px 0 0 0;
         }
         h3{
-              @media only screen and (max-width: 600px){
-                  font-size: 2rem;
-        }
+            @media only screen and (max-width: 600px){
+                font-size: 2rem;
+            }
         }
         h5{
-              @media only screen and (max-width: 600px){
-                  font-size: 1.3rem;
-        }
+            @media only screen and (max-width: 600px){
+                font-size: 1.3rem;
+            }
         }
         //background: url(../img/section1.jpg);
         background-size: cover;
         form{
-            
+
             z-index:1;
-            
+
             .form_checkbox {
                 span{
-                                height: auto;
-                            }
+                    height: auto;
+                }
             }
             .card{
                 .card-action{
@@ -66,5 +71,5 @@ main{
     padding-top: 35px;
 }
 body{
-/*    height: 2000px;*/
+    /*    height: 2000px;*/
 }
