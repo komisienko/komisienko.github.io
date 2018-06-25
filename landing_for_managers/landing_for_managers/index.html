@@ -4,7 +4,7 @@
         <title>Landing</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <link rel="stylesheet" href="./css/materialize.css"/>
     </head>
     <body>
@@ -16,9 +16,9 @@
                         <div class="col s12 m12">
                             <a href="#" class="brand-logo">Tradeinfo24</a>
                             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                                <li><a href="#section1">Заявка</a></li>
-                                <li><a href="#">Обучение</a></li>
-                                <li><a href="#">О трейдинге</a></li>
+                                <li class="active"><a href="#section1">Заявка</a></li>
+                                <li><a href="#section2">Обучение</a></li>
+                                <li><a href="#section3">О трейдинге</a></li>
                             </ul>
                         </div>
                     </div>
@@ -26,44 +26,66 @@
             </nav>
         </header>
         <main>
-            <section id="section1">
+            <section id="section1" class="target">
                 <div class="container">
-                    <div class="col m12 s12">
-                        <h3>Бесплатный курс по трейдингу на финансовых рынках</h3>
-                        <h3>Оставьте заявку, чтобы получить материалы курса на Вашу почту</h3>
+                    <div class="row">
+                        <div class="col m8 s12">
+                            <h3>Бесплатный курс по трейдингу на финансовых рынках</h3>
+                            <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum impedit aut assumenda officiis quam delectus deserunt voluptatibus quae?</h5>
+                        </div>
+                        <div class="col m4 s12">
 
-                        <div class="row">
-                            <form class="col s12 m6">
-                                <div class="row">
-                                    <div class="card">
-                                        <div class="card-content">
-                                    <div class="input-field col s12">
-                                        <input id="user_name" type="text" class="validate">
-                                        <label for="user_name">Ваше имя</label>
-                                    </div>
-                                    <div class="input-field col s12">
-                                        <input id="user_tel" type="tel" class="validate">
-                                        <label for="user_tel">Ваш телефон</label>
-                                    </div>
-                                    <div class="input-field col s12">
-                                        <p>
-                                            <label>
-                                                <input type="checkbox" class="filled-in" checked="checked" />
-                                                <span>Мне больше 18 лет. Я прочитал(а) и принимаю данную Политику Конфиденциальности
-                                                </span>
-                                            </label>
-                                        </p>
-                                    </div>
-                                    <div class="input-field col s12 center-align">
-                                        <button type="submit" class="btn btn-large">Отправить заявку</button>
-                                    </div>
-                                                                                    <div class="clearfix"></div>
+                            <form class="">
+                                <div class="card">
+                                    <div class="card-content">
+                                        <span class="card-title">Оставьте заявку чтобы получить материалы курса на Вашу почту</span>
+                                        <div class="input-field col s12">
+                                            <input id="user_name" type="text" class="validate">
+                                            <label for="user_name">Ваше имя</label>
+                                        </div>
+                                        <div class="input-field col s12">
+                                            <input id="user_tel" type="tel" class="validate">
+                                            <label for="user_tel">Ваш телефон</label>
+                                        </div>
+                                        <div class="input-field col s12">
+                                            <input id="user_email" type="email" class="validate">
+                                            <label for="user_email">Ваш Email</label>
+                                        </div>
+                                        <div class="input-field col s12 form_checkbox" >
+                                            <p>
+                                                <label>
+                                                    <input type="checkbox" class="filled-in" />
+                                                    <span>Мне больше 18 лет. Я прочитал(а) и принимаю данную 
+                                                        <a href="#">Политику Конфиденциальности</a>
+                                                    </span>
 
-                                </div>
+                                                </label>
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="card-action center-align">
+                                        <button type="submit" class="btn btn-large ">Отправить заявку</button>
                                     </div>
                                 </div>
                             </form>
+
                         </div>
+                    </div>
+            </section>
+            <section id="section2" class="target">
+                <div class="container">
+                    <div class="row">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, molestiae, repudiandae ducimus assumenda porro totam eveniet quasi dolore ullam iusto dolores voluptas quaerat nemo velit voluptates alias non. Iste, est.
+                    </div>
+                    </div>
+            </section>
+            <section id="section3" class="target">
+                <div class="container">
+                    <div class="row">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, molestiae, repudiandae ducimus assumenda porro totam eveniet quasi dolore ullam iusto dolores voluptas quaerat nemo velit voluptates alias non. Iste, est.
+                    </div>
                     </div>
             </section>
 
