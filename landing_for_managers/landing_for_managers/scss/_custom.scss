@@ -218,6 +218,10 @@ main{
             background: url(../img/bg-2.jpg);
             background-size: cover;
             height: 75vh;
+            @media only screen and (max-width: 993px){
+                height: 80vh;
+                  background-size: cover;
+            }
             .main_header{
                 margin-top: 0px;
                 padding-top: 113px;
@@ -237,9 +241,7 @@ main{
         }
         .section3_half_1{
             height: 75vh;
-            @media only screen and (max-width: 993px){
-                height: max-content;
-            }
+         
             .main_header{
                 margin-top: 0px;
                 padding-top: 113px;
@@ -250,14 +252,14 @@ main{
         }
         .sec3_part2{
             height: 25vh;
-             @media only screen and (max-width: 993px){
+            @media only screen and (max-width: 993px){
                 height: max-content;
             }
             color: #000;
             .footer_logo{
                 margin-top: 72px;
                 margin-bottom: 23px;
-              
+
             }
             .footer_who{
                 color: #9B9B9B;
@@ -302,5 +304,11 @@ main{
                 }
             }
         }
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .main_header{
+        text-align: center;
     }
 }
