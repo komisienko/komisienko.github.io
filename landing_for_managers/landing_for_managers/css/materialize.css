@@ -6543,6 +6543,9 @@ header {
 #nav-desctop {
   margin-left: 258px; }
 
+.card {
+  cursor: pointer; }
+
 nav {
   box-shadow: none; }
   nav .brand-logo img {
@@ -6649,8 +6652,11 @@ main #section1 {
         display: block;
         text-align: left; }
 main #section2 {
-  height: auto;
+  height: 100vh;
   margin-bottom: 80px; }
+  @media only screen and (max-width: 992px) {
+    main #section2 {
+      height: max-content; } }
   main #section2 .main_header {
     margin-top: 113px;
     color: #000; }
@@ -6660,8 +6666,11 @@ main #section2 {
   main #section2 .cards-container {
     display: grid;
     padding: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 1rem; }
+    @media only screen and (max-width: 992px) {
+      main #section2 .cards-container {
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); } }
     main #section2 .cards-container .card {
       padding: 32px;
       text-align: center;
@@ -6697,7 +6706,7 @@ main #section3 {
   main #section3 .sec3_part1 {
     background: url(../img/bg-2.jpg);
     background-size: cover;
-    height: 75vh; }
+    height: 60vh; }
     @media only screen and (max-width: 993px) {
       main #section3 .sec3_part1 {
         height: 80vh;
@@ -6716,7 +6725,7 @@ main #section3 {
       font-family: 'Rubik', sans-serif;
       margin-top: 30px; }
   main #section3 .section3_half_1 {
-    height: 75vh; }
+    height: 60vh; }
     main #section3 .section3_half_1 .main_header {
       margin-top: 0px;
       padding-top: 113px; }
@@ -6724,7 +6733,7 @@ main #section3 {
         main #section3 .section3_half_1 .main_header {
           padding-top: 90px; } }
   main #section3 .sec3_part2 {
-    height: 25vh;
+    height: 40vh;
     color: #000; }
     @media only screen and (max-width: 993px) {
       main #section3 .sec3_part2 {
