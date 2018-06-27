@@ -237,6 +237,9 @@ main{
         }
         .section3_half_1{
             height: 75vh;
+            @media only screen and (max-width: 993px){
+                height: max-content;
+            }
             .main_header{
                 margin-top: 0px;
                 padding-top: 113px;
@@ -247,13 +250,14 @@ main{
         }
         .sec3_part2{
             height: 25vh;
+             @media only screen and (max-width: 993px){
+                height: max-content;
+            }
             color: #000;
             .footer_logo{
                 margin-top: 72px;
                 margin-bottom: 23px;
-                  @media only screen and (max-width: 992px){
-                margin-top: 25px;
-            }
+              
             }
             .footer_who{
                 color: #9B9B9B;
@@ -264,9 +268,9 @@ main{
 
             }
             .footer_phone{
-                  @media only screen and (max-width: 992px){
-                margin-right: 5px;
-            }
+                @media only screen and (max-width: 992px){
+                    margin-right: 5px;
+                }
                 color: #9B9B9B;
                 position: relative;
                 &:before{
@@ -280,10 +284,10 @@ main{
                 }
             }
             .footer_mail{
-                    @media only screen and (max-width: 992px){
-                margin-right: 5px;
-            }
-           
+                @media only screen and (max-width: 992px){
+                    margin-right: 5px;
+                }
+
                 color: #9B9B9B;
                 position: relative;
                 display: initial;

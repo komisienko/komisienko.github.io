@@ -6713,6 +6713,9 @@ main #section3 {
       margin-top: 30px; }
   main #section3 .section3_half_1 {
     height: 75vh; }
+    @media only screen and (max-width: 993px) {
+      main #section3 .section3_half_1 {
+        height: max-content; } }
     main #section3 .section3_half_1 .main_header {
       margin-top: 0px;
       padding-top: 113px; }
@@ -6722,12 +6725,12 @@ main #section3 {
   main #section3 .sec3_part2 {
     height: 25vh;
     color: #000; }
+    @media only screen and (max-width: 993px) {
+      main #section3 .sec3_part2 {
+        height: max-content; } }
     main #section3 .sec3_part2 .footer_logo {
       margin-top: 72px;
       margin-bottom: 23px; }
-      @media only screen and (max-width: 992px) {
-        main #section3 .sec3_part2 .footer_logo {
-          margin-top: 25px; } }
     main #section3 .sec3_part2 .footer_who {
       color: #9B9B9B;
       font-size: 16px; }
