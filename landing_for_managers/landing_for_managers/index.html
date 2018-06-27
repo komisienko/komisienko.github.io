@@ -11,23 +11,23 @@
     </head>
     <body>
         <header>
-<div class="navbar-fixed">
-            <nav>
-                <div class="nav-wrapper">
-                    <div class="container">
-                        <div class="col s12 m12">
-                            <a href="#" class="brand-logo"><img src="./img/logo_1-01.svg" alt=""></a>
-                            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                            <ul id="nav-desctop" class=" hide-on-med-and-down">
-                                <li class="active"><a href="#section1">Заявка</a></li>
-                                <li><a href="#section2">Обучение</a></li>
-                                <li><a href="#section3">О трейдинге</a></li>
-                            </ul>
+            <div class="navbar-fixed">
+                <nav>
+                    <div class="nav-wrapper">
+                        <div class="container">
+                            <div class="col s12 m12">
+                                <a href="#" class="brand-logo"><img src="./img/COURSEINFO.svg" alt=""></a>
+                                <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                                <ul id="nav-desctop" class=" hide-on-med-and-down">
+                                    <li class="active"><a href="#section1">Заявка</a></li>
+                                    <li><a href="#section2">Обучение</a></li>
+                                    <li><a href="#section3">О трейдинге</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </nav>
- </div>
+                </nav>
+            </div>
             <ul class="sidenav" id="nav-mobile">
                 <li ><a href="#section1">Заявка</a></li>
                 <li><a href="#section2">Обучение</a></li>
@@ -42,50 +42,51 @@
                         <div class="col l8 m12 s12" >
                             <div class="valign-wrapper" >
                                 <div>
-                                    <h4 style="font-weight: bold">Бесплатный курс по трейдингу на финансовых рынках</h4>
+                                    <h4 class="main_header">Бесплатный курс по трейдингу на финансовых рынках</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum impedit aut assumenda officiis quam delectus deserunt voluptatibus quae?</p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col l4 m12 s12">
+                            <div class="valign-wrapper">
+                                <form action="#" id="sender_form">
+                                    <div class="card hoverable">
+                                        <div class="card-content">
+                                            <span class="card-title">Оставьте заявку</span>
+                                            <p> чтобы получить материалы курса на Вашу почту</p>
+                                            <div class="input-field ">
+                                                <input id="user_name" type="text" class="validate" required>
+                                                <label for="user_name">Ваше имя</label>
+                                            </div>
+                                            <div class="input-field ">
+                                                <input id="user_tel" type="tel" class="validate" required>
+                                                <label for="user_tel">Ваш телефон</label>
+                                            </div>
+                                            <div class="input-field ">
+                                                <input id="user_email" type="email" class="validate" required>
+                                                <label for="user_email">Ваш Email</label>
+                                            </div>
+                                            <div class="input-field  form_checkbox" >
+                                                <p>
+                                                    <label>
+                                                        <input type="checkbox" class="filled-in" required />
+                                                        <span>Мне больше 18 лет. Я прочитал(а) и принимаю данную 
+                                                            <a class="modal-trigger privat_policy_a" href="#privacypolicy" >Политику Конфиденциальности</a>
+                                                        </span>
 
-                            <form action="#">
-                                <div class="card">
-                                    <div class="card-content">
-                                        <span class="card-title">Оставьте заявку</span>
-                                        <p> чтобы получить материалы курса на Вашу почту</p>
-                                        <div class="input-field ">
-                                            <input id="user_name" type="text" class="validate">
-                                            <label for="user_name">Ваше имя</label>
-                                        </div>
-                                        <div class="input-field ">
-                                            <input id="user_tel" type="tel" class="validate">
-                                            <label for="user_tel">Ваш телефон</label>
-                                        </div>
-                                        <div class="input-field ">
-                                            <input id="user_email" type="email" class="validate">
-                                            <label for="user_email">Ваш Email</label>
-                                        </div>
-                                        <div class="input-field  form_checkbox" >
-                                            <p>
-                                                <label>
-                                                    <input type="checkbox" class="filled-in" />
-                                                    <span>Мне больше 18 лет. Я прочитал(а) и принимаю данную 
-                                                        <a class="modal-trigger privat_policy_a" href="#privacypolicy" >Политику Конфиденциальности</a>
-                                                    </span>
+                                                    </label>
 
-                                                </label>
-
-                                            </p>
-                                        </div>
-                                        <div class="center-align">
-                                            <button type="submit" class="btn btn_cdlc_wide waves-effect waves-light ">Отправить заявку</button>
+                                                </p>
+                                            </div>
+                                            <div class="center-align">
+                                                <button type="submit" class="btn btn_cdlc_wide waves-effect waves-light ">Отправить заявку</button>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </form>
+                                </form>
 
+                            </div>
                         </div>
                     </div>
             </section>
@@ -93,18 +94,87 @@
                 <div class="container">
                     <div class="row">
                         <div class="col s12 m12">
-                            <h3 class="center-align">Тестовый заголовок</h3>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, molestiae, repudiandae ducimus assumenda porro totam eveniet quasi dolore ullam iusto dolores voluptas quaerat nemo velit voluptates alias non. Iste, est.
+                            <h4 class=" main_header">Содержание нашего курса</h4>
+                            <div class="cards-container">
+                                <div class="card hoverable ">
+                                    <div class="card-image"><img src="./img/network-1.svg" alt=""></div>
+                                    <div class="card-content">
+                                        <h6 class="main_header">Рынки</h6>
+                                        <p>Валютные рынки и как они устроены</p>
+                                    </div>
+                                </div>
+                                <div class="card hoverable ">
+                                    <div class="card-image"><img src="./img/settings.svg" alt=""></div>
+                                    <div class="card-content">
+                                        <h6 class="main_header">Инструменты</h6>
+                                        <p>Основные иструменты трейдера, торговый терминал</p>
+                                    </div>
+                                </div>
+                                <div class="card hoverable ">
+                                    <div class="card-image"><img src="./img/user-1.svg" alt=""></div>
+                                    <div class="card-content">
+                                        <h6 class="main_header">Правила</h6>
+                                        <p>Основные правила для современного рынка валют, технический анализ</p>
+                                    </div>
+                                </div>
+                                <div class="card hoverable ">
+                                    <div class="card-image"><img src="./img/cloud-computing-3.svg" alt=""></div>
+                                    <div class="card-content">
+                                        <h6 class="main_header">Влияние</h6>
+                                        <p>Влияние микростатистики на валютные правила, экономический календарь, фундаментальный анализ </p>
+                                    </div>
+                                </div>
+                                <div class="card hoverable ">
+                                    <div class="card-image"><img src="./img/cpu.svg" alt=""></div>
+                                    <div class="card-content">
+                                        <h6 class="main_header">Методы</h6>
+                                        <p> Методы работы с торговыми рисками, управление вашим капиталом</p>
+                                    </div>
+                                </div>
+                                <div class="card hoverable ">
+                                    <div class="card-content">
+                                        <h6 class="main_header">Получите</h6>
+                                        <p>5 бесплатных уроков уже сегодня, и сделайте трейдинг основным источником вашего 
+                                            дохода в течении нескольких месяцев.</p>
+                                        <a href="#section1" class="card_solo_href">Получить курс</a>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
             <section id="section3" class="target">
-                <div class="container">
-                    <div class="row">
-                        <div class="col s12 m12">
-                            <h3 class="center-align">Тестовый заголовок</h3>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, molestiae, repudiandae ducimus assumenda porro totam eveniet quasi dolore ullam iusto dolores voluptas quaerat nemo velit voluptates alias non. Iste, est.
+                <div class="sec3_part1">
+                    <div class="container">
+                        <div class="row" style="margin-bottom: 0;">
+                            <div class="section3_half_1 col s12 m6 l6">
+                                <h4 class="main_header"> О Нас</h4>
+                                <p class="sec_mh_p">Финансовый трейдер</p>
+                                <p class="sec_mh_p_desc">Финансовый трейдер — это профессия, которая соответствует численным требованиям к идеальной работе. Вы получите высокую прибыль, свободный график, независимость от начальства, интересные задачи, а также возможность жить в любой точке мира.</p>
+                                <a href="#section1" class="button_href btn btn_cdlc_standart waves-effect waves-light">Получить курс</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="sec3_part2">     
+                        <div class="container section3_footer">
+                            <div class="row">
+                                <div class="col m12 s12"><img src="./img/COURSEINFO_black.svg" alt="" class="footer_logo"></div>
+                                <div class="col m3 l3 s12 footer_who">ФОП Павелко Роман Владимирович <br>
+                                    ОГРН 3070522215</div>
+                                <div class="col m3 l3 s12 footer_policy">Политика конфиденциальности</div>
+                                    <div class="col m3 l3 s6 right-align" ><a href="tel:0932734444" class="footer_phone">+3 093 273 44 44</a></div>
+                                    <div class="col m3 l3 s6  right-align"> <div class="footer_mail">exemple@mail.com</div></div>
+                            
+                            </div>
+                            <div class="row">
+                                <div class="divider"></div>
+                                <div class="col m9 l9 s12"><p>Все права защищены. Любое копирование материалов разрешено только с согласия правообладателей. 
+                                        По всем вопросам обращайтесь на: exemple@mail.com</p></div>
+                                <div class="col m3 l3 s12"><p>© Роман Павелко&MarketsPro</p></div>
+                            </div>
                         </div>
                     </div>
                 </div>
