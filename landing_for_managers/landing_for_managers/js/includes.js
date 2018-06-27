@@ -10,7 +10,7 @@ $('#nav-mobile').on("click", "a", function(){
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 700);
-})
+});
 });
 
 $('#nav-desctop').on('click',"a", function (event) {
@@ -26,7 +26,7 @@ $('.card_solo_href, .button_href').on('click', function (event) {
      event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top-64}, 700);
+        $('body,html').animate({scrollTop: top}, 700);
    
     $('#user_name').focus();
 });
