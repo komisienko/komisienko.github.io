@@ -166,26 +166,26 @@ main{
         @extend .valign-wrapper;
         margin-bottom: 80px;
         @media only screen and (max-width: 992px){
-              height: max-content;
-                
-            }
+            height: max-content;
+
+        }
         .main_header{
             margin-top: 113px;
             color: #000;
-            
+
             @media only screen and (max-width: 992px){
                 margin-top: 90px;
-                
+
             }
         }
         .cards-container {
             display: grid;
             padding: 1rem;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-             @media only screen and (max-width: 992px){
-                    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-                    
-                }
+            @media only screen and (max-width: 992px){
+                grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+
+            }
             grid-gap: 1rem;
             .card {
                 padding: 32px;
@@ -233,7 +233,7 @@ main{
             height: 60vh;
             @media only screen and (max-width: 993px){
                 height: 80vh;
-                  background-size: cover;
+                background-size: cover;
             }
             .main_header{
                 margin-top: 0px;
@@ -254,7 +254,7 @@ main{
         }
         .section3_half_1{
             height: 60vh;
-         
+
             .main_header{
                 margin-top: 0px;
                 padding-top: 113px;
@@ -280,7 +280,9 @@ main{
             }
             .footer_policy{
                 font-size: 16px;
-
+                @media only screen and (max-width: 993px){
+                    margin: 10px 0 10px 0;
+                }
             }
             .footer_phone{
                 @media only screen and (max-width: 992px){
