@@ -5,19 +5,20 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Rubik:400,500" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <link rel="stylesheet" href="./css/materialize.css"/>
     </head>
     <body>
         <header>
-
+<div class="navbar-fixed">
             <nav>
                 <div class="nav-wrapper">
                     <div class="container">
                         <div class="col s12 m12">
-                            <a href="#" class="brand-logo">Tradeinfo24</a>
+                            <a href="#" class="brand-logo"><img src="./img/logo.svg" alt=""></a>
                             <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                            <ul id="nav-desctop" class="right hide-on-med-and-down">
+                            <ul id="nav-desctop" class=" hide-on-med-and-down">
                                 <li class="active"><a href="#section1">Заявка</a></li>
                                 <li><a href="#section2">Обучение</a></li>
                                 <li><a href="#section3">О трейдинге</a></li>
@@ -26,7 +27,7 @@
                     </div>
                 </div>
             </nav>
-
+ </div>
             <ul class="sidenav" id="nav-mobile">
                 <li ><a href="#section1">Заявка</a></li>
                 <li><a href="#section2">Обучение</a></li>
@@ -38,44 +39,49 @@
             <section id="section1" class="target">
                 <div class="container">
                     <div class="row">
-                        <div class="col m8 s12">
-                            <h3>Бесплатный курс по трейдингу на финансовых рынках</h3>
-                            <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum impedit aut assumenda officiis quam delectus deserunt voluptatibus quae?</h5>
+                        <div class="col l8 m12 s12" >
+                            <div class="valign-wrapper" >
+                                <div>
+                                    <h4 style="font-weight: bold">Бесплатный курс по трейдингу на финансовых рынках</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum impedit aut assumenda officiis quam delectus deserunt voluptatibus quae?</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col m4 s12">
+
+                        <div class="col l4 m12 s12">
 
                             <form action="#">
                                 <div class="card">
                                     <div class="card-content">
-                                        <span class="card-title">Оставьте заявку чтобы получить материалы курса на Вашу почту</span>
-                                        <div class="input-field col s12">
+                                        <span class="card-title">Оставьте заявку</span>
+                                        <p> чтобы получить материалы курса на Вашу почту</p>
+                                        <div class="input-field ">
                                             <input id="user_name" type="text" class="validate">
                                             <label for="user_name">Ваше имя</label>
                                         </div>
-                                        <div class="input-field col s12">
+                                        <div class="input-field ">
                                             <input id="user_tel" type="tel" class="validate">
                                             <label for="user_tel">Ваш телефон</label>
                                         </div>
-                                        <div class="input-field col s12">
+                                        <div class="input-field ">
                                             <input id="user_email" type="email" class="validate">
                                             <label for="user_email">Ваш Email</label>
                                         </div>
-                                        <div class="input-field col s12 form_checkbox" >
+                                        <div class="input-field  form_checkbox" >
                                             <p>
                                                 <label>
                                                     <input type="checkbox" class="filled-in" />
                                                     <span>Мне больше 18 лет. Я прочитал(а) и принимаю данную 
-                                                        <a class="modal-trigger" href="#privacypolicy">Политику Конфиденциальности</a>
+                                                        <a class="modal-trigger privat_policy_a" href="#privacypolicy" >Политику Конфиденциальности</a>
                                                     </span>
 
                                                 </label>
 
                                             </p>
                                         </div>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                    <div class="card-action center-align">
-                                        <button type="submit" class="btn btn-large waves-effect waves-light green">Отправить заявку</button>
+                                        <div class="center-align">
+                                            <button type="submit" class="btn btn_cdlc_wide waves-effect waves-light ">Отправить заявку</button>
+                                        </div>
                                     </div>
                                 </div>
                             </form>
@@ -108,18 +114,18 @@
                     <h6 style="font-size: 1.1rem; font-weight: bold;">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ
                     </h6>
                     <div class="container" >
-TradeInfo24 делает все возможное, чтобы обеспечить конфиденциальность и безопасность своих клиентов на протяжении всего срока их взаимодействия с компанией и по истечении его в наивысшей достижимой компанией степени.
+                        TradeInfo24 делает все возможное, чтобы обеспечить конфиденциальность и безопасность своих клиентов на протяжении всего срока их взаимодействия с компанией и по истечении его в наивысшей достижимой компанией степени.
 
-<ol>
-  <li>Наши клиенты обязуются: что они достигли возраста 18 лет, предоставлять правдивую и точную информацию. Кроме того, они обязуются не выдавать себя за каких-либо других лиц.</li>	
-  <li>В момент Отправки заявки или Регистрации на сайте TradeInfo24 клиенты дают разрешение на получение и обработку сайтом TradeInfo24 своих персональных данных, признают готовность поделиться с компанией своей частной информацией, которая будет использоваться с целью подтверждения личности клиента.</li>
-  <li>В момент Отправки заявки или Регистрации на сайте TradeInfo24 клиенты отправляют свое Имя контактный Телефон и контактный E-mail через форму регистрации сайта. Это необходимо для обращения к Вам, оперативной связи и отправки Вам учебных материалов.</li>
-  <li>На сайте TradeInfo24 используются куки (Cookies) и данные о посетителях сервиса Google Analytics. При помощи этих данных собирается информация о действиях посетителей на сайте с целью улучшения его содержания, улучшения функциональных возможностей сайта и, как следствие, создания качественного контента и сервисов для посетителей. </li>
-  <li>TradeInfo24 не разглашает какую-либо личную или иную конфиденциальную информацию в отношении своих настоящих или бывших клиентов третьим лицам.</li>
-<li>TradeInfo24 делает все возможное, чтобы обеспечить конфиденциальность личной информации своих клиентов, включая осуществление процедур защиты данных. TradeInfo24 гарантирует, что политика защиты данных регулярно обновляется для того, чтобы убедиться, что конфиденциальная информация клиента постоянно защищена.</li>
-<li>Время от времени TradeInfo24 может связываться с клиентами по телефону или по электронной почте с целью предоставления им дополнительной информации о торговле на финансовых рынках. Кроме того, компания может в некоторых случаях связываться с клиентом по телефону или по электронной почте с целью информирования об уникальных рекламных предложениях, предоставляемых TradeInfo24 своим клиентам. Клиенты дают согласие на такой контакт посредством согласия с нашими условиями и положениями предоставления услуг при регистрации на TradeInfo24. Любое лицо, желающее отказаться от дальнейших контактов с TradeInfo24, в любое время может осуществить свое право на такой отказ, обратившись в компанию по телефону или электронной почте с просьбой прекратить вышеупомянутые обращения от лица компании.</li>
-</ol>
-</div>
+                        <ol>
+                            <li>Наши клиенты обязуются: что они достигли возраста 18 лет, предоставлять правдивую и точную информацию. Кроме того, они обязуются не выдавать себя за каких-либо других лиц.</li>	
+                            <li>В момент Отправки заявки или Регистрации на сайте TradeInfo24 клиенты дают разрешение на получение и обработку сайтом TradeInfo24 своих персональных данных, признают готовность поделиться с компанией своей частной информацией, которая будет использоваться с целью подтверждения личности клиента.</li>
+                            <li>В момент Отправки заявки или Регистрации на сайте TradeInfo24 клиенты отправляют свое Имя контактный Телефон и контактный E-mail через форму регистрации сайта. Это необходимо для обращения к Вам, оперативной связи и отправки Вам учебных материалов.</li>
+                            <li>На сайте TradeInfo24 используются куки (Cookies) и данные о посетителях сервиса Google Analytics. При помощи этих данных собирается информация о действиях посетителей на сайте с целью улучшения его содержания, улучшения функциональных возможностей сайта и, как следствие, создания качественного контента и сервисов для посетителей. </li>
+                            <li>TradeInfo24 не разглашает какую-либо личную или иную конфиденциальную информацию в отношении своих настоящих или бывших клиентов третьим лицам.</li>
+                            <li>TradeInfo24 делает все возможное, чтобы обеспечить конфиденциальность личной информации своих клиентов, включая осуществление процедур защиты данных. TradeInfo24 гарантирует, что политика защиты данных регулярно обновляется для того, чтобы убедиться, что конфиденциальная информация клиента постоянно защищена.</li>
+                            <li>Время от времени TradeInfo24 может связываться с клиентами по телефону или по электронной почте с целью предоставления им дополнительной информации о торговле на финансовых рынках. Кроме того, компания может в некоторых случаях связываться с клиентом по телефону или по электронной почте с целью информирования об уникальных рекламных предложениях, предоставляемых TradeInfo24 своим клиентам. Клиенты дают согласие на такой контакт посредством согласия с нашими условиями и положениями предоставления услуг при регистрации на TradeInfo24. Любое лицо, желающее отказаться от дальнейших контактов с TradeInfo24, в любое время может осуществить свое право на такой отказ, обратившись в компанию по телефону или электронной почте с просьбой прекратить вышеупомянутые обращения от лица компании.</li>
+                        </ol>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <a href="#!" class="modal-close waves-effect waves-green btn-flat">Понятно</a>

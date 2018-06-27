@@ -14,12 +14,13 @@ $('#nav-mobile').on("click", "a", function(){
 });
 
 $('#nav-desctop').on('click',"a", function (event) {
-    $(this).parent().find('a').parent().removeClass('active');
-    $(this).parent().addClass('active');
+    //$(this).parent().find('a').parent().removeClass('active');
+   // $(this).parent().addClass('active');
      event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top-64}, 700);
+    event.preventDefault();
 });
 $(window).on('scroll', function () {
     $('.target').each(function () {

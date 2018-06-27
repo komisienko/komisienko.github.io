@@ -3,9 +3,26 @@
         width: 100%;
     }
 }
+body{
+    font-family: 'Rubik', sans-serif;
+}
+h1,h2,h3,h4,h5,h6, .card-title{
+    font-family: 'Montserrat', sans-serif;
+
+}
+header{
+    height: 0;
+   
+}
+
+#nav-desctop{
+    margin-left: 258px; 
+   
+}
 nav{
-    position: fixed;
-    z-index:2;
+    box-shadow: none;
+    /*    position: fixed;
+        z-index:2;*/
     li{
         position: relative;
         &.active{
@@ -22,13 +39,51 @@ nav{
     }
 }
 main{
+    .btn.btn_cdlc_wide{
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        height: 56px;	
+        width: 260px;	
+        border-radius: 2px;	
+         background: linear-gradient(150.38deg, #8239CE 0%, #BE83FF 100%);
+         background:-webkit-linear-gradient(150.38deg, #8239CE 0%, #BE83FF 100%) ;
+        background: -moz-linear-gradient(150.38deg, #8239CE 0%, #BE83FF 100%) ;
+         background:-ms-linear-gradient(150.38deg, #8239CE 0%, #BE83FF 100%) ;
+        background: -o-linear-gradient(150.38deg, #8239CE 0%, #BE83FF 100%) ;
+        background: linear-gradient(150.38deg, #8239CE 0%, #BE83FF 100%) ;
+    }
+    .btn.btn_cdlc_standart{
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        height: 56px;	width: 167px;	
+        border-radius: 2px;	
+        background: linear-gradient(150.38deg, #8239CE 0%, #BE83FF 100%);
+         background:-webkit-linear-gradient(150.38deg, #8239CE 0%, #BE83FF 100%) ;
+        background: -moz-linear-gradient(150.38deg, #8239CE 0%, #BE83FF 100%) ;
+         background:-ms-linear-gradient(150.38deg, #8239CE 0%, #BE83FF 100%) ;
+        background: -o-linear-gradient(150.38deg, #8239CE 0%, #BE83FF 100%) ;
+        background: linear-gradient(150.38deg, #8239CE 0%, #BE83FF 100%) ;
+    }
     section{
         height: 100vh;
-
+        
     }
     #section1{
-        background-color: lightgray;
+        
+        .valign-wrapper{
+            height: 100%;
+        }
+        @media only screen and (max-width: 993px){
+            .valign-wrapper{
+                display: block;
+                height: auto;
+            }
+        }
+       // background-color: lightgray;
         padding: 100px 0 100px 0;
+        color: #fff;
         @media only screen and (max-width: 600px){
 
             height: max-content;
@@ -44,7 +99,7 @@ main{
                 font-size: 1.3rem;
             }
         }
-        //background: url(../img/section1.jpg);
+        background: url(../img/bg-1.jpg);
         background-size: cover;
         form{
 
@@ -56,8 +111,22 @@ main{
                 }
             }
             .card{
+                .card-title{
+                    font-weight: 600;
+                    //padding: 64px;
+                    color: #000;
+                }
+                p{color: #9B9B9B}
                 .card-action{
                     overflow: hidden;
+                }
+                .card-content{
+                    padding: 3rem;
+                    .privat_policy_a{
+                        color:#4A90E2;
+                        display: block;
+                        
+                    }
                 }
             }
         }
@@ -68,7 +137,7 @@ main{
     #section2{
         background-color: blueviolet;
     }
-    padding-top: 35px;
+
 }
 body{
     /*    height: 2000px;*/

@@ -1,3 +1,4 @@
+
 nav {
   &.nav-extended {
     height: auto;
@@ -14,8 +15,8 @@ nav {
   }
 
   color: $navbar-font-color;
-  @extend .z-depth-1;
-  background-color: $primary-color;
+  //@extend .z-depth-1;
+  //background-color: $primary-color;
   width: 100%;
   height: $navbar-height-mobile;
   line-height: $navbar-line-height-mobile;
@@ -125,7 +126,7 @@ nav {
       font-size: $navbar-font-size;
       color: $navbar-font-color;
       display: block;
-      padding: 0 15px;
+      padding: 0 36px;
       cursor: pointer;
 
       &.btn, &.btn-large, &.btn-flat, &.btn-floating {
@@ -204,5 +205,17 @@ nav {
   }
   .navbar-fixed {
     height: $navbar-height;
+  }
+}
+@media #{$medium-and-down} {
+  nav.nav-extended .nav-wrapper {
+    min-height:  53px;
+  }
+  nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i,.brand-logo> img {
+    height: 53px;
+    line-height:  53px;
+  }
+  .navbar-fixed {
+    height:  53px;
   }
 }
