@@ -232,7 +232,7 @@ main{
             background-size: cover;
             height: 60vh;
             @media only screen and (max-width: 993px){
-                height: 80vh;
+                height: max-content;
                 background-size: cover;
             }
             .main_header{
@@ -254,12 +254,16 @@ main{
         }
         .section3_half_1{
             height: 60vh;
-
+             @media only screen and (max-width: 992px){
+                 height: max-content;
+                 padding-top: 90px;
+                 padding-bottom: 90px;
+                }
             .main_header{
                 margin-top: 0px;
                 padding-top: 113px;
                 @media only screen and (max-width: 992px){
-                    padding-top: 90px;
+                    padding-top: 0;
                 }
             }
         }
@@ -279,9 +283,11 @@ main{
                 font-size: 16px;
             }
             .footer_policy{
+                text-align: center;
                 font-size: 16px;
                 @media only screen and (max-width: 993px){
                     margin: 10px 0 10px 0;
+                    text-align: left;
                 }
             }
             .footer_phone{

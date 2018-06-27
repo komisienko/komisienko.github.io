@@ -6709,7 +6709,7 @@ main #section3 {
     height: 60vh; }
     @media only screen and (max-width: 993px) {
       main #section3 .sec3_part1 {
-        height: 80vh;
+        height: max-content;
         background-size: cover; } }
     main #section3 .sec3_part1 .main_header {
       margin-top: 0px;
@@ -6726,12 +6726,17 @@ main #section3 {
       margin-top: 30px; }
   main #section3 .section3_half_1 {
     height: 60vh; }
+    @media only screen and (max-width: 992px) {
+      main #section3 .section3_half_1 {
+        height: max-content;
+        padding-top: 90px;
+        padding-bottom: 90px; } }
     main #section3 .section3_half_1 .main_header {
       margin-top: 0px;
       padding-top: 113px; }
       @media only screen and (max-width: 992px) {
         main #section3 .section3_half_1 .main_header {
-          padding-top: 90px; } }
+          padding-top: 0; } }
   main #section3 .sec3_part2 {
     height: 40vh;
     color: #000; }
@@ -6745,10 +6750,12 @@ main #section3 {
       color: #9B9B9B;
       font-size: 16px; }
     main #section3 .sec3_part2 .footer_policy {
+      text-align: center;
       font-size: 16px; }
       @media only screen and (max-width: 993px) {
         main #section3 .sec3_part2 .footer_policy {
-          margin: 10px 0 10px 0; } }
+          margin: 10px 0 10px 0;
+          text-align: left; } }
     main #section3 .sec3_part2 .footer_phone {
       color: #9B9B9B;
       position: relative; }
