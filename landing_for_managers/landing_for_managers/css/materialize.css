@@ -6799,13 +6799,11 @@ main {
     display: block;
     text-align: left; }
   main #section1 {
-    height: 90vh;
     padding: 100px 0 50px 0;
     color: #fff;
     background: url(../img/bg_header.jpg);
     background-repeat: no-repeat;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: top; }
     @media only screen and (max-width: 993px) {
       main #section1 {
@@ -6912,7 +6910,6 @@ main {
     height: 500px;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center; }
     @media only screen and (max-width: 993px) {
       #section3 .sec3_part1 {
@@ -6931,19 +6928,17 @@ main {
       font-size: 18px;
       font-family: 'Rubik', sans-serif;
       margin-top: 30px; }
-  #section3 .section3_half_1 {
-    height: 60vh; }
+  @media only screen and (max-width: 992px) {
+    #section3 .section3_half_1 {
+      height: max-content;
+      padding-top: 90px;
+      padding-bottom: 10%; } }
+  #section3 .section3_half_1 .main_header {
+    margin-top: 0px;
+    padding-top: 113px; }
     @media only screen and (max-width: 992px) {
-      #section3 .section3_half_1 {
-        height: max-content;
-        padding-top: 90px;
-        padding-bottom: 10%; } }
-    #section3 .section3_half_1 .main_header {
-      margin-top: 0px;
-      padding-top: 113px; }
-      @media only screen and (max-width: 992px) {
-        #section3 .section3_half_1 .main_header {
-          padding-top: 0; } }
+      #section3 .section3_half_1 .main_header {
+        padding-top: 0; } }
   #section3 .sec3_part2 {
     height: max-content;
     padding-top: 30px;

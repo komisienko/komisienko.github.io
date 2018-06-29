@@ -164,7 +164,7 @@ main {
         }
     }
     #section1 {
-        height: 90vh;
+ 
 
         @media only screen and (max-width: 993px) {
             height: max-content;
@@ -203,7 +203,7 @@ main {
        // background-size: 100% 80%;
             background-repeat: no-repeat;
   background-repeat: no-repeat;
-    background-attachment: fixed;
+   // background-attachment: fixed;
     background-position: top; 
        // background-position: top;
         @media only screen and (max-width: 600px) {
@@ -393,7 +393,7 @@ main {
 //       / background-size: 100% 100%; // background-attachment: fixed;
         background-position: center;
   background-repeat: no-repeat;
-    background-attachment: fixed;
+    //background-attachment: fixed;
     background-position: center; 
         @media only screen and (max-width: 993px) {
             height: max-content;
@@ -417,7 +417,7 @@ main {
         }
     }
     .section3_half_1 {
-        height: 60vh;
+       // height: 60vh;
         @media only screen and (max-width: 992px) {
             height: max-content;
             padding-top: 90px;
