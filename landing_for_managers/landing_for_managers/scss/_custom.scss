@@ -4,7 +4,7 @@
     }
 }
 html{
-    max-width: 1440px;
+    max-width: 1920px;
     margin: 0 auto;
 }
 body {
@@ -152,6 +152,9 @@ main {
           .main_header_text{
                 margin-top: 153px;
             }
+            .main_header_text_prt2{
+                margin-top: 114px;
+            }
             
         }
         .privat_policy_a {
@@ -161,7 +164,8 @@ main {
         }
     }
     #section1 {
-        height: 100vh;
+        height: 90vh;
+
         @media only screen and (max-width: 993px) {
             height: max-content;
         }
@@ -196,10 +200,12 @@ main {
         background: url(../img/bg_header.jpg);
 //        background-size: cover;
 //        background-repeat: no-repeat;
-        background-size: 100% 80%;
+       // background-size: 100% 80%;
             background-repeat: no-repeat;
-
-        background-position: top;
+  background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top; 
+       // background-position: top;
         @media only screen and (max-width: 600px) {
             background-size: 100% 35%;
         }
@@ -384,9 +390,11 @@ main {
         background: url(../img/bg_footer.jpg);
         background-repeat: no-repeat;
         height: 500px;
-        background-size: 100% 100%; // background-attachment: fixed;
+//       / background-size: 100% 100%; // background-attachment: fixed;
         background-position: center;
-
+  background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
         @media only screen and (max-width: 993px) {
             height: max-content;
             background-size: cover;
