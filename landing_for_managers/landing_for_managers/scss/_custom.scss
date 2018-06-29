@@ -3,7 +3,10 @@
         width: 100%;
     }
 }
-
+html{
+    max-width: 1440px;
+    margin: 0 auto;
+}
 body {
     font-family: 'Rubik', sans-serif;
 }
