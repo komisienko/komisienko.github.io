@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="86px" height="27px" viewBox="0 0 86 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 12</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-01" transform="translate(-144.000000, -27.000000)">
+            <g id="Group-12" transform="translate(144.000000, 25.000000)">
+                <g id="Logo" transform="translate(0.000000, 3.000000)" fill="#12A6C5">
+                    <path d="M16.2396619,15.0468384 L16.2396619,18.559719 L24,18.559719 L24,25 L16.2396619,25 L7.5490492,25 L7.5490492,6.53571429 L0,6.53571429 L0,0 L23.7887111,0 L23.7887111,6.53571429 L16.2396619,6.53571429 L16.2396619,10.9484778 L20.3779052,10.9484778 L20.3779052,15.0468384 L16.2396619,15.0468384 Z" id="Combined-Shape"></path>
+                </g>
+                <text id="Trade-Education" font-family="Rubik-Regular, Rubik" font-size="12" font-weight="normal" line-spacing="16" letter-spacing="-3.408642e-09" fill="#FFFFFF">
+                    <tspan x="30" y="11">Trade</tspan>
+                    <tspan x="30" y="27">Education</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
