@@ -37,6 +37,7 @@ nav {
         img {
             width: 153px;
             height: 83px;
+                padding-left: 12px;
         }
     }
     @media only screen and (max-width: 993px) {
@@ -249,10 +250,11 @@ main {
         }
     }*/
     #section2 {
+        margin-top: 74px;
         .main_header_aftertext {
             color: #7B7B7B;
             font-size: 20px;
-            padding: 0;
+            padding-left: 0;
         }
         .section2_wrapper{
             .wrapper_img_text{
@@ -263,13 +265,12 @@ main {
                 }
             }
             .wrapper_img_text:nth-child(odd){
-                .offset-l1,.offset-m1{
-                    margin-left: 0;
-                }
+//                .offset-l1,.offset-m1{
+//                    margin-left: 0;
+//                }
                 .left_prt{
                     img{
                         width: 80%;
-                        margin: 0 auto;
                     }
                 }
             }
