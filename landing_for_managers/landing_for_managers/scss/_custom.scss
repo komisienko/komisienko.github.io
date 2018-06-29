@@ -432,10 +432,13 @@ main {
         }
     }
     .sec3_part2 {
+        
         //height: 40vh;
         height: max-content;
         padding-top: 30px;
-
+ .phone_wrap,.mail_wrap{
+                text-align: right;
+            }
         @media only screen and (max-width: 993px) {
             height: max-content;
             .row{
@@ -445,6 +448,9 @@ main {
                 display: -o-flex;
                 display: flex;
                 flex-direction: column;
+            }
+            .phone_wrap,.mail_wrap{
+                text-align: left;
             }
         }
         color: #000;

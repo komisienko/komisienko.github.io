@@ -6943,6 +6943,8 @@ main {
     height: max-content;
     padding-top: 30px;
     color: #000; }
+    #section3 .sec3_part2 .phone_wrap, #section3 .sec3_part2 .mail_wrap {
+      text-align: right; }
     @media only screen and (max-width: 993px) {
       #section3 .sec3_part2 {
         height: max-content; }
@@ -6952,7 +6954,9 @@ main {
           display: -ms-flex;
           display: -o-flex;
           display: flex;
-          flex-direction: column; } }
+          flex-direction: column; }
+        #section3 .sec3_part2 .phone_wrap, #section3 .sec3_part2 .mail_wrap {
+          text-align: left; } }
     #section3 .sec3_part2 .footer_logo {
       margin-top: 72px;
       margin-bottom: 23px; }
