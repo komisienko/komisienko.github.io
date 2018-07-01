@@ -3,6 +3,11 @@
         width: 100%;
     }
 }
+@media only screen and (min-width: 993px){
+.container {
+    width: 85%;
+}
+}
 html{
     max-width: 1920px;
     margin: 0 auto;
@@ -62,9 +67,11 @@ header {
 nav {
     .brand-logo {
         img {
-            width: 153px;
-            height: 83px;
-            padding-left: 12px;
+//            width: 153px;
+//            height: 83px;
+           padding-left: 12px;
+            width: 100px;
+            height: 100%;
         }
     }
     @media only screen and (max-width: 993px) {
@@ -96,8 +103,9 @@ nav {
     color: $secondary-color;
 }
 
-main {
+main { 
     .btn.btn_cdlc_wide {
+        margin-top: 20px;
         @media only screen and (max-width: 993px) {
             width: auto;
         }
@@ -142,7 +150,7 @@ main {
 
     section {
         .main_header {
-            font-weight: bold;
+            font-weight: 600;
         }
         @media only screen and (max-width: 993px) {
             height: max-content;
@@ -151,16 +159,20 @@ main {
         @media only screen and (min-width: 993px) {
           .main_header_text{
                 margin-top: 153px;
+              width: 573px;
+              p{
+                  font-size: 18px;
+              }
             }
-            .main_header_text_prt2{
-                margin-top: 114px;
-            }
+//            .main_header_text_prt2{
+//                margin-top: 114px;
+//            }
             
         }
         .privat_policy_a {
             color: #4A90E2;
-            display: block;
-            text-align: left;
+           
+      
         }
     }
     #section1 {
@@ -171,6 +183,7 @@ main {
         }
         .main_header {
             color: #fff;
+            font-size: 2.18rem;
         }
         .valign-wrapper {
             height: 100%;
@@ -181,7 +194,7 @@ main {
                 height: auto;
             }
         }
-        padding: 100px 0 50px 0;
+        padding: 100px 0 0px 0;
         color: #fff;
         @media only screen and (max-width: 600px) {
             padding: 30px 0 0 0;
@@ -414,6 +427,12 @@ main {
             font-size: 18px;
             font-family: 'Rubik', sans-serif;
             margin-top: 30px;
+            width: 814px;
+            text-align: justify;
+            margin: 0 auto;
+                 @media only screen and (max-width: 993px) {
+                width: auto;
+            }
         }
     }
     .section3_half_1 {

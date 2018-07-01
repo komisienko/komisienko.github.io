@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Landing</title>
+    <title>Trade Education</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -37,37 +37,37 @@
 
     </header>
     <main>
-        <section id="section1" class="target">
+      <section id="section1" class="target">
             <div class="container">
                 <div class="row">
-                    <div class="col l7 m12 s12">
+                    <div class="col l5 m12 s12">
                         <div class="main_header_text">
                             <div>
                                 <h4 class="main_header"><span class="worlds_hilight">Экспресс курс</span> обучения торговли и торговой системе на финансовом рынке</h4>
-                                <p>Зарегистрируйтесь, чтобы получить на почту 5 базовых уроков и начать обучение уже сейчас</p>
+                                <p>Зарегистрируйтесь, чтобы получить на почту <br> 5 базовых уроков и начать обучение уже сейчас</p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col l4  m12 s12 offset-l1">
+                   <div class="col l4  m12 s12 offset-l2" style="float: right">
                         <div class="main_header_text_prt2" style="">
 
-                            <form action="#" id="sender_form">
+                            <form action="test.php" id="sender_form" name="order" method="post">
                                 <div class="card hoverable">
                                     <div class="card-content">
                                         <span class="card-title">Оставьте заявку</span>
                                         <p> чтобы получить материалы курса на Вашу почту</p>
                                         <div class="input-field ">
-                                            <input id="user_name" type="text" class="validate" required>
-                                            <label for="user_name">Ваше имя</label>
+                                            <input id="fname" type="text"  required>
+                                            <label for="fname">Ваше имя</label>
                                         </div>
                                         <div class="input-field ">
-                                            <input id="user_tel" type="tel" class="validate" required>
-                                            <label for="user_tel">Ваш телефон</label>
+                                            <input id="phone" type="tel"  required>
+                                            <label for="phone">Ваш телефон</label>
                                         </div>
                                         <div class="input-field ">
-                                            <input id="user_email" type="email" class="validate" required>
-                                            <label for="user_email">Ваш Email</label>
+                                            <input id="email" type="email"  required>
+                                            <label for="email">Ваш Email</label>
                                         </div>
                                         <div class="input-field  form_checkbox">
                                             <p>
@@ -82,7 +82,7 @@
                                             </p>
                                         </div>
                                         <div class="center-align">
-                                            <button type="submit" class="btn btn_cdlc_wide waves-effect waves-light ">Отправить заявку</button>
+                                            <button type="submit" name="add" class="btn btn_cdlc_wide waves-effect waves-light ">Отправить заявку</button>
                                         </div>
                                     </div>
                                 </div>
@@ -251,29 +251,34 @@
                 <div class="container section3_footer">
                     <div class="row">
                        
-                        <div class="col m5 l5 s12 footer_who" style="order: 1">ФОП Павелко Роман Владимирович <br> ОГРН 3070522215</div>
-                        <div class="col m4 l4 s12 footer_policy" style="order: 7">
+                        <div class="col m5 l4 s12 footer_who" style="order: 1">Площадь Славейков 11 этаж 3 <br> офис 14, Перник, Болгария</div>
+                        <div class="col m4 l4 s12 footer_policy center-align" style="order: 7">
                              <a class="modal-trigger privat_policy_a s3f_polis1" href="#privacypolicy">Политика конфиденциальности</a>
                         </div>
-                        <div class="col m3 l3 s12 phone_wrap " style="order: 5">
-                            <a href="tel:0932734444" class="footer_phone">+3 093 273 44 44</a>
-                        </div>
+                       
+<!--
                         <div class="col m4 l4 s12 footer_policy" style="order: 6">
                              <a class="modal-trigger privat_policy_a s3f_polis2" href="#publicoffer" >Публичный договор <span style="color:#7B7B7B">(Оферта)</span></a>
                         </div>
+-->
                         <div class="col m3 l3 s12  right-align mail_wrap" style="order: 5">
-                            <a href="mailto:exemple@mail.com" class="footer_mail"> exemple@mail.com</a>
+                            <a href="mailto:support@tradeeducation.net" class="footer_mail"> support@tradeeducation.net</a>
                          </div>
+                          <div class="col m3 l3 s12 phone_wrap " style="order: 5">
+                            <a href="tel:+412 257 54 123" class="footer_phone">+412 257 54 123</a>
+                        </div>
 
                     </div>
                     <div class="row">
                         <div class="divider"></div>
                         <div class="col m9 l9 s12">
-                            <p>Все права защищены. Любое копирование материалов разрешено только с согласия правообладателей. По всем вопросам обращайтесь на: aexemple@mail.com</p>
+                            <p>Все права защищены. Любое копирование материалов разрешено только с согласия правообладателей. По всем вопросам обращайтесь на: support@tradeeducation.net</p>
                         </div>
+<!--
                         <div class="col m3 l3 s12 right-align">
                             <p>© Роман Павелко&MarketsPro</p>
                         </div>
+-->
                     </div>
                 </div>
             </div>
@@ -319,9 +324,58 @@
                 <a href="#!" class="modal-close waves-effect waves-blue btn-flat">Понятно</a>
             </div>
    </div>
+ <div id="modal_success" class="modal">
+    <div class="modal-content">
+      <h4>Ваша заявка отправлена</h4>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Ок</a>
+    </div>
+  </div>
         <a href="#" id="back-to-top" title="Back to top">&uarr;</a>
     </main>
-    <footer></footer>
+    <script>
+$(function() {
+	$('form[name=order]').submit(function() {
+		if (validateForm(this)) {
+			$.ajax({
+				type: this.method,
+				url: this.action,
+				data: $(this).serialize(),
+				success: function() {
+					$('#modal_success').modal("open")
+                    $('form[name=order]')[0].reset();
+				},
+                error:function() {
+					alert("Ошибка сервера")
+				},
+			});
+		}
+		return false;
+	});
+});
+function validateForm(theForm) {
+	var regexp = /^[a-zёа-я]{3,20}$/i;
+	if (!regexp.test(theForm.name.value)) {
+		alert('Некорректное имя (от 3 до 20 букв)');
+		theForm.name.focus();
+		return false;
+	}
+	regexp = /^([\w-]+\.)*[\w-]+@[\w-]+(\.[\w-]+)*\.[a-z]{2,6}$/i;
+	if (!regexp.test(theForm.email.value)) {
+		alert('Некорректный адрес электронной почты');
+		theForm.email.focus();
+		return false;
+	}
+	regexp = /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/;
+	if (!regexp.test(theForm.phone.value)) {
+		alert('Некорректный номер телефона (от 7 до 16 цифр)');
+		theForm.phone.focus();
+		return false;
+	}
+	return true;
+}
+</script>
     <script src="./js/bin/materialize.min.js"></script>
     <script src="./js/includes.js"></script>
 </body>

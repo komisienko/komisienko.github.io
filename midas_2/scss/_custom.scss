@@ -1,0 +1,127 @@
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+}
+html{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.card-title {
+    font-family:Helvetica, "Helvetica Neue", Arial, sans-serif;
+
+}
+#back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 30px;
+    background: #f5f5f5;
+    //color: #444;
+    cursor: pointer;
+    border: 0;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: opacity 0.2s ease-out;
+    opacity: 0;
+}
+#back-to-top:hover {
+    background: #e9ebec;
+}
+#back-to-top.show {
+    opacity: 1;
+}
+
+header {
+    height: 0;
+
+}
+#nav-desctop {
+    margin-left: 258px;
+}
+
+nav {
+    .brand-logo {
+       	color: #FFFFFF;	font-family: Limelight;	font-size: 16px;
+    }
+    @media only screen and (max-width: 993px) { 
+        .brand-logo {
+            img {
+                width: 133px;
+                height: 53px;
+            }
+        } 
+    } 
+    box-shadow: none;
+    li { 
+        position: relative;
+        &.active {
+            &::before {
+                content: '';
+                position: absolute; 
+                left: 0;
+                right: 0;
+                bottom: 0;
+                height: 2px;
+                background-color: #fff;
+            }
+        }
+    }
+}
+#section1{  
+    padding-top: 83px; 
+    height: 100vh;
+    -webkit-background: radial-gradient(circle, #2F2F2F 0%, #1D1D1D 100%);
+    -moz-background: radial-gradient(circle, #2F2F2F 0%, #1D1D1D 100%);
+    -ms-background: radial-gradient(circle, #2F2F2F 0%, #1D1D1D 100%);
+    -o-background: radial-gradient(circle, #2F2F2F 0%, #1D1D1D 100%);
+    background: radial-gradient(circle, #2F2F2F 0%, #1D1D1D 100%); 
+    .valign-wrapper{
+        height: 100%; 
+        .vertical_text{
+             color: #fff;
+            margin-top: -113px;
+            h2{
+                height: 106px;	width: 393px;	color: #FFFFFF;	font-family: Helvetica;	font-size: 44px;	font-weight: bold;	line-height: 53px;
+            }
+           
+
+            p{margin-top: 32px;
+            height: 96px;	width: 393px;	color: #E5E5E5;	font-family: "Roboto Condensed";	font-size: 24px;	line-height: 32px;}
+        }
+    }
+    
+    #sender_form{
+        .title{
+            	height: 24px;	width: 313px;	color: #FFFFFF;	font-family: Helvetica;	font-size: 20px;	line-height: 24px;
+        }
+       .form_checkbox span {
+        height: auto;
+        text-align: left;
+        line-height: 17px;
+        
+    }
+        button[type="submit"]{
+            height: 56px;	width: 161px;	border: 1px solid #FFFFFF;	background-color: #FFFFFF;
+            color: #000000;	font-family: Helvetica;	font-size: 16px;
+            text-transform: none;
+            margin-top: 49px;
+        }
+    }
+
+}
