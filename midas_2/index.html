@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Limelight" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://www.thepetedesign.com/demos/jquery.onepage-scroll.js"></script>
-
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
     <link rel="stylesheet" href="./css/materialize.css" />
+      
 </head>
 
-<body>
+<body class="body">
     <header>
 
         <nav>
@@ -25,7 +27,9 @@
                         <ul id="nav-desctop" class=" hide-on-med-and-down">
                             <li class="active"><a href="#section1">Заявка</a></li>
                             <li><a href="#section2">Обучение</a></li>
-                            <li><a href="#section3">О трейдинге</a></li>
+                            <li><a href="#section3">О нас</a></li>
+                            <li><a href="#section4">Преимущества</a></li>
+                            <li><a href="#section5">Контакты</a></li>
                         </ul>
                     </div>
                 </div>
@@ -35,7 +39,9 @@
         <ul class="sidenav" id="nav-mobile">
             <li><a href="#section1">Заявка</a></li>
             <li><a href="#section2">Обучение</a></li>
-            <li><a href="#section3">О трейдинге</a></li>
+            <li><a href="#section3">О нас</a></li>
+            <li><a href="#section4">Преимущества</a></li>
+            <li><a href="#section5">Контакты</a></li>
         </ul>
 
     </header>
@@ -51,7 +57,7 @@
                                         <div class="vertical_text">
                                             <h4 class="main_header">Почему стоит инвестировать в криптовалюту?</h4>
                                             <p>Мы расскажем, в чем преимущества криптовалюты, и почему блокчейн – технология будущего. Зарегистрируйтесь, чтобы получить на почту бесплатный базовый курс для начинающих инвесторов</p>
-                                            <a class="scrollTrigger">
+                                            <a class="scrollTrigger scrollTrigger1">
                                                 <img src="./img/scroll.svg" alt="">
                                             </a>
                                         </div>
@@ -102,16 +108,143 @@
                     </div>
                 </div>
             </section>
-            
-        <section id="section2" class="section2">
-            <span style="display: table-cell; vertical-align: middle"><p>Page 2</p></span>
-        </section> 
-           <section id="section3" class="section3">
-            <span style="display: table-cell; vertical-align: middle"><p>Page 3</p></span>
-        </section>
+
+            <section id="section2" class="section2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col l5 m12 s12">
+                            <div class="main_header_text">
+                                <div>
+                                    <div class="valign-wrapper">
+                                        <div class="vertical_text">
+                                            <h4 class="main_header">Содержание курса начинающего инвестора</h4>
+                                            <p>После его завершения вы будете отличать биткоины от альткоинов, а также поймете, как блокчейн сможет победить коррупцию</p>
+                                            <a class="scrollTrigger scrollTrigger2">
+                                                <img src="./img/scroll.svg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l5  m12 s12 offset-l1 ">
+                            <div class="valign-wrapper">
+                                <div class="section2_grid-container">
+                                    <div class="grid__item">
+                                        <div class=" grid__item_numb">01</div>
+                                        <div class=" grid__item_numb__sub">Открытие кошельков</div>
+                                        <div class=" grid__item_text">Преимущества различных кошельков. Как выбрать кошелек, который соответствует вашим требованиям</div>
+                                    </div>
+                                    <div class="grid__item">
+                                        <div class=" grid__item_numb">02</div>
+                                        <div class=" grid__item_numb__sub">Переводы в блокчейне (транзакции)</div>
+                                        <div class=" grid__item_text">Как уменьшить время подтверждения транзакций и какую комиссию лучше ставить, чтобы перевод не завис</div>
+                                    </div>
+                                    <div class="grid__item">
+                                        <div class=" grid__item_numb">03</div>
+                                        <div class=" grid__item_numb__sub">Децентрализация</div>
+                                        <div class=" grid__item_text">Преимущества пользования децентрализованной системой переводов, и почему отсутствие регулятора гарантирует надежность сделок</div>
+                                    </div>
+                                    <div class="grid__item">
+                                        <div class=" grid__item_numb">04</div>
+                                        <div class=" grid__item_numb__sub">Анонимность</div>
+                                        <div class=" grid__item_text">Почему при использовании блокчейн вы не сможете скрыть сумму перевода, а собственное имя – с легкостью</div>
+                                    </div>
+                                    <div class="grid__item">
+                                        <div class=" grid__item_numb">05</div>
+                                        <div class=" grid__item_numb__sub">Необратимость</div>
+                                        <div class=" grid__item_text">В чем преимущества необратимости сделок в блокчейн, и как это поможет сделать мир лучше</div>
+                                    </div>
+                                    <div class="grid__item">
+                                        <a class="grid__item_numb grid__item_get">Получить курс <span class="scrollTrigger_to_form"><img src="./img/arrow_right.svg" alt=""></span>
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section id="section3" class="section3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col l5 m12 s12">
+                            <div class="main_header_text">
+                                <div>
+                                    <div class="valign-wrapper">
+                                        <div class="vertical_text">
+                                            <h4 class="main_header">О нас?</h4>
+                                            <p>Cryptocurrency – онлайн-академия, которая специализируется на обучении начинающих трейдеров основам торговли криптовалютой</p>
+                                            <a class="scrollTrigger scrollTrigger2">
+                                                <img src="./img/black_arrow_down.svg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l4  m12 s12 offset-l1">
+                            <div class="main_header_text_prt2" style="">
+                                <div class="valign-wrapper">
+                                    <a class="grid__item_numb grid__item_get" style="cursor: pointer;position: relative">Получить курс <span class="scrollTrigger_to_form"><img src="./img/arrow_black.svg" alt=""></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col l5 m12 s12">
+                            <div class="main_header_text">
+                                <div>
+                                    <div class="valign-wrapper">
+                                        <div class="vertical_text">
+                                            <h4 class="main_header">О нас?</h4>
+                                            <p>Cryptocurrency – онлайн-академия, которая специализируется на обучении начинающих трейдеров основам торговли криптовалютой</p>
+                                            <a class="scrollTrigger scrollTrigger2">
+                                                <img src="./img/scroll.svg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l4  m12 s12 offset-l1">
+                            <div class="main_header_text_prt2" style="">
+                                <div class="valign-wrapper">
+                                    <div class="slick-slider slider fade">
+                                        <div>
+                                            <div class="image">
+                                                <img src="./img/slider/etherium.png" />
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="image">
+                                                <img src="./img/slider/btc.png" />
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="image">
+                                                <img src="./img/slider/repple.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section5"></section>
         </div>
     </main>
-    
+
     <div id="privacypolicy" class="modal">
         <div class="modal-content">
             <h5 style="font-size: 1.1rem; font-weight: bold;">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ
@@ -157,6 +290,18 @@
     </div>
     <a href="#" id="back-to-top" title="Back to top">&uarr;</a>
     </main>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $('.slick-slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear',
+            adaptiveHeight: true
+        });
+    </script>
     <script>
         $(function() {
             $('form[name=order]').submit(function() {

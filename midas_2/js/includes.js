@@ -1,4 +1,4 @@
-"use strict";
+
 $(document).ready(function () {
     $('.sidenav').sidenav();
     $('.modal').modal();
@@ -12,6 +12,10 @@ $('#nav-mobile').on("click", "a", function(event){
         $('body,html').animate({scrollTop: top}, 700);
 });
 });
+///
+
+
+
 
 //$('#nav-desctop').on('click',"a", function (event) {
 //    //$(this).parent().find('a').parent().removeClass('active');
@@ -48,18 +52,52 @@ $("#nav-desctop li:nth-child(1) a").on('click', function(e){
      e.preventDefault();
     $('.onepage-pagination li:nth-child(1) a').click();
 })
-$("#nav-desctop li:nth-child(2) a, .scrollTrigger").on('click', function(e){
+$("#nav-desctop li:nth-child(2) a, .scrollTrigger1").on('click', function(e){
     $('#nav-desctop li').removeClass('active');
     $(this).parent().addClass('active')
      e.preventDefault();
     $('.onepage-pagination li:nth-child(2) a').click();
 })
-$("#nav-desctop li:nth-child(3) a").on('click', function(e){
+$("#nav-desctop li:nth-child(3) a, .scrollTrigger2").on('click', function(e){
      $('#nav-desctop li').removeClass('active');
     $(this).parent().addClass('active')
      e.preventDefault();
     $('.onepage-pagination li:nth-child(3) a').click();
-})
+});
+$("#nav-desctop li:nth-child(4) a, .scrollTrigger2").on('click', function(e){
+     $('#nav-desctop li').removeClass('active');
+    $(this).parent().addClass('active')
+     e.preventDefault();
+    $('.onepage-pagination li:nth-child(4) a').click();
+});
+$("#nav-desctop li:nth-child(5) a, .scrollTrigger2").on('click', function(e){
+     $('#nav-desctop li').removeClass('active');
+    $(this).parent().addClass('active')
+     e.preventDefault();
+    $('.onepage-pagination li:nth-child(5) a').click();
+});
+if ($(window).width() > 992) {
+$(".grid__item_get, .scrollTrigger_to_form").on('click', function(e){
+     $('#nav-desctop li').removeClass('active');
+    $(this).parent().addClass('active')
+     e.preventDefault();
+    $('.onepage-pagination li:nth-child(1) a').click();
+    $('#fname').focus();
+});
+}else{
+    $(".grid__item_get, .scrollTrigger_to_form").on('click', function(e){
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: 0
+        }, 700);
+        $('#fname').focus();
+    });
+}
+
+
+   
+
+
 if ($('#back-to-top').length) {
     var scrollTrigger = 100, // px
         backToTop = function () {
@@ -69,7 +107,8 @@ if ($('#back-to-top').length) {
             } else {
                 $('#back-to-top').removeClass('show');
             }
-        };
+        }
+};
     backToTop();
     $(window).on('scroll', function () {
         backToTop();
@@ -80,7 +119,7 @@ if ($('#back-to-top').length) {
             scrollTop: 0
         }, 700);
     });
-}
+
 //$(document).ready(function () {
 // $(window).on('scroll', function () {
 //if($('body').hasClass('viewing-page-2')){
@@ -115,14 +154,52 @@ $(".main").onepage_scroll({
    updateURL: true, // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
    beforeMove: function(index) {
         if ($(window).width() > 992) {
-             if($('body').hasClass('viewing-page-1')){
-                $('.nav-wrapper').fadeIn();
-                 console.log("2");
-            }else{
-                 $('.nav-wrapper').fadeOut();
-            console.log("1");
+//             if($('body').hasClass('viewing-page-1')){
+//                $('.nav-wrapper').fadeIn();
+//                 console.log("2");
+//            }else{
+//                 $('.nav-wrapper').fadeOut();
+//            console.log("1");
+//            } 
+            if($('.onepage-pagination li:nth-child(1) a').hasClass("active")){
+                  $('#nav-desctop li').removeClass('active');
+                $('#nav-desctop li:nth-child(1)').addClass('active')
+            }
+            
+            if($('.onepage-pagination li:nth-child(2) a').hasClass("active")){
+                  $('#nav-desctop li').removeClass('active');
+                $('#nav-desctop li:nth-child(2)').addClass('active')
             } 
+            if($('.onepage-pagination li:nth-child(5) a').hasClass("active")){
+                  $('#nav-desctop li').removeClass('active');
+                $('#nav-desctop li:nth-child(5)').addClass('active')
+            } 
+            if($('.onepage-pagination li:nth-child(4) a').hasClass("active")){
+                  $('#nav-desctop li').removeClass('active');
+                $('#nav-desctop li:nth-child(4)').addClass('active')
+            }
+            
+            
+            if($('.onepage-pagination li:nth-child(3) a').hasClass("active")){
+                 $('#nav-desctop li').removeClass('active');
+                $('#nav-desctop li:nth-child(3)').addClass('active')
+                var thisFilter='invert(1)'
+                $('.nav-wrapper, .onepage-pagination').css('filter',thisFilter)
+                                 .css('webkitFilter',thisFilter)
+                                 .css('mozFilter',thisFilter)
+                                 .css('oFilter',thisFilter)
+                                 .css('msFilter',thisFilter);
+            }else{
+                var nullFilter='invert(0)'
+                $('.nav-wrapper, .onepage-pagination').css('filter',nullFilter)
+                                 .css('webkitFilter',nullFilter)
+                                 .css('mozFilter',nullFilter)
+                                 .css('oFilter',nullFilter)
+                                 .css('msFilter',nullFilter);
+            }
         }
+       
+       
 
    }, // This option accepts a callback function. The function will be called before the page moves.
    afterMove: function(index) {
