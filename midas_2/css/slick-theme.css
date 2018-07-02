@@ -188,11 +188,11 @@
     width: 20px;
     height: 20px;
 
-    content: '•';
+    content: '◻';
     text-align: center;
 
     opacity: .25;
-    color: black;
+    color: #fff;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -200,5 +200,11 @@
 .slick-dots li.slick-active button:before
 {
     opacity: .75;
-    color: black;
+    color: #fff;
+     content: '■';
+    font-size: 27px!important;
+    line-height: 12px;
+    padding-left: 0px;
 }
+
+
