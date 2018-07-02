@@ -12,6 +12,81 @@ body {
     background-color: black;
 }
 
+body, .onepage-wrapper, html {
+  display: block;
+  position: static;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+//ONE PAGE SCROLL
+.onepage-wrapper .section {
+  width: 100%;
+  height: 100%;
+}
+
+.onepage-pagination {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  z-index: 5;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: -48px;
+    @media only screen and (max-width: 993px) { 
+        display: none;
+    }
+}
+.onepage-pagination li {
+  padding: 0;
+  text-align: center;
+}
+.onepage-pagination li a{
+  padding: 10px;
+  width: 4px;
+  height: 4px;
+  display: block;
+  
+}
+.onepage-pagination li a:before{
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: white;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+
+.onepage-pagination li a.active:before{
+  width: 10px;
+  height: 10px;
+  background: none;
+  border: 1px solid white;
+  margin-top: -4px;
+  left: 8px;
+}
+
+.disabled-onepage-scroll, .disabled-onepage-scroll .wrapper {
+  overflow: auto;
+}
+
+.disabled-onepage-scroll .onepage-wrapper .section {
+  position: relative !important;
+  top: auto !important;
+}
+.disabled-onepage-scroll .onepage-wrapper {
+  -webkit-transform: none !important;
+  -moz-transform: none !important;
+  transform: none !important;
+  -ms-transform: none !important;
+  min-height: 100%;
+}
+//end ONE PAGE 
 h1,
 h2,
 h3,
@@ -57,7 +132,13 @@ header {
 
 nav {
     .brand-logo {
-       	color: #FFFFFF;	font-family: Limelight;	font-size: 16px;
+       	color: #FFFFFF;	
+        font-family: Limelight;
+        font-size: 16px;
+        padding-left: 0.75rem;
+    }
+    .nav-wrapper{
+        z-index: 2;
     }
     @media only screen and (max-width: 993px) { 
         .brand-logo {
@@ -83,7 +164,8 @@ nav {
         }
     }
 }
-#section1{  
+.section1{  
+    //position: relative;
     padding-top: 83px; 
     height: 100vh;
     -webkit-background: radial-gradient(circle, #2F2F2F 0%, #1D1D1D 100%);
@@ -95,33 +177,142 @@ nav {
         height: 100%; 
         .vertical_text{
              color: #fff;
-            margin-top: -113px;
-            h2{
-                height: 106px;	width: 393px;	color: #FFFFFF;	font-family: Helvetica;	font-size: 44px;	font-weight: bold;	line-height: 53px;
+            margin-top: -94px;
+            position: relative;
+            .main_header{
+               // height: 106px;	
+               // width: 393px;	
+                margin-top: 0;
+                color: #FFFFFF;	
+                font-family: Helvetica;	
+                font-size: 44px;	
+                font-weight: bold;	
+                line-height: 53px;
             }
            
 
-            p{margin-top: 32px;
-            height: 96px;	width: 393px;	color: #E5E5E5;	font-family: "Roboto Condensed";	font-size: 24px;	line-height: 32px;}
+            p{
+                margin-top: 32px;
+            //height: 96px;	
+                margin-bottom: 0;
+                width: 393px;	
+                color: #E5E5E5;	
+                font-family: "Roboto Condensed";	
+                font-size: 24px;	
+                line-height: 32px;
+            }
+            .scrollTrigger{
+                display: block;
+                position: absolute;
+                height: 44px;	
+                width: 43px;
+                cursor: pointer;
+                
+                img{
+                    display: block;
+                    margin: 0 auto;
+                    margin-top: 15px;
+                }
+            }
+            @media only screen and (min-width: 992px) {
+                &:after{
+                    content: " ";
+                    border-right: 1px solid #fff;
+                    position: absolute;
+                    right: 0;
+                    height: 100%;
+                    top: 0;
+                }
+                .scrollTrigger{
+                display: block;
+                position: absolute;
+                height: 44px;	
+                width: 43px;
+                cursor: pointer;
+                right: -21px;
+                bottom: -69px;
+                    &:hover{
+                        border: 1px solid #fff;
+                        border-radius: 2px;
+                    }
+                img{
+                    display: block;
+                    margin: 0 auto;
+                    margin-top: 15px;
+                }
+            }
+            }
+        }
+@media only screen and (max-width: 992px) {
+        margin: auto;
+       display: block;
+    height: auto;
+    .vertical_text{
+        margin-top: 0;
+        .main_header{
+            font-weight: bold;
+        }
+         p{
+            height: auto;
+             width: auto;
         }
     }
+}
+    } 
     
     #sender_form{
         .title{
-            	height: 24px;	width: 313px;	color: #FFFFFF;	font-family: Helvetica;	font-size: 20px;	line-height: 24px;
+            position: relative;
+            height: 24px;	
+            width: 313px;	
+            color: #FFFFFF;	
+            font-family: Helvetica;	
+            font-size: 20px;	
+            line-height: 24px;
+            margin-bottom: 35px;
         }
        .form_checkbox span {
         height: auto;
         text-align: left;
         line-height: 17px;
+           color:#E5E5E5;
         
     }
+        .form_button_wrapper{
+            text-align: left;
+            @media only screen and (max-width: 992px) {
+                text-align: center;
+            }
+        }
         button[type="submit"]{
-            height: 56px;	width: 161px;	border: 1px solid #FFFFFF;	background-color: #FFFFFF;
-            color: #000000;	font-family: Helvetica;	font-size: 16px;
+            box-shadow: none;
+            height: 56px;	
+            width: 161px;	
+            border: 1px solid #FFFFFF;	
+            background-color: transparent;
+            color: #ffffff;	
+            font-family: Helvetica;	
+            font-size: 16px;
             text-transform: none;
-            margin-top: 49px;
+            margin-top: 25px;
         }
     }
-
+    &:before{
+        display: block;
+        content: " ";
+        background-image: url(../img/bg-1.jpg);
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        width: 48%;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        @media only screen and (max-width: 992px) {
+           display: none;
+    }
+}
+}
+.section2{
+    color: #fff;
 }

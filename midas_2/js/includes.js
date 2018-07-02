@@ -3,7 +3,7 @@ $(document).ready(function () {
     $('.sidenav').sidenav();
     $('.modal').modal();
           
-$('#nav-mobile').on("click", "a", function(){
+$('#nav-mobile').on("click", "a", function(event){
      let instance = M.Sidenav.getInstance('.sidenav');
      $('.sidenav').sidenav('close');
      event.preventDefault();
@@ -13,15 +13,17 @@ $('#nav-mobile').on("click", "a", function(){
 });
 });
 
-$('#nav-desctop').on('click',"a", function (event) {
-    //$(this).parent().find('a').parent().removeClass('active');
-   // $(this).parent().addClass('active');
-     event.preventDefault();
-        var id  = $(this).attr('href'),
-            top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 700);
-    event.preventDefault();
-});
+//$('#nav-desctop').on('click',"a", function (event) {
+//    //$(this).parent().find('a').parent().removeClass('active');
+//   // $(this).parent().addClass('active');
+//     event.preventDefault();
+////        var id  = $(this).attr('href'),
+////            top = $(id).offset().top;
+////        $('body,html').animate({scrollTop: top}, 700);
+//    
+//    event.preventDefault();
+//});
+
 $('.card_solo_href, .button_href').on('click', function (event) {
      event.preventDefault();
         var id  = $(this).attr('href'),
@@ -30,15 +32,34 @@ $('.card_solo_href, .button_href').on('click', function (event) {
    
     $('#user_name').focus();
 });
-$(window).on('scroll', function () {
-    $('.target').each(function () {
-        if ($(window).scrollTop() >= $(this).position().top-150) {
-            var id = $(this).attr('id');
-            $('#nav-desctop a').parent().removeClass('active');
-            $('#nav-desctop a[href="#' + id + '"]').parent().addClass('active');
-        }
-    });
-});
+
+//$(window).on('scroll', function () {
+//    $('.target').each(function () {
+//        if ($(window).scrollTop() >= $(this).position().top-150) {
+//            var id = $(this).attr('id');
+//            $('#nav-desctop a').parent().removeClass('active');
+//            $('#nav-desctop a[href="#' + id + '"]').parent().addClass('active');
+//        }
+//    });
+//});
+$("#nav-desctop li:nth-child(1) a").on('click', function(e){
+     $('#nav-desctop li').removeClass('active');
+    $(this).parent().addClass('active')
+     e.preventDefault();
+    $('.onepage-pagination li:nth-child(1) a').click();
+})
+$("#nav-desctop li:nth-child(2) a, .scrollTrigger").on('click', function(e){
+    $('#nav-desctop li').removeClass('active');
+    $(this).parent().addClass('active')
+     e.preventDefault();
+    $('.onepage-pagination li:nth-child(2) a').click();
+})
+$("#nav-desctop li:nth-child(3) a").on('click', function(e){
+     $('#nav-desctop li').removeClass('active');
+    $(this).parent().addClass('active')
+     e.preventDefault();
+    $('.onepage-pagination li:nth-child(3) a').click();
+})
 if ($('#back-to-top').length) {
     var scrollTrigger = 100, // px
         backToTop = function () {
@@ -60,3 +81,55 @@ if ($('#back-to-top').length) {
         }, 700);
     });
 }
+//$(document).ready(function () {
+// $(window).on('scroll', function () {
+//if($('body').hasClass('viewing-page-2')){
+//    $('.nav-wrapper').hide();
+//    console.log("1")
+//   
+//}else{
+//    $('.nav-wrapper').show();
+//     console.log("2")
+//}
+//});
+//});
+(function ( $ ) {
+	'use strict';
+   $.fn.heightFull = function() {
+	var totalHeight = $('window').height();
+	var heightMinus = totalHeight;
+	$(this).css('height', heightMinus);
+  };
+}( jQuery ));
+
+$(".main .item").heightFull();
+$(window).resize(function() {
+  $(".main .item").heightFull();
+});
+
+$(".main").onepage_scroll({
+   sectionContainer: "section", // sectionContainer accepts any kind of selector in case you don't want to use section
+   easing: "cubic-bezier(0.175, 0.885, 0.420, 1.210)", // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in", "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
+   animationTime: 1000, // AnimationTime let you define how long each section takes to animate
+   pagination: true, // You can either show or hide the pagination. Toggle true for show, false for hide.
+   updateURL: true, // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
+   beforeMove: function(index) {
+        if ($(window).width() > 992) {
+             if($('body').hasClass('viewing-page-1')){
+                $('.nav-wrapper').fadeIn();
+                 console.log("2");
+            }else{
+                 $('.nav-wrapper').fadeOut();
+            console.log("1");
+            } 
+        }
+
+   }, // This option accepts a callback function. The function will be called before the page moves.
+   afterMove: function(index) {
+    
+   }, // This option accepts a callback function. The function will be called after the page moves.
+   loop: false, // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
+   responsiveFallback: 992 // You can fallback to normal page scroll by defining the width of the browser in which you want the responsive fallback to be triggered. For example, set this to 600 and whenever the browser's width is less than 600, the fallback will kick in.
+    
+});
+
