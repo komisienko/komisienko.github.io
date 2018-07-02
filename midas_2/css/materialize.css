@@ -6951,12 +6951,9 @@ nav {
             width: auto; } }
   .section2 .section2_grid-container {
     display: grid;
-    grid-row-gap: 60px;
+    grid-row-gap: 20px;
     grid-template-columns: 60% 50%;
     grid-column-gap: 50px; }
-    @media only screen and (max-width: 992px) {
-      .section2 .section2_grid-container {
-        grid-row-gap: 20px; } }
     .section2 .section2_grid-container .grid__item .grid__item_numb {
       color: #fff;
       font-size: 24px;

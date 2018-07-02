@@ -432,12 +432,10 @@ nav {
     }
     .section2_grid-container {
         display: grid;
-        grid-row-gap: 60px;
+        grid-row-gap: 20px;
         grid-template-columns: 60% 50%;
         grid-column-gap: 50px;
-        @media only screen and (max-width: 992px){
-            grid-row-gap: 20px;
-        }
+      
         .grid__item {
             .grid__item_numb {
                 color: #fff;
