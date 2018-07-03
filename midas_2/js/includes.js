@@ -189,6 +189,7 @@ $(".main").onepage_scroll({
                                  .css('mozFilter',thisFilter)
                                  .css('oFilter',thisFilter)
                                  .css('msFilter',thisFilter);
+                                
             }else{
                 var nullFilter='invert(0)'
                 $('.nav-wrapper, .onepage-pagination').css('filter',nullFilter)
@@ -196,6 +197,7 @@ $(".main").onepage_scroll({
                                  .css('mozFilter',nullFilter)
                                  .css('oFilter',nullFilter)
                                  .css('msFilter',nullFilter);
+                               
             }
         }
        
