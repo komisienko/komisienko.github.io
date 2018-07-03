@@ -4617,8 +4617,8 @@ textarea.materialize-textarea {
   input[type=number]:not(.browser-default):focus:not([readonly]),
   input[type=search]:not(.browser-default):focus:not([readonly]),
   textarea.materialize-textarea:focus:not([readonly]) {
-    border-bottom: 1px solid #0FB4D6;
-    box-shadow: 0 1px 0 0 #0FB4D6; }
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 1px 0 0 #fff; }
   input:not([type]):focus:not([readonly]) + label,
   input[type=text]:not(.browser-default):focus:not([readonly]) + label,
   input[type=password]:not(.browser-default):focus:not([readonly]) + label,
@@ -4632,7 +4632,7 @@ textarea.materialize-textarea {
   input[type=number]:not(.browser-default):focus:not([readonly]) + label,
   input[type=search]:not(.browser-default):focus:not([readonly]) + label,
   textarea.materialize-textarea:focus:not([readonly]) + label {
-    color: #0FB4D6; }
+    color: #fff; }
   input:not([type]):focus.valid ~ label,
   input[type=text]:not(.browser-default):focus.valid ~ label,
   input[type=password]:not(.browser-default):focus.valid ~ label,
@@ -4914,7 +4914,7 @@ textarea.materialize-textarea + label:after, .select-wrapper + label:after {
     transition: color .2s;
     top: 0.5rem; }
     .input-field .prefix.active {
-      color: #0FB4D6; }
+      color: #fff; }
   .input-field .prefix ~ input,
   .input-field .prefix ~ textarea,
   .input-field .prefix ~ label,
@@ -5218,8 +5218,7 @@ textarea {
   top: 0;
   width: 20px;
   height: 20px;
-  border: 2px solid #0FB4D6;
-  background-color: #0FB4D6;
+  background-color: #474747;
   z-index: 0; }
 [type="checkbox"].filled-in.tabbed:focus + span:not(.lever):after {
   border-radius: 2px;
@@ -5349,7 +5348,7 @@ select {
     user-select: none;
     z-index: 1; }
     .select-wrapper input.select-dropdown:focus {
-      border-bottom: 1px solid #0FB4D6; }
+      border-bottom: 1px solid #fff; }
   .select-wrapper .caret {
     position: absolute;
     right: 0;
@@ -6770,13 +6769,11 @@ header {
 
 #nav-mobile {
   width: 150px; }
-  #nav-mobile .sidenav-close {
-    border-bottom: 1px solid #ddd; }
   #nav-mobile .close_nav_arrow {
     height: 100%; }
     #nav-mobile .close_nav_arrow img {
       margin-right: 20px;
-      transform: rotate(180deg); }
+      vertical-align: middle; }
 
 nav {
   box-shadow: none; }
@@ -7010,13 +7007,21 @@ nav {
       font-family: Helvetica, "Helvetica Neue", Arial, sans-serif; }
     .section2 .section2_grid-container .grid__item .grid__item_get {
       margin-top: 20px;
-      cursor: pointer; }
+      cursor: pointer;
+      display: inline-block;
+      width: 190px; }
+      @media only screen and (max-width: 992px) {
+        .section2 .section2_grid-container .grid__item .grid__item_get {
+          width: 100%; } }
       .section2 .section2_grid-container .grid__item .grid__item_get .scrollTrigger_to_form {
         display: inline-block;
         position: absolute;
         height: 44px;
         width: 43px;
         cursor: pointer; }
+        @media only screen and (max-width: 992px) {
+          .section2 .section2_grid-container .grid__item .grid__item_get .scrollTrigger_to_form {
+            right: 0; } }
         .section2 .section2_grid-container .grid__item .grid__item_get .scrollTrigger_to_form:hover {
           border: 1px solid #fff;
           border-radius: 2px; }
@@ -7055,6 +7060,10 @@ nav {
       font-weight: bold;
       font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
       margin-top: -75px; }
+      @media only screen and (max-width: 992px) {
+        .section3 .valign-wrapper .grid__item_numb {
+          width: 100%;
+          display: block; } }
     .section3 .valign-wrapper .scrollTrigger_to_form {
       display: inline-block;
       height: 44px;
@@ -7166,7 +7175,7 @@ nav {
 #section4 {
   color: #fff;
   padding-top: 53px;
-  background: url(../img/bg.png);
+  background: url(../img/bg-5.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   padding-bottom: 60px; }
@@ -7272,7 +7281,8 @@ nav {
     margin-top: 20px;
     cursor: pointer;
     display: block;
-    text-align: center; }
+    text-align: center;
+    font-family: Helvetica, "Helvetica Neue", Arial, sans-serif; }
     @media only screen and (min-width: 992px) {
       #section4 .slide4_abs {
         font-size: 24px;

@@ -154,14 +154,14 @@
 
     display: block;
 
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     padding: 5px;
 
     cursor: pointer;
 
     color: transparent;
-    border: 0;
+    border: 1px solid #fff;
     outline: none;
     background: transparent;
 }
@@ -175,6 +175,7 @@
 {
     opacity: 1;
 }
+/*
 .slick-dots li button:before
 {
     font-family: 'slick';
@@ -197,6 +198,8 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+*/
+/*
 .slick-dots li.slick-active button:before
 {
     opacity: .75;
@@ -205,6 +208,19 @@
     font-size: 22px!important;
     line-height: 15px;
     padding-left: 0px;
+}
+*/
+/*
+.slick-dots li.slick-active button
+{
+    font-size: 22px!important;
+    line-height: 15px;
+    padding-left: 0px;
+}
+*/
+.slick-dots li.slick-active button
+{
+    background-color: #fff;
 }
 
 
