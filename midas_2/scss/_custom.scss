@@ -3,7 +3,13 @@
         width: 100%;
     }
 }
+@media only screen and (max-width: 992px) {
+       section{
+        min-height: 530px;
+    }
+}
 @media only screen and (min-width: 992px) {
+ 
     html{  -ms-overflow-style: none;
     overflow:-moz-scrollbars-none;
      overflow:hidden-scroll; 
@@ -306,8 +312,8 @@ nav {
                 .main_header {
                     font-weight: bold;
                     font-size: 25px;
-                    line-height: 25px;
-                    text-align: center;
+                    line-height: 1.2;
+                    margin-top: 40px;
                 }
                 p {
                     height: auto;
@@ -460,6 +466,8 @@ nav {
                 margin-top: 0;
                 .main_header {
                     font-weight: bold;
+                    font-size: 25px;
+                    line-height: 1.2;
                 }
                 p {
                     height: auto;
@@ -530,7 +538,7 @@ nav {
     background-color: #fff;
     padding-top: 83px;
     color: #000;
-
+    position: relative;
     .valign-wrapper {
 
         height: 100%;
@@ -634,23 +642,29 @@ nav {
                         margin-top: 15px;
                     }
                 }
+                
             }
         }
         @media only screen and (max-width: 992px) {
+            
             margin: auto;
             display: block;
             height: auto;
             .vertical_text {
-                margin-top: 0;
+                margin-top: 53px;
                 .main_header {
                     font-weight: bold;
+                    font-size: 25px;
+                    line-height: 1.2;
                 }
                 p {
                     height: auto;
                     width: auto;
                 }
             }
-
+           
+            
+            
         }
         &:before {
             display: block;
@@ -670,12 +684,17 @@ nav {
     }
        @media only screen and (max-width: 992px) {
          padding-bottom: 60px;
+           
+            .get_course_s3{
+                    position: absolute;
+                    bottom: 60px; 
+                }
            }
 }
 
 #section4 {
     color: #fff;
-    padding-top: 83px;
+    padding-top: 53px;
     background: url(../img/bg.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -842,7 +861,7 @@ nav {
                 margin-top: 0;
                 .main_header {
                     font-weight: bold;
-                    font-size: 30px;
+                    font-size: 25px;
                 }
                 p {
                     height: auto;
@@ -913,12 +932,13 @@ nav {
             }
         }
     }
+    padding-bottom: 60px
 }
 
 #section5 {
 
     color: #fff;
-    padding-top: 83px;
+    padding-top: 53px;
 
     background: url(../img/bg5.jpg);
     background-size: 100% 100%;
@@ -973,7 +993,7 @@ nav {
 
         height: 100%;
         .vertical_text {
-            font-size: 20px;
+            font-size: 16px;
             font-weight: 300;
             color: #fff;
             margin-top: -94px;
@@ -987,6 +1007,9 @@ nav {
                 font-size: 44px;
                 font-weight: normal;
                 line-height: 53px;
+                 @media only screen and (max-width: 992px) {
+                    font-size: 25px;
+                }
             }
             p {
                 margin-top: 32px; //height: 96px;	
@@ -1006,9 +1029,10 @@ nav {
             }
             @media only screen and (max-width: 992px) {
                 margin-top: 0;
+                height: 313px;
             }
             @media only screen and (min-width: 992px) {
-
+                
                 &:after {
                     content: " ";
                     border-right: 1px solid #fff;
@@ -1041,7 +1065,7 @@ nav {
         @media only screen and (max-width: 992px) {
             position: absolute;
             margin-left: 110px;
-            width: 200px;
+            width: 250px;
             display: block;
             margin-left: 0px;
         }

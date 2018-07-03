@@ -6613,6 +6613,9 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
 @media only screen and (max-width: 600px) {
   .container {
     width: 100%; } }
+@media only screen and (max-width: 992px) {
+  section {
+    min-height: 530px; } }
 @media only screen and (min-width: 992px) {
   html {
     -ms-overflow-style: none;
@@ -6858,8 +6861,8 @@ nav {
           .section1 .valign-wrapper .vertical_text .main_header {
             font-weight: bold;
             font-size: 25px;
-            line-height: 25px;
-            text-align: center; }
+            line-height: 1.2;
+            margin-top: 40px; }
           .section1 .valign-wrapper .vertical_text p {
             height: auto;
             width: auto; } }
@@ -6980,7 +6983,9 @@ nav {
         .section2 .valign-wrapper .vertical_text {
           margin-top: 0; }
           .section2 .valign-wrapper .vertical_text .main_header {
-            font-weight: bold; }
+            font-weight: bold;
+            font-size: 25px;
+            line-height: 1.2; }
           .section2 .valign-wrapper .vertical_text p {
             height: auto;
             width: auto; } }
@@ -7031,7 +7036,8 @@ nav {
 .section3 {
   background-color: #fff;
   padding-top: 83px;
-  color: #000; }
+  color: #000;
+  position: relative; }
   .section3 .valign-wrapper {
     height: 100%; }
     .section3 .valign-wrapper .grid__item_numb {
@@ -7119,9 +7125,11 @@ nav {
         display: block;
         height: auto; }
         .section3 .valign-wrapper .vertical_text {
-          margin-top: 0; }
+          margin-top: 53px; }
           .section3 .valign-wrapper .vertical_text .main_header {
-            font-weight: bold; }
+            font-weight: bold;
+            font-size: 25px;
+            line-height: 1.2; }
           .section3 .valign-wrapper .vertical_text p {
             height: auto;
             width: auto; } }
@@ -7141,14 +7149,18 @@ nav {
           display: none; } }
   @media only screen and (max-width: 992px) {
     .section3 {
-      padding-bottom: 60px; } }
+      padding-bottom: 60px; }
+      .section3 .get_course_s3 {
+        position: absolute;
+        bottom: 60px; } }
 
 #section4 {
   color: #fff;
-  padding-top: 83px;
+  padding-top: 53px;
   background: url(../img/bg.png);
   background-size: 100% 100%;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  padding-bottom: 60px; }
   #section4 .valign-wrapper {
     height: 100%; }
     #section4 .valign-wrapper .vertical_text {
@@ -7225,7 +7237,7 @@ nav {
           margin-top: 0; }
           #section4 .valign-wrapper .vertical_text .main_header {
             font-weight: bold;
-            font-size: 30px; }
+            font-size: 25px; }
           #section4 .valign-wrapper .vertical_text p {
             height: auto;
             width: auto; }
@@ -7278,7 +7290,7 @@ nav {
 
 #section5 {
   color: #fff;
-  padding-top: 83px;
+  padding-top: 53px;
   background: url(../img/bg5.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat; }
@@ -7321,7 +7333,7 @@ nav {
           line-height: normal;
           margin-top: 0; } }
     #section5 .valign-wrapper .vertical_text {
-      font-size: 20px;
+      font-size: 16px;
       font-weight: 300;
       color: #fff;
       margin-top: -94px;
@@ -7333,6 +7345,9 @@ nav {
         font-size: 44px;
         font-weight: normal;
         line-height: 53px; }
+        @media only screen and (max-width: 992px) {
+          #section5 .valign-wrapper .vertical_text .main_header {
+            font-size: 25px; } }
       #section5 .valign-wrapper .vertical_text p {
         margin-top: 32px;
         margin-bottom: 0;
@@ -7349,7 +7364,8 @@ nav {
         display: none; }
       @media only screen and (max-width: 992px) {
         #section5 .valign-wrapper .vertical_text {
-          margin-top: 0; } }
+          margin-top: 0;
+          height: 313px; } }
       @media only screen and (min-width: 992px) {
         #section5 .valign-wrapper .vertical_text:after {
           content: " ";
@@ -7377,7 +7393,7 @@ nav {
       #section5 .s3f_polis1 {
         position: absolute;
         margin-left: 110px;
-        width: 200px;
+        width: 250px;
         display: block;
         margin-left: 0px; } }
   #section5 .footer_logo_text {

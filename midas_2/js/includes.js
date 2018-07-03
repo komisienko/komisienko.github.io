@@ -148,7 +148,9 @@ $(window).resize(function() {
 
 $(".main").onepage_scroll({
    sectionContainer: "section", // sectionContainer accepts any kind of selector in case you don't want to use section
-   easing: "cubic-bezier(0.175, 0.885, 0.420, 1.210)", // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in", "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
+   //easing: "cubic-bezier(0.68, -0.55, 0.265, 1.55)", 
+ easing: "cubic-bezier(0.175, 0.885, 0.420, 1.210)", 
+    // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in", "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
    animationTime: 1000, // AnimationTime let you define how long each section takes to animate
    pagination: true, // You can either show or hide the pagination. Toggle true for show, false for hide.
    updateURL: false, // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
@@ -183,21 +185,35 @@ $(".main").onepage_scroll({
             if($('.onepage-pagination li:nth-child(3) a').hasClass("active")){
                  $('#nav-desctop li').removeClass('active');
                 $('#nav-desctop li:nth-child(3)').addClass('active')
-                var thisFilter='invert(1)'
+                var thisFilter='invert(2)';
+                var thisBg = 'rgba(0,0,0,1)';
                 $('.nav-wrapper, .onepage-pagination').css('filter',thisFilter)
                                  .css('webkitFilter',thisFilter)
                                  .css('mozFilter',thisFilter)
                                  .css('oFilter',thisFilter)
-                                 .css('msFilter',thisFilter);
-                                
+                                 .css('msFilter',thisFilter)
+                               
+                $('.nav-wrapper').css('background-color', thisBg);
+                
+                
+                  $('body').css('filter',nullFilter)
+                                 .css('webkitFilter',nullFilter)
+                                 .css('mozFilter',nullFilter)
+                                 .css('oFilter',nullFilter)
+                                 .css('msFilter',nullFilter);                  
             }else{
                 var nullFilter='invert(0)'
+                var nullBg='rgba(0,0,0,.2)'
                 $('.nav-wrapper, .onepage-pagination').css('filter',nullFilter)
                                  .css('webkitFilter',nullFilter)
                                  .css('mozFilter',nullFilter)
                                  .css('oFilter',nullFilter)
                                  .css('msFilter',nullFilter);
-                               
+                                 
+                
+                $('.nav-wrapper').css('background-color', nullBg );
+                                    
+                 
             }
         }
        
