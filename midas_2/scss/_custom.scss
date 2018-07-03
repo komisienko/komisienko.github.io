@@ -62,9 +62,9 @@ body,
 .onepage-wrapper,
 html {
     display: block;
-    position: static;
+   // position: static;
     padding: 0;
-    width: 100%;
+ //   width: 100%;
     height: 100%;
 }
 
@@ -190,7 +190,20 @@ header {
 #nav-desctop {
     margin-left: 258px;
 }
-
+#nav-mobile{
+    width: 150px;
+    .sidenav-close{
+        border-bottom: 1px solid #ddd;
+    }
+    .close_nav_arrow{
+        height: 100%;
+        
+        img{
+                margin-right: 20px;
+                transform: rotate(180deg);
+        }
+    }
+}
 nav {
     .brand-logo {
         color: #FFFFFF;
@@ -325,6 +338,7 @@ nav {
     }
 
     #sender_form {
+       
         .title {
             position: relative;
             height: 24px;
@@ -379,7 +393,7 @@ nav {
     @media only screen and (max-width: 992px) {
         padding-top: 60px;
         height: auto !important;
-
+         overflow: hidden;
     }
 }
 

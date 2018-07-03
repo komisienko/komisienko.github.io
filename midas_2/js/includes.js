@@ -1,6 +1,9 @@
 
 $(document).ready(function () {
-    $('.sidenav').sidenav();
+    $('.sidenav').sidenav({
+        draggable: false,
+        
+    });
     $('.modal').modal();
           
 $('#nav-mobile').on("click", "a", function(event){
