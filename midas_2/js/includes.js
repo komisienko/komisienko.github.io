@@ -49,7 +49,7 @@ $('.card_solo_href, .button_href').on('click', function (event) {
 //        }
 //    });
 //});
-$("#nav-desctop li:nth-child(1) a").on('click', function(e){
+$("#nav-desctop li:nth-child(1) a, .brand-logo").on('click', function(e){
      $('#nav-desctop li').removeClass('active');
     $(this).parent().addClass('active')
      e.preventDefault();
