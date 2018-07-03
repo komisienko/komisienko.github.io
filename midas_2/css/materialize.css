@@ -6613,6 +6613,35 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
 @media only screen and (max-width: 600px) {
   .container {
     width: 100%; } }
+@media only screen and (min-width: 992px) {
+  html {
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    overflow: hidden-scroll;
+    -webkit-scrollbar-thumb: rgba(0, 0, 0, 0);
+    -moz-scrollbar-thumb: rgba(0, 0, 0, 0);
+    -ms-scrollbar-thumb: rgba(0, 0, 0, 0);
+    -o-scrollbar-thumb: rgba(0, 0, 0, 0);
+    scrollbar-thumb: rgba(0, 0, 0, 0); }
+    html ::-webkit-scrollbar {
+      display: none; }
+    html ::-webkit-scrollbar {
+      display: none; }
+    html ::-moz-scrollbar {
+      display: none; }
+    html ::-ms-scrollbar {
+      display: none; }
+    html ::-o-scrollbar {
+      display: none; }
+    html ::scrollbar {
+      display: none; }
+    html ::-webkit-scrollbar {
+      width: 0px;
+      /* remove scrollbar space */
+      background: transparent;
+      /* optional: just make scrollbar invisible */ }
+    html ::-webkit-scrollbar-thumb {
+      background: rgba(0, 0, 0, 0); } }
 @media only screen and (min-width: 1280) {
   .container {
     width: 85%; } }
@@ -7110,6 +7139,9 @@ nav {
       @media only screen and (max-width: 992px) {
         .section3 .valign-wrapper:before {
           display: none; } }
+  @media only screen and (max-width: 992px) {
+    .section3 {
+      padding-bottom: 60px; } }
 
 #section4 {
   color: #fff;
@@ -7166,18 +7198,20 @@ nav {
             display: block;
             margin: 0 auto;
             margin-top: 15px; } }
-    #section4 .valign-wrapper .slider {
-      height: 400px;
-      margin-left: 30px; }
-    #section4 .valign-wrapper .slick-prev, #section4 .valign-wrapper .slick-next {
+    #section4 .valign-wrapper .slick-prev,
+    #section4 .valign-wrapper .slick-next {
       display: none !important; }
     #section4 .valign-wrapper .slick-dots li button::before {
       font-size: 20px; }
     #section4 .valign-wrapper .slick-slide img {
+      width: 300px;
       display: block;
       margin: 0 auto;
       transition: all 500ms ease-in-out;
       transform: scale(0, 0); }
+      @media only screen and (max-width: 992px) {
+        #section4 .valign-wrapper .slick-slide img {
+          width: 200px; } }
     #section4 .valign-wrapper .slick-slide.slick-current.slick-active .image img {
       transform: scale(1, 1); }
     #section4 .valign-wrapper .slick-dots {
@@ -7195,7 +7229,8 @@ nav {
           #section4 .valign-wrapper .vertical_text p {
             height: auto;
             width: auto; }
-        #section4 .valign-wrapper .slick-prev, #section4 .valign-wrapper .slick-next {
+        #section4 .valign-wrapper .slick-prev,
+        #section4 .valign-wrapper .slick-next {
           display: none !important; }
         #section4 .valign-wrapper .slick-dots li button::before {
           font-size: 20px; }
@@ -7254,11 +7289,13 @@ nav {
       background-attachment: fixed; } }
   #section5 .valign-wrapper {
     height: 100%; }
-    #section5 .valign-wrapper .footer_mail, #section5 .valign-wrapper .footer_phone {
+    #section5 .valign-wrapper .footer_mail,
+    #section5 .valign-wrapper .footer_phone {
       position: relative;
       color: #fff;
       font-size: 16px; }
-      #section5 .valign-wrapper .footer_mail:before, #section5 .valign-wrapper .footer_phone:before {
+      #section5 .valign-wrapper .footer_mail:before,
+      #section5 .valign-wrapper .footer_phone:before {
         background-repeat: no-repeat;
         position: absolute;
         width: 20px;
@@ -7277,13 +7314,15 @@ nav {
       background: url(../img/kontakts/mail.svg);
       background-repeat: no-repeat; }
     #section5 .valign-wrapper .fmail_fphone {
-      line-height: 7;
+      line-height: 3;
       margin-top: -90px; }
       @media only screen and (max-width: 992px) {
         #section5 .valign-wrapper .fmail_fphone {
           line-height: normal;
           margin-top: 0; } }
     #section5 .valign-wrapper .vertical_text {
+      font-size: 20px;
+      font-weight: 300;
       color: #fff;
       margin-top: -94px;
       position: relative; }
@@ -7324,5 +7363,30 @@ nav {
     @media only screen and (max-width: 992px) {
       #section5 .valign-wrapper {
         height: auto; } }
+  #section5 .s3f_polis1 {
+    position: absolute;
+    margin-left: 110px;
+    width: 200px; }
+    @media only screen and (max-width: 1440px) {
+      #section5 .s3f_polis1 {
+        margin-left: 80px; } }
+    @media only screen and (max-width: 1280px) {
+      #section5 .s3f_polis1 {
+        margin-left: 70px; } }
+    @media only screen and (max-width: 992px) {
+      #section5 .s3f_polis1 {
+        position: absolute;
+        margin-left: 110px;
+        width: 200px;
+        display: block;
+        margin-left: 0px; } }
+  #section5 .footer_logo_text {
+    position: absolute;
+    bottom: 10%; }
+    @media only screen and (max-width: 992px) {
+      #section5 .footer_logo_text {
+        bottom: 20px;
+        display: block;
+        margin-left: 0px; } }
 
 /*# sourceMappingURL=materialize.css.map */
