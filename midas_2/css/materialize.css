@@ -6613,6 +6613,12 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
 @media only screen and (max-width: 600px) {
   .container {
     width: 100%; } }
+@media only screen and (min-width: 1280) {
+  .container {
+    width: 85%; } }
+@media only screen and (min-width: 1600) {
+  .container {
+    width: 70%; } }
 html {
   max-width: 1920px;
   margin: 0 auto; }
@@ -7108,14 +7114,9 @@ nav {
 #section4 {
   color: #fff;
   padding-top: 83px;
-  background: url(../img/bg4.jpg);
+  background: url(../img/bg.png);
   background-size: 100% 100%;
   background-repeat: no-repeat; }
-  @media only screen and (max-width: 992px) {
-    #section4 {
-      padding-top: 53px;
-      padding-bottom: 53px;
-      background-attachment: fixed; } }
   #section4 .valign-wrapper {
     height: 100%; }
     #section4 .valign-wrapper .vertical_text {
@@ -7165,18 +7166,20 @@ nav {
             display: block;
             margin: 0 auto;
             margin-top: 15px; } }
+    #section4 .valign-wrapper .slider {
+      height: 400px;
+      margin-left: 30px; }
     #section4 .valign-wrapper .slick-prev, #section4 .valign-wrapper .slick-next {
       display: none !important; }
     #section4 .valign-wrapper .slick-dots li button::before {
       font-size: 20px; }
-    #section4 .valign-wrapper .slick-slider {
-      margin-top: -140px; }
     #section4 .valign-wrapper .slick-slide img {
       display: block;
-      margin: 0 auto; }
-    #section4 .valign-wrapper .slider {
-      height: 400px;
-      margin-left: 30px; }
+      margin: 0 auto;
+      transition: all 500ms ease-in-out;
+      transform: scale(0, 0); }
+    #section4 .valign-wrapper .slick-slide.slick-current.slick-active .image img {
+      transform: scale(1, 1); }
     #section4 .valign-wrapper .slick-dots {
       text-align: left; }
     @media only screen and (max-width: 992px) {
