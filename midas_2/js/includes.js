@@ -67,13 +67,13 @@ $("#nav-desctop li:nth-child(3) a, .scrollTrigger2").on('click', function(e){
      e.preventDefault();
     $('.onepage-pagination li:nth-child(3) a').click();
 });
-$("#nav-desctop li:nth-child(4) a, .scrollTrigger2").on('click', function(e){
+$("#nav-desctop li:nth-child(4) a, .scrollTrigger3").on('click', function(e){
      $('#nav-desctop li').removeClass('active');
     $(this).parent().addClass('active')
      e.preventDefault();
     $('.onepage-pagination li:nth-child(4) a').click();
 });
-$("#nav-desctop li:nth-child(5) a, .scrollTrigger2").on('click', function(e){
+$("#nav-desctop li:nth-child(5) a, .scrollTrigger4").on('click', function(e){
      $('#nav-desctop li').removeClass('active');
     $(this).parent().addClass('active')
      e.preventDefault();

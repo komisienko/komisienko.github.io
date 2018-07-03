@@ -6615,6 +6615,9 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
 @media only screen and (max-width: 992px) {
   section {
     min-height: 530px; } }
+@media only screen and (max-width: 992px) {
+  section .valign-wrapper .vertical_text {
+    text-align: center; } }
 @media only screen and (min-width: 992px) {
   html {
     -ms-overflow-style: none;
@@ -6879,6 +6882,9 @@ nav {
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 35px; }
+    @media only screen and (max-width: 992px) {
+      .section1 #sender_form .title {
+        text-align: center; } }
   .section1 #sender_form .form_checkbox span {
     height: auto;
     text-align: left;
@@ -7009,18 +7015,12 @@ nav {
       cursor: pointer;
       display: inline-block;
       width: 190px; }
-      @media only screen and (max-width: 992px) {
-        .section2 .section2_grid-container .grid__item .grid__item_get {
-          width: 100%; } }
       .section2 .section2_grid-container .grid__item .grid__item_get .scrollTrigger_to_form {
         display: inline-block;
         position: absolute;
         height: 44px;
         width: 43px;
         cursor: pointer; }
-        @media only screen and (max-width: 992px) {
-          .section2 .section2_grid-container .grid__item .grid__item_get .scrollTrigger_to_form {
-            right: 0; } }
         .section2 .section2_grid-container .grid__item .grid__item_get .scrollTrigger_to_form:hover {
           border: 1px solid #fff;
           border-radius: 2px; }
@@ -7057,12 +7057,11 @@ nav {
       color: #000;
       font-size: 24px;
       font-weight: bold;
-      font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
-      margin-top: -75px; }
+      font-family: Helvetica, "Helvetica Neue", Arial, sans-serif; }
       @media only screen and (max-width: 992px) {
         .section3 .valign-wrapper .grid__item_numb {
-          width: 100%;
-          display: block; } }
+          display: block;
+          width: 220px; } }
     .section3 .valign-wrapper .scrollTrigger_to_form {
       display: inline-block;
       height: 44px;
@@ -7272,6 +7271,8 @@ nav {
         #section4 .valign-wrapper .slider {
           height: 300px; }
         #section4 .valign-wrapper .slick-dots {
+          text-align: center; }
+        #section4 .valign-wrapper .image-text {
           text-align: center; } }
   #section4 .slide4_abs {
     font-size: 24px;
@@ -7282,8 +7283,23 @@ nav {
     display: block;
     text-align: center;
     font-family: Helvetica, "Helvetica Neue", Arial, sans-serif; }
+    #section4 .slide4_abs .scrollTrigger_to_form {
+      display: inline-block;
+      height: 44px;
+      width: 43px;
+      cursor: pointer;
+      float: right; }
+      #section4 .slide4_abs .scrollTrigger_to_form:hover {
+        border: 1px solid #fff;
+        border-radius: 2px; }
+      #section4 .slide4_abs .scrollTrigger_to_form img {
+        display: block;
+        margin: 0 auto;
+        margin-top: 15px; }
     @media only screen and (min-width: 992px) {
       #section4 .slide4_abs {
+        display: block;
+        width: 220px;
         font-size: 24px;
         bottom: 10%;
         right: 10%;
@@ -7305,6 +7321,13 @@ nav {
             display: block;
             margin: 0 auto;
             margin-top: 15px; } }
+    @media only screen and (max-width: 992px) {
+      #section4 .slide4_abs {
+        text-align: left;
+        padding-left: 10px;
+        width: 230px;
+        margin: 0 auto;
+        margin-top: 20px; } }
 
 #section5 {
   color: #fff;
@@ -7314,6 +7337,7 @@ nav {
   background-repeat: no-repeat; }
   @media only screen and (max-width: 992px) {
     #section5 {
+      text-align: center;
       padding-top: 53px;
       padding-bottom: 53px;
       background-attachment: fixed; } }
@@ -7338,18 +7362,26 @@ nav {
       display: block;
       background: url(../img/kontakts/phone-receiver.svg);
       background-repeat: no-repeat; }
+      @media only screen and (max-width: 992px) {
+        #section5 .valign-wrapper .footer_mail:before {
+          background: rgba(0, 0, 0, 0); } }
     #section5 .valign-wrapper .footer_phone:before {
       content: "";
       display: block;
       background: url(../img/kontakts/mail.svg);
       background-repeat: no-repeat; }
+      @media only screen and (max-width: 992px) {
+        #section5 .valign-wrapper .footer_phone:before {
+          background: rgba(0, 0, 0, 0); } }
     #section5 .valign-wrapper .fmail_fphone {
       line-height: 3;
       margin-top: -90px; }
       @media only screen and (max-width: 992px) {
         #section5 .valign-wrapper .fmail_fphone {
           line-height: normal;
-          margin-top: 0; } }
+          margin-top: 0;
+          display: block;
+          margin: 0 auto; } }
     #section5 .valign-wrapper .vertical_text {
       font-size: 16px;
       font-weight: 300;
@@ -7411,7 +7443,6 @@ nav {
       #section5 .s3f_polis1 {
         position: absolute;
         margin-left: 110px;
-        width: 250px;
         display: block;
         margin-left: 0px; } }
   #section5 .footer_logo_text {
@@ -7421,6 +7452,8 @@ nav {
       #section5 .footer_logo_text {
         bottom: 20px;
         display: block;
-        margin-left: 0px; } }
+        margin-left: 0px;
+        left: 50%;
+        transform: translateX(-50%); } }
 
 /*# sourceMappingURL=materialize.css.map */
