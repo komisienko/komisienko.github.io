@@ -6619,7 +6619,7 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   section .valign-wrapper .vertical_text {
     text-align: center; } }
 @media only screen and (min-width: 992px) {
-  html {
+  html:not(.modal) {
     -ms-overflow-style: none;
     overflow: -moz-scrollbars-none;
     overflow: hidden-scroll;
@@ -6628,24 +6628,24 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
     -ms-scrollbar-thumb: rgba(0, 0, 0, 0);
     -o-scrollbar-thumb: rgba(0, 0, 0, 0);
     scrollbar-thumb: rgba(0, 0, 0, 0); }
-    html ::-webkit-scrollbar {
+    html:not(.modal) ::-webkit-scrollbar {
       display: none; }
-    html ::-webkit-scrollbar {
+    html:not(.modal) ::-webkit-scrollbar {
       display: none; }
-    html ::-moz-scrollbar {
+    html:not(.modal) ::-moz-scrollbar {
       display: none; }
-    html ::-ms-scrollbar {
+    html:not(.modal) ::-ms-scrollbar {
       display: none; }
-    html ::-o-scrollbar {
+    html:not(.modal) ::-o-scrollbar {
       display: none; }
-    html ::scrollbar {
+    html:not(.modal) ::scrollbar {
       display: none; }
-    html ::-webkit-scrollbar {
+    html:not(.modal) ::-webkit-scrollbar {
       width: 0px;
       /* remove scrollbar space */
       background: transparent;
       /* optional: just make scrollbar invisible */ }
-    html ::-webkit-scrollbar-thumb {
+    html:not(.modal) ::-webkit-scrollbar-thumb {
       background: rgba(0, 0, 0, 0); } }
 @media only screen and (min-width: 1280) {
   .container {
