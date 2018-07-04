@@ -11,10 +11,10 @@
 }
 
 @media only screen and (max-width: 992px) {
-    section .valign-wrapper .vertical_text  {
-            text-align: center;
-        }
-} 
+    section .valign-wrapper .vertical_text {
+        text-align: center;
+    }
+}
 
 @media only screen and (min-width: 992px) {
 
@@ -211,7 +211,7 @@ header {
 }
 
 #nav-mobile {
-    width: 230px; 
+    width: 230px;
 
     .close_nav_arrow {
         height: 100%;
@@ -366,7 +366,7 @@ nav {
             font-size: 20px;
             line-height: 24px;
             margin-bottom: 35px;
-            @media only screen and (max-width: 992px){
+            @media only screen and (max-width: 992px) {
                 width: 100%;
                 text-align: center;
             }
@@ -430,11 +430,11 @@ nav {
         padding-top: 53px;
         padding-bottom: 53px;
         background-attachment: fixed;
-        .grid_lastitem{
-            text-align: center;  
-            .grid__item_numb{
-                margin-left: -43px; 
-            } 
+        .grid_lastitem {
+            text-align: center;
+            .grid__item_numb {
+                margin-left: -43px;
+            }
         }
     }
     .valign-wrapper {
@@ -536,7 +536,7 @@ nav {
                 cursor: pointer;
                 display: inline-block;
                 width: 190px;
-              
+
                 .scrollTrigger_to_form {
                     display: inline-block;
                     position: absolute;
@@ -544,7 +544,7 @@ nav {
                     width: 43px;
                     cursor: pointer;
                     @media only screen and (max-width: 992px) {
-                       // right: 0;
+                        // right: 0;
                     } //                    right: -81px;
                     //                    bottom: -69px;
                     &:hover {
@@ -570,11 +570,11 @@ nav {
             }
         }
         @media only screen and (max-width: 992px) {
-//            grid-template-columns: 100%;
-//            grid-column-gap: 5px;
-//            margin-top: 20px;
+            //            grid-template-columns: 100%;
+            //            grid-column-gap: 5px;
+            //            margin-top: 20px;
             display: block;
-            .grid__item{
+            .grid__item {
                 margin-top: 20px;
             }
             .grid__item_numb__sub {
@@ -583,7 +583,7 @@ nav {
                 margin-bottom: 8px;
             }
         }
-        
+
     }
 }
 
@@ -598,11 +598,10 @@ nav {
             color: #000;
             font-size: 24px;
             font-weight: bold;
-            font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
-           // margin-top: -75px;
+            font-family: Helvetica, "Helvetica Neue", Arial, sans-serif; // margin-top: -75px;
             @media only screen and (max-width: 992px) {
                 display: block;
-                    width: 220px;
+                width: 230px;
                 margin: 0 auto;
             }
         }
@@ -612,9 +611,7 @@ nav {
             width: 43px;
             cursor: pointer;
             float: right; //   
-            @media only screen and (max-width: 992px) {
-                
-            }
+            @media only screen and (max-width: 992px) {}
             //                    bottom: -69px;
             &:hover {
                 border: 1px solid #000;
@@ -950,7 +947,7 @@ nav {
             .slick-dots {
                 text-align: center;
             }
-            .image-text{
+            .image-text {
                 text-align: center;
             }
         }
@@ -964,15 +961,13 @@ nav {
         display: block;
         text-align: center;
         font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
-         .scrollTrigger_to_form {
+        .scrollTrigger_to_form {
             display: inline-block; //position: absolute;
             height: 44px;
             width: 43px;
             cursor: pointer;
             float: right; //   
-            @media only screen and (max-width: 992px) {
-                
-            }
+            @media only screen and (max-width: 992px) {}
             //                    bottom: -69px;
             &:hover {
                 border: 1px solid #fff;
@@ -984,10 +979,10 @@ nav {
                 margin-top: 15px;
             }
         }
-      
-            @media only screen and (min-width: 992px) {
-                display: block;
-    width: 220px;
+
+        @media only screen and (min-width: 992px) {
+            display: block;
+            width: 220px;
             font-size: 24px;
             bottom: 10%;
             right: 10%;
@@ -1014,12 +1009,12 @@ nav {
                 }
             }
         }
-           @media only screen and (max-width: 992px) {
-               text-align: left;
-               padding-left: 10px;
-               width: 230px;
-               margin: 0 auto;
-               margin-top: 20px;
+        @media only screen and (max-width: 992px) {
+            text-align: left;
+            padding-left: 10px;
+            width: 240px;
+            margin: 0 auto;
+            margin-top: 20px;
         }
     }
     padding-bottom: 60px
@@ -1040,7 +1035,7 @@ nav {
         padding-bottom: 53px;
         background-attachment: fixed;
     }
-       
+
     .valign-wrapper {
         .footer_mail,
         .footer_phone {
@@ -1065,7 +1060,7 @@ nav {
                 background: url(../img/kontakts/phone-receiver.svg);
                 background-repeat: no-repeat;
                 @media only screen and (max-width: 992px) {
-                       background: rgba(0,0,0,0);
+                    background: rgba(0, 0, 0, 0);
                 }
             }
         }
@@ -1077,7 +1072,7 @@ nav {
 
                 background-repeat: no-repeat;
                 @media only screen and (max-width: 992px) {
-                       background: rgba(0,0,0,0);
+                    background: rgba(0, 0, 0, 0);
                 }
             }
         }
@@ -1086,11 +1081,11 @@ nav {
             margin-top: -90px;
             @media only screen and (max-width: 992px) {
                 line-height: 2;
-               
+
                 display: block;
                 margin: 0 auto;
-                 margin-top: -80px;
-               
+                margin-top: -80px;
+
             }
         }
 
@@ -1167,8 +1162,7 @@ nav {
         }
         @media only screen and (max-width: 992px) {
             position: absolute;
-            margin-left: 110px;
-           // width: 250px;
+            margin-left: 110px; // width: 250px;
             display: block;
             margin-left: 0px;
         }
@@ -1180,8 +1174,8 @@ nav {
             bottom: 20px;
             display: block;
             margin-left: 0px;
-                left: 50%;
-    transform: translateX(-50%);
+            left: 50%;
+            transform: translateX(-50%);
         }
     }
 }
