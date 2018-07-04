@@ -6826,13 +6826,13 @@ main {
         text-align: center; } }
     @media only screen and (max-width: 600px) {
       main #section1 h4 {
-        font-size: 2rem; } }
+        font-size: 1.4rem !important; } }
     @media only screen and (max-width: 600px) {
       main #section1 h5 {
         font-size: 1.3rem; } }
     @media only screen and (max-width: 600px) {
       main #section1 {
-        background-size: 100% 35%; } }
+        background-size: auto 100%; } }
     main #section1 form {
       z-index: 1; }
       main #section1 form .form_checkbox span {
@@ -6937,7 +6937,8 @@ main {
       margin: 0 auto; }
       @media only screen and (max-width: 993px) {
         #section3 .sec3_part1 .sec_mh_p_desc {
-          width: auto; } }
+          width: auto;
+          text-align: left; } }
   @media only screen and (max-width: 992px) {
     #section3 .section3_half_1 {
       height: max-content;
@@ -6959,12 +6960,7 @@ main {
       #section3 .sec3_part2 {
         height: max-content; }
         #section3 .sec3_part2 .row {
-          display: -webkit-flex;
-          display: -moz-flex;
-          display: -ms-flex;
-          display: -o-flex;
-          display: flex;
-          flex-direction: column; }
+          display: block; }
         #section3 .sec3_part2 .phone_wrap, #section3 .sec3_part2 .mail_wrap {
           text-align: left; } }
     #section3 .sec3_part2 .footer_logo {

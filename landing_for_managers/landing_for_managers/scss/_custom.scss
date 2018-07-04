@@ -202,7 +202,7 @@ main {
         }
         h4 {
             @media only screen and (max-width: 600px) {
-                font-size: 2rem;
+                font-size: 1.4rem !important;
             }
         }
         h5 {
@@ -220,7 +220,7 @@ main {
     background-position: top; 
        // background-position: top;
         @media only screen and (max-width: 600px) {
-            background-size: 100% 35%;
+            background-size: auto 100%;
         }
         form {
             z-index: 1;
@@ -432,6 +432,7 @@ main {
             margin: 0 auto;
                  @media only screen and (max-width: 993px) {
                 width: auto;
+                     text-align: left;
             }
         }
     }
@@ -461,12 +462,13 @@ main {
         @media only screen and (max-width: 993px) {
             height: max-content;
             .row{
-                display: -webkit-flex;
-                display: -moz-flex;
-                display: -ms-flex;
-                display: -o-flex;
-                display: flex;
-                flex-direction: column;
+//                display: -webkit-flex;
+//                display: -moz-flex;
+//                display: -ms-flex;
+//                display: -o-flex;
+//                display: flex;
+//                flex-direction: column;
+                display: block;
             }
             .phone_wrap,.mail_wrap{
                 text-align: left;
@@ -508,6 +510,7 @@ main {
         .footer_mail {
             @media only screen and (max-width: 992px) {
                 margin-right: 5px;
+               
             }
 
             color: #9B9B9B;
