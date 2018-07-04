@@ -7347,7 +7347,10 @@ nav {
       text-align: center;
       padding-top: 53px;
       padding-bottom: 53px;
-      background-attachment: fixed; } }
+      background-attachment: fixed; }
+      #section5 .hide-on-med-and-up .modal-trigger.privat_policy_a {
+        height: 20px;
+        display: block; } }
   #section5 .valign-wrapper {
     height: 100%; }
     #section5 .valign-wrapper .footer_mail,
@@ -7422,7 +7425,8 @@ nav {
       @media only screen and (max-width: 992px) {
         #section5 .valign-wrapper .vertical_text {
           margin-top: 0;
-          height: 313px; } }
+          height: 313px;
+          width: 100%; } }
       @media only screen and (min-width: 992px) {
         #section5 .valign-wrapper .vertical_text:after {
           content: " ";
@@ -7450,8 +7454,8 @@ nav {
       #section5 .s3f_polis1 {
         position: absolute;
         margin-left: 110px;
-        display: block;
-        margin-left: 0px; } }
+        margin-left: 0px;
+        display: none; } }
   #section5 .footer_logo_text {
     position: absolute;
     bottom: 10%; }

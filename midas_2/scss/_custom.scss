@@ -1034,6 +1034,12 @@ nav {
         padding-top: 53px;
         padding-bottom: 53px;
         background-attachment: fixed;
+        .hide-on-med-and-up{
+            .modal-trigger.privat_policy_a{
+                height: 20px;
+                display: block;
+            } 
+        }
     }
 
     .valign-wrapper {
@@ -1128,6 +1134,7 @@ nav {
             @media only screen and (max-width: 992px) {
                 margin-top: 0;
                 height: 313px;
+                width: 100%;
             }
             @media only screen and (min-width: 992px) {
 
@@ -1156,6 +1163,7 @@ nav {
         width: 200px;
         @media only screen and (max-width: 1440px) {
             margin-left: 80px;
+          
         }
         @media only screen and (max-width: 1280px) {
             margin-left: 70px;
@@ -1163,8 +1171,8 @@ nav {
         @media only screen and (max-width: 992px) {
             position: absolute;
             margin-left: 110px; // width: 250px;
-            display: block;
             margin-left: 0px;
+              display: none;
         }
     }
     .footer_logo_text {
