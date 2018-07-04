@@ -402,14 +402,14 @@ main {
         position: relative;
         background: url(../img/bg_footer.jpg);
         background-repeat: no-repeat;
-        height: 500px;
+          height: 500px;
 //       / background-size: 100% 100%; // background-attachment: fixed;
         background-position: center;
-  background-repeat: no-repeat;
-    //background-attachment: fixed;
-    background-position: center; 
+        background-repeat: no-repeat;
+        //background-attachment: fixed;
+        background-position: center; 
         @media only screen and (max-width: 993px) {
-            height: max-content;
+            height: auto;
             background-size: cover;
         }
         .main_header {

@@ -6917,7 +6917,7 @@ main {
     background-position: center; }
     @media only screen and (max-width: 993px) {
       #section3 .sec3_part1 {
-        height: max-content;
+        height: auto;
         background-size: cover; } }
     #section3 .sec3_part1 .main_header {
       margin-top: 0px;
