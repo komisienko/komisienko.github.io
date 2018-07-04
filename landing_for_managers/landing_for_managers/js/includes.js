@@ -27,7 +27,6 @@ $('.card_solo_href, .button_href').on('click', function (event) {
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 700);
-   
     $('#user_name').focus();
 });
 $(window).on('scroll', function () {

@@ -85,16 +85,24 @@ $(".grid__item_get, .scrollTrigger_to_form").on('click', function(e){
     $(this).parent().addClass('active')
      e.preventDefault();
     $('.onepage-pagination li:nth-child(1) a').click();
-    $('#fname').focus();
+    //$('#fname').focus();
 });
 }else{
-    $(".grid__item_get, .scrollTrigger_to_form").on('click', function(e){
-        e.preventDefault();
-        $('html,body').animate({
-            scrollTop: 0
-        }, 700);
+//    $(".grid__item_get, .scrollTrigger_to_form").on('click', function(e){
+//        e.preventDefault();
+//        $('html,body').animate({
+//            scrollTop: 0
+//        }, 700);
+//        $('#fname').focus();
+//    });
+    
+    $('.grid__item_get, .scrollTrigger_to_form').on('click', function (event) {
+     event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 700);
         $('#fname').focus();
-    });
+});
 }
 
 
