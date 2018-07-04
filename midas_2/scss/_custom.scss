@@ -211,7 +211,7 @@ header {
 }
 
 #nav-mobile {
-    width: 150px;
+    width: 230px; 
 
     .close_nav_arrow {
         height: 100%;
@@ -367,6 +367,7 @@ nav {
             line-height: 24px;
             margin-bottom: 35px;
             @media only screen and (max-width: 992px){
+                width: 100%;
                 text-align: center;
             }
         }
@@ -429,6 +430,12 @@ nav {
         padding-top: 53px;
         padding-bottom: 53px;
         background-attachment: fixed;
+        .grid_lastitem{
+            text-align: center;
+            .grid__item_numb{
+                margin-left: -43px;
+            }
+        }
     }
     .valign-wrapper {
         height: 100%;
@@ -563,15 +570,20 @@ nav {
             }
         }
         @media only screen and (max-width: 992px) {
-            grid-template-columns: 100%;
-            grid-column-gap: 5px;
-            margin-top: 20px;
+//            grid-template-columns: 100%;
+//            grid-column-gap: 5px;
+//            margin-top: 20px;
+            display: block;
+            .grid__item{
+                margin-top: 20px;
+            }
             .grid__item_numb__sub {
                 font-size: 16px;
                 margin-top: 0px;
                 margin-bottom: 8px;
             }
         }
+        
     }
 }
 
@@ -581,7 +593,6 @@ nav {
     color: #000;
     position: relative;
     .valign-wrapper {
-
         height: 100%;
         .grid__item_numb {
             color: #000;
@@ -590,9 +601,9 @@ nav {
             font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
            // margin-top: -75px;
             @media only screen and (max-width: 992px) {
-      
                 display: block;
                     width: 220px;
+                margin: 0 auto;
             }
         }
         .scrollTrigger_to_form {
@@ -1023,6 +1034,7 @@ nav {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     @media only screen and (max-width: 992px) {
+        position: relative;
         text-align: center;
         padding-top: 53px;
         padding-bottom: 53px;
@@ -1073,10 +1085,11 @@ nav {
             line-height: 3;
             margin-top: -90px;
             @media only screen and (max-width: 992px) {
-                line-height: normal;
-                margin-top: 0;
+                line-height: 2;
+               
                 display: block;
                 margin: 0 auto;
+                 margin-top: -80px;
                
             }
         }
