@@ -85,7 +85,7 @@ $(".grid__item_get, .scrollTrigger_to_form").on('click', function(e){
     $(this).parent().addClass('active')
      e.preventDefault();
     $('.onepage-pagination li:nth-child(1) a').click();
-    //$('#fname').focus();
+    $('#fname').focus();
 });
 }else{
 //    $(".grid__item_get, .scrollTrigger_to_form").on('click', function(e){
