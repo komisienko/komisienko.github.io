@@ -16,46 +16,46 @@
     }
 }
 
-@media only screen and (min-width: 992px) {
-
-    html:not(.modal) {
-        -ms-overflow-style: none;
-        overflow: -moz-scrollbars-none;
-        overflow: hidden-scroll;
-        ::-webkit-scrollbar {
-            display: none;
-        }
-        ::-webkit-scrollbar {
-            display: none;
-        }
-        ::-moz-scrollbar {
-            display: none;
-        }
-        ::-ms-scrollbar {
-            display: none;
-        }
-        ::-o-scrollbar {
-            display: none;
-        }
-        ::scrollbar {
-            display: none;
-        }
-        ::-webkit-scrollbar {
-            width: 0px;
-            /* remove scrollbar space */
-            background: transparent;
-            /* optional: just make scrollbar invisible */
-        }
-        ::-webkit-scrollbar-thumb {
-            background: rgba(0, 0, 0, 0);
-        }
-        -webkit-scrollbar-thumb: rgba(0, 0, 0, 0);
-        -moz-scrollbar-thumb: rgba(0, 0, 0, 0);
-        -ms-scrollbar-thumb: rgba(0, 0, 0, 0);
-        -o-scrollbar-thumb: rgba(0, 0, 0, 0);
-        scrollbar-thumb: rgba(0, 0, 0, 0);
-    }
-}
+//@media only screen and (min-width: 992px) {
+//
+//    html:not(.modal) {
+//        -ms-overflow-style: none;
+//        overflow: -moz-scrollbars-none;
+//        overflow: hidden-scroll;
+//        ::-webkit-scrollbar {
+//            display: none;
+//        }
+//        ::-webkit-scrollbar {
+//            display: none;
+//        }
+//        ::-moz-scrollbar {
+//            display: none;
+//        }
+//        ::-ms-scrollbar {
+//            display: none;
+//        }
+//        ::-o-scrollbar {
+//            display: none;
+//        }
+//        ::scrollbar {
+//            display: none;
+//        }
+//        ::-webkit-scrollbar {
+//            width: 0px;
+//            /* remove scrollbar space */
+//            background: transparent;
+//            /* optional: just make scrollbar invisible */
+//        }
+//        ::-webkit-scrollbar-thumb {
+//            background: rgba(0, 0, 0, 0);
+//        }
+//        -webkit-scrollbar-thumb: rgba(0, 0, 0, 0);
+//        -moz-scrollbar-thumb: rgba(0, 0, 0, 0);
+//        -ms-scrollbar-thumb: rgba(0, 0, 0, 0);
+//        -o-scrollbar-thumb: rgba(0, 0, 0, 0);
+//        scrollbar-thumb: rgba(0, 0, 0, 0);
+//    }
+//}
 
 @media only screen and (min-width: 1280) {
     .container {
