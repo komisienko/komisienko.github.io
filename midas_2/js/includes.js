@@ -4,7 +4,33 @@ $(document).ready(function () {
         draggable: false,
         
     });
-    $('.modal').modal();
+    $('.modal').modal({
+        onOpenStart: function(){
+            if ($('.modal').hasClass('open')){
+       $('body').addClass('disabled-onepage-scroll');
+                 console.log('1');
+        }else{
+            
+                 $('body').removeClass('disabled-onepage-scroll');
+            $(this).disable();
+            console.log('2');
+        }
+                    },
+
+            onCloseStart: function(){
+                      if ($('.modal').hasClass('open')){
+       //$('body').addClass('disabled-onepage-scroll');
+                 console.log('1');
+                          $(this).enable();
+        }else{
+            
+                 //$('body').removeClass('disabled-onepage-scroll');
+            $(this).enable();
+            console.log('2');
+        }
+            }
+            
+    });
           
 $('#nav-mobile').on("click", "a", function(event){
      let instance = M.Sidenav.getInstance('.sidenav');
