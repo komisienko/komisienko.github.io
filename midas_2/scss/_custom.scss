@@ -88,6 +88,7 @@ html {
 }
 
 
+
 //ONE PAGE SCROLL
 .onepage-wrapper .section {
     width: 100%;
@@ -430,6 +431,7 @@ nav {
         padding-top: 53px;
         padding-bottom: 53px;
         background-attachment: fixed;
+//        background-size: cover;
         .grid_lastitem {
             text-align: center;
             .grid__item_numb {
@@ -1187,5 +1189,32 @@ nav {
             left: 50%;
             transform: translateX(-50%);
         }
+    } 
+}
+#section1{
+ @media only screen and (max-width: 992px) {
+        background-size: cover!important; 
+    }
+}
+#section2{
+     @media only screen and (max-width: 992px) {
+        background-size: cover!important; 
+    }
+}
+#section3{
+     @media only screen and (max-width: 992px) {
+        background-size: cover!important; 
+        
+    }
+}
+#section4{
+ @media only screen and (max-width: 992px) {
+        background-size: cover!important; 
+      background-attachment: fixed;  
+    }
+}
+#section5{
+    @media only screen and (max-width: 992px) {
+        background-size: cover!important; 
     }
 }

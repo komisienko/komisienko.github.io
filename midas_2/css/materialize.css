@@ -7440,4 +7440,25 @@ nav {
         left: 50%;
         transform: translateX(-50%); } }
 
+@media only screen and (max-width: 992px) {
+  #section1 {
+    background-size: cover !important; } }
+
+@media only screen and (max-width: 992px) {
+  #section2 {
+    background-size: cover !important; } }
+
+@media only screen and (max-width: 992px) {
+  #section3 {
+    background-size: cover !important; } }
+
+@media only screen and (max-width: 992px) {
+  #section4 {
+    background-size: cover !important;
+    background-attachment: fixed; } }
+
+@media only screen and (max-width: 992px) {
+  #section5 {
+    background-size: cover !important; } }
+
 /*# sourceMappingURL=materialize.css.map */
