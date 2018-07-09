@@ -8,12 +8,10 @@ $(document).ready(function () {
             if ($(window).width() > 992) {
                 if ($('.modal').hasClass('open')) {
                     $('body').addClass('disabled-onepage-scroll');
-                    console.log('1');
                 } else {
 
                     $('body').removeClass('disabled-onepage-scroll');
                     $(this).disable();
-                    console.log('2');
                 }
             }
         },
@@ -22,13 +20,11 @@ $(document).ready(function () {
             if ($(window).width() > 992) {
                 if ($('.modal').hasClass('open')) {
                     //$('body').addClass('disabled-onepage-scroll');
-                    console.log('1');
                     $(this).enable();
                 } else {
 
                     //$('body').removeClass('disabled-onepage-scroll');
                     $(this).enable();
-                    console.log('2');
                 }
             }
         }
