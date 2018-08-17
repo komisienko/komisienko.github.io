@@ -5,7 +5,6 @@ jQuery(document).ready(function () {
         $(this).removeClass('input-error');
         $(this).closest('div').removeClass("input-error_after");
     });
-    // next step
     $('.registration-form .btn-next').on('click', function () {
         var parent_fieldset = $(this).parents('fieldset');
         var next_step = true;
@@ -24,18 +23,6 @@ jQuery(document).ready(function () {
     var user_email = $("#user_email");
     var user_pass = $("#user_password");
     var user_accepted_rules = $("#user_accepted_rules");
-//    $('.registration-form').change(function () {
-//        $([user_email, user_name, user_pass, user_gender_choise, user_accepted_rules]).each(function(){
-//           var errors = 0;
-//         if( !$(this).val() ) {  
-//                errors++;
-//         } 
-//         console.log(errors);
-//         if (errors = 0){
-//             $("button[type=submit").prop("disabled", false);
-//         }
-//        });
-//    });
 
 
     $('.registration-form').change(function () {
@@ -92,57 +79,8 @@ jQuery(document).ready(function () {
             }
         });
 
-//
-//        if (!$('input[name=gender]').is(":checked")) {
-//            $(".minilast_form_radiogroup .radio_label").addClass("input-error");
-//        }
-//        ;
-//        if (!$("#user_accepted_rules").is(":checked")) {
-//            $(".user_accepted_rules_wrapper").addClass("after_test");
-//        }
+
     });
-//        $(this).closest('div').removeClass("input-error_after");
-//        if (user_gender_choise.length > 0 && user_name.val().length > 0 && user_email.val().length > 0 && user_pass.val().length > 0) {
-//            e.preventDefault();
-//            alert("DONE");
-//        } else if (user_gender_choise.length == 0 && user_name.val().length == 0 && user_email.val().length == 0 && user_pass.val().length == 0) {
-//            e.preventDefault();
-//            $([user_email, user_name, user_pass, radio_wrap]).each(function () {
-//                $(this).addClass('input-error');
-//                //$("button[type=submit").prop("disabled", true);
-//                $(this).closest('div').addClass("input-error_after");
-//            });
-//            $("button[type=submit").prop("disabled", false);
-//        }
-//    });
-//    
-//    $("input[name=gender]").on("click", function(){
-//        radio_wrap.removeClass("input-error");
-//    });
-
-
-//        if ($('#user_accepted_rules').hasClass("input-error")) {
-//            $('#user_accepted_rules').closest('label').addClass("after_test");
-//        } else {
-//            $('#user_accepted_rules').closest('label').removeClass("after_test");
-//        }
-//        ;
-//        $(this).find('input[type="text"], input[type="password"], input[type="email"], input[type="checkbox"] ').each(function () {
-//            if ($(this).val() == "") {
-//                e.preventDefault();
-//                $(this).addClass('input-error');
-//                $(this).closest('div').addClass("input-error_after");
-//                $('button[type="submit"]').attr("style", "background-color: #fff !important;color:#aaa9a9;")
-//
-//            } else {
-//                $(this).removeClass('input-error');
-//                $(this).closest('div').removeClass("input-error_after");
-//            }
-//        });
-
-
-
-
     $('#second_slide .question_answers .btn-answer').on("click", function () {
         if ($(this).hasClass("selected_answer")) {
             return false;
