@@ -3530,6 +3530,9 @@ body {
 
 #fourth_slide .left-part {
   border-top-color: #1da7c0; }
+  @media only screen and (max-width: 600px) {
+    #fourth_slide .left-part {
+      height: 130px; } }
 #fourth_slide .right-part:before {
   background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(23, 130, 149, 0.7)); }
 @media only screen and (min-width: 601px) {

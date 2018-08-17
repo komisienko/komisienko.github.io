@@ -106,9 +106,9 @@ body{
             padding: 0;
             margin: 0; 
             display: none;
-             @media #{$medium-and-up} {
-                        min-height:768px;
-                    }
+            @media #{$medium-and-up} {
+                min-height:768px;
+            }
             .row{
                 height: inherit;
                 .left-part{
@@ -119,7 +119,7 @@ body{
                     background-repeat: no-repeat;
                     background-position: left top;
                     height: inherit;
-                   
+
                     @media #{$small-and-down} {
                         height: 265px;
                         border-top: 38px solid;
@@ -446,18 +446,20 @@ body{
 #fourth_slide{
     .left-part{
         border-top-color:$fourth_slide;
-
+        @media #{$small-and-down} {
+            height: 130px;
+        }
     }
     .right-part{
         &:before{
             background: linear-gradient(to right, rgba(0,0,0,0),  rgba(23,130,149,.7));
         }
-     
-        
+
+
     }
-     @media #{$medium-and-up} {
-                        min-height:835px;
-                    }
+    @media #{$medium-and-up} {
+        min-height:835px;
+    }
     .used_field_wrapper{
         border-top: 13px solid $fourth_slide;
         border-left: 13px solid $fourth_slide;
@@ -589,7 +591,7 @@ body{
         input[type="text"],
         input[type="email"],
         input[type="password"]{
-           
+
             width: 100%;
             border: 1px solid #d3d3d3;
             height: 80px;
@@ -618,7 +620,7 @@ body{
         .user_email_wrapper,
         .user_password_wrapper{
             position: relative;
-           
+
             &:before{
                 position: absolute;
                 left: 0;
@@ -627,7 +629,7 @@ body{
                 font-size: 18px;
                 letter-spacing: .45px;
                 color:#000; 
-                 
+
                 @media #{$small-and-down}{
                     letter-spacing: 1px;
                     font-size: 11px;
@@ -636,7 +638,7 @@ body{
             }
             &.input-error_after{
                 &:after{
-             
+
                     position: absolute;
                     left: 13px;
                     top: 30px;
@@ -650,7 +652,7 @@ body{
         .user_name_wrapper{
             &:before{
                 content: "Ваше имя:";
-                
+
 
             }
             &.input-error_after{
