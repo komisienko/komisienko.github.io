@@ -452,6 +452,10 @@ body{
         &:before{
             background: linear-gradient(to right, rgba(0,0,0,0),  rgba(23,130,149,.7));
         }
+        @media #{$small-and-down} {
+                        height: 130px;
+                       border-top: 38px solid;
+                    }
         
     }
      @media #{$medium-and-up} {
