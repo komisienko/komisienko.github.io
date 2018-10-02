@@ -147,7 +147,7 @@ body.fullscreen-enabled #fullscreenToggle {
 }
 
 #autorotateToggle {
-  display: block;
+  display: none;
   position: absolute;
   top: 0;
   right: 0;
