@@ -1,6 +1,7 @@
 var APP_DATA = {
   "scenes": [
     {
+      "id": "0-pano_20181002_205546_0",
       "name": "PANO_20181002_205546_0",
       "levels": [
         {
