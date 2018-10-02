@@ -43,6 +43,7 @@ a, a:hover, a:active, a:visited {
 }
 
 #titleBar {
+    display: none;
   position: absolute;
   top: 0;
   left: 0;
