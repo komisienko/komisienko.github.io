@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/komisienko.github.io/DB2_LIMITED_TASK_2/static/js/main.7626489f.chunk.js",
+    "main.js.map": "/komisienko.github.io/DB2_LIMITED_TASK_2/static/js/main.7626489f.chunk.js.map",
+    "runtime-main.js": "/komisienko.github.io/DB2_LIMITED_TASK_2/static/js/runtime-main.dbd7d129.js",
+    "runtime-main.js.map": "/komisienko.github.io/DB2_LIMITED_TASK_2/static/js/runtime-main.dbd7d129.js.map",
+    "static/js/2.9bfb1fd2.chunk.js": "/komisienko.github.io/DB2_LIMITED_TASK_2/static/js/2.9bfb1fd2.chunk.js",
+    "static/js/2.9bfb1fd2.chunk.js.map": "/komisienko.github.io/DB2_LIMITED_TASK_2/static/js/2.9bfb1fd2.chunk.js.map",
+    "index.html": "/komisienko.github.io/DB2_LIMITED_TASK_2/index.html",
+    "precache-manifest.ead64236db4d91464a5a04fe285eadb8.js": "/komisienko.github.io/DB2_LIMITED_TASK_2/precache-manifest.ead64236db4d91464a5a04fe285eadb8.js",
+    "service-worker.js": "/komisienko.github.io/DB2_LIMITED_TASK_2/service-worker.js",
+    "static/js/2.9bfb1fd2.chunk.js.LICENSE.txt": "/komisienko.github.io/DB2_LIMITED_TASK_2/static/js/2.9bfb1fd2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dbd7d129.js",
+    "static/js/2.9bfb1fd2.chunk.js",
+    "static/js/main.7626489f.chunk.js"
+  ]
+}
