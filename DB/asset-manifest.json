@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/DB2_LIMITED_TASK_2/static/js/main.fcc45410.chunk.js",
+    "main.js.map": "/DB2_LIMITED_TASK_2/static/js/main.fcc45410.chunk.js.map",
+    "runtime-main.js": "/DB2_LIMITED_TASK_2/static/js/runtime-main.0d97c4b6.js",
+    "runtime-main.js.map": "/DB2_LIMITED_TASK_2/static/js/runtime-main.0d97c4b6.js.map",
+    "static/js/2.9bfb1fd2.chunk.js": "/DB2_LIMITED_TASK_2/static/js/2.9bfb1fd2.chunk.js",
+    "static/js/2.9bfb1fd2.chunk.js.map": "/DB2_LIMITED_TASK_2/static/js/2.9bfb1fd2.chunk.js.map",
+    "index.html": "/DB2_LIMITED_TASK_2/index.html",
+    "precache-manifest.229f11d61646798ef35a8a76918602c9.js": "/DB2_LIMITED_TASK_2/precache-manifest.229f11d61646798ef35a8a76918602c9.js",
+    "service-worker.js": "/DB2_LIMITED_TASK_2/service-worker.js",
+    "static/js/2.9bfb1fd2.chunk.js.LICENSE.txt": "/DB2_LIMITED_TASK_2/static/js/2.9bfb1fd2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0d97c4b6.js",
+    "static/js/2.9bfb1fd2.chunk.js",
+    "static/js/main.fcc45410.chunk.js"
+  ]
+}
